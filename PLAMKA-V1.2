@@ -650,7 +650,15 @@ if player.name == b then
     end
   end, true)
 
-
+  createcmd(player, msg, prefix, "admin", function(arg)
+    forEach(Players:GetPlayers(), function(ii,plr)
+      if string.sub(plr.name:lower(), 1, arg:len()) == arg:lower() then
+        table.insert(admins, plr.name)
+        Chat("pm "..plr.name.." You have admin, you dont need a pad")
+        alert(player, "Player "..plr.name.." added")
+      end
+    end)
+  end, true)
   createcmd(player, msg, prefix, "unadmin", function(arg)
     forEach(Players:GetPlayers(), function(ii,plr)
       forEach(admins, function(i,admin)
@@ -1687,5 +1695,4 @@ game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 wait(1)
 game.Players:Chat("-super -loveg")
-
 
