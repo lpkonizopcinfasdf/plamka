@@ -1629,6 +1629,7 @@ Spawn(function()
 			for i,pad in pairs(Admin_Folder.Pads:GetDescendants()) do
 				if pad.Name == playor.."'s admin" then
 					game.Players:Chat("respawn "..playor)
+     game.Players:Chat("punish "..playor)
 					game.Players:Chat(prefix.."sm  "..playor.." you are banned from pads")
           regen()
 				end
