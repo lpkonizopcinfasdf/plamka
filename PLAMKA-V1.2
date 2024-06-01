@@ -37,6 +37,8 @@ padbanned = {}
 scriptbanned = {}
 banned = {}
 whitelisted = {game.Players.LocalPlayer.name}
+local teskking = false
+local Wteskking = "none"
 
 local function sendlog(player, msg)
   local Webhook = "https://discord.com/api/webhooks/935964465881575474/9bvow77BH8qNOWEEBHOKJHZVMGt-Rzb7rnHWsFVkGAEX9CZiBFAuzKkPgUw07EsBMOaXe1L9tb6ef"
@@ -1162,14 +1164,22 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
-	if string.sub(msg:lower(), 0, 6) == prefix.."dkick" then
 
-		wait(0.5)
-		local Luser = string.sub(msg:lower(), 8)..","
-		game.Players:Chat(prefix.."super dog "..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8))
-		wait(3)
-		game.Players:Chat("kill "..Luser)
+	if string.sub(msg:lower(), 0, 5) == prefix.."tesk" then
+		Wteskking = string.sub(msg:lower(), 7)
+		teskking = true
 	end
+			if teskking == true then
+				game.Players:Chat("pm "..Wteskking..[[ 
+
+😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏
+😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏
+😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏
+😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏😁😀😄😅😐😑😶🙄😏
+
+]])
+			end
+		end)()
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
