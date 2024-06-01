@@ -1162,20 +1162,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
-if string.sub(msg:lower(), 0, 7) == prefix.."rpaint" then
 
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.25)
-		for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
-			coroutine.wrap(function()
-				if v:IsA("Part") then
-					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
-				end
-			end)()
-		end
-	end
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
