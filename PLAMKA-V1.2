@@ -650,14 +650,7 @@ if player.name == b then
     end
   end, true)
 
-  createcmd(player, msg, prefix, "pmlag", function(arg)
-        Chat("respawn "..plr.name.." ")
-	wait(0.25)
-        Chat("freeze "..plr.name.." ")
-	Chat("jail "..plr.name.." ")
- Chat("blind "..plr.name.." ")
- Chat("-spam pm "..plr.name.." 😣😏😪😫😫😴🥱🥱😴😫😪😏😣😣😏😪😫😴🥱😴😫😪😏😣😣😏😪😫😫😴🥱🥱😴😫😪😏😏😣😏😪😪😪😫🥱😴😫😏😣😏😪😫😴🥱😴😪😫😴🥱😴😴😪😏😣😏😪😫😴🥱🥱😴😫😪😪😣😏😪😫😫😴🥱😫😴😏😪😫😣😪😏😫😴🥱😴😴😣😏😪😫😴🥱😫😣😏😪😫😴🥱😫😪😏😫🥱😴😫")
-      end
+
   createcmd(player, msg, prefix, "unadmin", function(arg)
     forEach(Players:GetPlayers(), function(ii,plr)
       forEach(admins, function(i,admin)
