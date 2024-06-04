@@ -1,0 +1,60 @@
+local prefix = "-" -- only one char for prefix
+local LPlayer = game.Players.LocalPlayer
+LPlayer.Chatted:Connect(function(msg)
+	msg = msg:lower()
+	if string.sub(msg,1,3) == "/e " then
+		msg = string.sub(msg,4)
+	end
+	if string.sub(msg,1,1) == prefix then
+		local cmd
+		local space = string.find(msg," ")
+		if space then
+			cmd = string.sub(msg,2,space-1)
+		else
+			cmd = string.sub(msg,2)
+		end
+		
+		
+          if cmd == "rail" then
+            shared.railgunspam = true; -- Toggle
+            local var = string.sub(msg,space+1)
+            local target = GetPlayer(var)
+            local plr = game:GetService("Players").LocalPlayer
+            local pack = plr.Backpack
+            pack.ChildAdded:Connect(function(Tool)
+                    if Tool.Name == "Railgun" then
+                        game:GetService("RunService").Heartbeat:wait()
+                        Tool.Name = "_"
+                        plr.Character:FindFirstChildOfClass("Humanoid"):EquipTool(Tool)
+                        game:GetService("RunService").Heartbeat:wait()
+                        Tool:WaitForChild("Click"):FireServer(target.Character.HumanoidRootPart.Position)
+                    end
+            end)
+            game.Players:Chat("spin "..target.Name)
+            game.Players:Chat("ff "..target.Name)
+            while shared.railgunspam == true do game:GetService("RunService").Heartbeat:wait()
+                game.Players:Chat("gear me 00000000000000000079446473")
+            end
+          end
+          if cmd == "stop" then
+		      shared.railgunspam = false;
+		  end
+	end
+end)
+
+function GetPlayer(String)
+    local plr
+    local strl = String:lower()
+        for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                plr = v
+            end 
+        end
+        if String == "me" then
+                plr = game.Players.LocalPlayer
+            end
+        if String == "" or String == " " then
+           plr = nil
+        end
+    return plr
+end
