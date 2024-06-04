@@ -30,8 +30,7 @@ LPlayer.Chatted:Connect(function(msg)
                         Tool:WaitForChild("Click"):FireServer(target.Character.HumanoidRootPart.Position)
                     end
             end)
-            game.Players:Chat("spin "..target.Name)
-            game.Players:Chat("ff "..target.Name)
+
             while shared.railgunspam == true do game:GetService("RunService").Heartbeat:wait()
                 game.Players:Chat("gear me 00000000000000000079446473")
             end
