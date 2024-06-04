@@ -15,7 +15,7 @@ LPlayer.Chatted:Connect(function(msg)
 		end
 		
 		
-          if cmd == "rail" then
+          if cmd == "laserspam" then
             shared.railgunspam = true; -- Toggle
             local var = string.sub(msg,space+1)
             local target = GetPlayer(var)
