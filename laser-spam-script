@@ -22,7 +22,7 @@ LPlayer.Chatted:Connect(function(msg)
             local plr = game:GetService("Players").LocalPlayer
             local pack = plr.Backpack
             pack.ChildAdded:Connect(function(Tool)
-                    if Tool.Name == "Hyperlaser-Gun" then
+                    if Tool.Name == "Lasergun" then
                         game:GetService("RunService").Heartbeat:wait()
                         Tool.Name = "_"
                         plr.Character:FindFirstChildOfClass("Humanoid"):EquipTool(Tool)
