@@ -3,16 +3,16 @@ getgenv().autoexecute = false -- This annoys me, no more of this.
 
 if autoexecute then
     queueteleport([[
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/Shortcut__v2_src2.lua'),true))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/PLAMKA-V2-SC'),true))()
     ]])
 end
 
 repeat task.wait() until game:IsLoaded()
 
-function logn(message) -- Totally skidded, amirite Temmie
+function logn(message) 
     game.StarterGui:SetCore("SendNotification",
         {
-            Title = "NEW Shortcut v2",
+            Title = "PLAMKA-V2",
             Text = message,
             Duration = 5.5
         })
@@ -59,8 +59,8 @@ local Character = plr.Character or plr.CharacterAdded
 local hum = Character:WaitForChild("Humanoid")
 local Plrname = plr.Name
 local userId = game.Players.LocalPlayer.UserId
-getgenv().house_keybind = "n"
-getgenv().reset_keybind = "c" -- This also shares with VAR
+getgenv().house_keybind = "h"
+getgenv().reset_keybind = "r" -- This also shares with VAR
 getgenv().scriptrunning = true -- keep on
 
 local Game_Folder = game:GetService("Workspace").Terrain["_Game"]
@@ -80,11 +80,10 @@ local Utils = {
 }
 
 local function trueblind()
-    chatt(":blind all")
+    chatt("blind a/notme/others")
     chatt("fogcolor 0 0 0")
-    chatt("fogend nil")
-    chatt("brightness nan")
-    chatt("time -")
+    chatt("fogend ")
+    chatt("time 0")
 end
 
 local sg = game:GetService("StarterGui")
@@ -197,11 +196,11 @@ connections[#connections + 1] = mousee.Button1Down:Connect(function()
 				chatt(prefix3.."annoy "..plr.Name)
             elseif clickFard then
                 for i = 1, 128 do
-				    chatt("smoke "..plr.Name.." "..plr.Name.." "..plr.Name)
+				    chatt(" "..plr.Name.." "..plr.Name.." "..plr.Name)
                 end
                 wait(2.5)
                 chatt("kill "..plr.Name)
-                chatt("h \n\n\n\n\n\n LOL "..plr.Name.." DIED BY THEIR OWN STENCH \n\n\n\n\n\n")
+
 			end
 		end
 	end)
@@ -230,7 +229,7 @@ task.spawn(function()
             if respawnRate > RESPAWN_THRESHOLD then
                 if messagewentpast2 then return end
                 messagewentpast2 = true
-                logn("Use //forcelag if you're being spam respawned or refreshed")
+                logn("Use p/carlag if you're being spam respawned or refreshed")
                 wait(30)
                 messagewentpast2 = false
             end
@@ -252,7 +251,7 @@ task.spawn(function()
     end)
 end)
 
-getgenv().prefix3 = "//"
+getgenv().prefix3 = "p/"
 local admin = {prefix3 = prefix3, version = "v2"}
 local commands = {}
 local descriptions = {}
@@ -295,7 +294,7 @@ function GetPlayer(target)
     end
 end
 
-addcommand("migrate",
+addcommand("sshop",
 "No description",
 function()
     while scriptrunning do wait(.35)
@@ -449,7 +448,7 @@ local function dumbrobloxupdate(character)
             pcall(function()
                 game:GetService("Players").LocalPlayer.Character.Head:Destroy()
             end)
-            chatt(":punish                                                                                                                                others fuck "..math.random(1,1000))
+            chatt("punish                                                                                                                        0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0        others "..math.random(1,1000))
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(0, -499.4, 0))
             task.wait()
         end)
@@ -462,8 +461,8 @@ game:GetService("Players").LocalPlayer.Character.Head:Destroy()
 ]])
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
 else
-chatt("unpunish me")
-chatt("punish others")
+chatt("unpunish 0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0/ me")
+chatt("punish 0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0/ others")
 end
 end
 end
@@ -476,7 +475,7 @@ function()
     for _Index, Target in pairs(GetPlayer(args[2])) do
         spam = true
         while spam do Utils.Task:wait()
-            chatt("unchar "..Target.Name.." "..Target.Name.." "..Target.Name)
+            chatt("unchar 0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0/  "..Target.Name.." "..Target.Name.." "..Target.Name)
         end
     end
 end)
@@ -491,30 +490,30 @@ function()
         end
         chatt("unpunish "..Target.Name.." "..math.random(1,1000));task.wait()
         chatt("invis "..Target.Name.." "..math.random(1,1000))
-        chatt(":refresh "..Target.Name.." "..math.random(1,1000))
+        chatt("refresh "..Target.Name.." "..math.random(1,1000))
         chatt("invis "..Target.Name.." "..math.random(1,1000))
-        chatt(":kill "..Target.Name.." "..math.random(1,1000))
+        chatt("kill "..Target.Name.." "..math.random(1,1000))
         chatt("invis "..Target.Name.." "..math.random(1,1000))
-        chatt(":trip "..Target.Name.." "..math.random(1,1000))
+        chatt("trip "..Target.Name.." "..math.random(1,1000))
         chatt("invis "..Target.Name.." "..math.random(1,1000))
         chatt("speed "..Target.Name.." 00000000000000000000000000000000000000000000")
-        chatt(":setgrav "..Target.Name.." -1000000000000000000000000000000000000000000000000000000000000000000000000000000000000");wait(.1)
+        chatt("setgrav "..Target.Name.." -1000000000000000000000000000000000000000000000000000000000000000000000000000000000000");wait(.1)
         chatt("speed "..Target.Name.." 00000000000000000000000000000000000000000000")
         chatt("invis "..Target.Name.." "..Target.Name..""..Target.Name.." "..math.random(1,1000))
-        chatt(":unpunish "..Target.Name.." "..Target.Name.." "..Target.Name.." "..math.random(1,1000));task.wait(.2)
+        chatt("unpunish "..Target.Name.." "..Target.Name.." "..Target.Name.." "..math.random(1,1000));task.wait(.2)
         chatt("invis "..Target.Name.." "..math.random(1,1000));wait(.2)
-        chatt(":reset "..Target.Name.." "..math.random(1,1000));wait(.15)
+        chatt("reset "..Target.Name.." "..math.random(1,1000));wait(.15)
         pcall(function()
             fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
-            chatt("iyc firecd")
+   
         end)
         for i = 1, 20 do
-        chatt(":punish "..Target.Name.."                                                                                                 "..Target.Name.." "..Target.Name.."                                                                       "..math.random(1,1000))
+        chatt("punish "..Target.Name.."                                                                                                 "..Target.Name.." "..Target.Name.."                        0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0                                               "..math.random(1,1000))
         end
         chatt("speed "..Target.Name.." 00000000000000000000000000000000000000000000")
         wait(1)
-        chatt("invis                                                                                                                                                 "..Target.Name.." "..math.random(1,1000));wait(.2)
-        chatt("removehats                                                                                                                                                 "..Target.Name.." "..math.random(1,1000));wait(.2)
+        chatt("invis                                                                                                                                                 "..Target.Name.." 0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0"..math.random(1,1000));wait(.2)
+        chatt("removehats                                                                                                                                                 "..Target.Name.." 0/0/0/0/0/0/0/0/00000000000/0//00/00//0/00//0/0"..math.random(1,1000));wait(.2)
     end
 end)
 
@@ -557,7 +556,7 @@ function()
         end
         for b, c in ipairs(a) do
             local e = string.rep("  ", 2 * (b - 1))
-            chatt("h/ lol look\n\n\n\n\n\n\n" .. e .. _G["variable_" .. tostring(b)])
+
         end
     else 
         if permcheck1 == true then return end
@@ -634,7 +633,7 @@ function()
         end)
         spawn(function()
             while L_14_ do task.wait(nil)
-                chatt("unpunish me "..math.random(1,1000))
+                chatt("unpunish me/somemomaeonf93j0ajf093f0a8h3fn08ah30fna308fn08a3wnf08a3wbnf08abw3 "..math.random(1,1000))
             end
         end);task.wait(0.3)
         L_14_ = false
@@ -730,7 +729,7 @@ function()
     chatt("time 16")
 end)
 
-addcommand("fixclientcam",
+addcommand("fixcam",
 "No description",
 function()
     task.spawn(function()
@@ -909,10 +908,10 @@ for i = 1, 350 do
 end
 wait(5.01)
 for i = 1, 350 do
-	chatt(":gear all 253519495")
+	chatt("gear all 253519495")
 end
 while task.wait() do
-    chatt(":gear all 253519495")
+    chatt("gear all 253519495")
 end
 end)
 
@@ -942,7 +941,7 @@ function()
         end)
         connections[#connections + 1] = game.Players.LocalPlayer.CharacterAdded:connect(function()
             task.wait(.65)
-            chatt("god                                                                                                                               me fuck " .. math.random(1, 1000))
+            chatt("god me/lovegod/me_/me_l/030                                                                                                                              me  " .. math.random(1, 1000))
         end)
         logn("AntiKill is now On")
     end
@@ -992,8 +991,7 @@ function()
         task.wait(0.005)
         chatt("blind "..Target.Name)
         chatt("freeze "..Target.Name)
-        chatt("vis "..Target.Name)
-        chatt("rainbowify "..Target.Name)
+
         chatt("ff "..Target.Name)
         for i = 1, 103 do
             game.Players:Chat("pm "..Target.Name.." "..shared.pmstuff)
@@ -1036,7 +1034,7 @@ fixpaint - Restore the map colors to how it originally was (we were the first to
 messpaint - Mess up the map paint instead by painting everything random
 breakcam - Break the server camera
 fixclientcam - This will only fix YOUR CAMERA. For anyone else it will stay broken
-migrate - Look for an empty/clean server and join it. There's no ping check though so if that server is located on the other side of the world then that sucks for you lmao
+sshop - Look for an empty/clean server and join it. There's no ping check though so if that server is located on the other side of the world then that sucks for you lmao
 sunset - Sets the map theme to this.
 periastron - This gives you all periastron swords EXCEPT FOR THE IVORY
 ivory - This will give you the ivory specifically. It has been separated due to the ivory having many uses outside of just being an ordinary periastron sword, an example of that is attaching and moving parts or objects by using the Ivory's server sided after making your character weld to a part
@@ -1046,7 +1044,7 @@ crazycolors - This will hurt peoples eyes. Use the stop command to stop it
 nopadgrabber - Disable the padgrabber that will automatically get a pad if your account doesn't have perm
 permcheck (player) - Check if a player has perm
 punish (Player) - Altered punish, it's buffed and can only be bypassed using respawn or unchar
-forcelag - Use this command in emergencies. To stop it, you have to rejoin entirely (Requires admin of course)
+carlag - Use this command in emergencies. To stop it, you have to rejoin entirely (Requires admin of course)
 tempcrash - Temporarily crash the server using the blue tempcrash sword
 kick (Player) - Kick a player using the shitty dog method (scv3-var has a way better method)
 chatcontrol - Funny chat control GUI, made by DIY Scripts.
@@ -1078,7 +1076,7 @@ function()
         local id1 = 66254
         task.wait()
         if not game:GetService("Workspace").Terrain["_Game"].Admin:FindFirstChild("Regen") then
-            chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Failed to ban "..Target.Name.." \n Try a different method instead")
+           
             game.Players:ReportAbuse(game:GetService("Players"),Target.Name,"Cheating/Exploiting", "Using a spam script to disrupt the chat for everyone")
             return
         end
@@ -1090,10 +1088,10 @@ function()
                 chatt("skydive                                                                                                                                  me me me")
                 chatt("skydive                                                                                                                                  me me me");wait(.51)
                 chatt(prefix3.."vgcrash");wait(.51)
-                chatt(prefix3.."migrate")
+
                 return 
             end
-            --chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Failed to ban "..Target.Name.." \n Try a different method instead")
+            
             chatt(prefix3.."kick "..Target.Name.." fuck")
             game.Players:ReportAbuse(game:GetService("Players"),Target.Name,"Cheating/Exploiting", "Spamming in the chat")
             return
@@ -1116,7 +1114,7 @@ end)
 addcommand("vgcrash",
 "Crash the server with the vampire gear",
 function()
-    chatt(":gear me "..antilog.."94794847")
+    chatt("gear me "..antilog.."94794847")
     local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
     game.Players.LocalPlayer.Backpack:WaitForChild("VampireVanquisher")
     for _, v in ipairs(Backpack:GetChildren()) do
@@ -1182,11 +1180,11 @@ end
 addcommand("house",
 "Teleport to the house",
 function()
-    chatt("invis                                                                                                                                                               me "..math.random(1,1000).." fuck")
+    chatt("invis /m/me/m/e/m/e/me                                                                                                                                                               me "..math.random(1,1000).." ")
     wait(.49)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
     wait(.49)
-    chatt("vis                                                                                                                                                               me "..math.random(1,1000).." fuck")
+    chatt("vis    m.3./m3/m3/m3/m/3m/3m/3m/3m/em/eme/me/me/me/me/me/me/me/me/me/me/me/me/me/me/me/me/meme                                                                                                                                                            me "..math.random(1,1000).." ")
 end
 )
 
@@ -1196,18 +1194,18 @@ task.spawn(function()
 			connections[#connections + 1] = Plr.CharacterAdded:Connect(function()
 				connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 					if antiGear == true then
-						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears have been disabled for now \n cry about it if you have any complaints \n and no we don't care about your hurt feelings")
-                        chatt("trip " .. Plr.Name);wait(.51)
+						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others 0/0/0//0/0/0/0/0/0/0/0/0/0/00//00//0/0/0/0//0/00//0/0 " ..math.random(1, 1000))
+                       
+                        chatt("blind " .. Plr.Name);wait(.51)
                         chatt("noclip                                                                                                                        " .. Plr.Name)
                     end
 				end)
 			end)
 			connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 				if antiGear == true then
-					chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                    chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears have been disabled for now \n cry about it if you have any complaints \n and no we don't care about your hurt feelings")
-                    chatt("trip " .. Plr.Name);wait(.51)
+					chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others 0/0/0/0/0/0/0/0/0/0/00/0/0/000/0//0/00/0/0/0/0 " ..math.random(1, 1000))
+                  
+                    chatt("blind " .. Plr.Name);wait(.51)
                     chatt("noclip                                                                                                                        " .. Plr.Name)
                 end
 			end)
@@ -1218,18 +1216,17 @@ task.spawn(function()
 			connections[#connections + 1] = Plr.CharacterAdded:Connect(function()
 				connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 					if antiGear == true then
-						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears have been disabled for now \n cry about it if you have any complaints \n and no we don't care about your hurt feelings")
-                        chatt("trip " .. Plr.Name);wait(.51)
+						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others /0/0/0/0/0/0/0/0/0/0/00/00/ " ..math.random(1, 1000))
+                        
+                        chatt("blind " .. Plr.Name);wait(.51)
                         chatt("noclip                                                                                                                        " .. Plr.Name)
                     end
 				end)
 			end)
 			connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 				if antiGear == true then
-					chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                    chatt("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears have been disabled for now \n cry about it if you have any complaints \n and no we don't care about your hurt feelings")
-                    chatt("trip " .. Plr.Name);wait(.51)
+					chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others/0/0/0/0/0/0/" ..math.random(1, 1000))
+                    chatt("blind " .. Plr.Name);wait(.51)
                     chatt("noclip                                                                                                                        " .. Plr.Name)
                 end
 			end)
@@ -1290,8 +1287,8 @@ task.spawn(function()
             local L_1_ = workspace[game.Players.LocalPlayer.Name]
             if ELFRGD == true then
                 if L_1_.Humanoid.Health == 0 then
-                    chatt("reset me " .. math.random(1, 1000))
-                    chatt("reset/me " .. math.random(1, 1000))
+                    chatt("reset 0000000000000000000000000000000000000000000000000000000000000000000000000000000000/me " .. math.random(1, 1000))
+                   
                     chatt("god                                                                                                                               me fuck " ..math.random(1, 1000))
                 end
             end
@@ -1684,7 +1681,7 @@ local function NKEI_fake_script() -- ScrollingFrame.LocalScript
 	end)
 	
 	addBtn("DeleteResetPad", function(v)
-		chatt(prefix3.."deleteregen fuck")
+		chatt(prefix3.."deleteregen ")
 	end)
 	
 	addBtn("RainbowPads", function(v)
@@ -1716,15 +1713,15 @@ local function NKEI_fake_script() -- ScrollingFrame.LocalScript
 	end)
 	
 	addBtn("Shutdown", function(v)
-		chatt(prefix3.."vgcrash fuck")
+		chatt(prefix3.."vgcrash ")
 	end)
 
     addBtn("Silent Crash", function(v)
-		chatt(prefix3.."silcrash fuck")
+		chatt(prefix3.."silcrash ")
 	end)
 
     addBtn("House TP", function(v)
-		chatt(prefix3.."house fuck")
+		chatt(prefix3.."house ")
 	end)
 	
 	addBtn("ServerHop", function(v)
@@ -1757,9 +1754,9 @@ local function NKEI_fake_script() -- ScrollingFrame.LocalScript
 
     addBtn("AntiPunish", function(v)
 		if gamepassperm then
-            chatt(prefix3.."permap fuck")
+            chatt(prefix3.."permap ")
         else
-            chatt(prefix3.."nonpermap fuck")
+            chatt(prefix3.."nonpermap ")
         end
 	end)
 
