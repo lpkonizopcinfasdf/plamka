@@ -1181,7 +1181,7 @@ Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪�
   end
 
 
-   if string.sub(msg:lower(), 1, #prefix + 7) == prefix..'control' then -- really funny ngl (scv1)
+   if string.sub(msg:lower(), 1, #prefix + 7) == prefix..'control' then 
                 local dogman = string.sub(msg:lower(), #prefix + 9)
                Players:Chat("speed "..dogman.." 0")
 	       Players:Chat("ff LOVE GOD❤️❤️")
@@ -1208,7 +1208,9 @@ Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪�
   if msg == prefix.."temprchat" then
   Players:Chat("-super h 😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏😪😣😣😪😏🥱😴😫😣😣😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣")
   end
-
+if msg == prefix.."fixpaint" then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
+    end
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
