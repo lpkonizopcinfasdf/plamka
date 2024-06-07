@@ -19,6 +19,7 @@ local autoadminword = "none"
 local autoadminonjoin = false
 local admins = {}
 local loopgrab = false
+local slock = false
 local logchat = false
 local wspamming = "nothing"
 local PadCheck = true
@@ -1175,7 +1176,22 @@ Players:Chat("respawn "..arg)
 Players:Chat("freeze "..arg)
 Players:Chat("jail "..arg)
 Players:wait(0.25)
-Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫 ")
+Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😏😪😣😣😣😣😣😣😣😫😫😫😫😫😫🥱😪😪😴🥰😗🥱🥱😉😉😫😫🥱🥱🥱🥱🥱🥱🥱🥱🥱😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫 ")
+       
+    end
+  end
+  if string.sub(msg:lower(), 1, 4) == prefix.."bk " then
+    local arg = string.sub(msg:lower(), 5, msg:len())
+    if arg == "me" then
+      Players:Chat("reset "..player.name)
+    elseif arg == "all" then
+      Players:Chat("reset all")
+    elseif arg == "others" then
+      Players:Chat("reset others")
+    else
+Players:Chat("-super dog "..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/"..arg"/")
+wait(3)
+Players:Chat("kill "..arg" ")
        
     end
   end
@@ -1559,6 +1575,20 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
     wlc = true
     alert(player, "Welcomes Enabled")
   end
+    if msg == prefix.."slock" then
+    slock = true
+    alert(player, "Server lock Enabled")
+  end
+  if msg == prefix.."loopgrab" then
+  loopgrab = true
+  end
+  if msg == prefix.."unloopgrab" then
+  loopgrab = false
+  end
+    if msg == prefix.."unslock" then
+    slock = false
+    alert(player, "Server lock disabled")
+  end
   if msg == prefix.."dwlc" then
     wlc = false
     alert(player, "Welcomes Disabled")
@@ -1716,6 +1746,11 @@ end)
 game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
+  end
+  game:GetService("Players").PlayerAdded:Connect(function(player)
+    if slock == true then
+    game:GetService'Players':Chat((prefix.."lck "..player.name..""))
+    game:GetService'Players':Chat(("h Sorry \n "..player.name.." \n this server is locked \n\n join next server \n\n or ask to be whitelisted."))
   end
   if player.name == "" then
 
