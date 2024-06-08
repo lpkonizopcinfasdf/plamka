@@ -1,0 +1,16 @@
+game.Players:Chat([[h
+1.Rihanna - SOS
+2.Bullet - Skibidi fanum tax
+3.kirkiimad - i love (slow+reverb version)
+4.The Kid LAROI, Justin Bieber - STAY
+5.Michael Jackson – Smooth Criminal
+6.You've been Rick Rolled
+7.
+8.
+9.
+10.
+=If u want to play song chat: -song (nubmer)
+]])
+wait(0.45)
+game.Players:Chat("reset others")
+game.Players:Chat("-clearlogs")
