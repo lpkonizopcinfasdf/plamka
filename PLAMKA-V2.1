@@ -21,6 +21,7 @@ local admins = {}
 local loopgrab = false
 local logchat = false
 local perm = false
+local prem = true
 local wspamming = "nothing"
 local PadCheck = true
 local mymusic = false
@@ -1066,6 +1067,42 @@ if player.name == b then
 if msg == prefix.."house" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
 end
+if msg == prefix.."perm2" then
+prem = true
+end
+-- perm 2 function
+-- PERM 2
+task.spawn(function()
+    while true do 
+        task.wait(0)
+        coroutine.wrap(function()
+                              local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                              if (prem ~= true or workspace.Terrain._Game.Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil) and firetouchinterest then 
+                              else
+                                    pcall(function()
+                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+                                              local a = pad.Head
+                                              firetouchinterest(a, spr, 1)
+                                              firetouchinterest(a, spr, 0)
+                                              firetouchinterest(a, spr, 1)
+                                              task.wait()
+                                              firetouchinterest(a, spr, 0)
+                                    end)
+                              end
+        end)()
+    end
+end)
+if msg == prefix.."tempclag" then
+Chat("-super gear all 00000000000000000000000000000000000253519495")
+wait(2)
+Chat("-spam reset all all all all all all all all all all")
+end
+
+if msg == prefix.."carlag" then
+Chat("-super gear all 00000000000000000000000000000000000000000000000000253519495")
+wait(0.99)
+Chat("-spam gear all 0000000000000000000000253519495")
+end
 if msg == prefix.."loveg" then
 Players:Chat([[h 
 
@@ -1163,7 +1200,8 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
- if string.sub(msg:lower(), 1, 4) == prefix.."ps " then
+
+ if string.sub(msg:lower(), 1, 4) == prefix.."pk " then
     local arg = string.sub(msg:lower(), 5, msg:len())
     if arg == "me" then
       Players:Chat("reset "..player.name)
@@ -1176,7 +1214,7 @@ Players:Chat("respawn "..arg)
 Players:Chat("freeze "..arg)
 Players:Chat("jail "..arg)
 Players:wait(0.25)
-Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫 ")
+Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱 ")
        
     end
   end
@@ -1808,10 +1846,7 @@ for _, plr in pairs(game.Players:GetPlayers()) do
   end)
 end
 
-game.Players:Chat(prefix.."noperm")
-game.Players:Chat(prefix.."unperm")
-game.Players:Chat(prefix.."perm")
-game.Players:Chat(prefix.."perm")
+game.Players:Chat(prefix.."perm2")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 
