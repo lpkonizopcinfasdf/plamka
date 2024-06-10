@@ -1207,38 +1207,64 @@ Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪�
     end
 
   if msg == prefix.."temprchat" then
-  Players:Chat("-super h 😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏😪😣😣😪😏🥱😴😫😣😣😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣")
+  Players:Chat("-super h 😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣")
   end
+-- Paints list
 if msg == prefix.."paintnormal" then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
+    end
+    if msg == prefix.."paint1" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/paint1"))()
+end
+    -- koniec paints list
+    if msg == prefix.."songlist" then
+game.Players:Chat([[h
+1.Rihanna - SOS
+2.Bullet - Skibidi fanum tax
+3.kirkiimad - i love (slow+reverb version)
+4.The Kid LAROI, Justin Bieber - STAY
+5.Michael Jackson – Smooth Criminal
+6.You've been Rick Rolled
+7.Raining tacos
+8.
+9.
+10.            -- Only 7 songs rn 
+=If u want to play song chat: -song (nubmer)
+]])
+wait(0.45)
+game.Players:Chat("reset others")
+game.Players:Chat("-clearlogs")
     end
     -- ------------------MUSIC LIST----------------------------
 if msg == prefix.."song 1" then
 Chat("music 0000000000000000000006901063458")
-Chat("h \n\n\n\n Now playing:Rihanna - SOS")
+Chat("h \n\n\n\n\n\n Now playing:Rihanna - SOS")
 end
 if msg == prefix.."song 2" then
-Chat("h \n\n\n\n Now playing:Bullet - Skibidi fanum tax")
+Chat("h \n\n\n\n\n\n Now playing:Bullet - Skibidi fanum tax")
 Chat("music 00000000000000000000016190757458")
 end
 if msg prefix.."song 3" then
-Chat("h \n\n\n\n Now playing:kirkiimad - i love (slow+reverb version)")
+Chat("h \n\n\n\n\n\n Now playing:kirkiimad - i love (slow+reverb version)")
 Chat("music 0000000000000000000000000015689455422")
 end
 if msg prefix.."song 4" then
-Chat("h \n\n\n\n Now playing:The Kid LAROI, Justin Bieber - STAY")
+Chat("h \n\n\n\n\n\n Now playing:The Kid LAROI, Justin Bieber - STAY")
 Chat("music 0000000000000009062549544")
 end
 if msg prefix.."song 5" then
-Chat("h \n\n\n\n Now playing:Michael Jackson – Smooth Criminal")
+Chat("h \n\n\n\n\n\n Now playing:Michael Jackson – Smooth Criminal")
 Chat("music 00000000000000000000000000000000000000000004883181281")
 end
 if msg prefix.."song 6" then
 Chat("music 00000000000000000007363412529")
-Chat("h \n\n\n\n Now playing:You've been Rick Rolled")
+Chat("h \n\n\n\n\n\n Now playing:You've been Rick Rolled")
 end
-
-    -- KONIEC MUSIC LIST -------
+if msg prefix.."song 7" then
+Chat("h \n\n\n\n\n\n Now playing:Raining Tacos")
+Chat("music 00000000000000000000000000000142376088")
+end
+-- KONIEC MUSIC LIST -------
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
