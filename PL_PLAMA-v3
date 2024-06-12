@@ -25,7 +25,7 @@ local PadCheck = true
 local mymusic = false
 local slock = false
 local mymusiccode = 0
-local wlc = true
+local wlc = false
 local closed = false
 local nokill = true
 local Game_Folder = game:GetService("Workspace").Terrain["_Game"]
@@ -1331,7 +1331,11 @@ end
 if msg == prefix.."fixpaint" then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
     end
-
+if msg == prefix.."ap" then
+Chat("-regen")
+wait(0.25)
+Chat("-allpads")
+end
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
