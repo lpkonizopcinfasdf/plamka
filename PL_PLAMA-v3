@@ -1330,10 +1330,11 @@ end
   if msg == prefix.."temprchat" then
   Players:Chat("-super h 😣😪😏🥱😴😫😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😏🥱😴😫😣")
   end
-if msg == prefix.."fixpaint" then
+if msg == prefix.."paintnormal" then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
     end
-if msg == prefix.."tap" then
+-- gear list 
+if msg == prefix.."ap" then
 game.Players:Chat("-regen")
 wait(0.45)
 game.Players:Chat("-allpads")
