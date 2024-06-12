@@ -2391,4 +2391,12 @@ end
 
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
+game.Players:Chat("-noperm")
+
+game.Players:Chat("-unperm")
+game.Players:Chat("-perm")
+game.Players:Chat("-nok")
+game.Players:Chat("-ap")
+
+
 
