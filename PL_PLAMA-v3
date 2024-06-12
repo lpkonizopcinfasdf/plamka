@@ -1057,6 +1057,8 @@ if msg == prefix.."house" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
 end
 if msg == prefix.."vgcrash" then
+anticrash = false
+wait(0.25)
 Chat("gear me 0000000000000000000000000000000000000094794847")
 wait(0.45)
 Chat("-alltools")
@@ -1331,10 +1333,10 @@ end
 if msg == prefix.."fixpaint" then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
     end
-if msg == prefix.."ap" then
-Chat("-regen")
-wait(0.25)
-Chat("-allpads")
+if msg == prefix.."tap" then
+game.Players:Chat("-regen")
+wait(0.45)
+game.Players:Chat("-allpads")
 end
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
@@ -2391,6 +2393,15 @@ end
 
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
+game.Players:Chat("-noperm")
+
+game.Players:Chat("-unperm")
+game.Players:Chat("-perm")
+game.Players:Chat("-noperm")
+
+game.Players:Chat("-unperm")
+game.Players:Chat("-perm")
+wait(0.25)
 game.Players:Chat("-noperm")
 
 game.Players:Chat("-unperm")
