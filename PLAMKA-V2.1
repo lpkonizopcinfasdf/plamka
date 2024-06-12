@@ -20,7 +20,7 @@ local autoadminonjoin = false
 local admins = {}
 local loopgrab = false
 local logchat = false
-local perm = true
+
 
 local wspamming = "nothing"
 local PadCheck = true
@@ -1067,9 +1067,7 @@ if player.name == b then
 if msg == prefix.."house" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
 end
-if msg == prefix.."perm2" then
-prem = true
-end
+
 
 if msg == prefix.."tempclag" then
 Chat("-super gear all 00000000000000000000000000000000000253519495")
@@ -1178,7 +1176,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
-
+end
 
  if string.sub(msg:lower(), 1, 4) == prefix.."pk " then
     local arg = string.sub(msg:lower(), 5, msg:len())
