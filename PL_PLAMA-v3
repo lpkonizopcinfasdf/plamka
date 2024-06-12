@@ -2384,10 +2384,7 @@ for _, plr in pairs(game.Players:GetPlayers()) do
   end)
 end
 
-game.Players:Chat(prefix.."noperm")
-game.Players:Chat(prefix.."unperm")
-game.Players:Chat(prefix.."perm")
-game.Players:Chat(prefix.."perm")
+
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 
