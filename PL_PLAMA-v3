@@ -1222,6 +1222,12 @@ Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪�
        
     end
   end
+if msg == prefix.."l rail" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/rail-spam-script"))()
+Chat("name me \-Loaded-/")
+wait(1)
+Chat("unname                                                                                       me ")
+end
 
 -- kicks methodds
   if string.sub(msg:lower(), 1, 4) == prefix.."ek " then
@@ -2392,23 +2398,12 @@ for _, plr in pairs(game.Players:GetPlayers()) do
 end
 
 
+game.Players:Chat(prefix.."noperm")
+game.Players:Chat(prefix.."unperm")
+game.Players:Chat(prefix.."perm")
+game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
-game.Players:Chat("-noperm")
-
-game.Players:Chat("-unperm")
-game.Players:Chat("-perm")
-game.Players:Chat("-noperm")
-
-game.Players:Chat("-unperm")
-game.Players:Chat("-perm")
-wait(0.25)
-game.Players:Chat("-noperm")
-
-game.Players:Chat("-unperm")
-game.Players:Chat("-perm")
-game.Players:Chat("-nok")
-game.Players:Chat("-ap")
-
+game.Players:Chat(prefix.."nok")
 
 
