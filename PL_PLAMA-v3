@@ -1066,6 +1066,52 @@ if player.name == b then
 if msg == prefix.."house" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
 end
+if msg == prefix.."vgcrash" then
+Chat("gear me 0000000000000000000000000000000000000094794847")
+wait(0.45)
+Chat("-alltools")
+wait(0.25)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("size me 0.3")
+wait(0.5)
+Chat("-spam size me 0.3")
+end
+
 if msg == prefix.."loveg" then
 Players:Chat([[h 
 
@@ -2231,7 +2277,6 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
   end
-game:GetService("Players").PlayerAdded:Connect(function(player)
     if slock == true then
     game:GetService'Players':Chat((prefix.."lck "..player.name..","))
         game:GetService'Players':Chat(("h Sorry \n\n\n\n  "..player.name..", \n\n This server is locked \n\n\n join next server \n\n or ask to be whitelisted "))
