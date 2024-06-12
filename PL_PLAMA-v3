@@ -333,11 +333,11 @@ local function antipunish()
   game.Lighting.ChildAdded:Connect(function(child)
     if antipunishb == true then
       if child.name == LP.name then
-        Chat("unpunish me")
+        Chat("reset me")
+Chat("god                                                               me")
         Chat("unpunish/me")
         game.Players:Chat(prefix.."jail others")
-        wait(5)
-        game.Players:Chat(prefix.."unjail others")
+
       end
     end
   end)
@@ -1064,43 +1064,6 @@ Chat("gear me 0000000000000000000000000000000000000094794847")
 wait(0.45)
 Chat("-alltools")
 wait(0.25)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
-wait(0.5)
-Chat("size me 0.3")
 wait(0.5)
 Chat("-spam size me 0.3")
 end
@@ -1391,6 +1354,8 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
     alert(player, "NoKill Disabled")
   end
   if msg == prefix.."allpads" then
+Chat("-regen")
+wait(0.26)
     if not game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
       regen()
       Players:Chat((prefix.."allpads"))
@@ -1482,6 +1447,7 @@ end
 end
 end
 end
+
   if string.sub(msg:lower(), 1, 4) == prefix.."re " then
     local arg = string.sub(msg:lower(), 5, msg:len())
     if arg == "me" then
@@ -2197,6 +2163,7 @@ end
       alert(player, "Removed Hitboxes")
     end
   end
+
   if string.sub(msg, 1,4) == prefix.."sm " then
     local message = string.sub(msg, 5, msg:len())
     sm("Server message ", message)
@@ -2291,7 +2258,7 @@ Spawn(function()
         game.Players:Chat(prefix.."jail "..baned)
         Chat("punish "..baned)
         Chat("blind "..baned)
-        Chat("pm "..baned.." You are locked. Please join next server!")
+        Chat("h \n\n\n\n\n\n ["..baned.."] You are locked \n\n\n\n\n join next server")
         regen()
       end
     end)
@@ -2303,8 +2270,10 @@ Spawn(function()
             if pl.Character.Humanoid.Health == 0 then 
               wait(0)
               game.Players:Chat((prefix.."re "..b))
+game.Players:Chat(("god                                                         "..b))
               if b == LP.name then
                 game.Players:Chat((prefix.."re me"))
+game.Players:Chat(("god                                                      me "))
               end
             end
           end
