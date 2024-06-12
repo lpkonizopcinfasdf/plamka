@@ -16,6 +16,7 @@ local cantrun = false
 local prefix = "-" -- ONLY ONE CHARACTER
 local autoadmin = false
 local autoadminword = "none"
+local healauto = true
 local autoadminonjoin = false
 local admins = {}
 local loopgrab = false
@@ -1275,10 +1276,8 @@ end
 		wait(3)
 		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
 	end
-if msg == prefix.."tempclag" then
-Chat("-super gear all 00000000000000000000000000000000000253519495")
-wait(2)
-Chat("-spam reset all all all all all all all all all all")
+if msg == prefix.."lag" then
+game.Players:Chat("-super gear all 00000000000000000000000000000000000253519495")
 end
   if msg == prefix.."temprchat" then
   Players:Chat("-super h 😣😪😏🥱😴😫😪😏🥱😴😫😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😫😣😣🥱😴😫😏🥱😴😫😣")
@@ -1340,11 +1339,7 @@ if msg == prefix.."paintnormal" then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
     end
 -- gear list 
-if msg == prefix.."ap" then
-game.Players:Chat("-regen")
-wait(0.45)
-game.Players:Chat("-allpads")
-end
+
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
@@ -1475,6 +1470,18 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
     game:GetService'Players':Chat(("unblind others"))
 
   end
+if healauto == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
+game:GetService'Players':Chat(("heal me 100"))
+game:GetService'Players':Chat(("ff me"))
+game:GetService'Players':Chat(("god me"))
+wait(0.25)
+end
+end
+end
+end
   if string.sub(msg:lower(), 1, 4) == prefix.."re " then
     local arg = string.sub(msg:lower(), 5, msg:len())
     if arg == "me" then
