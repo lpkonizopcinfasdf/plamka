@@ -20,8 +20,8 @@ local autoadminonjoin = false
 local admins = {}
 local loopgrab = false
 local logchat = false
-local perm = false
-local prem = true
+local perm = true
+
 local wspamming = "nothing"
 local PadCheck = true
 local mymusic = false
@@ -1070,28 +1070,7 @@ end
 if msg == prefix.."perm2" then
 prem = true
 end
--- perm 2 function
--- PERM 2
-task.spawn(function()
-    while true do 
-        task.wait(0)
-        coroutine.wrap(function()
-                              local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
-                              if (prem ~= true or workspace.Terrain._Game.Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil) and firetouchinterest then 
-                              else
-                                    pcall(function()
-                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
-                                              local a = pad.Head
-                                              firetouchinterest(a, spr, 1)
-                                              firetouchinterest(a, spr, 0)
-                                              firetouchinterest(a, spr, 1)
-                                              task.wait()
-                                              firetouchinterest(a, spr, 0)
-                                    end)
-                              end
-        end)()
-    end
-end)
+
 if msg == prefix.."tempclag" then
 Chat("-super gear all 00000000000000000000000000000000000253519495")
 wait(2)
