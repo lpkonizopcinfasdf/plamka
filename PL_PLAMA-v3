@@ -2323,8 +2323,12 @@ Spawn(function()
       if game.Workspace:FindFirstChild(baned) then
         game.Players:Chat(prefix.."jail "..baned)
         Chat("punish "..baned)
-        Chat("blind "..baned)
-        Chat("h \n\n\n\n ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+        Chat("jail "..baned)
+       Chat("h \n\n\n\n ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+wait(1)
+Chat("-rchat")
+
+ 
         regen()
       end
     end)
@@ -2398,10 +2402,17 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
   end
+game:GetService("Players").PlayerAdded:Connect(function(player)
     if slock == true then
     game:GetService'Players':Chat((prefix.."lck "..player.name..","))
         game:GetService'Players':Chat(("h Sorry \n\n\n\n  "..player.name..", \n\n This server is locked \n\n\n join next server \n\n or ask to be whitelisted "))
   end
+if msg == prefix.."2slock" then
+slock = true
+end
+if msg == prefix.."un2slock" then
+slock = false
+end
   if player.name == "" then
 
   end
