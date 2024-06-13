@@ -1413,7 +1413,10 @@ wait(0.26)
       end
     end
   end
-  if msg == prefix.."close" then
+if msg == prefix.."rchat" then
+Chat("-super h à¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹€Šaaaaaaaaa")
+end
+if msg == prefix.."close" then
     closed = true
     alert(player, "Game Closed")
     Players:Chat((prefix.."sm Game Closed"))
