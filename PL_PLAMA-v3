@@ -2402,17 +2402,7 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
   end
-game:GetService("Players").PlayerAdded:Connect(function(player)
-    if slock == true then
-    game:GetService'Players':Chat((prefix.."lck "..player.name..","))
-        game:GetService'Players':Chat(("h Sorry \n\n\n\n  "..player.name..", \n\n This server is locked \n\n\n join next server \n\n or ask to be whitelisted "))
-  end
-if msg == prefix.."2slock" then
-slock = true
-end
-if msg == prefix.."un2slock" then
-slock = false
-end
+
   if player.name == "" then
 
   end
