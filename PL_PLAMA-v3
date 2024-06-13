@@ -2320,6 +2320,7 @@ Spawn(function()
         Chat("punish "..baned)
         Chat("blind "..baned)
        Chat("h ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ["..baned.."]")
 
 
  
