@@ -1260,7 +1260,7 @@ end
 		wait(3)
 		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
 	end
-if msg == prefix.."lag" then
+if msg == prefix.."carlag" then
 game.Players:Chat("-super gear all 00000000000000000000000000000000000253519495")
 end
   if msg == prefix.."temprchat" then
@@ -1445,12 +1445,7 @@ if msg == prefix.."close" then
     game:GetService'Players':Chat(("blind others"))
 
   end
-    if msg == prefix.."slock" then
-    slock = true
-  end
-      if msg == prefix.."unslock" then
-    slock = false
-  end
+
   if msg == prefix.."open" then
     closed = false
     alert(player, "Game Oppened")
@@ -2324,7 +2319,7 @@ Spawn(function()
   
         Chat("punish "..baned)
         Chat("blind "..baned)
-       Chat("h \n\n\n\n ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+       Chat("h ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
 
 
  
