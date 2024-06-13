@@ -14,7 +14,7 @@ local Players = game:GetService('Players')
 local spamming = false
 local cantrun = false
 local prefix = "-" -- ONLY ONE CHARACTER
-local antigear = true
+
 local autoadmin = false
 local autoadminword = "none"
 local healauto = true
@@ -2329,27 +2329,7 @@ Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ["..baned.."]")
       end
     end)
 
-	connections[#connections + 1] = game.Players.PlayerAdded:Connect(function(Plr)
-		if Plr.Name ~= game.Players.LocalPlayer.Name then
-			connections[#connections + 1] = Plr.CharacterAdded:Connect(function()
-				connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
-					if antiGear == true then
-						Chat("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others  " ..math.random(1, 1000))
-                        Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are disabled in this server.")
 
-                    end
-				end)
-			end)
-			connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
-				if antiGear == true then
-					Chat("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others  " ..math.random(1, 1000))
-						Chat("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others  " ..math.random(1, 1000))
-                        Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are disabled in this server.")                                                                                                                    " .. Plr.Name)
-                end
-			end)
-		end
-	end)
-end)
 
     if nokill == true then
       for a,b in pairs(whitelisted) do
