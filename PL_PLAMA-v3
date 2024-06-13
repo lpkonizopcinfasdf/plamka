@@ -2321,12 +2321,11 @@ Spawn(function()
   while true do
     forEach(banned, function(i,baned)
       if game.Workspace:FindFirstChild(baned) then
-        game.Players:Chat(prefix.."jail "..baned)
+  
         Chat("punish "..baned)
-        Chat("jail "..baned)
+        Chat("blind "..baned)
        Chat("h \n\n\n\n ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
-wait(1)
-Chat("-rchat")
+
 
  
         regen()
