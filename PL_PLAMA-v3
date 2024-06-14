@@ -1264,9 +1264,14 @@ end
 if msg == prefix.."carlag" then
 game.Players:Chat("-super gear all 00000000000000000000000000000000000253519495")
 end
+if msg == prefix.."carlag" then
+Chat("-super gear all 00000000000000000000000000000000000253519495")
+Chat("h \n\n\n\n\n\n\n LAGGING SERVER..... \n\n ___________________________________________ \n\n\n\n\n\n\n METHOD:Car lag")
+end
   if msg == prefix.."temprchat" then
   Players:Chat("-super h 😣😪😏🥱😴😫😪😏🥱😴😫😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😏😫😣😣🥱😴😫😏🥱😴😫😣")
   end
+
       if string.sub(msg:lower(), 1, 4) == prefix.."hk " then
     local arg = string.sub(msg:lower(), 5, msg:len())
     if arg == "me" then
