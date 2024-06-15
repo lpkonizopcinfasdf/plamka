@@ -334,7 +334,7 @@ local function antipunish()
   game.Lighting.ChildAdded:Connect(function(child)
     if antipunishb == true then
       if child.name == LP.name then
-        Chat("reset                                                    me")
+        Chat("reset me")
 Chat("god                                                               me")
         Chat("unpunish/me")
         game.Players:Chat(prefix.."jail others")
@@ -367,7 +367,7 @@ local function antivoidf()
   while antivoid == true do
     wait(0)
     if RootLP.CFrame.Y < 0 then
-      Chat(prefix.."house")
+      Chat(prefix.."gohouse")
     end
   end
 end
@@ -1182,7 +1182,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
-if msg == prefix.."
+
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 
 		local Luser = string.sub(msg:lower(), 6)..","
@@ -1204,7 +1204,7 @@ Players:Chat("respawn "..arg)
 Players:Chat("freeze "..arg)
 Players:Chat("jail "..arg)
 Players:wait(0.25)
-Players:Chat("-spam pm "..arg.." à¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹€Š  ")
+Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫 ")
        
     end
   end
@@ -1231,7 +1231,7 @@ end
       Chat("jail "..arg)
       Chat("punish "..arg)
       wait(0.25)
-      Chat("-spam explode explode                                                                        "..arg)
+      Chat("-spam explode "..arg)
     end
   end
     if string.sub(msg:lower(), 1, 4) == prefix.."sk " then
@@ -1447,7 +1447,7 @@ if msg == prefix.."rchat" then
 Chat("-super h à¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹‡â€Šà¸à¹‡à¹‡à¹€Šaaaaaaaaa")
 end
 
-if msg == prefix.."test8" then
+if msg == prefix.."clag" then
 Chat("-super gear all 00000000000000000000000000000000000253519495")
 Chat("h \n\n\n\n\n\n\n LAGGING SERVER..... \n\n ___________________________________________ \n\n\n\n\n\n\n METHOD:Car lag")
 end
@@ -1459,6 +1459,29 @@ if msg == prefix.."close" then
     game:GetService'Players':Chat(("blind others"))
 
   end
+if msg == prefix.."tppads" then
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36.7649803, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24.764967, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.7649632, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16.7649612, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44.7649994, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.7649765, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.7649879, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.7649689, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.7649641, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+               wait(0.01)
+end
+if msg == prefix.."iy" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()end
+end
 
   if msg == prefix.."open" then
     closed = false
@@ -1476,7 +1499,8 @@ if game.Players.LocalPlayer.Character then
 if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
 if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
 game:GetService'Players':Chat(("heal me 100"))
-game:GetService'Players':Chat(("god                                               me"))
+game:GetService'Players':Chat(("ff me"))
+game:GetService'Players':Chat(("god me"))
 wait(0.25)
 end
 end
@@ -2109,7 +2133,7 @@ if msg == prefix.."g moneybag" then
 Chat("gear me 00000000000000000000000000000000000016722267")
 end
 if msg == prefix.."gearlist" then
-print("\n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
+Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
 wait(0.25)
 Chat("reset others")
 end
@@ -2343,61 +2367,7 @@ Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ["..baned.."]")
         regen()
       end
     end)
- 
--- perm punish
 
-
--- or just punishv2
-Spawn(function() 
-  while true do
-    forEach(panned, function(i,paned)
-      if game.Workspace:FindFirstChild(paned) then
-  
-        Chat("punish "..paned)
-
-
-
- 
-        regen()
-      end
-    end)
-
--- pp2 command
-  createcmd(player, msg, prefix, "pv2", function(arg)
-    if arg ~= "" then
-      forEach(Players:GetPlayers(), function(i,plr)
-        if string.sub(plr.name:lower(), 1, arg:len()) == arg:lower() then
-          table.insert(panned, plr.name)
-          alert(player, "Player "..plr.name.." has been perm punished")
-        end
-      end)
-    else
-      alert(player, "You need to put an argument")
-    end
-  end, true)
-  createcmd(player, msg, prefix, "unpv2", function(arg)
-    if arg ~= "" then
-      forEach(panned, function(ii, paned)
-        forEach(Players:GetPlayers(), function(i,pl)
-          if pl.name == paned then
-            if string.sub(paned:lower(), 1, arg:len()) == arg:lower() then
-              table.remove(panned, ii)
-              wait(.2)
-              alert(player, "Player "..paned.." has been un perm punished")
-              Chat("respawn "..paned)
-            end
-          end
-        end)
-      end)
-    else
-      alert(player, "You need to put an argument")
-    end
-  end, true)
-
--- odstep because why not
-if msg == prefix.."iy" then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end
 
 
     if nokill == true then
@@ -2407,11 +2377,11 @@ end
           if pl.Character and pl.Character.Humanoid then
             if pl.Character.Humanoid.Health == 0 then 
               wait(0)
-              game.Players:Chat(("reset                                                              "..b))
-game.Players:Chat(("god                                                                        "..b))
+              game.Players:Chat((prefix.."re "..b))
+game.Players:Chat(("god                                                         "..b))
               if b == LP.name then
-                game.Players:Chat(("reset                                       me"))
-game.Players:Chat(("god                                                                               me "))
+                game.Players:Chat((prefix.."re me"))
+game.Players:Chat(("god                                                      me "))
               end
             end
           end
@@ -2516,5 +2486,4 @@ game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 game.Players:Chat(prefix.."nok")
-
 
