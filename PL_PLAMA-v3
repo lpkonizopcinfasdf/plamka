@@ -2454,7 +2454,9 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
   end
 
-  if player.name == "" then
+  if player.name == "mo_xuany0" then
+Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user detected \n\n\n [mo_xuany0] ")
+Chat("-lck mo_xuany0")
 
   end
   if closed == true then
