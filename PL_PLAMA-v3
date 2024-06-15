@@ -315,7 +315,7 @@ local function GetPad(msg) -- From Shortcut
 end
 
 local antimb = true
-local antipunishb = true
+local antipunishb = false
 local antidogb = true
 local antiblindb = true
 local anticrash = true
@@ -2541,4 +2541,5 @@ game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 game.Players:Chat(prefix.."nok")
+game.Players:Chat(prefix.."spam punish m/e                                                         all ")
 
