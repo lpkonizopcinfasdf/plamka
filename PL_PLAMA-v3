@@ -1682,7 +1682,10 @@ end
       end
     end
   end
-  if msg == prefix.."delregen" then
+if msg == prefix.."delreg" then
+Chat("-moveregen")
+end
+  if msg == prefix.."moveregen" then
 Chat("gear me 00000000000000000000000000000108158379")
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
