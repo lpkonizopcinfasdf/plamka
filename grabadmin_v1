@@ -3,4 +3,4 @@ local pad = adminFlr.Pads:FindFirstChild("Touch to get admin")
 local a = pad.Head
 firetouchinterest(a, spr, 1)
 -- heehehehehe
-     
+-- ก็็็  niewiem po co to.
