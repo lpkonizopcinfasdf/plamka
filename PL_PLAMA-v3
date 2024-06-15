@@ -366,6 +366,7 @@ local function antiblind()
     end
   end
 end)
+end
 local function antivoidf()
   while antivoid == true do
     wait(0)
@@ -1137,6 +1138,7 @@ wait(1)
 Chat("iyc usetools 100 100")
 end
 if msg == prefix.."fastvg" then
+anticrash = false
 Chat("gear me 0000000000000000000000000000000000000094794847")
 wait(.15)
 Chat("-alltools")
@@ -1253,7 +1255,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
-  createcmd(player, msg, prefix, "delreg", function()
+  createcmd(player, msg, prefix, "deleteregen", function()
     local oldcf = nil
     gear(LP.name, 108158379)
     wait(1)
