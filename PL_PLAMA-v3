@@ -2540,7 +2540,42 @@ for _, plr in pairs(game.Players:GetPlayers()) do
     command(plr, msg)
   end)
 end
-
+-- fogcolors:)(((*(
+if msg == prefix.."fogc white" then
+Chat("fogcolor 255 255 255")
+end
+if msg == prefix.."fogc black" then
+Chat("fogcolor 0 0 0")
+end
+if msg == prefix.."fogc green" then
+Chat("fogcolor 0 128 0")
+end
+if msg == prefix.."fogc blue" then
+Chat("fogcolor 0 0 255")
+end
+if msg == prefix.."fogc red" then
+Chat("fogcolor 255 0 0")
+end
+if msg == prefix.."fogc pink" then
+Chat("fogcolor 255 192 203")
+end
+if msg == prefix.."fogc orange" then
+Chat("fogcolor 255 140 0")
+end
+if msg == prefix.."fogc purple" then
+Chat("fogcolor 128 0 128")
+end
+if msg == prefix.."fogc yellow" then
+Chat("fogcolor 255 255 0")
+end
+if msg == prefix.."fogc brown" then
+Chat("fogcolor 139 69 19")
+end
+-- koniec fog color :)))))) 
+-- move tools
+if msg == prefix.."movetools" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/BTOOLS%20Move%20part",true))()
+end
 
 game.Players:Chat(prefix.."noperm")
 game.Players:Chat(prefix.."unperm")
