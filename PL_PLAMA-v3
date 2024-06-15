@@ -1682,7 +1682,7 @@ end
       end
     end
   end
-  if msg == prefix.."moveregen" then
+  if msg == prefix.."delregen" then
 Chat("gear me 00000000000000000000000000000108158379")
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
