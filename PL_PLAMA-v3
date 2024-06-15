@@ -20,6 +20,7 @@ local autoadmin = false
 local autoadminword = "none"
 local healauto = true
 local autoadminonjoin = false
+local Stable_Check = false
 local admins = {}
 local loopgrab = false
 local logchat = false
@@ -358,12 +359,13 @@ end
 local function antiblind()
   game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(child)
     if antiblindb == true then
-      if child.name == "EFFECTGUIBLIND" then
-        game.Players:Chat("unblind me")
-      end
+    if child.name == "EFFECTGUIBLIND" then
+      pcall(function()
+        repeat RunService.Heartbeat:Wait() child:Remove() until child.Parent == nil
+      end)
     end
-  end)
-end
+  end
+end)
 local function antivoidf()
   while antivoid == true do
     wait(0)
@@ -579,6 +581,27 @@ if player.name == b then
       Chat(prefix.."toggle anticrash")
     end
   end)
+-- ivory move method
+local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
+        v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
+      --repeat wait() until workspace[LP]:FindFirstChild("IvoryPeriaston")
+        for i,w in pairs(workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+          if w:IsA("Tool") and v.Name == "IvoryPeriastron" then
+            local wkspt = w
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+          wait(.1)
+            local Remote = wkspt.Remote
+            wait(.1)
+            Remote:FireServer(Enum.KeyCode.E)
+          end
+        end
+        v.Parent = game.Players.LocalPlayer.Backpack
+      end
+    end
+end
+-- koniec ivory move method
   createcmd(player, msg, prefix, "gearban", function(name)
     gear(player.name, 82357101)
     wait(1)
@@ -1229,6 +1252,59 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
+
+  createcmd(player, msg, prefix, "delreg", function()
+    local oldcf = nil
+    gear(LP.name, 108158379)
+    wait(1)
+    local arg = "adsasdasd"
+    if arg ~= "" then
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
+      wait(.2)
+      Chat("jail me")
+      wait(.2)
+      clickivory()
+      
+      if Stable_Check == false then
+        alert(player, "{Move.lua} Moving Admin Reset Pad")
+        Stable_Check = true
+        if Admin_Folder.Regen.CFrame.Y < 20 then
+				  repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+				  local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				  local looping = true
+				  spawn(function()
+				    while true do
+				      game:GetService('RunService').Heartbeat:Wait()
+						  game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						  cf.CFrame = Admin_Folder.Regen.CFrame * CFrame.new(-1*(Admin_Folder.Regen.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						  if not looping then break end
+				    end
+				  end)
+				  spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				  wait(1)
+				  looping = false
+				  clickivory()
+				  wait(0.2)
+				  game.Players:Chat("respawn me")
+				  wait(0.2)
+        end
+        wait(0.5)
+        Stable_Check = false
+        alert(player, "{Move.lua} Done Moving Admin Reset Pad")
+      else
+        alert(player, "{Move.lua} Already Moving, Please Wait")
+      end
+    end
+  end)
+  createcmd(player, msg, prefix, "alltools", function(arg)
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+			Spawn(function()
+				if v:IsA'BackpackItem' then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end)
+		end
+  end)
 
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 
