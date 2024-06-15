@@ -10,6 +10,7 @@ function forEach(tabla, func)
   end
 end
 
+
 local Players = game:GetService('Players')
 local spamming = false
 local cantrun = false
@@ -1283,6 +1284,37 @@ Chat("name me \-Loaded-/")
 wait(1)
 Chat("unname                                                                                       me ")
 end
+
+-- new dl rege
+if msg == prefix.."delreg" then
+function()
+    Chat("gear me 000000000000000000108158379");task.wait()
+    local function L_1_func()
+        repeat task.wait()
+        until game.Players.LocalPlayer.Backpack:FindFirstChild("IvoryPeriastron")
+        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.IvoryPeriastron)
+    end
+    local function L_2_func()
+        repeat task.wait()
+        until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+        local L_10_=game:GetService("Workspace").Terrain["_Game"]local L_11_=L_10_.Workspace;local L_12_=L_10_.Admin;local L_13_=game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")local L_14_=true
+        spawn(function()
+            while scriptrunning do
+                game:GetService('RunService').Heartbeat:wait()
+                game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+                L_13_.CFrame = L_12_.Regen.CFrame * CFrame.new(-1 * (L_12_.Regen.Size.X / 2) - (game.Players.LocalPlayer.Character['Torso'].Size.X / 2), 0, 0);task.wait()
+                if not L_14_ then
+                    break
+                end
+            end
+        end)
+        spawn(function()
+            while L_14_ do task.wait(nil)
+                Chat("unpunish me me me ")
+            end
+        end);task.wait(0.3)
+        L_14_ = false
+    end
 
 -- kicks methodds
   if string.sub(msg:lower(), 1, 4) == prefix.."ek " then
