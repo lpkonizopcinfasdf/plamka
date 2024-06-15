@@ -1084,6 +1084,24 @@ Chat("size me 0.3")
 Chat("size me 0.3")
 Chat("size me 0.3")
 Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
+Chat("size me 0.3")
 wait(1)
 Chat("-super size me 0.3")
 wait(0.25)
@@ -1191,7 +1209,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
 	end
 
- if string.sub(msg:lower(), 1, 4) == prefix.."ps" then
+ if string.sub(msg:lower(), 1, 4) == prefix.."ps " then
     local arg = string.sub(msg:lower(), 6, msg:len())
     if arg == "me" then
       Players:Chat("reset "..player.name)
@@ -1205,6 +1223,21 @@ Players:Chat("freeze "..arg)
 Players:Chat("jail "..arg)
 Players:wait(0.25)
 Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫😴🥱😏😪😣😫 ")
+       
+    end
+  end
+ if string.sub(msg:lower(), 1, 4) == prefix.."ck " then
+    local arg = string.sub(msg:lower(), 6, msg:len())
+    if arg == "me" then
+      Players:Chat("reset "..player.name)
+    elseif arg == "all" then
+      Players:Chat("reset all")
+    elseif arg == "others" then
+      Players:Chat("reset others")
+    else
+Chat("blind                                                                      "..arg)
+
+Chat("-super gear "..arg" 00000000000000000000000000000000000253519495 ")
        
     end
   end
