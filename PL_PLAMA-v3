@@ -13,7 +13,7 @@ end
 local Players = game:GetService('Players')
 local spamming = false
 local cantrun = false
-local prefix = "-" -- ONLY ONE CHARACTER
+local prefix = " " -- ONLY ONE CHARACTER
 
 local autoadmin = false
 local autoadminword = "none"
