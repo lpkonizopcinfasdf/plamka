@@ -2080,9 +2080,9 @@ Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user de
 Chat("-lck mo_xuany0")
 
   end
-  if player.name == "jhjssi#keksms" then
-antipunishb = false
-Chat("-spam punish all all all ")
+  if player.name == "imokmsksk" then
+
+Chat("-lck imokmsksk")
 
   end
   if closed == true then
