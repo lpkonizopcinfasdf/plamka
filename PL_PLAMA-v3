@@ -1710,7 +1710,7 @@ wait(0.66)
 				    end
 				  end)
 				  spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
-				  wait(0.3)
+				  wait(1)
 				  looping = false
 	clickivory()
       
