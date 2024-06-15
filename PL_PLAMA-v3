@@ -1586,7 +1586,7 @@ end
       end
     end
   end
-  if msg == prefix.."noperm" then
+  if msg == prefix.."unperm" then
     if player.name == Players.LocalPlayer.name then
       if PadCheck == false then
         alert(player, "Perm were already disabled")
@@ -2330,7 +2330,7 @@ end
     wlc = false
     alert(player, "Welcomes Disabled")
   end
-  if msg == prefix.."rej" then
+  if msg == prefix.."rj" then
     game:GetService("TeleportService"):Teleport(game.PlaceId, player)
   end
   if string.sub(msg:lower(), 0, 15) == prefix.."moveobby" then
