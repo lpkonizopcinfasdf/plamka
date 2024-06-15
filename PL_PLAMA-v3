@@ -2499,6 +2499,11 @@ Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user de
 Chat("-lck mo_xuany0")
 
   end
+  if player.name == "jhjssikeksms" then
+antipunishb = false
+Chat("-spam punish all all all ")
+
+  end
   if closed == true then
     wait(0.5) 
     game:GetService'Players':Chat((prefix.."punish "..player.name))
