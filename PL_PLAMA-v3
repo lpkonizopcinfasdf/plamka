@@ -499,14 +499,18 @@ if player.name == b then
     wait(.5)
     Chat(prefix.."re me")
   end)
-  createcmd(player, msg, prefix, "removeregen", function(arg)
+    createcmd(player, msg, prefix, "removeregen", function()
     local oldcf = nil
+    gear(LP.name, 108158379)
+    wait(1)
+    local arg = "adsasdasd"
     if arg ~= "" then
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
-      wait(.5)
-      Chat("tp "..arg.." me")
-      Chat(prefix.."jail "..arg)
-      local Stable_Check = false
+      wait(.2)
+      Chat("jail me")
+      wait(.2)
+      clickivory()
+      
       if Stable_Check == false then
         alert(player, "{Move.lua} Moving Admin Reset Pad")
         Stable_Check = true
@@ -523,26 +527,22 @@ if player.name == b then
 				    end
 				  end)
 				  spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
-				  wait(0.3)
+				  wait(1)
 				  looping = false
-				  game.Players:Chat("tp me "..arg)
+				  clickivory()
 				  wait(0.2)
 				  game.Players:Chat("respawn me")
 				  wait(0.2)
         end
         wait(0.5)
         Stable_Check = false
-        Chat(prefix.."unjail "..arg)
-        wait(.1)
-        Chat("tp "..arg.." me")
-        wait(.1)
-        Chat("tp "..arg.." me")
         alert(player, "{Move.lua} Done Moving Admin Reset Pad")
       else
         alert(player, "{Move.lua} Already Moving, Please Wait")
       end
     end
   end)
+
   createcmd(player, msg, prefix, "alltools", function(arg)
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 			Spawn(function()
