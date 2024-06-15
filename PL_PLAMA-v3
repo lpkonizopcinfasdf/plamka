@@ -1107,6 +1107,28 @@ Chat("-super size me 0.3")
 wait(0.25)
 Chat("-spam size me 0.3")
 end
+if msg == prefix.."lnuke" then
+Chat("-super gear me 00000000000000000000000000000000000000000292969139")
+wait(1)
+Chat("iyc usetools 100 100")
+end
+if msg == prefix.."fastvg" then
+Chat("gear me 0000000000000000000000000000000000000094794847")
+wait(.15)
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("iyc equiptools")
+Chat("-alltools")
+wait(.20)
+Chat("-spam unsize                                  ,-,-,-,-,-me me me me me me me me me me me me me me me /m/m/m/m/m/m/m/m/m/mm/m/m/m/m/m//m")
+end
 
 if msg == prefix.."loveg" then
 Players:Chat([[h 
