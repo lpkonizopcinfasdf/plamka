@@ -1,0 +1,6 @@
+local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+local pad = adminFlr.Pads:FindFirstChild("Touch to get admin")
+local a = pad.Head
+firetouchinterest(a, spr, 1)
+-- heehehehehe
+     
