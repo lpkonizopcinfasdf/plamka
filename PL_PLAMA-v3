@@ -2080,9 +2080,9 @@ Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user de
 Chat("-lck mo_xuany0")
 
   end
-  if player.name == "imokmsksk" then
+  if player.name == "imokMsksk" then
 
-Chat("-lck imokmsksk")
+Chat("-lck imokMsksk")
 
   end
   if closed == true then
