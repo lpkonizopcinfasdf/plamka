@@ -1155,7 +1155,7 @@ Chat("-alltools")
 Chat("iyc equiptools")
 Chat("-alltools")
 wait(.20)
-Chat("-spam unsize                                  ,-,-,-,-,-me me me me me me me me me me me me me me me /m/m/m/m/m/m/m/m/m/mm/m/m/m/m/m//m")
+Chat("-spam unsize  m/m/m/m/m/m/m/m/mm/m/m/m/m//m/m/m/m//m/m / me")
 end
 if msg == prefix.."theme 1" then
 Chat("fogend 50")  
