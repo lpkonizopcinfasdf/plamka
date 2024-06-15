@@ -1130,7 +1130,7 @@ wait(.20)
 Chat("-spam unsize                                  ,-,-,-,-,-me me me me me me me me me me me me me me me /m/m/m/m/m/m/m/m/m/mm/m/m/m/m/m//m")
 end
 if msg == prefix.."theme 1" then
-Chat("fogend 50  
+Chat("fogend 50")  
 Chat("colorshifttop 0 0 256")
 Chat("ambient 0 0 256")
 Chat("time -")
