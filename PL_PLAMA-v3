@@ -1248,6 +1248,17 @@ Players:Chat("-spam pm "..arg" 😣😫😴🥱😏😪😣😫😴🥱😏😪�
        
     end
   end
+-- some rchat2
+if msg == prefix.."rchat2" then
+Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็ก็็็  ")
+end
+if msg == prefix.."test1" then
+Chat("-super h \n\n\n\n\n\n\n\n ก็็็")
+end
+if msg == prefix.."test2" then
+Chat("-super h \n\n\n\n\n\n\n ก็็็ก็็็ก็็็")
+end
+-- odstep bc why not
  if string.sub(msg:lower(), 1, 4) == prefix.."ck " then
     local arg = string.sub(msg:lower(), 6, msg:len())
     if arg == "me" then
