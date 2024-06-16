@@ -1875,13 +1875,11 @@ end
       Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldCF
     end
   end
-  if string.sub(msg:lower(), 1, 6):lower() == prefix.."spam " then
-    spamming = true
-    local strglower = string.gsub(msg:lower(), "me", player.name)
-    wspamming = string.sub(strglower, 7, strglower:len())
-    alert(player, "Spamming "..wspamming)
-    sendlog(player, "A user is spamming '"..wspamming.."'")
-  end
+	if string.sub(msg:lower(), 0, 6) == prefix.."spam " then
+	
+		Wspamming = string.sub(msg:lower(), 7)
+		spamming = true
+	end
   if msg == prefix.."stop" then
     spamming = false
     alert(player, "No longer spamming")
