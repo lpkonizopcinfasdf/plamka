@@ -1143,6 +1143,7 @@ Chat("iyc usetools 100 100")
 end
 if msg == prefix.."fastvg" then
 anticrash = false
+wait(0.30)
 Chat("gear me 0000000000000000000000000000000000000094794847")
 wait(.15)
 Chat("-alltools")
