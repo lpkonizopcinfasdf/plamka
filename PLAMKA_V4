@@ -358,9 +358,7 @@ local function antidog()
     end
   end)
 end
-local function antiblind()
-  game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(child)
-    if antiblindb == true then
+  if antiblindb == true then
     if child.name == "EFFECTGUIBLIND" then
       pcall(function()
         repeat RunService.Heartbeat:Wait() child:Remove() until child.Parent == nil
@@ -368,7 +366,7 @@ local function antiblind()
     end
   end
 end)
-end
+------
 local function antivoidf()
   while antivoid == true do
     wait(0)
