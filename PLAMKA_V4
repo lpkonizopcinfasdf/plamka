@@ -21,6 +21,7 @@ local autoadminword = "none"
 local healauto = true
 local autoadminonjoin = false
 local Stable_Check = true
+local noice = true
 local admins = {}
 local loopgrab = false
 local logchat = false
@@ -1156,6 +1157,11 @@ Chat("-alltools")
 Chat("iyc equiptools")
 Chat("-alltools")
 wait(.20)
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
+Chat("-alltools")
 Chat("-spam unsize  m/m/m/m/m/m/m/m/mm/m/m/m/m//m/m/m/m//m/m / me")
 end
 if msg == prefix.."theme 1" then
@@ -1164,6 +1170,7 @@ Chat("colorshifttop 0 0 256")
 Chat("ambient 0 0 256")
 Chat("time -")
 end
+
 
 if msg == prefix.."loveg" then
 Players:Chat([[h 
@@ -2159,7 +2166,16 @@ end
 if msg == prefix.."movetools" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/BTOOLS%20Move%20part",true))()
 end
-
+if noice == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("ice") then
+Chat("reset                                                  me")
+Chat("god                                                        me")
+Chat("-regen")
+wait(0.28)
+end
+end
+end
 game.Players:Chat(prefix.."noperm")
 game.Players:Chat(prefix.."unperm")
 game.Players:Chat(prefix.."perm")
