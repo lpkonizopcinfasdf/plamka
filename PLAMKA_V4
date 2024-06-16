@@ -2170,11 +2170,14 @@ if noice == true then
 if game.Players.LocalPlayer.Character then
 if game.Players.LocalPlayer.Character:FindFirstChild("ice") then
 Chat("reset                                                  me")
-Chat("god                                                        me")
+Chat("god                                                     me")
 Chat("-regen")
 wait(0.28)
 end
 end
+end
+if msg == prefix.."reg" then
+Chat("-regen")
 end
 game.Players:Chat(prefix.."noperm")
 game.Players:Chat(prefix.."unperm")
