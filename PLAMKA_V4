@@ -1700,7 +1700,7 @@ Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \
 Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
 Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
 Chat("gear me 00000000000000000000000000000108158379")
-Chat("gear me 00000000000000000000000000000108158379")
+
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
       wait(.2)
