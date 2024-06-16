@@ -1165,6 +1165,9 @@ Chat("-alltools")
 Chat("-alltools")
 Chat("-spam unsize  m/m/m/m/m/m/m/m/mm/m/m/m/m//m/m/m/m//m/m / me")
 end
+if msg == prefix.."fpaint" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
+end
 if msg == prefix.."theme 1" then
 Chat("fogend 50")  
 Chat("colorshifttop 0 0 256")
