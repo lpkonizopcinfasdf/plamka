@@ -358,14 +358,8 @@ local function antidog()
     end
   end)
 end
-  if antiblindb == true then
-    if child.name == "EFFECTGUIBLIND" then
-      pcall(function()
-        repeat RunService.Heartbeat:Wait() child:Remove() until child.Parent == nil
-      end)
-    end
-  end
-end)
+
+
 ------
 local function antivoidf()
   while antivoid == true do
