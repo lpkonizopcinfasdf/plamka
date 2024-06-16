@@ -2202,3 +2202,17 @@ game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 game.Players:Chat(prefix.."nok")
+
+
+
+local loppping = false
+local Lspamming = "nothing"
+
+if spamming == true then
+game.Players:Chat(Lspamming)
+		end
+if string.sub(msg:lower(), 0, 6) == prefix.."loop " then
+	
+Lspamming = string.sub(msg:lower(), 7)
+loppping = true
+end
