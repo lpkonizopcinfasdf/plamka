@@ -1483,12 +1483,7 @@ end
   if msg == prefix.."temprchat" then
   Players:Chat("-super h 😣😪😏🥱😴😫😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😣😣😪😏🥱😴😫😏🥱😴😫😣")
   end
-if msg == prefix.."paintnormal" then
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
-    end
-if msg == prefix.."paintfix" then
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Qltxi/scripts/main/Color%20API%202.0"),true))()
-end
+
 -- gear list 
 
 if string.sub(msg, 1, 6) == "-house" then
