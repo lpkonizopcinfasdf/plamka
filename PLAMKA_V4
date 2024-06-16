@@ -1687,6 +1687,7 @@ if msg == prefix.."delreg" then
 Chat("-moveregen")
 end
   if msg == prefix.."moveregen" then
+Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
 Chat("gear me 00000000000000000000000000000108158379")
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
@@ -1987,41 +1988,8 @@ end
   end
 end
 
--- new spam .
-local spamning = false
-local Nspamming = "nothing"
-	if string.sub(msg:lower(), 0, 6) == prefix.."loop " then
 
-		Nspamming = string.sub(msg:lower(), 7)
-		spamning = true
-	end
-		if spamning == true then
-			game.Players:Chat(Wspamming)
-		end
--- koniec spamming v2
--- antigearban 
-local antijailgearban = true
--- funckja antijailgearban
-		if antijailgearban == true then
-			if game.Players.LocalPlayer.Character:FindFirstChild("Part") then
-				game.Players.LocalPlayer.Character:FindFirstChild("Part"):Destroy()
-				wait(0.25)
-				game.Players:Chat("speed me 16")
-				game.Players:Chat("ungear                                        all")
-				if antigearban == true then
-					if antigearban == true then
-						game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n This gear is blacklisted \n\n [Portable Justice]")
-game.Players:Chat("ungear me                                                            all")
-					else
-											game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n This gear is blacklisted \n\n [Portable Justice]")
-game.Players:Chat("ungear me                                                            all")
-					end
-				end
-			end
-		end
-	end
-end)
--- koniec antigearban
+
 	
 Spawn(function() 
   while true do
