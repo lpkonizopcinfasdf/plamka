@@ -2097,7 +2097,9 @@ Spawn(function()
   antidog()
   antivoidf()
 end)
-
+if msg == prefix.."g ivory" then
+Chat("gear me 00000000000000000000000000000108158379")
+end
 game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
     game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
@@ -2202,17 +2204,3 @@ game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 game.Players:Chat(prefix.."nok")
-
-
-
-local loppping = false
-local Lspamming = "nothing"
-
-if spamming == true then
-game.Players:Chat(Lspamming)
-		end
-if string.sub(msg:lower(), 0, 6) == prefix.."loop " then
-	
-Lspamming = string.sub(msg:lower(), 7)
-loppping = true
-end
