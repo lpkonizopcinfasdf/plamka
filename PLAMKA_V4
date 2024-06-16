@@ -1695,6 +1695,9 @@ Chat("-moveregen")
 end
   if msg == prefix.."moveregen" then
 Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
+Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
+Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
+Chat("gear me 00000000000000000000000000000108158379")
 Chat("gear me 00000000000000000000000000000108158379")
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
@@ -1994,6 +1997,19 @@ end
   end
   end
 end
+local dead = false
+local antifreeze = true
+
+game.Players.LocalPlayer.Character.ChildAdded:Connect(function(child)
+    if dead == true then
+      return;
+    end
+  if child.name == "ice" and antifreeze == true then
+    game:GetService'Players':Chat(("reset                                   me"))
+    game:GetService'Players':Chat(("god                                   me"))
+    RunService.Heartbeat:Wait() 
+  end
+end)
 
 
 
