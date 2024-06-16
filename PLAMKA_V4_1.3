@@ -2268,8 +2268,16 @@ end)
 
 game:GetService("Players").PlayerAdded:Connect(function(player)
   if wlc == true then
-    game:GetService'Players':Chat((prefix.."sm  "..player.name..", has joined the server!"))
+Chat("m \n\n\n "..player.name.." \n\n This server is locked \n\n Join next server \n\n or ask to be whitelisted.")
+Chat("-lck "..player.name.."")
   end
+  if msg == prefix.."slock2" then
+  wlc = true
+  end
+  if msg == prefix.."unslock2" then
+  wlc = false
+  end
+  
 
   if player.name == "mo_xuany0" then
 Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user detected \n\n\n [mo_xuany0] ")
