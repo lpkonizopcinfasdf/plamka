@@ -1730,7 +1730,7 @@ if msg == prefix.."delreg" then
 Chat("-moveregen")
 end
 
-  if msg == prefix.."delfloors" then
+  if msg == prefix.."delfloor1" then
   -- -10.7649708, 6.42999983, 93.8430023
   -- admin div1
   Chat("gear me 00000000000000000000000000000108158379")
@@ -1743,43 +1743,60 @@ end
       Chat("-house")
       Chat("stun                                                                 me")
       Chat("-super unpunish                                                     me")
-      clickivory()
-      wait(.40)
-      Chat("respawn                                                             me")
-      wait(0.30)
-        Chat("gear me 00000000000000000000000000000108158379")
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
-      wait(.2)
-      Chat("jail                                                   me")
-      Chat("invis                                                   me")
-      
-      wait(.2)
-      Chat("-house")
-      Chat("stun                                                                 me")
-      Chat("-super unpunish                                                     me")
-      clickivory()
-      wait(.40)
-      Chat("respawn                                                             me")
-      wait(0.30)
-        Chat("gear me 00000000000000000000000000000108158379")
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
-      wait(.2)
-      Chat("jail                                                   me")
-      Chat("invis                                                   me")
-      
-      wait(.2)
-      Chat("-house")
-      Chat("stun                                                                 me")
-      Chat("-super unpunish                                                     me")
+      wait(0.50)
       clickivory()
       wait(.40)
       Chat("respawn                                                             me")
       wait(0.30)
       
-
 end
-
-  
+ if msg == prefix.."delfloor2" then
+  -- -10.7649708, 6.42999983, 93.8430023
+  -- admin div1
+  Chat("gear me 00000000000000000000000000000108158379")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
+      wait(.2)
+      Chat("jail                                                   me")
+      Chat("invis                                                   me")
+      
+      wait(.2)
+      Chat("-house")
+      Chat("stun                                                                 me")
+      Chat("-super unpunish                                                     me")
+      wait(0.50)
+      clickivory()
+      wait(.40)
+      Chat("respawn                                                             me")
+      wait(0.30)
+      
+end
+ if msg == prefix.."delfloor3" then
+  -- -10.7649708, 6.42999983, 93.8430023
+  -- admin div1
+  Chat("gear me 00000000000000000000000000000108158379")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
+      wait(.2)
+      Chat("jail                                                   me")
+      Chat("invis                                                   me")
+      
+      wait(.2)
+      Chat("-house")
+      Chat("stun                                                                 me")
+      Chat("-super unpunish                                                     me")
+      wait(0.50)
+      clickivory()
+      wait(.40)
+      Chat("respawn                                                             me")
+      wait(0.30)
+      
+end
+if msg == prefix.."delfloors" then
+Chat("-delfloor1")
+wait(2)
+Chat("-delfloor2")
+wait(2)
+Chat("-delfloor3")
+end 
   if msg == prefix.."moveregen" then
 Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
 Chat("h deleteregen.lua \n\n EXECUTED \n\n\n\n\n\n\n\n\n\n\n Deleting regen... \n\n\n __________________________________________________")
