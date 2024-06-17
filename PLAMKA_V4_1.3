@@ -808,11 +808,14 @@ end
   createcmd(player, msg, prefix, "unskydive", function() 
     LP.Character.HumanoidRootPart.CFrame = CFrame.new(LP.Character.HumanoidRootPart.CFrame.X, 2, LP.Character.HumanoidRootPart.CFrame.Z)
   end)
-  if string.sub(msg:lower(), 1, 9) == prefix.."bugchar" then
-    local p = string.sub(string.gsub(msg:lower(), "me", player.name), 10, msg:len())
-    Chat("size "..p.." nan")
+  if string.sub(msg:lower(), 1, 8) == prefix.."pmkick" then
+    local p = string.sub(string.gsub(msg:lower(), "me", player.name), 9, msg:len())
+    Chat("respawn                                              "..p.." nan")
     wait(.05)
-    Chat("undog "..p)
+    Chat("freeze  "..p.." 343")
+     Chat("-super pm "..p.." ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็ ")
+     wait(.25)
+     Chat("-spam pm "..p.." ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็ ")
 
   end
   if string.sub(msg:lower(), 1, 8) == prefix.."btools " then
