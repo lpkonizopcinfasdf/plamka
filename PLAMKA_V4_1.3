@@ -697,17 +697,6 @@ end
   Chat("-spam m ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็")
   Chat("-super m ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็")
   end
-  createcmd(player, msg, prefix, "autoadmin", function(arg)
-    if arg == "toggle" then
-      autoadmin = not autoadmin
-      alert(player, "Autoadmin has been set to "..tostring(autoadmin))
-    end
-    if arg == "onjoin" then
-      autoadminonjoin = not autoadminonjoin
-      alert(player, "OnJoin admin has been set to "..tostring(autoadminonjoin))
-    end
-    if arg == "" then alert(player, "Enabled?: "..tostring(autoadmin).." | On Join Admin?: "..tostring(autoadminonjoin)) end
-  end, true)
   createcmd(player, msg, prefix, "toggle", function(arg)
     local done = false
     if arg:lower() == "antivoid" then
