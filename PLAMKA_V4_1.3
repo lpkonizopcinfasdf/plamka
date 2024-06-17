@@ -1340,7 +1340,24 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
 	end
 
- if string.sub(msg:lower(), 1, 4) == prefix.."ps " then
+ if string.sub(msg:lower(), 1, 4) == prefix.."pk " then
+    local arg = string.sub(msg:lower(), 6, msg:len())
+    if arg == "me" then
+      Players:Chat("reset "..player.name)
+    elseif arg == "all" then
+      Players:Chat("reset all")
+    elseif arg == "others" then
+      Players:Chat("reset others")
+    else
+Players:Chat("respawn                                      "..arg)
+Players:Chat("freeze                                        "..arg)
+Players:Chat("jail                                          "..arg)
+Players:wait(0.25)
+Players:Chat("-spam pm "..arg"  \n\n\n\n\n\n\n\n\n ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ")
+       Chat("-regen")
+    end
+  end
+   if string.sub(msg:lower(), 1, 4) == prefix.."ps " then
     local arg = string.sub(msg:lower(), 6, msg:len())
     if arg == "me" then
       Players:Chat("reset "..player.name)
