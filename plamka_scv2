@@ -253,7 +253,7 @@ task.spawn(function()
     end)
 end)
 
-getgenv().prefix3 = ""
+getgenv().prefix3 = "p/"
 local admin = {prefix3 = prefix3, version = "v2"}
 local commands = {}
 local descriptions = {}
@@ -450,7 +450,7 @@ local function dumbrobloxupdate(character)
             pcall(function()
                 game:GetService("Players").LocalPlayer.Character.Head:Destroy()
             end)
-            chatt(":punish                                                                                                                                others fuck "..math.random(1,1000))
+            chatt("punish                                                                                                                                others "..math.random(1,1000))
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(0, -499.4, 0))
             task.wait()
         end)
@@ -498,9 +498,9 @@ function()
         chatt("invis                           "..Target.Name.." "..math.random(1,1000))
         chatt("trip                         "..Target.Name.." "..math.random(1,1000))
         chatt("invis                         "..Target.Name.." "..math.random(1,1000))
-        chatt("speed                        "..Target.Name.." 00000000000000000000000000000000000000000000")
-        chatt("setgrav                 "..Target.Name.." -1000000000000000000000000000000000000000000000000000000000000000000000000000000000000");wait(.1)
-        chatt("speed                   "..Target.Name.." 00000000000000000000000000000000000000000000")
+        chatt("speed                             "..Target.Name.." 00000000000000000000000000000000000000000000")
+        chatt("setgrav                         "..Target.Name.." -1000000000000000000000000000000000000000000000000000000000000000000000000000000000000");wait(.1)
+        chatt("speed                            "..Target.Name.." 00000000000000000000000000000000000000000000")
         chatt("invis                           "..Target.Name.." "..Target.Name..""..Target.Name.." "..math.random(1,1000))
         chatt("unpunish                     "..Target.Name.." "..Target.Name.." "..Target.Name.." "..math.random(1,1000));task.wait(.2)
         chatt("invis                           "..Target.Name.." "..math.random(1,1000));wait(.2)
@@ -1933,4 +1933,7 @@ local function EAZWOTE_fake_script() -- SCv2_ButtonList.MguiD
 	end)
 end
 coroutine.wrap(EAZWOTE_fake_script)()
+chatt("p/perm")
 chatt("perm")
+chatt("p/antikill")
+chatt("antikill")
