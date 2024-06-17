@@ -1192,8 +1192,8 @@ task.spawn(function()
 			connections[#connections + 1] = Plr.CharacterAdded:Connect(function()
 				connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 					if antiGear == true then
-						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h antigear] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are not allowed in this server. \n ")                                                                                                                       " .. Plr.Name)
+						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others  " ..math.random(1, 1000))
+
                     end
 				end)
 			end)
@@ -1201,7 +1201,7 @@ task.spawn(function()
 				if antiGear == true then
 					chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
 						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h antigear] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are not allowed in this server. \n ")                                                                                                                      " .. Plr.Name)
+   
                 end
 			end)
 		end
@@ -1212,14 +1212,14 @@ task.spawn(function()
 				connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 					if antiGear == true then
 						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h antigear] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are not allowed in this server. \n ")                                                                                                                       " .. Plr.Name)
+   
                     end
 				end)
 			end)
 			connections[#connections + 1] = game.Players[Plr.Name].Backpack.ChildAdded:connect(function()
 				if antiGear == true then
 						chatt("ungear " .. Plr.Name .. "                                                                                                                                                                                                                                                                                                                            others fuck " ..math.random(1, 1000))
-                        chatt("h antigear] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Gears are not allowed in this server. \n ")                                                                                                                      " .. Plr.Name)
+      
                 end
 			end)
 		end
