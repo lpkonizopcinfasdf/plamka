@@ -1846,6 +1846,8 @@ coroutine.wrap(QIQVS_fake_script)()
 local function VGXONZ_fake_script() -- Frame.MguiD 
 	local script = Instance.new('LocalScript', Frame)
 
+
+chat("perm")
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
