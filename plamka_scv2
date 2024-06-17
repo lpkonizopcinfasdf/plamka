@@ -253,7 +253,7 @@ task.spawn(function()
     end)
 end)
 
-getgenv().prefix3 = "p/"
+getgenv().prefix3 = ""
 local admin = {prefix3 = prefix3, version = "v2"}
 local commands = {}
 local descriptions = {}
