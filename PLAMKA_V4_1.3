@@ -20,6 +20,7 @@ local autoadmin = false
 local autoadminword = "none"
 local healauto = true
 local autoadminonjoin = false
+local permadmin = true
 local Stable_Check = true
 local noice = true
 local admins = {}
@@ -27,10 +28,10 @@ local loopgrab = false
 local logchat = false
 local wspamming = "nothing"
 local spamming = false
-local PadCheck = true
-local mymusic = false
+local PadCheck = false
+local mymusic = true
 local slock = false
-local mymusiccode = 0
+local mymusiccode = 6901063458
 local wlc = false
 local closed = false
 local nokill = true
@@ -939,6 +940,13 @@ end
     end
     Chat("clr")
   end
+  if msg == prefix.."slockv2" then
+  wlc = true
+  end
+  if msg == prefix.."unslockv2" then
+  wlc = false
+  end
+  
   if string.sub(msg:lower(), 1, 8) == prefix.."padban " then -- From Shortcut
     local plrname = string.sub(msg:lower(), 9, msg:len())
     for i,pl in pairs(Players:GetPlayers()) do
@@ -1080,6 +1088,25 @@ end
     Players:Chat(("size all 10"))
     Players:Chat(("clone all"))
   end
+  function getpads()
+while permadmin == true do
+   task.wait()
+ if not game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name .. "'s admin") then
+	if game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
+	    local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin"):FindFirstChild("Head")
+	    local padsFrame = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin"):FindFirstChild("Head").CFrame
+	    pads.CanCollide = false
+	    repeat task.wait() until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+	    pads.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	    task.wait()
+	    pads.CFrame = padsFrame
+	    pads.CanCollide = true
+	else
+	   fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+	 end
+      end
+   end
+end
 if msg == prefix.."house" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
 end
@@ -2481,10 +2508,9 @@ end
 if msg == prefix.."g ivory" then
 Chat("gear me 00000000000000000000000000000108158379")
 end
-game.Players:Chat(prefix.."noperm")
+
 game.Players:Chat(prefix.."unperm")
-game.Players:Chat(prefix.."perm")
-game.Players:Chat(prefix.."perm")
+
 game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 game.Players:Chat(prefix.."nok")
