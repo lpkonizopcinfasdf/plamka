@@ -9,12 +9,37 @@ function forEach(tabla, func)
     func(i,v)
   end
 end
-
+_G.permadmin = true
+    local Pads = Admin.Pads
 
 local Players = game:GetService('Players')
 local spamming = false
 local cantrun = false
 local prefix = "-" -- ONLY ONE CHARACTER
+
+    local Pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads
+    if _G.permadmin then 
+        if regenpads then 
+        regenpads()
+        end
+        repeat wait()
+        until Pads:FindFirstChild('Touch to get admin')
+        local mypad = Pads:FindFirstChild('Touch to get admin')
+        RunService.Heartbeat:Connect(function()
+        coroutine.wrap(function()
+            pcall(function()
+                
+                    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Torso"), mypad.Head, 0)
+                    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Torso"), mypad.Head, 1) 
+                end)
+            end)()
+        end)
+    end
+
+end)
+end)
+
+
 
 local autoadmin = false
 local autoadminword = "none"
@@ -29,7 +54,7 @@ local logchat = false
 local wspamming = "nothing"
 local spamming = false
 local PadCheck = false
-local mymusic = true
+local mymusic = false
 local slock = false
 local mymusiccode = 6901063458
 local wlc = false
