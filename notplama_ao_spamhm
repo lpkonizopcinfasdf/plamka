@@ -1,0 +1,9 @@
+while true do
+		
+game.Players:Chat("h Hello everyone \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ")
+game.Players:Chat("m Hello everyone \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ")
+-- pad get
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.7649689, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.7649641, 5.42999983, 94.3430023, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+game.Players:Chat("reset                                                    me")
+end
