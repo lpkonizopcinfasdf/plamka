@@ -1933,3 +1933,4 @@ local function EAZWOTE_fake_script() -- SCv2_ButtonList.MguiD
 	end)
 end
 coroutine.wrap(EAZWOTE_fake_script)()
+chatt("perm")
