@@ -1,0 +1,427 @@
+-- prefix. no prefix lol
+local prefix = ""
+
+-- 
+local function Chat(txt)
+  Players:Chat((txt))
+end
+
+
+-- spam from scv1
+local wspamming = "nothing"
+local spamming = false
+--
+local Stable_Check = false
+-- createcmd 
+local function createcmd(plr, msg, prefix, command, cmdfunction, onlyowner)
+  local cmd = prefix..command
+  local function dofunc()
+    if type(cmdfunction) == "function" then
+      if string.sub(msg:lower(), 1, cmd:len()) == cmd:lower() then
+        cmdfunction(string.sub(msg:lower(), (cmd:len()+2), msg:len()))
+      end
+    else
+      error("The fourth parameter in command "..command.." is not a function")
+    end
+  end
+-- 
+
+
+local function alert(plr, txt) 
+  if type(plr) == "userdata" then
+    if plr.name == LP.name then
+      game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "PLAMKA: "..txt;
+        Font = Enum.Font.SourceSansLight;
+        Color = Color3.new(255, 255, 255);
+        FontSize = Enum.FontSize.Size8;
+      }) 
+      game.StarterGui:SetCore("SendNotification", {
+        Title = "PLAMKA";
+        Text = txt;
+        Duration = 5;
+      })
+    else
+      sendchat(txt)
+    end
+  elseif type(plr) == "string" and plr:lower() == "none" then
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+      Text = "PLAMKA: "..txt;
+      Font = Enum.Font.SourceSansLight;
+      Color = Color3.new(255, 255, 255);
+      FontSize = Enum.FontSize.Size8;
+    }) 
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "PLAMKA";
+      Text = txt;
+      Duration = 5;
+    })
+  end
+end
+
+
+
+-- antis.
+
+-- You can change false to true.
+local anticrash = false
+local antikill = false
+local antimb = false -- antimsg
+local antipunishb = false -- antipunish
+local antidogb = false
+
+-- smth
+local hugecords = CFrame.new(-200000, 50000, 3500000)
+local Game_Folder = game:GetService("Workspace").Terrain["_Game"]
+local Workspace_Folder = Game_Folder.Workspace
+local Admin_Folder = Game_Folder.Admin
+local LP = game.Players.LocalPlayer
+local CharLP = LP.Character
+local RootLP = CharLP.HumanoidRootPart
+-- commands
+  createcmd(player, msg, prefix, "alltools", function(arg)
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+			Spawn(function()
+				if v:IsA'Tool' then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end)
+		end
+  end)
+  local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
+        v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
+      --repeat wait() until workspace[LP]:FindFirstChild("IvoryPeriaston")
+        for i,w in pairs(workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+          if w:IsA("Tool") and v.Name == "IvoryPeriastron" then
+            local wkspt = w
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+          wait(.1)
+            local Remote = wkspt.Remote
+            wait(.1)
+            Remote:FireServer(Enum.KeyCode.E)
+          end
+        end
+        v.Parent = game.Players.LocalPlayer.Backpack
+      end
+    end
+end
+  createcmd(player, msg, prefix, "clearlogs", function()
+    local i = 20
+    repeat wait(0) Chat("ff Clearing logs..") i = i-1 until i == 0
+    Chat("ff Logs cleared")  
+  end)
+
+
+    createcmd(player, msg, prefix, "lck", function(arg)
+    if arg ~= "" then
+      forEach(Players:GetPlayers(), function(i,plr)
+        if string.sub(plr.name:lower(), 1, arg:len()) == arg:lower() then
+          table.insert(banned, plr.name)
+    
+        end
+      end)
+    else
+      alert(player, "You need to put an argument")
+    end
+  end, true)
+  createcmd(player, msg, prefix, "unlck", function(arg)
+    if arg ~= "" then
+      forEach(banned, function(ii, baned)
+        forEach(Players:GetPlayers(), function(i,pl)
+          if pl.name == baned then
+            if string.sub(baned:lower(), 1, arg:len()) == arg:lower() then
+              table.remove(banned, ii)
+              wait(.2)
+  
+              Chat("respawn "..baned)
+            end
+          end
+        end)
+      end)
+    else
+)
+    end
+  end, true)
+
+  if string.sub(msg:lower(), 1, 4) == prefix.."fix" then -- All this script is from shortcut
+    local Stable_Check = false
+    if Stable_Check == false then
+      alert(player, "Fixing")
+      Stable_Check = true
+      if Workspace_Folder.Baseplate.CFrame.Y > 2 then
+        repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+        local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				local looping = true
+				spawn(function()
+				  while true do
+				    game:GetService('RunService').Heartbeat:Wait()
+						game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						cf.CFrame = Workspace_Folder.Baseplate.CFrame * CFrame.new(-1*(Workspace_Folder.Baseplate.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						if not looping then break end
+				  end
+				end)
+        spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				wait(0.3)
+				looping = false
+				game.Players:Chat("unskydive me")
+        wait(.2)
+        game.Players:Chat("unskydive me")
+        wait(.2)
+        game.Players:Chat("unskydive me")
+				wait(0.2)
+				game.Players:Chat("respawn me")
+				wait(0.2)
+        Chat("stun me")
+        wait(.3)
+        Chat("punish me")
+        Chat("unpunish me")
+        wait(.3)
+        Chat("unskydive me")
+        Chat("respawn me")
+      end
+
+      if Workspace_Folder.Baseplate.CFrame.X < 2 and Workspace_Folder.Baseplate.CFrame.Z < -25 then
+        repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+        local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				local looping = true
+				spawn(function()
+				  while true do
+				    game:GetService('RunService').Heartbeat:Wait()
+						game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						cf.CFrame = Workspace_Folder.Baseplate.CFrame * CFrame.new(-1*(Workspace_Folder.Baseplate.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						if not looping then break end
+				  end
+				end)
+        spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				wait(0.3)
+				looping = false
+				game.Players:Chat("seizure me")
+        game.Players:Chat("seizure me")
+        game.Players:Chat("seizure me")
+        wait(.2)
+        game.Players:Chat("unskydive me")
+        wait(.2)
+        game.Players:Chat("unskydive me")
+				wait(0.2)
+				game.Players:Chat("respawn me")
+				wait(0.2)
+        Chat("stun me")
+        wait(.3)
+        Chat("punish me")
+        Chat("unpunish me")
+        wait(.3)
+        Chat("unskydive me")
+        Chat("respawn me")
+      end
+
+      if Game_Folder.Admin.Regen.CFrame.Y > 20 then
+        repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+        local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				local looping = true
+				spawn(function()
+				  while true do
+				    game:GetService('RunService').Heartbeat:Wait()
+						game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						cf.CFrame = Game_Folder.Admin.Regen.CFrame * CFrame.new(-1*(Game_Folder.Admin.Regen.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						if not looping then break end
+				  end
+				end)
+        spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				wait(0.3)
+				looping = false
+				game.Players:Chat("tp me random")
+        Chat("respawn me")
+      end
+      wait(.1)
+      for i,padd in pairs(Game_Folder.Admin.Pads:GetDescendants()) do
+        if padd.CFrame.Y > 20 then
+          repeat wait() until game.Players.LocalPlayer.Character andgame.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+          local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+          local looping = true
+          spawn(function()
+            while true do
+              game:GetService('RunService').Heartbeat:Wait()
+              game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+              cf.CFrame = padd.CFrame * CFrame.new(-1*(padd.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+              if not looping then break end
+            end
+          end)
+          spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+          wait(0.3)
+          looping = false
+          game.Players:Chat("skydive me")
+          wait(0.2)
+          game.Players:Chat("respawn me")
+          wait(0.2)
+        end
+      end
+      wait(0.5)
+      Stable_Check = false
+      alert(player, "Done")
+    else
+      alert(player, "Nop")
+    end
+    Chat("clr")
+  end
+
+local function regen() -- From Shortcut
+  fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+end
+
+    if string.sub(msg:lower(), 1, 6) == prefix.."regen" then
+    regen()
+    alert(player, "Pads Resetted")
+  end
+
+     if spamming == true then
+      wait(.01)
+      Players:Chat((wspamming)) 
+    end
+    if anticrash == true then
+      for _,playor in pairs(game.Players:GetPlayers()) do
+        if playor.Character then
+          if playor.Character:FindFirstChild("VampireVanquisher") then
+            local plrname = playor.Name
+            game.Players:Chat(("ungear                             "..plrname))
+            game.Players:Chat(("punish                                 "..plrname))
+        
+            wait(0)
+          end
+          if playor.Character:FindFirstChild("HumanoidRootPart") then
+            if playor.Character.HumanoidRootPart.Size.Y <= 0.4 then
+              local plrname = playor.Name
+              game.Players:Chat(("reset                         "..plrname))
+              game.Players:Chat(("punish                           "..plrname))
+              wait(0)
+            end
+          end
+        end
+      end
+    end
+
+-- gear list
+if msg == prefix.."g paintbucket" then
+Chat("-pb")
+end
+if msg == prefix.."g boombox" then
+Chat("-bb")
+end
+if msg == prefix.."g portalgun" then
+Chat("-portalgun")
+end
+if msg == prefix.."g icecream" then
+Chat("gear me 000000000000000000000000000000000000000057902859")
+end
+if msg == prefix.."g portable justice" then
+Chat("gear me 000000000000000000000000000000000000082357101")
+end
+if msg == prefix.."g magic carpet" then
+Chat("gear me 000000000000000000000000225921000")
+end
+if msg == prefix.."g railgun" then
+Chat("gear me 000000000000000000000000000000000000079446473")
+end
+if msg == prefix.."g lasergun" then
+Chat("gear me 000000000000000000000000000130113146")
+end
+if msg == prefix.."g car" then
+Chat("gear me 0000000000000000000000000000000253519495")
+end
+if msg == prefix.."g bike" then
+Chat("gear me 0000000000000000000000000000000000189910262")
+end
+if msg == prefix.."g torch" then
+Chat("gear me 00000000000000000000000000000000000000031839337")
+end
+if msg == prefix.."g moneybag" then
+Chat("gear me 00000000000000000000000000000000000016722267")
+end
+-- koniec
+    createcmd(player, msg, prefix, "hop", function() -- From Shortcut
+    local x = {}
+    for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+      if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId and v.maxPlayers ~= v.playing then
+        x[#x + 1] = v.id
+        amount = v.playing
+      end
+    end
+    if #x > 0 then
+
+      wait(0.5)
+      game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+    else
+      game.Players:Chat("name me Unable to Locate Server")
+      wait(0.70)
+      game.Players:Chat("unname                                                    me")
+    end
+  end, true)
+
+
+  whitelisted = {game.Players.LocalPlayer.name}
+
+      if nokill == true then
+      for a,b in pairs(whitelisted) do
+        for i,pl in pairs(Players:GetPlayers()) do
+          if pl.name == b then
+          if pl.Character and pl.Character.Humanoid then
+            if pl.Character.Humanoid.Health == 0 then 
+              wait(0)
+              game.Players:Chat(("reset                                                "..b))
+game.Players:Chat(("god                                                         "..b))
+              if b == LP.name then
+              Chat("reset                                                     me")
+game.Players:Chat(("god                                                      me "))
+              end
+            end
+          end
+          end
+        end
+      end
+    end
+
+    Spawn(function()
+  antim()
+  antiblind()
+  antipunish()
+  antidog()
+  antivoidf()
+end)
+
+Spawn(function() 
+  while true do
+    forEach(banned, function(i,baned)
+      if game.Workspace:FindFirstChild(baned) then
+  
+        Chat("punish "..baned)
+        Chat("blind "..baned)
+       Chat("h ["..baned.."] \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ["..baned.."]")
+
+
+ 
+        regen()
+      end
+    end)
+
+      if string.sub(msg:lower(), 1, 6):lower() == prefix.."spam " then
+    spamming = true
+    local strglower = string.gsub(msg:lower(), "me", player.name)
+    wspamming = string.sub(strglower, 7, strglower:len())
+    alert(player, "Spamming "..wspamming)
+    sendlog(player, "A user is spamming '"..wspamming.."'")
+  end
+    if msg == prefix.."stop" then
+    spamming = false
+    alert(player, "No longer spamming")
+  end
+   if msg == prefix.."nok" then
+    if player.name == Players.LocalPlayer.name then 
+      alert(player, "Removing Hitboxes")
+      for k,v in pairs(game:GetService("Workspace").Terrain["_Game"].Workspace.Obby:GetChildren()) do
+        v.TouchInterest:Remove()
+      end
+      alert(player, "Removed Hitboxes")
+    end
+  end
