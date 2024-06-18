@@ -1,0 +1,1321 @@
+
+
+local abc = 0 -- Wait Time of Spam
+local lol = 0 -- If command being spammed will be displayed
+local amn = 1 -- amount of gear given
+local nopunish = true
+local healauto = true
+local noexp = true
+local nokill = true
+local noblind = true
+local nojail = true
+local nomusic = false
+local nodog = true
+local nosmoke = true
+local noswag = true
+local nosparkles = false
+local nofire = true
+local nospeed = false
+local noskydive = true
+local nocrash = true
+local noice = true
+local noseizure = true
+local noff = false
+local nomsgcrash = false
+local ilight = true
+
+-- Functions
+
+local function ultanti(msg)
+local GetPlayers = game:GetService("Players")
+local allplr = GetPlayers:GetPlayers()
+ 
+while multianti == true do
+wait()
+
+-- anti-punish
+
+if nopunish == true then
+if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
+game:GetService'Players':Chat(("reset                                                                      me"))
+game:GetService'Players':Chat(("punish                                                                    others"))
+wait(0.25)
+end
+end
+
+-- auto-heal
+
+if healauto == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
+game:GetService'Players':Chat(("heal me 100"))
+wait(0.25)
+end
+end
+end
+end
+
+-- remove explosion effect
+
+if noexp == true then
+if game.Workspace:FindFirstChild("Explosion") then
+game.Workspace.Explosion:Destroy()
+end
+end
+
+-- anti-kill
+
+if nokill == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+game:GetService'Players':Chat(("reset                                                     me"))
+game:GetService'Players':Chat(("god                                                       me"))
+wait(0.25)
+end
+end
+end
+
+-- anti-blind
+
+if noblind == true then
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
+game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
+end
+end
+
+--anti-jail
+
+if nojail == true then
+if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name .. "'s jail") then
+game:GetService'Players':Chat(("unjail                                               me"))
+wait(0.25)
+end
+end
+
+-- anti-music
+
+if nomusic == true then
+if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") then
+game:GetService'Players':Chat(("music antimusic "))
+wait(0.25)
+end
+end
+
+-- anti dog
+
+if nodog == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso.Transparency == 1 and game.Players.LocalPlayer.Character.Torso.BrickColor == BrickColor.new("Brown") then
+game:GetService'Players':Chat(("undog                                         me"))
+wait(0.25)
+end
+end
+end
+
+-- anti smoke
+
+if nosmoke == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Smoke") then
+game:GetService'Players':Chat(("unsmoke                                                  me"))
+wait(0.25)
+end
+end
+end
+
+-- anti swag
+
+if noswag == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("EpicCape") then
+game:GetService'Players':Chat(("reset                                      me"))
+wait(0.25)
+end
+end
+
+-- anti-sparkles
+
+if nosparkles == true then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Sparkles") then
+game:GetService'Players':Chat(("unsparkles                                             me"))
+wait(0.25)
+end
+end
+
+-- anti-fire
+
+if nofire == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Fire") then
+game:GetService'Players':Chat(("unfire                                                             me"))
+wait(0.25)
+end
+end
+end
+
+-- anti-speed
+
+if nospeed == true then
+if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed > 16 or game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 16 then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+wait(0.25)
+end
+end
+
+-- anti skydive
+
+if noskydive == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+if game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y >= 1950 then
+game:GetService'Players':Chat(("unskydive                                                me"))
+wait(0.25)
+end
+end
+end
+
+-- anti crash
+
+ if nocrash == true then
+  if game.Players.PlayerAdded then
+   allplr = GetPlayers:GetPlayers()
+  end
+  for i, player in pairs(allplr) do
+   if player.Character then
+    if player.Character:FindFirstChild("VampireVanquisher") then
+     local plrname = player.Name
+     game:GetService'Players':Chat(("ungear "..plrname))
+     game:GetService'Players':Chat(("unsize "..plrname))
+     wait(0.28)
+    end
+    if player.Character:FindFirstChild("HumanoidRootPart") then
+     if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
+      local plrname = player.Name
+      game:GetService'Players':Chat(("reset "..plrname))
+      game:GetService'Players':Chat(("unclone "..plrname))
+      wait(0.28)
+     end
+    end
+   end
+  end
+ end
+
+-- removeff effect
+if noff == true then
+ if game.Players.PlayerAdded then
+  allplr = GetPlayers:GetPlayers()
+ end
+ for i, player in pairs(allplr) do
+  if player.Character then
+   if player.Character:FindFirstChild("ForceField") then
+    player.Character.ForceField:Destroy()
+   end
+  end
+ end
+end
+
+-- anti ice
+
+if noice == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("ice") then
+game:GetService'Players':Chat(("reset                                   me"))
+game:GetService'Players':Chat(("freeze                                                                                         others"))
+wait(0.28)
+end
+end
+end
+
+-- anti seizure
+
+if noseizure == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("Seizure") then
+game:GetService'Players':Chat(("unseizure                                               all"))
+wait(0.28)
+end
+end
+end
+
+-- anti message crash
+
+if nomsgcrash == true then
+wait(0.2)
+for i, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+if v.Name == "MessageGUI" or v.Name == "HintGUI" then
+v:Destroy()
+end
+end
+end
+
+
+-- anti ivory light
+
+if ilight == true then
+ if game.Workspace:FindFirstChild("StarShard") then
+  game.Workspace.StarShard:Destroy()
+ end
+ if game.Workspace:FindFirstChild("Part") then
+  if game.Workspace.Part:FindFirstChild("Twinkle") then
+   game.Workspace.Part:Destroy()
+  end
+ end
+end
+
+end
+end
+
+
+local function rjn ()
+          local place = game:GetService("TeleportService")
+        local playur = game:GetService("Players").LocalPlayer
+      place:Teleport(game.PlaceId, playur)	
+end
+
+local function regen ()
+fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
+end
+
+local function killanti(msg)
+ local plrname = string.sub(msg, 11)
+ local GetPlayers = game:GetService("Players")
+ local all = GetPlayers:GetPlayers()
+
+ while ak == true do
+  wait(0)
+
+  for i, player in pairs(all) do
+   if player.Name == plrname then
+    if player.Character then
+     if player.Character.Humanoid.Health == 0 then
+      game:GetService'Players':Chat(("reset "..plrname))
+      wait(0.28)
+     end
+    end
+   end
+  end
+ end
+end
+
+local function antiforall(msg)
+ local GetPlayers = game:GetService("Players")
+ local allplr = GetPlayers:GetPlayers()
+
+ while liall == true do
+   wait(0)
+  if game.Players.PlayerAdded then
+   allplr = GetPlayers:GetPlayers()
+  end
+  for i, player in pairs(allplr) do
+   if player.Character then
+    if player.Character.Humanoid.Health == 0 then
+     local plrname = player.Name
+     game:GetService'Players':Chat(("reset "..plrname))
+     wait(0.28)
+    end -- if
+   end -- other if
+  end -- for
+ end -- while
+end -- function
+
+-- Animation Functions
+------------------------------------------------------------------------------------------------------------------------
+local function armturbine ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "259438880"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(100)
+end
+end
+local function loopheadd ()
+    for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "35154961"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+while wait(0.00703125) do
+k:Play()
+k:AdjustSpeed(640)
+end
+end
+end
+local function laydown ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "282574440"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function dabb ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "248263260"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function hmmm ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "148840371"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function screamm ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "180611870"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function headthrow ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "35154961"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function raisehead ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "121572214"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function crouchh ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "182724289"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+local function MovingDance ()
+for i,v in pairs(game.Players:GetPlayers()) do
+AnimationId = "429703734"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+end
+end
+------------------------------------------------------------------------------------------------------------------------
+
+local function clors(msg)
+
+while ccolor == true do
+wait(0)
+game:GetService'Players':Chat(("colorshifttop 10000 0 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshifttop 0 10000 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 0 10000 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshifttop 0 0 10000"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 0 0 10000"))
+wait(0.005)
+end
+
+while bcolor == true do
+wait(0)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 0 10000 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 0 0 10000"))
+wait(0.005)
+end
+
+while acolor == true do
+wait(0)
+game:GetService'Players':Chat(("colorshifttop 10000 0 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshifttop 0 10000 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshifttop 0 0 10000"))
+wait(0.005)
+end
+
+while rhell == true do
+wait(0)
+game:GetService'Players':Chat(("colorshifttop 10000 0 0"))
+wait(0.125)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 0"))
+wait(0.125)
+game:GetService'Players':Chat(("colorshifttop 100000000 1000000000 10000000000000"))
+wait(0.125)
+game:GetService'Players':Chat(("colorshiftbottom 100000000 1000000000 10000000000000"))
+wait(0.125)
+game:GetService'Players':Chat(("time 0"))
+wait(0.125)
+end
+
+end
+
+
+local function antiff(msg)
+ local GetPlayers = game:GetService("Players")
+ local allplr = GetPlayers:GetPlayers()
+
+ while ffanti == true do
+  wait(0)
+  if game.Players.PlayerAdded then
+   allplr = GetPlayers:GetPlayers()
+  end
+  for i, player in pairs(allplr) do
+   if player.Character then
+    if not player.Character:FindFirstChild("ForceField") then
+     local plrname = player.Name
+     game:GetService'Players':Chat(("ff "..plrname))
+     wait(0.28)
+    end -- character check
+   end -- ff check
+  end -- for
+ end -- while
+end -- function
+
+local function rainbow(msg)
+
+while multi == true do
+wait(0)
+game:GetService'Players':Chat(("colorshifttop 0 0 10000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 0 0 10000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 0 10000 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 0 10000 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10000 0 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 15000 10603 0"))
+wait(0.005)
+game:GetService'Players':Chat(("colorshiftbottom 15000 10603 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10000 9000 5000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10000 9000 5000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10000 0 14135"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 14135"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10000 0 12000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10000 0 12000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10610 7496 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10610 7496 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 100000000000000000 0 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 100000000000000000 0 0"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshifttop 10000000 10000000 10000000"))
+wait(0.05)
+game:GetService'Players':Chat(("colorshiftbottom 10000000 10000000 10000000"))
+wait(0.05)
+end
+
+end
+
+local wlholder = {}
+
+local function whitelist(msg)
+for i,v in pairs(game.Players:GetPlayers()) do 
+if v.Name:lower():sub(1,#wluser) == wluser:lower() then
+wluser = v.Name
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(wluser .. " has been Whitelisted!", "All")
+wait(1)
+if not table.find(wlholder, v.Name) then
+table.insert(wlholder, v.Name)
+wait(1)
+v.Chatted:connect(function(msg)
+if v.Name == wluser then
+
+-- Teleport commands
+----------------------------------
+
+----------------------------------
+
+end -- username check
+end) -- message function
+end -- table
+end -- get entire user
+end -- get players
+end -- functions
+
+local function Spam(msg)
+ local plyr = string.sub(msg, 6)
+  while Non == true do
+   wait(abc)
+   game:GetService'Players':Chat((plyr))
+  end
+end
+
+local function Stop(msg)
+while stop == true do
+wait(0.0005)
+game:GetService'Players':Chat(("unfly all"))
+wait(0.0005)
+game:GetService'Players':Chat(("removetools all"))
+wait(0.0005)
+game:GetService'Players':Chat(("setgrav all 1250"))
+wait(0.0005)
+game:GetService'Players':Chat(("speed all 0"))
+wait(0.0005)
+game:GetService'Players':Chat(("outdoorambient 239 20 20"))
+end
+end
+
+-- Hotkey Variables
+
+local hotkeyf = nil
+      local keyfcmd1 = nil
+      local keyfcmd2 = nil
+      local keyfcmd3 = nil
+local hotkeyg = nil
+      local keygcmd1 = nil
+      local keygcmd2 = nil
+      local keygcmd3 = nil
+local hotkeyh = nil
+      local keyhcmd1 = nil
+      local keyhcmd2 = nil
+      local keyhcmd3 = nil
+local hotkeyt = nil
+      local keytcmd1 = nil
+      local keytcmd2 = nil
+      local keytcmd3 = nil
+local hotkeyy = nil
+      local keyycmd1 = nil
+      local keyycmd2 = nil
+      local keyycmd3 = nil
+local check1 = 0
+local lastcmd = nil
+
+-- HotKey Function
+
+lp = game.Players.LocalPlayer
+ms = lp:GetMouse() 
+ms.KeyDown:connect(function(key) 
+
+-- Hot Keys
+
+if check1 == 0 then
+
+if key == "z" then 
+game:GetService'Players':Chat(("fly me"))
+
+elseif key == "x" then
+game:GetService'Players':Chat(("ff me"))
+
+elseif key == "c" then
+game:GetService'Players':Chat(("reset me"))
+
+elseif key == "v" then
+game:GetService'Players':Chat(("respawn me"))
+
+elseif key == "b" then
+SPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
+elseif key == "n" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = SPos
+
+elseif key == "m" then
+ game:GetService'Players':Chat((lastcmd))
+
+elseif key == "f" then
+
+ if keyfcmd1 ~= nil then
+  game:GetService'Players':Chat((keyfcmd1))
+ end
+ if keyfcmd2 ~= nil then
+  game:GetService'Players':Chat((keyfcmd2))
+ end
+ if keyfcmd3 ~= nil then
+  game:GetService'Players':Chat((keyfcmd3))
+ end
+
+elseif key == "g" then
+ if keygcmd1 ~= nil then
+  game:GetService'Players':Chat((keygcmd1))
+ end
+ if keygcmd2 ~= nil then
+  game:GetService'Players':Chat((keygcmd2))
+ end
+ if keygcmd3 ~= nil then
+  game:GetService'Players':Chat((keygcmd3))
+ end
+
+elseif key == "h" then
+ if keyhcmd1 ~= nil then
+  game:GetService'Players':Chat((keyhcmd1))
+ end
+ if keyhcmd2 ~= nil then
+  game:GetService'Players':Chat((keyhcmd2))
+ end
+ if keyhcmd3 ~= nil then
+  game:GetService'Players':Chat((keyhcmd3))
+ end
+
+elseif key == "t" then
+ if keytcmd1 ~= nil then
+  game:GetService'Players':Chat((keytcmd1))
+ end
+ if keytcmd2 ~= nil then
+  game:GetService'Players':Chat((keytcmd2))
+ end
+ if keytcmd3 ~= nil then
+  game:GetService'Players':Chat((keytcmd3))
+ end
+
+elseif key == "y" then
+ if keyycmd1 ~= nil then
+  game:GetService'Players':Chat((keyycmd1))
+ end
+ if keyycmd2 ~= nil then
+  game:GetService'Players':Chat((keyycmd2))
+ end
+ if keyycmd3 ~= nil then
+  game:GetService'Players':Chat((keyycmd3))
+ end
+end
+
+end
+
+if key == "j" then
+
+          check1 = check1 + 1
+ 
+      if check1 == 2 then
+          check1 = 0
+      end
+end
+
+end)
+
+
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+time = string.sub(msg, 9)
+
+if string.sub(msg, 1, math.huge) == "" then
+ lastcmd = string.sub(msg, 1)
+end
+
+if string.sub(msg, 1, 9) == "hkfcmd1 =" then
+ keyfcmd1 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkfcmd2 =" then
+ keyfcmd2 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkfcmd3 =" then
+ keyfcmd3 = string.sub(msg, 11)
+ 
+elseif string.sub(msg, 1, 9) == "hkgcmd1 =" then
+ keygcmd1 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkgcmd2 =" then
+ keygcmd2 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkgcmd3 =" then
+ keygcmd3 = string.sub(msg, 11)
+ 
+elseif string.sub(msg, 1, 9) == "hkhcmd1 =" then
+ keyhcmd1 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkhcmd2 =" then
+ keyhcmd2 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkhcmd3 =" then
+ keyhcmd3 = string.sub(msg, 11)
+ 
+elseif string.sub(msg, 1, 9) == "hktcmd1 =" then
+ keytcmd1 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hktcmd2 =" then
+ keytcmd2 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hktcmd3 =" then
+ keytcmd3 = string.sub(msg, 11)
+
+elseif string.sub(msg, 1, 9) == "hkycmd1 =" then
+ keyycmd1 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkycmd2 =" then
+ keyycmd2 = string.sub(msg, 11)
+elseif string.sub(msg, 1, 9) == "hkycmd3 =" then
+ keyycmd3 = string.sub(msg, 11)
+ 
+end
+	
+	if string.sub(msg, 1, 7) == "-wait =" then
+		abc = time
+	end
+
+if string.sub(msg, 1, 9) == "-amount =" then
+amn = string.sub(msg, 11)
+end
+	
+if msg == "lol = 0" then
+lol = 0
+end
+if msg == "lol = 1" then
+lol = 1
+end
+-- Kit Commands
+	
+
+
+-- Teleport Commands
+
+if msg == "clicktp" then
+-- Notifications
+local function notify(title, text)
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+	        Title = title;
+	        Text = text;
+	        Duration = 1;
+	    })
+end
+
+
+
+
+
+if msg "-h" then
+game.Players:Chat("-house me")
+end
+
+if string.sub(msg, 1, 6) == "-house" then
+if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+elseif string.sub(msg, 8, 10) == "all" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+wait(0.25)
+game:GetService'Players':Chat(("tp all me"))
+else
+local plrname = string.sub(msg, 8)
+local loc = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(0.125)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+wait(0.25)
+game:GetService'Players':Chat(("tp "..plrname.." me"))
+wait(0.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = loc
+end
+end
+
+
+
+-- Super Commands
+
+if string.sub(msg, 1, 6) == "-super" then
+	local plrname = string.sub(msg, 7)
+	for i = 1,250 do
+		game:GetService'Players':Chat((plrname))
+	end
+end
+
+-- Spam Commands
+
+if string.sub(msg, 1, 5) == "-spam" then
+	Non = true
+	Spam(msg)
+end
+
+if msg == "-stop" then
+           Non = false
+           acolor = false
+           bcolor = false
+           ccolor = false
+           rhell = false
+           multi = false
+end
+
+-- Other Commands
+
+
+
+if string.sub(msg, 1, 8) == "-boombox" then
+
+local plrname = string.sub(msg, 10)
+game:GetService'Players':Chat(("gear "..plrname.." 000000000212641536"))
+end
+
+
+
+
+
+
+if string.sub(msg, 1, 7) == "-autoff" then
+ffanti = true
+antiff(msg)
+end
+
+if msg == ":unanti" then
+multianti = false
+ak = false
+liall = false
+ffanti = false
+end
+
+-- Local Commands
+
+if string.sub(msg, 1, 11) == "-burger" then
+local plrname = string.sub(msg, 13)
+for i = 1,amn do
+game:GetService'Players':Chat(("unhat                                                                           "..plrname..""))
+game:GetService'Players':Chat(("-spam gear all 0000000000000000006532391513"))
+wait(0.1)
+game:GetService'Players':Chat((":stop"))
+wait(0.1)
+game:GetService'Players':Chat(("hat "..plrname.." 0000000000006532391513"))
+game:GetService'Players':Chat(("shirt "..plrname.." 0000000000003626016947"))
+game:GetService'Players':Chat(("pants "..plrname.." 0000000000003735173229"))
+game:GetService'Players':Chat(("name "..plrname.." 🍔 Burger Man 🍔"))
+end
+end
+
+
+
+
+
+
+if string.sub(msg, 1, 5) == "-swap" then
+ local plr1 = string.sub(msg, 7,10)
+ local plr2 = string.sub(msg, 11, 13)
+ local mylocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  game:GetService'Players':Chat(("invis me"))
+  wait(0.20)
+  game:GetService'Players':Chat(("tp me "..plr1))
+  wait(0.20)
+  game:GetService'Players':Chat(("tp ".. plr1 .. plr2))
+  wait(0.20)
+  game:GetService'Players':Chat(("tp "..plr2.." me"))
+  wait(0.125)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = mylocation
+  game:GetService'Players':Chat(("vis me"))
+end
+
+if string.sub(msg, 1, 8) == "-swap me" then
+ local plyr1 = string.sub(msg, 10)
+ local myloc1 = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  game:GetService'Players':Chat(("invis me"))
+  wait(0.20)
+  game:GetService'Players':Chat(("tp me "..plyr1))
+  wait(0.20)
+  local myloc2 = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  wait(0.20)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = myloc1
+  wait(0.20)
+  game:GetService'Players':Chat(("tp "..plyr1.." me"))
+  wait(0.20)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = myloc2
+  game:GetService'Players':Chat(("vis me"))
+ end
+ 
+if string.sub(msg, 1, 7) == "-random" then
+ local xvalue = math.random(-495,495)
+ local zvalue = math.random(-495,495)
+ local plrname = string.sub(msg, 9)
+ local myloc = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+  wait(0.125)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(xvalue, 3, zvalue))
+  wait(0.25)
+  game:GetService'Players':Chat(("tp "..plrname.." me"))
+  wait(0.25)
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = myloc
+end
+
+if string.sub(msg, 1, 6) == "-fling" then
+local plrname = string.sub(msg, 8)
+game:GetService'Players':Chat(("fling "..plrname))
+end
+
+
+
+
+if string.sub(msg, 1, 8) == "-hell" then
+rhell = true
+ccolor = false
+acolor = false
+bcolor = false
+clors(msg)
+end
+
+if msg == "-rainbow" then
+multi = true
+rainbow(msg)
+end
+
+if msg == ":map" then
+wait(0.5)
+game:GetService'Players':Chat(("sit me"))
+wait(1.25)
+game:GetService'Players':Chat(("punish me"))
+wait(1.25) 
+game:GetService'Players':Chat(("unpunish me"))
+end
+if string.sub(msg, 1, 6) == "-regen" then
+regen()
+end
+if msg == "-reg" then
+game.Players:Chat("-regen")
+end
+if msg == "-stop" then
+stop = true
+Stop(msg)
+
+end
+
+
+
+
+
+
+if msg == "-clearlogs" then
+local rlog = math.random(1,5)
+
+if rlog == 1 then
+for i = 1,100 do
+game:GetService'Players':Chat(("ff a"))
+end
+end
+
+if rlog == 2 then
+for i = 1,100 do
+game:GetService'Players':Chat(("ff b :/"))
+end
+end
+
+if rlog == 3 then
+for i = 1,100 do
+game:GetService'Players':Chat(("ff c"))
+end
+end
+
+if rlog == 4 then
+for i = 1,100 do
+game:GetService'Players':Chat(("ff d"))
+end
+end
+
+if rlog == 5 then
+for i = 1,100 do
+game:GetService'Players':Chat(("ff e"))
+end
+end
+
+end
+
+if string.sub(msg, 1) == "-rejoin" then
+rjn()
+game:GetService("TeleportService"):Teleport(game.PlaceId, playur)
+end
+if msg == "-rj"
+game.Players:Chat("-rejoin")
+end
+
+
+
+if msg == "-zawarudo" then
+game.Players:Chat("music 304787933")
+wait(2)
+game.Players:Chat("freeze all")
+game.Players:Chat("ambient 0 63.75 0")
+wait(.25)
+game.Players:Chat("ambient 0 127.5 0")
+wait(.25)
+game.Players:Chat("ambient 0 191.25 0")
+wait(.25)
+game.Players:Chat("ambient 0 255 0")
+wait(.25)
+game.Players:Chat("stopmusic")
+wait(1.5)
+game.Players:Chat("music 384043882")
+for i = 1,20 do
+game.Players:Chat("freeze all")
+game.Players:Chat("ambient 0 255 0")
+wait(.5)
+end
+game.Players:Chat("music 676242549")
+wait(2.5)
+game.Players:Chat("stopmusic")
+game.Players:Chat("thaw all")
+game.Players:Chat("ambient 0 255 0")
+wait(.25)
+game.Players:Chat("ambient 0 191.25 0")
+wait(.25)
+game.Players:Chat("ambient 0 127.5 0")
+wait(.25)
+game.Players:Chat("ambient 0 63.75 0")
+end
+
+
+
+
+
+
+
+
+ if string.sub(msg, 1, 5) == "-jail" then
+  local plr = string.sub(msg, 7)
+  game:GetService'Players':Chat(("freeze "..plr))
+  wait(0.10)
+  game:GetService'Players':Chat(("name "..plr.." "))
+  wait(0.10)
+  game:GetService'Players':Chat(("thaw "..plr))
+ end
+
+
+
+if msg == "-nok" then
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump1.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump2.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump3.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump4.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump5.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump6.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump7.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump8.TouchInterest:destroy()
+game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9.TouchInterest:destroy()
+end
+
+if msg == ":invertfix" then
+for i = 1,25 do
+game.Workspace.CurrentCamera.GrayScale:Destroy()
+end
+end
+
+
+
+if msg == "-allantis on" then
+nopunish = true
+healauto = true
+noexp = true
+nokill = true
+noblind = true
+nojail = true
+nomusic = true
+nodog = true
+nosmoke = true
+noswag = true
+nosparkles = true
+nofire = true
+nospeed = true
+noskydive = true
+nocrash = true
+noice = true
+noseizure = true
+noff = true
+nomsgcrash = true
+ilight = true
+end
+
+
+if msg == "-allantis off" then
+nopunish = false
+healauto = false
+noexp = false
+nokill = false
+noblind = false
+nojail = false
+nomusic = false
+nodog = false
+nosmoke = false
+noswag = false
+nosparkles = false
+nofire = false
+nospeed = false
+noskydive = false
+nocrash = false
+noice = false
+noseizure = false
+noff = false
+nomsgcrash = false
+ilight = false
+end
+
+if msg == "-antikill off" then
+nokill = false
+end
+if msg == "-antipunish off" then
+nopunish = false
+end
+if msg == "-autoheal off" then
+healauto = false
+end
+if msg == "-antijail off" then
+nojail = false
+end
+if msg == "-antimusic off" then
+nomusic = false
+end
+if msg == "-antidog off" then
+nodog = false
+end
+if msg == "-antisparkles off" then
+nosparkles = false
+end
+if msg == "-antismoke off" then
+nosmoke = false
+end
+if msg == "-expe off" then
+noexp = false
+end
+if msg == "-antispeed off" then
+nospeed = false
+end
+if msg == "-antifire off" then
+nofire = false
+end
+if msg == "-antiswag off" then
+noswag = false
+end
+if msg == "-antiblind off" then
+noblind = false
+end
+
+if msg == "-antiskydive off" then
+noskydive = false
+end
+
+if msg == "-anticrash off" then
+nocrash = false
+end
+
+if msg == "-antiice off" then
+noice = false
+end
+
+if msg == "-antiseizure off" then
+noseizure = false
+end
+
+if msg == "-antiff off" then
+noff = false
+end
+
+if msg == "-antimsg off" then
+nomsgcrash = false
+end
+
+if msg == ":disablenolight" then
+ilight = false
+end
+
+if msg == "-antikill on" then
+nokill = true
+end
+if msg == "-antipunish on" then
+nopunish = true
+end
+if msg == "-autoheal on" then
+healauto =true
+end
+if msg == "-antijail on" then
+nojail = true
+end
+if msg == "-antimusic on" then
+nomusic = true
+end
+if msg == "-antidog on" then
+nodog = true
+end
+if msg == "-antisparkles on" then
+nosparkles = true
+end
+if msg == "-antismoke on" then
+nosmoke = true
+end
+if msg == "-explodeffect on" then
+noexp = true
+end
+if msg == "-antispeed on" then
+nospeed = true
+end
+if msg == "-antifire on" then
+nofire = true
+end
+if msg == "-antiswag on" then
+noswag = true
+end
+if msg == "-antiblind on" then
+noblind = true
+end
+
+if msg == "-antiskydive on" then
+noskydive = true
+end
+
+if msg == "-anticrash on" then
+nocrash = true
+end
+
+if msg == "-antice on" then
+noice = true
+end
+
+if msg == "-antiseizure on" then
+noseizure = true
+end
+
+if msg == "-antiff on" then
+noff = true
+end
+
+if msg == "-antimsg on" then
+nomsgcrash = true
+end
+
+if msg == ":didk" then
+ilight = true
+end
+
+if msg == "allpads" then
+local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:GetChildren("Head")
+
+for i, pad in pairs(pads) do
+pad.PrimaryPart = pad:FindFirstChild("Head")
+local pos = pad.PrimaryPart.CFrame
+wait(0)
+pad.PrimaryPart.CanCollide = false
+pad:SetPrimaryPartCFrame(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
+wait(0)
+pad:SetPrimaryPartCFrame(pos)
+pad.PrimaryPart.CanCollide = true
+end
+end
+
+end)
+
+local function system(text)
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = text;
+	Font = Enum.Font.SourceSansLight;
+	Color = Color3.new(255, 255, 255);
+	FontSize = Enum.FontSize.Size8;
+})
+end
+
