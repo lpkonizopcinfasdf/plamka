@@ -641,6 +641,16 @@ game.Players:Chat("respawn                                         me")
 			end
 		end
 	end
+	if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
+game.Players:Chat("-super dog all all all")
+wait(0.50)
+game.Players:Chat("-super clone all all all")
+wait(1)
+game.Players:Chat("-super dog all all all")
+wait(0.50)
+game.Players:Chat("-super clone all all all")
+	end
+
 	
 	if string.sub(msg:lower(), 0, 11) == prefix.."bind fkick" then
 		logn("fkick is now bound to '"..string.sub(msg:lower(), 13, 13).."'")
