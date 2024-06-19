@@ -1,5 +1,5 @@
 -- Settings --
-getgenv().klprefix2 = "-"
+getgenv().klprefix2 = "."
 
 -- Antis (settings) --
 local antigear = true -- No one except you can use gears with this on
