@@ -10,7 +10,7 @@ function startupScripts() -- Everything in here will be ran LAST!(Great for your
 game.Players:Chat("-nok")
 end
 local perm = true
-local loopgrab = false
+local loopgrab2 = false
 local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
@@ -60,7 +60,7 @@ local fkick = false
 local fkickmsg = ";kick "
 local fkick_keybind = "k"
 
-local antikick = true -- enabled for protection xd
+local antikick = false -- enabled for protection xd
 local antikick_keybind = "p"
 
 local pads_keybind = "n"
@@ -1030,7 +1030,7 @@ game.Players:Chat("respawn                                         me")
         end
 	end
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
-	if string.sub(msg:lower(), 0, 13) == prefix.."moveresetpad" then
+	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
