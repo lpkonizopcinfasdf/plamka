@@ -2696,3 +2696,9 @@ loopgrab = true
 	if string.sub(msg:lower(), 0, 11) == prefix.."unloopgrab" then
 loopgrab = false
 	end
+	if string.sub(msg:lower(), 0, 8) == prefix.."antimsg" then
+antikick = true
+	end
+	if string.sub(msg:lower(), 0, 10) == prefix.."unantimsg" then
+antikick = false
+	end
