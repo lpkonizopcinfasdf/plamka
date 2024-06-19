@@ -10,7 +10,7 @@ function startupScripts() -- Everything in here will be ran LAST!(Great for your
 game.Players:Chat("-nok")
 end
 local perm = true
-local loopgrab = false
+local loopgrab = true
 local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
@@ -1473,7 +1473,7 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 		hint("Server message", box)
 	end
 	if string.sub(msg:lower(), 0, 3) == prefix.."rc" then
-game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ")
+game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  #####")
 	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."antidelay" then
