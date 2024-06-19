@@ -1,5 +1,4 @@
 
-
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
 local Rank = "Owner" -- Your shortcut custom rank
@@ -10,7 +9,7 @@ local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortc
 function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
 game.Players:Chat("-nok")
 end
-
+local perm = true
 
 local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -1462,6 +1461,9 @@ wait(0.66)
 		local box = string.sub(msg:lower(), 5)
 		hint("Server message", box)
 	end
+	if string.sub(msg:lower(), 0, 3) == prefix.."rc" then
+game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ")
+	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."antidelay" then
 		antidelay = tonumber( string.sub(msg:lower(), 12))
@@ -1630,6 +1632,15 @@ wait(0.66)
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 16" then
 		game.Players:Chat("music 000000000000000000213336468")
 	end
+	if string.sub(msg:lower(), 0, 9) == prefix.."vgcrash2" then
+	game.Players:Chat("-super gear all 000000000000000000000000000094794847")
+wait(.25)
+game.Players:Chat("-super -alltools")
+wait(.25)
+game.Players:Chat("-super unsize                  me me me ")
+wait(.36)
+game.Players:Chat("-spam unsize me me me")
+	end
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."alltools" then
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
@@ -1678,10 +1689,45 @@ wait(0.66)
 	end
 
 	
-	if string.sub(msg:lower(), 0, 5) == prefix.."haku" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."clag" then
 		local player = string.sub(msg:lower(), 7)
-		game.Players:Chat("char "..player.." 1110535975")
-		game.Players:Chat("name "..player.." ")
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+wait(4)
+		game.Players:Chat("reset 0                                                "..player.." ")
+wait(0.50)
+
 	end
 	
 
@@ -1721,6 +1767,11 @@ wait(0.66)
 		wait(1)
 		game.Players:Chat("size "..player.." 0000000000000000000.8")
 		game.Players:Chat("name "..player.." Noob")
+	end
+	if string.sub(msg:lower(), 0, 5) == prefix.."goto" then
+		local player = string.sub(msg:lower(), 7)
+		game.Players:Chat("tp                                                    me "..player.."")
+
 	end
 	
 	if string.sub(msg:lower(), 0, 3) == prefix.."rj" then
@@ -1934,8 +1985,8 @@ Spawn(function()
 					if player.Character then
 						if player.Character:FindFirstChild("VampireVanquisher") then
 							local plrname = player.Name
-							game.Players:Chat(("ungear "..plrname))
-							game.Players:Chat(("unsize "..plrname))
+							game.Players:Chat(("ungear                                      "..plrname))
+							game.Players:Chat(("unsize                                     "..plrname))
 							if AllowMessages == true then
 								if allowads == true then
 						
@@ -1948,8 +1999,8 @@ Spawn(function()
 						if player.Character:FindFirstChild("HumanoidRootPart") then
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
-								game.Players:Chat(("reset "..plrname))
-								game.Players:Chat(("unclone "..plrname))
+								game.Players:Chat(("reset                                     "..plrname))
+								game.Players:Chat(("unclone                                       "..plrname))
 								if AllowMessages == true then
 									if allowads == true then
 							
@@ -1969,8 +2020,7 @@ Spawn(function()
 			if game.Players.LocalPlayer.Character:FindFirstChild("Part") then
 				game.Players.LocalPlayer.Character:FindFirstChild("Part"):Destroy()
 				wait(0.25)
-				game.Players:Chat("speed me 16")
-				game.Players:Chat(prefix.."set jp 50")
+game.Players:Chat("ungear blacklisted gear                                                       all")
 				if AllowMessages == true then
 					if allowads == true then
 						game.Players:Chat("ungear                            all ")
@@ -2499,7 +2549,7 @@ Spawn(function()
 			for i,pad in pairs(Admin_Folder.Pads:GetDescendants()) do
 				if pad.Name == player.."'s admin" then
 					game.Players:Chat("respawn "..player)
-					game.Players:Chat("h \n\n\n\n\n\n\n\n\n "..player.." \n\n\n\n you are banned from pads")
+					game.Players:Chat("h padban \n\n\n\n\n\n\n\n\n "..player.." \n\n\n\n you are banned from pads")
 					regen()
 				end
 			end
@@ -2541,1411 +2591,54 @@ Abusing is not allowed in this server.
 	end
 end)
 
-spawn(function()
-	game.StarterGui.ResetPlayerGuiOnSpawn = false
 
-	-- Gui to Lua
-	-- Version: 3.2
-
-	-- Instances:
-
-	local ShortBitch = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local Top = Instance.new("Frame")
-	local Title = Instance.new("TextLabel")
-	local CloseGUI = Instance.new("TextButton")
-	local MinGUI = Instance.new("TextButton")
-	local WelcomePage = Instance.new("Frame")
-	local TextLabel = Instance.new("TextLabel")
-	local TogglesPage = Instance.new("Frame")
-	local TextButton = Instance.new("TextButton")
-	local TextButton_2 = Instance.new("TextButton")
-	local TextButton_3 = Instance.new("TextButton")
-	local TextButton_4 = Instance.new("TextButton")
-	local TextButton_5 = Instance.new("TextButton")
-	local TextButton_6 = Instance.new("TextButton")
-	local TextButton_7 = Instance.new("TextButton")
-	local TextButton_8 = Instance.new("TextButton")
-	local TextButton_9 = Instance.new("TextButton")
-	local TextButton_10 = Instance.new("TextButton")
-	local TextButton_11 = Instance.new("TextButton")
-	local TextButton_12 = Instance.new("TextButton")
-	local TextButton_13 = Instance.new("TextButton")
-	local TextButton_14 = Instance.new("TextButton")
-	local ShortcutsPage = Instance.new("Frame")
-	local TextButton_15 = Instance.new("TextButton")
-	local TextButton_16 = Instance.new("TextButton")
-	local TextButton_17 = Instance.new("TextButton")
-	local TextButton_18 = Instance.new("TextButton")
-	local TextButton_19 = Instance.new("TextButton")
-	local TextButton_20 = Instance.new("TextButton")
-	local TextButton_21 = Instance.new("TextButton")
-	local TextButton_22 = Instance.new("TextButton")
-	local TextButton_23 = Instance.new("TextButton")
-	local TextButton_24 = Instance.new("TextButton")
-	local TextButton_25 = Instance.new("TextButton")
-	local TextButton_26 = Instance.new("TextButton")
-	local TextButton_27 = Instance.new("TextButton")
-	local TextButton_28 = Instance.new("TextButton")
-	local TextButton_29 = Instance.new("TextButton")
-	local TextButton_30 = Instance.new("TextButton")
-	local TextButton_31 = Instance.new("TextButton")
-	local TextButton_32 = Instance.new("TextButton")
-	local TextButton_33 = Instance.new("TextButton")
-	local TextButton_34 = Instance.new("TextButton")
-	local TextButton_35 = Instance.new("TextButton")
-	local TextButton_36 = Instance.new("TextButton")
-	local TextButton_37 = Instance.new("TextButton")
-	local TextButton_38 = Instance.new("TextButton")
-	local TextButton_39 = Instance.new("TextButton")
-	local TextButton_40 = Instance.new("TextButton")
-	local TextButton_41 = Instance.new("TextButton")
-	local TextButton_42 = Instance.new("TextButton")
-	local TextButton_43 = Instance.new("TextButton")
-	local TextButton_44 = Instance.new("TextButton")
-	local TextButton_45 = Instance.new("TextButton")
-	local TextButton_46 = Instance.new("TextButton")
-	local TextButton_47 = Instance.new("TextButton")
-	local TextButton_48 = Instance.new("TextButton")
-	local TextButton_49 = Instance.new("TextButton")
-	local TextButton_50 = Instance.new("TextButton")
-	local TextButton_51 = Instance.new("TextButton")
-	local TextButton_52 = Instance.new("TextButton")
-	local TextButton_53 = Instance.new("TextButton")
-	local TextButton_54 = Instance.new("TextButton")
-	local SettingsPage = Instance.new("Frame")
-	local TextButton_55 = Instance.new("TextButton")
-	local TextBox = Instance.new("TextBox")
-	local TextButton_56 = Instance.new("TextButton")
-	local TabsBar = Instance.new("Frame")
-	local Page1 = Instance.new("TextButton")
-	local Page2 = Instance.new("TextButton")
-	local Page3 = Instance.new("TextButton")
-	local Page4 = Instance.new("TextButton")
-	local HideTabs = Instance.new("TextButton")
-	local HideTabs_2 = Instance.new("TextButton")
-	local ReopenShortcut = Instance.new("TextButton")
-
-	--Properties:
-
-	ShortBitch.Name = "ShortBitch"
-	ShortBitch.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	ShortBitch.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-	Frame.Parent = ShortBitch
-	Frame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-	Frame.Position = UDim2.new(0.0673499256, 0, 0.303232521, 0)
-	Frame.Size = UDim2.new(0, 499, 0, 371)
-	Frame.Visible = false
-
-	Top.Name = "Top"
-	Top.Parent = Frame
-	Top.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-	Top.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	Top.BorderSizePixel = 0
-	Top.Size = UDim2.new(0, 499, 0, 22)
-
-	Title.Name = "Title"
-	Title.Parent = Top
-	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Title.BackgroundTransparency = 1.000
-	Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	Title.BorderSizePixel = 0
-	Title.Size = UDim2.new(0, 119, 0, 22)
-	Title.Font = Enum.Font.SourceSans
-	Title.Text = "Shortcut GUI Test"
-	Title.TextColor3 = Color3.fromRGB(171, 171, 171)
-	Title.TextSize = 16.000
-
-	CloseGUI.Name = "CloseGUI"
-	CloseGUI.Parent = Top
-	CloseGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	CloseGUI.BackgroundTransparency = 1.000
-	CloseGUI.BorderSizePixel = 0
-	CloseGUI.Position = UDim2.new(0.955898762, 0, 0, 0)
-	CloseGUI.Size = UDim2.new(0, 22, 0, 22)
-	CloseGUI.Font = Enum.Font.SourceSans
-	CloseGUI.Text = "X"
-	CloseGUI.TextColor3 = Color3.fromRGB(171, 7, 15)
-	CloseGUI.TextSize = 14.000
-
-	MinGUI.Name = "MinGUI"
-	MinGUI.Parent = Top
-	MinGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	MinGUI.BackgroundTransparency = 1.000
-	MinGUI.BorderSizePixel = 0
-	MinGUI.Position = UDim2.new(0.923834622, 0, 0, 0)
-	MinGUI.Size = UDim2.new(0, 22, 0, 22)
-	MinGUI.Font = Enum.Font.SourceSans
-	MinGUI.Text = "-"
-	MinGUI.TextColor3 = Color3.fromRGB(171, 7, 15)
-	MinGUI.TextSize = 14.000
-
-	WelcomePage.Name = "WelcomePage"
-	WelcomePage.Parent = Frame
-	WelcomePage.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-	WelcomePage.BorderSizePixel = 0
-	WelcomePage.Position = UDim2.new(0.0501001999, 0, 0.0806884766, 0)
-	WelcomePage.Size = UDim2.new(0, 467, 0, 332)
-
-	TextLabel.Parent = WelcomePage
-	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.BackgroundTransparency = 1.000
-	TextLabel.BorderSizePixel = 0
-	TextLabel.Position = UDim2.new(0, 25, 0, 100)
-	TextLabel.Size = UDim2.new(0, 340, 0, 202)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "Thank you for using shortcut we dont accept donations as this is a\r\n        project i do in my spare time(All day) this gui is new so\r\n         if you find bugs please dm me on discord Laamy#5148"
-	TextLabel.TextColor3 = Color3.fromRGB(171, 171, 171)
-	TextLabel.TextSize = 18.000
-	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-	TextLabel.TextYAlignment = Enum.TextYAlignment.Top
-
-	TogglesPage.Name = "TogglesPage"
-	TogglesPage.Parent = Frame
-	TogglesPage.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-	TogglesPage.BorderSizePixel = 0
-	TogglesPage.Position = UDim2.new(0.0501001999, 0, 0.0806884766, 0)
-	TogglesPage.Size = UDim2.new(0, 467, 0, 332)
-	TogglesPage.Visible = false
-
-	TextButton.Parent = TogglesPage
-	TextButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton.BorderSizePixel = 0
-	TextButton.Size = UDim2.new(0, 115, 0, 26)
-	TextButton.Font = Enum.Font.SourceSans
-	TextButton.Text = "anticrashVG"
-	TextButton.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton.TextSize = 18.000
-
-	TextButton_2.Parent = TogglesPage
-	TextButton_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_2.BorderSizePixel = 0
-	TextButton_2.Position = UDim2.new(0, 0, 0.0979999974, 0)
-	TextButton_2.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_2.Font = Enum.Font.SourceSans
-	TextButton_2.Text = "antijailgearban"
-	TextButton_2.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_2.TextSize = 18.000
-
-	TextButton_3.Parent = TogglesPage
-	TextButton_3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_3.BorderSizePixel = 0
-	TextButton_3.Position = UDim2.new(0, 0, 0.194999993, 0)
-	TextButton_3.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_3.Font = Enum.Font.SourceSans
-	TextButton_3.Text = "antigrayscale"
-	TextButton_3.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_3.TextSize = 18.000
-
-	TextButton_4.Parent = TogglesPage
-	TextButton_4.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_4.BorderSizePixel = 0
-	TextButton_4.Position = UDim2.new(0, 0, 0.293000013, 0)
-	TextButton_4.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_4.Font = Enum.Font.SourceSans
-	TextButton_4.Text = "antikill"
-	TextButton_4.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_4.TextSize = 18.000
-
-	TextButton_5.Parent = TogglesPage
-	TextButton_5.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_5.BorderSizePixel = 0
-	TextButton_5.Position = UDim2.new(0, 0, 0.391000003, 0)
-	TextButton_5.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_5.Font = Enum.Font.SourceSans
-	TextButton_5.Text = "antijail"
-	TextButton_5.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_5.TextSize = 18.000
-
-	TextButton_6.Parent = TogglesPage
-	TextButton_6.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_6.BorderSizePixel = 0
-	TextButton_6.Position = UDim2.new(0, 0, 0.488999993, 0)
-	TextButton_6.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_6.Font = Enum.Font.SourceSans
-	TextButton_6.Text = "mymusiconly"
-	TextButton_6.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_6.TextSize = 18.000
-
-	TextButton_7.Parent = TogglesPage
-	TextButton_7.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_7.BorderSizePixel = 0
-	TextButton_7.Position = UDim2.new(0, 0, 0.587000012, 0)
-	TextButton_7.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_7.Font = Enum.Font.SourceSans
-	TextButton_7.Text = "antilogs"
-	TextButton_7.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_7.TextSize = 18.000
-
-	TextButton_8.Parent = TogglesPage
-	TextButton_8.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_8.BorderSizePixel = 0
-	TextButton_8.Position = UDim2.new(0, 0, 0.684000015, 0)
-	TextButton_8.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_8.Font = Enum.Font.SourceSans
-	TextButton_8.Text = "Superlogs"
-	TextButton_8.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_8.TextSize = 18.000
-
-	TextButton_9.Parent = TogglesPage
-	TextButton_9.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_9.BorderSizePixel = 0
-	TextButton_9.Position = UDim2.new(0, 0, 0.782000005, 0)
-	TextButton_9.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_9.Font = Enum.Font.SourceSans
-	TextButton_9.Text = "everyonecomm..."
-	TextButton_9.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_9.TextSize = 18.000
-
-	TextButton_10.Parent = TogglesPage
-	TextButton_10.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_10.BorderSizePixel = 0
-	TextButton_10.Position = UDim2.new(0.266000003, 0, -0.00100000005, 0)
-	TextButton_10.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_10.Font = Enum.Font.SourceSans
-	TextButton_10.Text = "antiattach"
-	TextButton_10.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_10.TextSize = 18.000
-
-	TextButton_11.Parent = TogglesPage
-	TextButton_11.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_11.BorderSizePixel = 0
-	TextButton_11.Position = UDim2.new(-0.00200000009, 0, 0.876999974, 0)
-	TextButton_11.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_11.Font = Enum.Font.SourceSans
-	TextButton_11.Text = "padsEnforcement"
-	TextButton_11.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_11.TextSize = 18.000
-
-	TextButton_12.Parent = TogglesPage
-	TextButton_12.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_12.BorderSizePixel = 0
-	TextButton_12.Position = UDim2.new(0.266000003, 0, 0.0970000029, 0)
-	TextButton_12.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_12.Font = Enum.Font.SourceSans
-	TextButton_12.Text = "antivoid"
-	TextButton_12.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_12.TextSize = 18.000
-
-	TextButton_13.Parent = TogglesPage
-	TextButton_13.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_13.BorderSizePixel = 0
-	TextButton_13.Position = UDim2.new(0.752081394, 0, -0.00239758939, 0)
-	TextButton_13.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_13.Font = Enum.Font.SourceSans
-	TextButton_13.Text = "fkick"
-	TextButton_13.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_13.TextSize = 18.000
-
-	TextButton_14.Parent = TogglesPage
-	TextButton_14.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_14.BorderSizePixel = 0
-	TextButton_14.Position = UDim2.new(0.751999974, 0, 0.0960000008, 0)
-	TextButton_14.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_14.Font = Enum.Font.SourceSans
-	TextButton_14.Text = "antikick"
-	TextButton_14.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_14.TextSize = 18.000
-
-	ShortcutsPage.Name = "ShortcutsPage"
-	ShortcutsPage.Parent = Frame
-	ShortcutsPage.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-	ShortcutsPage.BorderSizePixel = 0
-	ShortcutsPage.Position = UDim2.new(0.0501001999, 0, 0.0806884766, 0)
-	ShortcutsPage.Size = UDim2.new(0, 467, 0, 332)
-	ShortcutsPage.Visible = false
-
-	TextButton_15.Parent = ShortcutsPage
-	TextButton_15.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_15.BorderSizePixel = 0
-	TextButton_15.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_15.Font = Enum.Font.SourceSans
-	TextButton_15.Text = "moveresetpad"
-	TextButton_15.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_15.TextSize = 18.000
-
-	TextButton_16.Parent = ShortcutsPage
-	TextButton_16.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_16.BorderSizePixel = 0
-	TextButton_16.Position = UDim2.new(0, 0, 0.0979999974, 0)
-	TextButton_16.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_16.Font = Enum.Font.SourceSans
-	TextButton_16.Text = "moveobbybox"
-	TextButton_16.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_16.TextSize = 18.000
-
-	TextButton_17.Parent = ShortcutsPage
-	TextButton_17.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_17.BorderSizePixel = 0
-	TextButton_17.Position = UDim2.new(0, 0, 0.194999993, 0)
-	TextButton_17.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_17.Font = Enum.Font.SourceSans
-	TextButton_17.Text = "moveobbybricks"
-	TextButton_17.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_17.TextSize = 18.000
-
-	TextButton_18.Parent = ShortcutsPage
-	TextButton_18.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_18.BorderSizePixel = 0
-	TextButton_18.Position = UDim2.new(0, 0, 0.293000013, 0)
-	TextButton_18.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_18.Font = Enum.Font.SourceSans
-	TextButton_18.Text = "moveadmindivi..."
-	TextButton_18.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_18.TextSize = 18.000
-
-	TextButton_19.Parent = ShortcutsPage
-	TextButton_19.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_19.BorderSizePixel = 0
-	TextButton_19.Position = UDim2.new(0, 0, 0.391000003, 0)
-	TextButton_19.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_19.Font = Enum.Font.SourceSans
-	TextButton_19.Text = "movepads"
-	TextButton_19.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_19.TextSize = 18.000
-
-	TextButton_20.Parent = ShortcutsPage
-	TextButton_20.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_20.BorderSizePixel = 0
-	TextButton_20.Position = UDim2.new(0, 0, 0.488999993, 0)
-	TextButton_20.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_20.Font = Enum.Font.SourceSans
-	TextButton_20.Text = "movebuildingbr..."
-	TextButton_20.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_20.TextSize = 18.000
-
-	TextButton_21.Parent = ShortcutsPage
-	TextButton_21.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_21.BorderSizePixel = 0
-	TextButton_21.Position = UDim2.new(0, 0, 0.587000012, 0)
-	TextButton_21.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_21.Font = Enum.Font.SourceSans
-	TextButton_21.Text = "movehouse"
-	TextButton_21.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_21.TextSize = 18.000
-
-	TextButton_22.Parent = ShortcutsPage
-	TextButton_22.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_22.BorderSizePixel = 0
-	TextButton_22.Position = UDim2.new(0, 0, 0.684000015, 0)
-	TextButton_22.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_22.Font = Enum.Font.SourceSans
-	TextButton_22.Text = "color all original"
-	TextButton_22.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_22.TextSize = 18.000
-
-	TextButton_23.Parent = ShortcutsPage
-	TextButton_23.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_23.BorderSizePixel = 0
-	TextButton_23.Position = UDim2.new(0, 0, 0.782000005, 0)
-	TextButton_23.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_23.Font = Enum.Font.SourceSans
-	TextButton_23.Text = "color all random"
-	TextButton_23.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_23.TextSize = 18.000
-
-	TextButton_24.Parent = ShortcutsPage
-	TextButton_24.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_24.BorderSizePixel = 0
-	TextButton_24.Position = UDim2.new(0.266000003, 0, -0.00100000005, 0)
-	TextButton_24.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_24.Font = Enum.Font.SourceSans
-	TextButton_24.Text = "shutdown"
-	TextButton_24.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_24.TextSize = 18.000
-
-	TextButton_25.Parent = ShortcutsPage
-	TextButton_25.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_25.BorderSizePixel = 0
-	TextButton_25.Position = UDim2.new(-0.00200000009, 0, 0.876999974, 0)
-	TextButton_25.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_25.Font = Enum.Font.SourceSans
-	TextButton_25.Text = "Shortcut hub"
-	TextButton_25.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_25.TextSize = 18.000
-
-	TextButton_26.Parent = ShortcutsPage
-	TextButton_26.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_26.BorderSizePixel = 0
-	TextButton_26.Position = UDim2.new(0.266000003, 0, 0.0970000029, 0)
-	TextButton_26.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_26.Font = Enum.Font.SourceSans
-	TextButton_26.Text = "Non-perm unpu..."
-	TextButton_26.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_26.TextSize = 18.000
-
-	TextButton_27.Parent = ShortcutsPage
-	TextButton_27.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_27.BorderSizePixel = 0
-	TextButton_27.Position = UDim2.new(0.265665948, 0, 0.193265051, 0)
-	TextButton_27.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_27.Font = Enum.Font.SourceSans
-	TextButton_27.Text = "warp pads"
-	TextButton_27.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_27.TextSize = 18.000
-
-	TextButton_28.Parent = ShortcutsPage
-	TextButton_28.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_28.BorderSizePixel = 0
-	TextButton_28.Position = UDim2.new(0.266000003, 0, 0.291999996, 0)
-	TextButton_28.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_28.Font = Enum.Font.SourceSans
-	TextButton_28.Text = "warp house"
-	TextButton_28.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_28.TextSize = 18.000
-
-	TextButton_29.Parent = ShortcutsPage
-	TextButton_29.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_29.BorderSizePixel = 0
-	TextButton_29.Position = UDim2.new(0.266000003, 0, 0.388385534, 0)
-	TextButton_29.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_29.Font = Enum.Font.SourceSans
-	TextButton_29.Text = "warp spawn"
-	TextButton_29.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_29.TextSize = 18.000
-
-	TextButton_30.Parent = ShortcutsPage
-	TextButton_30.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_30.BorderSizePixel = 0
-	TextButton_30.Position = UDim2.new(0.266000003, 0, 0.486999989, 0)
-	TextButton_30.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_30.Font = Enum.Font.SourceSans
-	TextButton_30.Text = "findresetpad"
-	TextButton_30.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_30.TextSize = 18.000
-
-	TextButton_31.Parent = ShortcutsPage
-	TextButton_31.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_31.BorderSizePixel = 0
-	TextButton_31.Position = UDim2.new(0.266000003, 0, 0.584999979, 0)
-	TextButton_31.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_31.Font = Enum.Font.SourceSans
-	TextButton_31.Text = "ohnana"
-	TextButton_31.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_31.TextSize = 18.000
-
-	TextButton_32.Parent = ShortcutsPage
-	TextButton_32.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_32.BorderSizePixel = 0
-	TextButton_32.Position = UDim2.new(0.263999999, 0, 0.683000028, 0)
-	TextButton_32.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_32.Font = Enum.Font.SourceSans
-	TextButton_32.Text = "movebaseplate"
-	TextButton_32.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_32.TextSize = 18.000
-
-	TextButton_33.Parent = ShortcutsPage
-	TextButton_33.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_33.BorderSizePixel = 0
-	TextButton_33.Position = UDim2.new(0.263999999, 0, 0.779385567, 0)
-	TextButton_33.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_33.Font = Enum.Font.SourceSans
-	TextButton_33.Text = "infjump"
-	TextButton_33.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_33.TextSize = 18.000
-
-	TextButton_34.Parent = ShortcutsPage
-	TextButton_34.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_34.BorderSizePixel = 0
-	TextButton_34.Position = UDim2.new(0.263999999, 0, 0.875771105, 0)
-	TextButton_34.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_34.Font = Enum.Font.SourceSans
-	TextButton_34.Text = "allpads"
-	TextButton_34.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_34.TextSize = 18.000
-
-	TextButton_35.Parent = ShortcutsPage
-	TextButton_35.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_35.BorderSizePixel = 0
-	TextButton_35.Position = UDim2.new(0.529999971, 0, -0.000987952109, 0)
-	TextButton_35.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_35.Font = Enum.Font.SourceSans
-	TextButton_35.Text = "lagall"
-	TextButton_35.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_35.TextSize = 18.000
-
-	TextButton_36.Parent = ShortcutsPage
-	TextButton_36.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_36.BorderSizePixel = 0
-	TextButton_36.Position = UDim2.new(0.529999971, 0, 0.0953975841, 0)
-	TextButton_36.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_36.Font = Enum.Font.SourceSans
-	TextButton_36.Text = "stop"
-	TextButton_36.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_36.TextSize = 18.000
-
-	TextButton_37.Parent = ShortcutsPage
-	TextButton_37.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_37.BorderSizePixel = 0
-	TextButton_37.Position = UDim2.new(0.529999971, 0, 0.194795176, 0)
-	TextButton_37.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_37.Font = Enum.Font.SourceSans
-	TextButton_37.Text = "rejoin"
-	TextButton_37.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_37.TextSize = 18.000
-
-	TextButton_38.Parent = ShortcutsPage
-	TextButton_38.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_38.BorderSizePixel = 0
-	TextButton_38.Position = UDim2.new(0.529999971, 0, 0.29118073, 0)
-	TextButton_38.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_38.Font = Enum.Font.SourceSans
-	TextButton_38.Text = "Regenerate pads"
-	TextButton_38.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_38.TextSize = 18.000
-
-	TextButton_39.Parent = ShortcutsPage
-	TextButton_39.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_39.BorderSizePixel = 0
-	TextButton_39.Position = UDim2.new(0.529999971, 0, 0.39057833, 0)
-	TextButton_39.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_39.Font = Enum.Font.SourceSans
-	TextButton_39.Text = "commands"
-	TextButton_39.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_39.TextSize = 18.000
-
-	TextButton_40.Parent = ShortcutsPage
-	TextButton_40.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_40.BorderSizePixel = 0
-	TextButton_40.Position = UDim2.new(0.529999971, 0, 0.486963868, 0)
-	TextButton_40.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_40.Font = Enum.Font.SourceSans
-	TextButton_40.Text = "alltools"
-	TextButton_40.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_40.TextSize = 18.000
-
-	TextButton_41.Parent = ShortcutsPage
-	TextButton_41.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_41.BorderSizePixel = 0
-	TextButton_41.Position = UDim2.new(0.529999971, 0, 0.586361468, 0)
-	TextButton_41.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_41.Font = Enum.Font.SourceSans
-	TextButton_41.Text = "traplogs"
-	TextButton_41.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_41.TextSize = 18.000
-
-	TextButton_42.Parent = ShortcutsPage
-	TextButton_42.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_42.BorderSizePixel = 0
-	TextButton_42.Position = UDim2.new(0.529999971, 0, 0.682747006, 0)
-	TextButton_42.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_42.Font = Enum.Font.SourceSans
-	TextButton_42.Text = "Disable rightclick"
-	TextButton_42.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_42.TextSize = 18.000
-
-	TextButton_43.Parent = ShortcutsPage
-	TextButton_43.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_43.BorderSizePixel = 0
-	TextButton_43.Position = UDim2.new(0.529999971, 0, 0.779132545, 0)
-	TextButton_43.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_43.Font = Enum.Font.SourceSans
-	TextButton_43.Text = "dancing swords"
-	TextButton_43.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_43.TextSize = 18.000
-
-	TextButton_44.Parent = ShortcutsPage
-	TextButton_44.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_44.BorderSizePixel = 0
-	TextButton_44.Position = UDim2.new(0.529999971, 0, 0.875518084, 0)
-	TextButton_44.Size = UDim2.new(0, 115, 0, 26)
-	TextButton_44.Font = Enum.Font.SourceSans
-	TextButton_44.Text = "click teleport"
-	TextButton_44.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_44.TextSize = 18.000
-
-	TextButton_45.Parent = ShortcutsPage
-	TextButton_45.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_45.BorderSizePixel = 0
-	TextButton_45.Position = UDim2.new(0.795000017, 0, -0.00100000226, 0)
-	TextButton_45.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_45.Font = Enum.Font.SourceSans
-	TextButton_45.Text = "reset me"
-	TextButton_45.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_45.TextSize = 18.000
-
-	TextButton_46.Parent = ShortcutsPage
-	TextButton_46.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_46.BorderSizePixel = 0
-	TextButton_46.Position = UDim2.new(0.795000017, 0, 0.0953855366, 0)
-	TextButton_46.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_46.Font = Enum.Font.SourceSans
-	TextButton_46.Text = "fly me"
-	TextButton_46.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_46.TextSize = 18.000
-
-	TextButton_47.Parent = ShortcutsPage
-	TextButton_47.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_47.BorderSizePixel = 0
-	TextButton_47.Position = UDim2.new(0.795000017, 0, 0.191771075, 0)
-	TextButton_47.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_47.Font = Enum.Font.SourceSans
-	TextButton_47.Text = "ff me"
-	TextButton_47.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_47.TextSize = 18.000
-
-	TextButton_48.Parent = ShortcutsPage
-	TextButton_48.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_48.BorderSizePixel = 0
-	TextButton_48.Position = UDim2.new(0.795000017, 0, 0.29116866, 0)
-	TextButton_48.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_48.Font = Enum.Font.SourceSans
-	TextButton_48.Text = "god me"
-	TextButton_48.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_48.TextSize = 18.000
-
-	TextButton_49.Parent = ShortcutsPage
-	TextButton_49.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_49.BorderSizePixel = 0
-	TextButton_49.Position = UDim2.new(0.795000017, 0, 0.39056626, 0)
-	TextButton_49.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_49.Font = Enum.Font.SourceSans
-	TextButton_49.Text = "respawn me"
-	TextButton_49.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_49.TextSize = 18.000
-
-	TextButton_50.Parent = ShortcutsPage
-	TextButton_50.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_50.BorderSizePixel = 0
-	TextButton_50.Position = UDim2.new(0.795000017, 0, 0.486951798, 0)
-	TextButton_50.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_50.Font = Enum.Font.SourceSans
-	TextButton_50.Text = "heykindle me"
-	TextButton_50.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_50.TextSize = 18.000
-
-	TextButton_51.Parent = ShortcutsPage
-	TextButton_51.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_51.BorderSizePixel = 0
-	TextButton_51.Position = UDim2.new(0.795000017, 0, 0.584999979, 0)
-	TextButton_51.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_51.Font = Enum.Font.SourceSans
-	TextButton_51.Text = "kill me"
-	TextButton_51.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_51.TextSize = 18.000
-
-	TextButton_52.Parent = ShortcutsPage
-	TextButton_52.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_52.BorderSizePixel = 0
-	TextButton_52.Position = UDim2.new(0.795000017, 0, 0.683000028, 0)
-	TextButton_52.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_52.Font = Enum.Font.SourceSans
-	TextButton_52.Text = "jail me"
-	TextButton_52.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_52.TextSize = 18.000
-
-	TextButton_53.Parent = ShortcutsPage
-	TextButton_53.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_53.BorderSizePixel = 0
-	TextButton_53.Position = UDim2.new(0.795000017, 0, 0.779385567, 0)
-	TextButton_53.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_53.Font = Enum.Font.SourceSans
-	TextButton_53.Text = "unjail me"
-	TextButton_53.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_53.TextSize = 18.000
-
-	TextButton_54.Parent = ShortcutsPage
-	TextButton_54.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_54.BorderSizePixel = 0
-	TextButton_54.Position = UDim2.new(0.795000017, 0, 0.872759044, 0)
-	TextButton_54.Size = UDim2.new(0, 86, 0, 26)
-	TextButton_54.Font = Enum.Font.SourceSans
-	TextButton_54.Text = "speed me 16"
-	TextButton_54.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_54.TextSize = 18.000
-
-	SettingsPage.Name = "SettingsPage"
-	SettingsPage.Parent = Frame
-	SettingsPage.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-	SettingsPage.BorderSizePixel = 0
-	SettingsPage.Position = UDim2.new(0.0501001999, 0, 0.0806884766, 0)
-	SettingsPage.Size = UDim2.new(0, 467, 0, 332)
-	SettingsPage.Visible = false
-
-	TextButton_55.Parent = SettingsPage
-	TextButton_55.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_55.BorderSizePixel = 0
-	TextButton_55.Position = UDim2.new(0, 8, 0, 306)
-	TextButton_55.Size = UDim2.new(0, 103, 0, 26)
-	TextButton_55.Font = Enum.Font.SourceSans
-	TextButton_55.Text = "Execute"
-	TextButton_55.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_55.TextSize = 18.000
-
-	TextBox.Parent = SettingsPage
-	TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextBox.Size = UDim2.new(0, 451, 0, 296)
-	TextBox.Font = Enum.Font.SourceSans
-	TextBox.Text = "print(\"Im blue baba  ;)\")"
-	TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextBox.TextSize = 14.000
-	TextBox.TextXAlignment = Enum.TextXAlignment.Left
-	TextBox.TextYAlignment = Enum.TextYAlignment.Top
-
-	TextButton_56.Parent = SettingsPage
-	TextButton_56.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	TextButton_56.BorderSizePixel = 0
-	TextButton_56.Position = UDim2.new(0, 332, 0, 306)
-	TextButton_56.Size = UDim2.new(0, 103, 0, 26)
-	TextButton_56.Font = Enum.Font.SourceSans
-	TextButton_56.Text = "Clear"
-	TextButton_56.TextColor3 = Color3.fromRGB(134, 134, 134)
-	TextButton_56.TextSize = 18.000
-
-	TabsBar.Name = "TabsBar"
-	TabsBar.Parent = Frame
-	TabsBar.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-	TabsBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	TabsBar.Position = UDim2.new(0, 0, 0.0592991896, 0)
-	TabsBar.Size = UDim2.new(0, 126, 0, 347)
-	TabsBar.Visible = false
-
-	Page1.Name = "Page1"
-	Page1.Parent = TabsBar
-	Page1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Page1.BackgroundTransparency = 1.000
-	Page1.BorderSizePixel = 0
-	Page1.Size = UDim2.new(0, 126, 0, 21)
-	Page1.Font = Enum.Font.SourceSans
-	Page1.Text = "Home"
-	Page1.TextColor3 = Color3.fromRGB(171, 171, 171)
-	Page1.TextSize = 14.000
-
-	Page2.Name = "Page2"
-	Page2.Parent = TabsBar
-	Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Page2.BackgroundTransparency = 1.000
-	Page2.BorderSizePixel = 0
-	Page2.Position = UDim2.new(0, 0, 0.0518731959, 0)
-	Page2.Size = UDim2.new(0, 126, 0, 21)
-	Page2.Font = Enum.Font.SourceSans
-	Page2.Text = "Togglable"
-	Page2.TextColor3 = Color3.fromRGB(171, 171, 171)
-	Page2.TextSize = 14.000
-
-	Page3.Name = "Page3"
-	Page3.Parent = TabsBar
-	Page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Page3.BackgroundTransparency = 1.000
-	Page3.BorderSizePixel = 0
-	Page3.Position = UDim2.new(0, 0, 0.112391926, 0)
-	Page3.Size = UDim2.new(0, 126, 0, 21)
-	Page3.Font = Enum.Font.SourceSans
-	Page3.Text = "Shortcuts"
-	Page3.TextColor3 = Color3.fromRGB(171, 171, 171)
-	Page3.TextSize = 14.000
-
-	Page4.Name = "Page4"
-	Page4.Parent = TabsBar
-	Page4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Page4.BackgroundTransparency = 1.000
-	Page4.BorderSizePixel = 0
-	Page4.Position = UDim2.new(0, 0, 0.172910661, 0)
-	Page4.Size = UDim2.new(0, 126, 0, 21)
-	Page4.Font = Enum.Font.SourceSans
-	Page4.Text = "Executor"
-	Page4.TextColor3 = Color3.fromRGB(171, 171, 171)
-	Page4.TextSize = 14.000
-
-	HideTabs.Name = "HideTabs >"
-	HideTabs.Parent = Frame
-	HideTabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	HideTabs.BackgroundTransparency = 1.000
-	HideTabs.BorderSizePixel = 0
-	HideTabs.Position = UDim2.new(-5.58793545e-09, 0, 0.0592991896, 0)
-	HideTabs.Size = UDim2.new(0, 25, 0, 21)
-	HideTabs.Font = Enum.Font.SourceSans
-	HideTabs.Text = ">"
-	HideTabs.TextColor3 = Color3.fromRGB(134, 134, 134)
-	HideTabs.TextSize = 14.000
-
-	HideTabs_2.Name = "HideTabs <"
-	HideTabs_2.Parent = Frame
-	HideTabs_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	HideTabs_2.BackgroundTransparency = 1.000
-	HideTabs_2.BorderSizePixel = 0
-	HideTabs_2.Position = UDim2.new(0.252505004, 0, 0.0592991896, 0)
-	HideTabs_2.Size = UDim2.new(0, 25, 0, 21)
-	HideTabs_2.Visible = false
-	HideTabs_2.Font = Enum.Font.SourceSans
-	HideTabs_2.Text = "<"
-	HideTabs_2.TextColor3 = Color3.fromRGB(134, 134, 134)
-	HideTabs_2.TextSize = 14.000
-
-	ReopenShortcut.Name = "ReopenShortcut"
-	ReopenShortcut.Parent = ShortBitch
-	ReopenShortcut.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	ReopenShortcut.BackgroundTransparency = 1.000
-	ReopenShortcut.BorderSizePixel = 0
-	ReopenShortcut.Position = UDim2.new(0.979937732, 0, 0.967893839, 0)
-	ReopenShortcut.Size = UDim2.new(0, 27, 0, 24)
-	ReopenShortcut.Font = Enum.Font.SourceSans
-	ReopenShortcut.Text = "S"
-	ReopenShortcut.TextColor3 = Color3.fromRGB(0, 0, 0)
-	ReopenShortcut.TextSize = 24.000
-
-	-- Scripts:
-
-	local function XIVQNHC_fake_script() -- CloseGUI.LocalScript 
-		local script = Instance.new('LocalScript', CloseGUI)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			wait(0.12)
-			script.Parent.Parent.Parent:Destroy()
-		end)
-	end
-	coroutine.wrap(XIVQNHC_fake_script)()
-	local function XPVT_fake_script() -- MinGUI.LocalScript 
-		local script = Instance.new('LocalScript', MinGUI)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.Parent.ReopenShortcut.Visible = true
-			script.Parent.Parent.Parent.Visible = false
-		end)
-	end
-	coroutine.wrap(XPVT_fake_script)()
-	local function VUWRTM_fake_script() -- Frame.Main 
-		local script = Instance.new('LocalScript', Frame)
-
-		frame = script.Parent
-		frame.Draggable = true
-		frame.Active = true
-		frame.Selectable = true
-	end
-	coroutine.wrap(VUWRTM_fake_script)()
-	local function HHQDWPZ_fake_script() -- TextButton.LocalScript 
-		local script = Instance.new('LocalScript', TextButton)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle anticrashvg")
-		end)
-	end
-	coroutine.wrap(HHQDWPZ_fake_script)()
-	local function MHELDAN_fake_script() -- TextButton_2.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_2)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antijailgearban")
-		end)
-	end
-	coroutine.wrap(MHELDAN_fake_script)()
-	local function MDRE_fake_script() -- TextButton_3.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_3)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antigrayscale")
-		end)
-	end
-	coroutine.wrap(MDRE_fake_script)()
-	local function YDZP_fake_script() -- TextButton_4.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_4)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antikill")
-		end)
-	end
-	coroutine.wrap(YDZP_fake_script)()
-	local function TFKYX_fake_script() -- TextButton_5.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_5)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antijail")
-		end)
-	end
-	coroutine.wrap(TFKYX_fake_script)()
-	local function TBMWNT_fake_script() -- TextButton_6.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_6)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle mymusiconly")
-		end)
-	end
-	coroutine.wrap(TBMWNT_fake_script)()
-	local function MXYXV_fake_script() -- TextButton_7.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_7)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antilogs")
-		end)
-	end
-	coroutine.wrap(MXYXV_fake_script)()
-	local function NWIEA_fake_script() -- TextButton_8.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_8)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle superlogs")
-		end)
-	end
-	coroutine.wrap(NWIEA_fake_script)()
-	local function GCIF_fake_script() -- TextButton_9.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_9)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle everyonecommands")
-		end)
-	end
-	coroutine.wrap(GCIF_fake_script)()
-	local function LEGA_fake_script() -- TextButton_10.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_10)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antiattach")
-		end)
-	end
-	coroutine.wrap(LEGA_fake_script)()
-	local function TJEE_fake_script() -- TextButton_11.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_11)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle padsenforcement")
-		end)
-	end
-	coroutine.wrap(TJEE_fake_script)()
-	local function FDTSV_fake_script() -- TextButton_12.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_12)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";toggle antivoid")
-		end)
-	end
-	coroutine.wrap(FDTSV_fake_script)()
-	local function GDOZSA_fake_script() -- TextButton_13.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_13)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			fkick = not fkick
-		end)
-	end
-	coroutine.wrap(GDOZSA_fake_script)()
-	local function ELZGOHJ_fake_script() -- TextButton_14.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_14)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			antikick = not antikick
-		end)
-	end
-	coroutine.wrap(ELZGOHJ_fake_script)()
-	local function YKBCN_fake_script() -- TextButton_15.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_15)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";moveresetpad")
-		end)
-	end
-	coroutine.wrap(YKBCN_fake_script)()
-	local function BKYKUQ_fake_script() -- TextButton_16.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_16)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";moveobbybox")
-		end)
-	end
-	coroutine.wrap(BKYKUQ_fake_script)()
-	local function GQMOGSE_fake_script() -- TextButton_17.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_17)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";moveobbybricks")
-		end)
-	end
-	coroutine.wrap(GQMOGSE_fake_script)()
-	local function ADENMM_fake_script() -- TextButton_18.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_18)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";moveadmindividers")
-		end)
-	end
-	coroutine.wrap(ADENMM_fake_script)()
-	local function ETQNRT_fake_script() -- TextButton_19.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_19)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";movepads")
-		end)
-	end
-	coroutine.wrap(ETQNRT_fake_script)()
-	local function KYQBY_fake_script() -- TextButton_20.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_20)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";movebuildingbricks")
-		end)
-	end
-	coroutine.wrap(KYQBY_fake_script)()
-	local function ISOUZ_fake_script() -- TextButton_21.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_21)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";movehouse")
-		end)
-	end
-	coroutine.wrap(ISOUZ_fake_script)()
-	local function SJGAVR_fake_script() -- TextButton_22.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_22)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";color all original")
-		end)
-	end
-	coroutine.wrap(SJGAVR_fake_script)()
-	local function UCAS_fake_script() -- TextButton_23.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_23)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";color all random")
-		end)
-	end
-	coroutine.wrap(UCAS_fake_script)()
-	local function KJYI_fake_script() -- TextButton_24.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_24)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";shutdown")
-		end)
-	end
-	coroutine.wrap(KJYI_fake_script)()
-	local function BNPJUSH_fake_script() -- TextButton_25.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_25)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";sch")
-		end)
-	end
-	coroutine.wrap(BNPJUSH_fake_script)()
-	local function ADLSJYY_fake_script() -- TextButton_26.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_26)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";upme")
-		end)
-	end
-	coroutine.wrap(ADLSJYY_fake_script)()
-	local function IWCDYQI_fake_script() -- TextButton_27.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_27)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";pads")
-		end)
-	end
-	coroutine.wrap(IWCDYQI_fake_script)()
-	local function MSZYQ_fake_script() -- TextButton_28.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_28)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";house")
-		end)
-	end
-	coroutine.wrap(MSZYQ_fake_script)()
-	local function FOQZRI_fake_script() -- TextButton_29.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_29)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";spawn")
-		end)
-	end
-	coroutine.wrap(FOQZRI_fake_script)()
-	local function HKLR_fake_script() -- TextButton_30.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_30)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";findresetpad")
-		end)
-	end
-	coroutine.wrap(HKLR_fake_script)()
-	local function ZUIBX_fake_script() -- TextButton_31.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_31)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";ohnana")
-		end)
-	end
-	coroutine.wrap(ZUIBX_fake_script)()
-	local function SWOULII_fake_script() -- TextButton_32.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_32)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";movebaseplate")
-		end)
-	end
-	coroutine.wrap(SWOULII_fake_script)()
-	local function OREYPMV_fake_script() -- TextButton_33.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_33)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";infjump")
-		end)
-	end
-	coroutine.wrap(OREYPMV_fake_script)()
-	local function GVHNRE_fake_script() -- TextButton_34.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_34)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";allpads")
-		end)
-	end
-	coroutine.wrap(GVHNRE_fake_script)()
-	local function KJQR_fake_script() -- TextButton_35.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_35)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";lagall")
-		end)
-	end
-	coroutine.wrap(KJQR_fake_script)()
-	local function REANZLF_fake_script() -- TextButton_36.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_36)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";stop")
-		end)
-	end
-	coroutine.wrap(REANZLF_fake_script)()
-	local function PMEORY_fake_script() -- TextButton_37.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_37)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";rej")
-		end)
-	end
-	coroutine.wrap(PMEORY_fake_script)()
-	local function SHJXI_fake_script() -- TextButton_38.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_38)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";reg")
-		end)
-	end
-	coroutine.wrap(SHJXI_fake_script)()
-	local function OOUQRE_fake_script() -- TextButton_39.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_39)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";cmds")
-		end)
-	end
-	coroutine.wrap(OOUQRE_fake_script)()
-	local function NEHHA_fake_script() -- TextButton_40.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_40)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";alltools")
-		end)
-	end
-	coroutine.wrap(NEHHA_fake_script)()
-	local function ONUHYA_fake_script() -- TextButton_41.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_41)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";traplogs")
-		end)
-	end
-	coroutine.wrap(ONUHYA_fake_script)()
-	local function GMOJIZ_fake_script() -- TextButton_42.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_42)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";disablerc")
-		end)
-	end
-	coroutine.wrap(GMOJIZ_fake_script)()
-	local function NHZOTC_fake_script() -- TextButton_43.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_43)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";ds")
-		end)
-	end
-	coroutine.wrap(NHZOTC_fake_script)()
-	local function ITMH_fake_script() -- TextButton_44.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_44)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";clicktp")
-		end)
-	end
-	coroutine.wrap(ITMH_fake_script)()
-	local function TTLALKA_fake_script() -- TextButton_45.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_45)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("reset me")
-		end)
-	end
-	coroutine.wrap(TTLALKA_fake_script)()
-	local function FIHMFUG_fake_script() -- TextButton_46.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_46)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("fly me")
-		end)
-	end
-	coroutine.wrap(FIHMFUG_fake_script)()
-	local function HZKLHFZ_fake_script() -- TextButton_47.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_47)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("ff me")
-		end)
-	end
-	coroutine.wrap(HZKLHFZ_fake_script)()
-	local function JZHWCDC_fake_script() -- TextButton_48.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_48)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("god me")
-		end)
-	end
-	coroutine.wrap(JZHWCDC_fake_script)()
-	local function GNUWRVW_fake_script() -- TextButton_49.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_49)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("respawn me")
-		end)
-	end
-	coroutine.wrap(GNUWRVW_fake_script)()
-	local function XGTLXX_fake_script() -- TextButton_50.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_50)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat(";heykindle me")
-		end)
-	end
-	coroutine.wrap(XGTLXX_fake_script)()
-	local function MAKRZ_fake_script() -- TextButton_51.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_51)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("kill me")
-		end)
-	end
-	coroutine.wrap(MAKRZ_fake_script)()
-	local function SWUQDRL_fake_script() -- TextButton_52.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_52)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("jail me")
-		end)
-	end
-	coroutine.wrap(SWUQDRL_fake_script)()
-	local function NRGR_fake_script() -- TextButton_53.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_53)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("unjail me")
-		end)
-	end
-	coroutine.wrap(NRGR_fake_script)()
-	local function WZVWGO_fake_script() -- TextButton_54.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_54)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			game.Players:Chat("speed me 16")
-		end)
-	end
-	coroutine.wrap(WZVWGO_fake_script)()
-	local function PPPFA_fake_script() -- TextButton_55.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_55)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			loadstring(script.Parent.Parent.TextBox.Text)()
-		end)
-	end
-	coroutine.wrap(PPPFA_fake_script)()
-	local function NVRSPFO_fake_script() -- TextButton_56.LocalScript 
-		local script = Instance.new('LocalScript', TextButton_56)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.TextBox.Text = ""
-		end)
-	end
-	coroutine.wrap(NVRSPFO_fake_script)()
-	local function NRXI_fake_script() -- Page1.LocalScript 
-		local script = Instance.new('LocalScript', Page1)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.WelcomePage.Visible = true
-			script.Parent.Parent.Parent.TogglesPage.Visible = false
-			script.Parent.Parent.Parent.ShortcutsPage.Visible = false
-			script.Parent.Parent.Parent.SettingsPage.Visible = false
-		end)
-	end
-	coroutine.wrap(NRXI_fake_script)()
-	local function JRKZ_fake_script() -- Page2.LocalScript 
-		local script = Instance.new('LocalScript', Page2)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.WelcomePage.Visible = false
-			script.Parent.Parent.Parent.TogglesPage.Visible = true
-			script.Parent.Parent.Parent.ShortcutsPage.Visible = false
-			script.Parent.Parent.Parent.SettingsPage.Visible = false
-		end)
-	end
-	coroutine.wrap(JRKZ_fake_script)()
-	local function GBEK_fake_script() -- Page3.LocalScript 
-		local script = Instance.new('LocalScript', Page3)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.WelcomePage.Visible = false
-			script.Parent.Parent.Parent.TogglesPage.Visible = false
-			script.Parent.Parent.Parent.ShortcutsPage.Visible = true
-			script.Parent.Parent.Parent.SettingsPage.Visible = false
-		end)
-	end
-	coroutine.wrap(GBEK_fake_script)()
-	local function ZAWZV_fake_script() -- Page4.LocalScript 
-		local script = Instance.new('LocalScript', Page4)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.WelcomePage.Visible = false
-			script.Parent.Parent.Parent.TogglesPage.Visible = false
-			script.Parent.Parent.Parent.ShortcutsPage.Visible = false
-			script.Parent.Parent.Parent.SettingsPage.Visible = true
-		end)
-	end
-	coroutine.wrap(ZAWZV_fake_script)()
-	local function PXSI_fake_script() -- HideTabs.LocalScript 
-		local script = Instance.new('LocalScript', HideTabs)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent["HideTabs <"].Visible = true
-			script.Parent.Parent["HideTabs >"].Visible = false
-			script.Parent.Parent.TabsBar.Visible = true
-		end)
-	end
-	coroutine.wrap(PXSI_fake_script)()
-	local function MJFDHG_fake_script() -- HideTabs_2.LocalScript 
-		local script = Instance.new('LocalScript', HideTabs_2)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent["HideTabs <"].Visible = false
-			script.Parent.Parent["HideTabs >"].Visible = true
-			script.Parent.Parent.TabsBar.Visible = false
-		end)
-	end
-	coroutine.wrap(MJFDHG_fake_script)()
-	local function CNGZ_fake_script() -- ReopenShortcut.LocalScript 
-		local script = Instance.new('LocalScript', ReopenShortcut)
-
-		script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Visible = false
-			script.Parent.Parent.Frame.Visible = true
-		end)
-	end
-	coroutine.wrap(CNGZ_fake_script)()
-
-end)
 
 Spawn(function()
 	mods()
 end)
 
 logn("Code fully executed!")
+game.Players:Chat("h aix.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n []")
 
 wait(0.25)
 
 Spawn(function()
 	startupScripts()
+end)
+
+
+
+local perm = true
+
+
+
+
+
+
+
+
+
+
+
+
+
+task.spawn(function()
+    while true do 
+        task.wait(0)
+        coroutine.wrap(function()
+                              local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                              if (perm ~= true or workspace.Terrain._Game.Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil) and firetouchinterest then 
+                              else
+                                    pcall(function()
+                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+                                              local a = pad.Head
+                                              firetouchinterest(a, spr, 1)
+                                              firetouchinterest(a, spr, 0)
+                                              firetouchinterest(a, spr, 1)
+                                              task.wait()
+                                              firetouchinterest(a, spr, 0)
+                                    end)
+                              end
+        end)()
+    end
 end)
