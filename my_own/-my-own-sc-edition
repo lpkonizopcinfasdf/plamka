@@ -2684,6 +2684,12 @@ task.spawn(function()
 end)
 
 
+	if string.sub(msg:lower(), 0, 3) == prefix.."hc" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
+	end
+
+
+
 	if string.sub(msg:lower(), 0, 9) == prefix.."loopgrab" then
 loopgrab = true
 	end
