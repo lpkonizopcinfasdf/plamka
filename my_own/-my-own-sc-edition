@@ -2684,9 +2684,9 @@ task.spawn(function()
 end)
 
 
-	if string.sub(msg:lower(), 0, 12) == prefix.."loopgrab on" then
+	if string.sub(msg:lower(), 0, 9) == prefix.."loopgrab" then
 loopgrab = true
 	end
-	if string.sub(msg:lower(), 0, 13) == prefix.."loopgrab off" then
+	if string.sub(msg:lower(), 0, 11) == prefix.."unloopgrab" then
 loopgrab = false
 	end
