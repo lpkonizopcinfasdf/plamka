@@ -1217,6 +1217,9 @@ wait(0.66)
 		local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 		cf.CFrame = Admin_Folder.Regen.CFrame
 	end
+	if string.sub(msg:lower(), 0, 13) == prefix.."rchat" then
+game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ")
+	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."nok" then
 		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump.TouchInterest:destroy()
