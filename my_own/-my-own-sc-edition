@@ -1871,9 +1871,9 @@ wait(0.50)
 		game.Players:Chat("freeze                                                    "..player.." 0.3")
   		game.Players:Chat("name  "..player.." \n\n PMKICKING \n\n ["..player.."] \n\n\n")
     wait(.34)
-    		game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
+    		game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
       wait(.20)
-       		game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
+       		game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
 	end
 	
 
