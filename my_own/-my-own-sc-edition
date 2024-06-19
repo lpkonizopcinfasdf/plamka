@@ -734,6 +734,14 @@ game.Players:Chat("respawn                                         me")
 	if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
 		loadstring(string.sub(msg:lower(), 6))()
 	end
+	if string.sub(msg:lower(), 0, 4) == prefix.."clr" then
+		game.Players:Chat("clr 343")
+game.Players:Chat("fix 343 ")
+game.Players:Chat("ungear 343                                           all")
+game.Players:Chat("respawn 343                                              all")
+game.Players:Chat("unchar 343                                              all")
+game.Players:Chat("-reg")
+	end
 	
 	if string.sub(msg:lower(), 0, 12) == prefix.."moveobbybox" then
         if Stable_Check == false then
