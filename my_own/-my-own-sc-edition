@@ -1687,6 +1687,9 @@ game.Players:Chat("-spam unsize me me me")
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 25" then
 		game.Players:Chat("music 0000000000000000002614260103")
 	end
+	if string.sub(msg:lower(), 0, 3) == prefix.."iy" then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
 
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."clag" then
