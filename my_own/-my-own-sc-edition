@@ -10,7 +10,7 @@ function startupScripts() -- Everything in here will be ran LAST!(Great for your
 game.Players:Chat("-nok")
 end
 local perm = true
-local loopgrab2 = false
+local loopgrab = false
 local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
@@ -2656,35 +2656,37 @@ end)
 -- loopgrab
 
 task.spawn(function()
-   while true do
-   task.wait(0)
-   if loopgrab2 then
-      local pads = game.Workspace.Terrain._Game.Admin.Pads:GetChildren()
-      for i, pad in ipairs(pads) do
-         local head = pad:FindFirstChild("Head")
-         local character = game.Players.LocalPlayer.Character
-         local headOfCharacter = character and character:FindFirstChild("Head")
+    while true do 
+        task.wait(0)
+            coroutine.wrap(function() -- PadAbuse
+                        if loopgrab == true and firetouchinterest then
+                                local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:GetChildren("Head")
+                                for i, pad in pairs(pads) do
+                                        coroutine.wrap(function()
+                                                pcall(function()
+                                                        local cre = pad.Head
+                                                        local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                                                        firetouchinterest(cre, spr, 1)
+                                                            firetouchinterest(cre, spr, 0)
+                                                            firetouchinterest(cre, spr, 1)
+                                                        task.wait()
+                                                        firetouchinterest(cre, spr, 0)
 
-         if head and headOfCharacter and firetouchinterest then
-            firetouchinterest(head, headOfCharacter, 1)
-            firetouchinterest(head, headOfCharacter, 0)
-            firetouchinterest(head, headOfCharacter, 1)
-            wait()
-            firetouchinterest(head, headOfCharacter, 0)
-
-            if pad.Name ~= game.Players.LocalPlayer.Name.."'s admin" then
-               Regen()
-            end
-         end
-      end
-   end
-   end
+                                                        if pad.Name ~= game.Players.LocalPlayer.Name.."'s admin" then
+                                                                Regen()
+                                                        end
+                                                end)
+                                        end)()
+                                end
+                        end
+        end)()
+    end
 end)
 
 
 	if string.sub(msg:lower(), 0, 12) == prefix.."loopgrab on" then
-loopgrab2 = true
+loopgrab = true
 	end
 	if string.sub(msg:lower(), 0, 13) == prefix.."loopgrab off" then
-loopgrab2 = false
+loopgrab = false
 	end
