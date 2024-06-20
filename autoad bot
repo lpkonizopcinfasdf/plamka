@@ -1,0 +1,19 @@
+local auto = true
+
+
+-- -- - - ------------------------------------------------------
+
+if auto == true then
+wait(3)
+
+game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n .")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /8 yH v8 E PnE F")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
+
+
+end
