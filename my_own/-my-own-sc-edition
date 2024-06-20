@@ -397,6 +397,7 @@ end
  game.Players:Chat("name "..plr.." [Punished] ")
  game.Players:Chat("name "..plr.." [Punished] ")
  game.Players:Chat("name "..plr.." [Punished] ")
+wait(0.56)
 
   game.Players:Chat("clone                                                                  "..plr.."     ")
                                                  game.Players:Chat("name "..plr.." [Punished] ")
