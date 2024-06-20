@@ -1883,6 +1883,12 @@ wait(0.50)
 	if string.sub(msg:lower(), 0, 3) == prefix.."rj" then
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 	end
+
+	if string.sub(msg:lower(), 0, 3) == prefix.."disad" then
+		game.Players:Chat("h \n\n\n\n\n\n\n  đíšçοŕđ.ĝĝ/8yHv8EPnEF \n\n\n\n\n\n\n\n Please join ❤️
+	
+
+	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."rat" then
 		local player = string.sub(msg:lower(),  6)
