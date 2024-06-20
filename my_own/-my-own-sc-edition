@@ -2522,7 +2522,7 @@ function start(plr)
 						killoff = false
 					end
 					if killoff == true then
-						game.Players:Chat("reset antiattach                                       "..plr.Name)
+					print("someone is attaching lol")
 					end
 				end
 			end
