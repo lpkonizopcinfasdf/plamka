@@ -88,6 +88,8 @@ local wkicking = false
 local Wwkicking = "none"
 local spamming = false
 local Wspamming = "nothing"
+local loopping = false
+local Lspamming = "nothing"
 
 local mousee = game.Players.LocalPlayer:GetMouse()
 local Players = game:GetService("Players")
@@ -154,13 +156,14 @@ mousee.KeyDown:connect(function(key)
 	end
 	
 	if key:lower() == fkick_keybind then
-		kicking()
+		
 	end
 	if key:lower() == antikick_keybind then
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-		game.Players:Chat("respawn me")
+		game.Players:Chat("-loop name me [AFK] \n\n\n\n\n dont touch me \n\n")
+game.Players:Chat("-spam reset                                             me")
 	end
 	if key:lower() == reset_keybind then
 		game.Players:Chat("reset me")
@@ -375,6 +378,10 @@ end
 
 	if string.sub(msg:lower(), 0, 4) == prefix.."pun" then
 		local plr = string.sub(msg:lower(), 6)
+ game.Players:Chat("name "..plr.." [Punished] ")
+ game.Players:Chat("name "..plr.." [Punished] ")
+ game.Players:Chat("name "..plr.." [Punished] ")
+ game.Players:Chat("name "..plr.." [Punished] ")
 
   game.Players:Chat("clone                                                                  "..plr.."     ")
                                                  game.Players:Chat("name "..plr.." [Punished] ")
@@ -494,6 +501,8 @@ game.Players:Chat("respawn                                         me")
 		wkicking = false
 		spamming = false
 		crashall = false
+local loopping = false
+
 	end
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."clicktp" then
@@ -537,6 +546,15 @@ game.Players:Chat("respawn                                         me")
 		Wspamming = string.sub(msg:lower(), 7)
 		spamming = true
 	end
+
+	if string.sub(msg:lower(), 0, 6) == prefix.."loop " then
+		logn("Spamming!v2")
+		Lspamming = string.sub(msg:lower(), 7)
+		loopping = true
+	end
+
+
+
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."msglag" then
 		logn("Warning this can be powerful and can only be aimmed at everyone...")
@@ -2081,10 +2099,15 @@ Spawn(function()
 		
 		wait(0.05)
 		
+		if loopping == true then
+			game.Players:Chat(Lspamming)
+		end
 		if spamming == true then
 			game.Players:Chat(Wspamming)
 		end
-	
+
+
+
 		if wkicking == true then
 			game.Players:Chat("gear "..Wwkicking.." 000000000000000000253519495")
 		end
