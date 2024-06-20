@@ -143,6 +143,7 @@ mousee.KeyDown:connect(function(key)
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.25)
 				looping = false
+game.Players:Chat("invis                                          me")
 				game.Players:Chat(prefix..'super skydive me')
 				wait(1)
 				game.Players:Chat(prefix..'spam tp me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me')
@@ -415,6 +416,7 @@ wait(.35)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 		wait(0.10)
 		game.Players:Chat("jail me")
+game.Players:Chat("invis                                          me")
 		wait(0.25)
   game.Players:Chat("gear me 00000000000000000000000000000108158379")
   wait(.35)
@@ -806,12 +808,13 @@ game.Players:Chat("-reg")
             for i, v in pairs(Workspace_Folder["Obby Box"]:GetChildren()) do
                 if v.CFrame.Y < 500 then
                     repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
-
+game.Players:Chat("invis                                          me")
                     local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
                     local looping = true
 
                     spawn(function()
                         while true do
+game.Players:Chat("invis                                          me")
                             game:GetService('RunService').Heartbeat:Wait()
                             game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
                             cf.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
@@ -820,6 +823,7 @@ game.Players:Chat("-reg")
                     end)
                     spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
                     wait(0.3)
+game.Players:Chat("invis                                          me")
                     looping = false
                     game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
@@ -841,6 +845,7 @@ game.Players:Chat("-reg")
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."moveobby" then
 		game.Players:Chat(prefix.."nok")
+game.Players:Chat("invis                                          me")
 		wait(0.05)
         if Stable_Check == false then
             logn("{Move.lua} Moving Obby Kill Bricks")
@@ -862,6 +867,7 @@ game.Players:Chat("-reg")
                     end)
                     spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
                     wait(0.3)
+game.Players:Chat("invis                                          me")
                     looping = false
                                  game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
@@ -884,6 +890,7 @@ game.Players:Chat("-reg")
         if Stable_Check == false then
             logn("{Move.lua} Moving Building Bricks")
             Stable_Check = true
+game.Players:Chat("invis                                          me")
             for i, v in pairs(Workspace_Folder["Building Bricks"]:GetChildren()) do
                 if v.CFrame.Y < 500 then
                     repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
@@ -902,6 +909,7 @@ game.Players:Chat("-reg")
                     spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
                     wait(0.30)
                     looping = false
+game.Players:Chat("invis                                          me")
                            game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
                             game.Players:Chat("skydive                                   me me me me me me me")
@@ -922,6 +930,7 @@ game.Players:Chat("-reg")
 	if string.sub(msg:lower(), 0, 18) == prefix.."moveadmindividers" then
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Dividers")
+game.Players:Chat("invis                                          me")
             Stable_Check = true
             for i, v in pairs(Workspace_Folder["Admin Dividers"]:GetChildren()) do
                 if v.CFrame.Y < 500 then
@@ -943,7 +952,8 @@ game.Players:Chat("-reg")
                     looping = false
                                   game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
-                            game.Players:Chat("skydive                                   me me me me me me me")
+                            game.Players:Chat("skydive                   me me me me me me me")
+game.Players:Chat("invis                                          me")
                                 game.Players:Chat("skydive                                   me me me me me me me")
                     wait(0.2)
 					game.Players:Chat("respawn me")
@@ -971,6 +981,7 @@ game.Players:Chat("-reg")
 	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."movehouse" then
+game.Players:Chat("invis                                          me")
         if Stable_Check == false then
             logn("{Move.lua} Moving House")
             Stable_Check = true
@@ -992,6 +1003,7 @@ game.Players:Chat("-reg")
                     spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
                     wait(0.3)
                     looping = false
+game.Players:Chat("invis                                          me")
                                    game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
                             game.Players:Chat("skydive                                   me me me me me me me")
@@ -1010,6 +1022,7 @@ game.Players:Chat("-reg")
 	end
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."movepads" then
+game.Players:Chat("invis                                          me")
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Pads")
             Stable_Check = true
@@ -1032,6 +1045,7 @@ game.Players:Chat("-reg")
                         spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
                         wait(0.3)
                         looping = false
+game.Players:Chat("invis                                          me")
                                          game.Players:Chat("skydive                                   me me me me me me me")
                         game.Players:Chat("skydive                                   me me me me me me me")
                             game.Players:Chat("skydive                                   me me me me me me me")
@@ -1095,6 +1109,7 @@ game.Players:Chat("-reg")
 	end
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
+game.Players:Chat("invis                                          me")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
@@ -1137,6 +1152,7 @@ clickivory()
 	end
 	
 	if string.sub(msg:lower(), 0, 14) == prefix.."movebaseplate" then
+game.Players:Chat("invis                                          me")
  game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
@@ -1195,8 +1211,11 @@ wait(0.66)
 						if not looping then break end
 				    end
 				end)
+game.Players:Chat("invis                                          me")
+
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.3)
+game.Players:Chat("invis                                          me")
 				looping = false
 				game.Players:Chat("tp me "..playername)
 				wait(0.2)
@@ -1709,6 +1728,9 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 16" then
 		game.Players:Chat("music 000000000000000000213336468")
+	end
+	if string.sub(msg:lower(), 0, 2) == prefix.."s" then
+		game.Players:Chat("-sm hi! If you have Díšçοŕđ please join this server: đíšçοŕđ.ĝĝ/ 8  y H v8 EP   nE  F")
 	end
 	if string.sub(msg:lower(), 0, 9) == prefix.."vgcrash2" then
 	game.Players:Chat("-super gear all 000000000000000000000000000094794847")
