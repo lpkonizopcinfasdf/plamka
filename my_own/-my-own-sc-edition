@@ -2743,6 +2743,7 @@ end)
 
 logn("Code fully executed!")
 game.Players:Chat("-pad")
+wait(.35
 game.Players:Chat("h mpx.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n [MPX]")
 
 wait(0.25)
@@ -2839,7 +2840,7 @@ antikick = false
 --gears
 
 if msg == prefix.."g paintbucket" then
-Chat("-pb")
+game.Players:Chat("gear me 000000000000000000000000000000000000000000018474459")
 end
 if msg == prefix.."g boombox" then
 game.Players:Chat("-boombox")
@@ -2848,34 +2849,34 @@ if msg == prefix.."g portalgun" then
 Chat("-portalgun")
 end
 if msg == prefix.."g icecream" then
-Chat("gear me 000000000000000000000000000000000000000057902859")
+game.Players:Chat("gear me 000000000000000000000000000000000000000057902859")
 end
 if msg == prefix.."g portable justice" then
-Chat("gear me 000000000000000000000000000000000000082357101")
+game.Players:Chat("gear me 000000000000000000000000000000000000082357101")
 end
 if msg == prefix.."g magic carpet" then
-Chat("gear me 000000000000000000000000225921000")
+game.Players:Chat("gear me 000000000000000000000000225921000")
 end
 if msg == prefix.."g railgun" then
-Chat("gear me 000000000000000000000000000000000000079446473")
+game.Players:Chat("gear me 000000000000000000000000000000000000079446473")
 end
 if msg == prefix.."g lasergun" then
-Chat("gear me 000000000000000000000000000130113146")
+game.Players:Chat("gear me 000000000000000000000000000130113146")
 end
 if msg == prefix.."g car" then
-Chat("gear me 0000000000000000000000000000000253519495")
+game.Players:Chat("gear me 0000000000000000000000000000000253519495")
 end
 if msg == prefix.."g bike" then
-Chat("gear me 0000000000000000000000000000000000189910262")
+game.Players:Chat("gear me 0000000000000000000000000000000000189910262")
 end
 if msg == prefix.."g torch" then
-Chat("gear me 00000000000000000000000000000000000000031839337")
+game.Players:Chat("gear me 00000000000000000000000000000000000000031839337")
 end
 if msg == prefix.."g moneybag" then
-Chat("gear me 00000000000000000000000000000000000016722267")
+game.Players:Chat("gear me 00000000000000000000000000000000000016722267")
 end
 if msg == prefix.."gearlist" then
-Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
+game.Players:Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
 wait(0.25)
-Chat("reset others")
+game.Players:Chat("reset others")
 end
