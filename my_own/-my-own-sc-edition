@@ -2851,8 +2851,17 @@ end
 
 if nopunish == true then
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
-game:GetService'Players':Chat(("reset                                                                      me"))
-game:GetService'Players':Chat(("punish                                                                    others"))
+
 wait(0.25)
 end
 end
+
+
+local antipunish2 = true
+
+        if antipunish2 == true then
+            if game.Lighting:FindFirstChild(lp.Name) then
+                game.Players:Chat("reset                                                       me")
+game.Players:Chat("punish                                                                   others")
+            end
+        end
