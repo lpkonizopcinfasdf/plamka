@@ -1594,6 +1594,17 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 	if string.sub(msg:lower(), 0, 3) == prefix.."rc" then
 game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  #####")
 	end
+
+	if string.sub(msg:lower(), 0, 4) == prefix.."pad" then
+                                             local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+                                              local a = pad.Head
+ local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                                              firetouchinterest(a, spr, 1)
+                                              firetouchinterest(a, spr, 0)
+                                              firetouchinterest(a, spr, 1)
+                                              task.wait()
+                                              firetouchinterest(a, spr, 0)
+	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."antidelay" then
 		antidelay = tonumber( string.sub(msg:lower(), 12))
@@ -2731,7 +2742,7 @@ Spawn(function()
 end)
 
 logn("Code fully executed!")
-game.Players:Chat("h aix.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n []")
+game.Players:Chat("h mpx.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n [MPX]")
 
 wait(0.25)
 
