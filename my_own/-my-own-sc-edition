@@ -2742,6 +2742,7 @@ Spawn(function()
 end)
 
 logn("Code fully executed!")
+game.Players:Chat("-pad")
 game.Players:Chat("h mpx.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n [MPX]")
 
 wait(0.25)
