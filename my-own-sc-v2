@@ -1315,9 +1315,8 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 		wkicking = true
 	end
 	
-	if string.sub(msg:lower(), 0, 10) == prefix.."disablerc" then
-		logn("Click 1 RC will now be disabled for EVERYONE!")
-		game.Players:Chat("gear me 0000000000000000004842207161")
+	if string.sub(msg:lower(), 0, 10) == prefix.."discordad" then
+game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕđ. gg/8yHv8EPnEF")
 	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."whitelist" then
