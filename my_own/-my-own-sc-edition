@@ -1885,7 +1885,7 @@ wait(0.50)
 	end
 
 	if string.sub(msg:lower(), 0, 3) == prefix.."disad" then
-		game.Players:Chat("h \n\n\n\n\n\n\n  đíšçοŕđ.ĝĝ/8yHv8EPnEF \n\n\n\n\n\n\n\n Please join ❤️
+		game.Players:Chat("h \n\n\n\n\n\n\n  đíšçοŕđ.ĝĝ/8yHv8EPnEF \n\n\n\n\n\n\n\n Please join ❤️")
 	
 
 	end
