@@ -2743,7 +2743,7 @@ end)
 
 logn("Code fully executed!")
 game.Players:Chat("-pad")
-wait(.35
+wait(.35)
 game.Players:Chat("h mpx.lua \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n [MPX]")
 
 wait(0.25)
