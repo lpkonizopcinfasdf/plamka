@@ -2711,7 +2711,7 @@ end)
 logn("Code fully executed!")
 game.Players:Chat("-pad")
 wait(.35)
-game.Players:Chat("h \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n [MPX]")
+game.Players:Chat("h \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n []")
 
 wait(0.25)
 
