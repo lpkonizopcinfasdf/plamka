@@ -780,13 +780,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/pla
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
 	
-	if string.sub(msg:lower(), 0, 3) == prefix.."ds" then
+	if string.sub(msg:lower(), 0, 3) == prefix.."ad" then
 
-		game.Players:Chat("hat me 0000000000000000004506945409") -- Sword 1
-		game.Players:Chat("hat me 0000000000000000004794315940") -- Sword 2
-		game.Players:Chat("hat me 0000000000000000004315489767") -- Sword 3
-		game.Players:Chat("hat me 0000000000000000004458601937") -- Sword 4
+game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n .")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /8 yH v8 E PnE F")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
@@ -800,7 +803,16 @@ game.Players:Chat("respawn 343                                              all"
 game.Players:Chat("unchar 343                                              all")
 game.Players:Chat("-reg")
 	end
-	
+if string.sub(msg:lower(), 0, 4) == prefix.."dis" then
+game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n g")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n .")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /8 yH v8 E PnE F")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
+end
 	if string.sub(msg:lower(), 0, 12) == prefix.."moveobbybox" then
         if Stable_Check == false then
             logn("{Move.lua} Moving Obby Box")
