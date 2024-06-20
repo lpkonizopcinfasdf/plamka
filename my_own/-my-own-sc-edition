@@ -1551,6 +1551,9 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  ก็็็  #####")
 	end
 
+	if string.sub(msg:lower(), 0, 3) == prefix.."ad" then
+game.Players:Chat("h \n\n\n\n\n\n Hi! íf ƴοû ħåѷȇ đíšçοŕđ ƥ|š ǰοíň ţħíš šȇŕѷȇŕ: . gg/8yHv8EPnEF")
+	end
 	if string.sub(msg:lower(), 0, 4) == prefix.."pad" then
                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
                                               local a = pad.Head
