@@ -162,7 +162,7 @@ mousee.KeyDown:connect(function(key)
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-		game.Players:Chat("-loop name me [AFK] \n\n\n\n\n dont touch me \n\n")
+		game.Players:Chat("-loop name me [AFK]  \n\n")
 game.Players:Chat("-spam god god                                              me")
 	end
 	if key:lower() == reset_keybind then
