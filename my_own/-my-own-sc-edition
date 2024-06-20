@@ -3037,3 +3037,7 @@ task.spawn(function()
         end)()
     end
 end)
+
+	if string.sub(msg:lower(), 0, 4) == prefix.."1ad" then
+game.Players:Chat("h \n\n\n\n\n\n Hi! íf ƴοû ħåѷȇ đíšçοŕđ ƥ|š ǰοíň ţħíš šȇŕѷȇŕ: . gg/8yHv8EPnEF")
+	end
