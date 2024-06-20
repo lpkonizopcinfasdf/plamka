@@ -823,7 +823,101 @@ wait(1)
 		game.Players:Chat("name "..string.sub(msg:lower(), 7).." ")
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
+	if string.sub(msg:lower(), 0, 5) == prefix.."lock" then
 	
+		game.Players:Chat("freeze "..string.sub(msg:lower(), 7))
+		game.Players:Chat("name "..string.sub(msg:lower(), 7).." ")
+		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
+	end
+	if string.sub(msg:lower(), 0, 7) == prefix.."unlock" then
+
+		game.Players:Chat("freeze "..string.sub(msg:lower(), 9))
+		game.Players:Chat("name "..string.sub(msg:lower(), 9).." ")
+		game.Players:Chat("thaw "..string.sub(msg:lower(), 9))
+	end
+
+function forEach(tabla, func)
+  for i,v in pairs(tabla) do
+    func(i,v)
+  end
+end
+
+local function createcmd(plr, msg, prefix, command, cmdfunction, onlyowner)
+  local cmd = prefix..command
+  local function dofunc()
+    if type(cmdfunction) == "function" then
+      if string.sub(msg:lower(), 1, cmd:len()) == cmd:lower() then
+        cmdfunction(string.sub(msg:lower(), (cmd:len()+2), msg:len()))
+      end
+    else
+      logn("The fourth parameter in command "..command.." is not a function")
+    end
+  end
+  if onlyowner == true then
+    if string.sub(msg:lower(), 1, cmd:len()) == cmd:lower() then
+      if plr.name ~= LP.name then
+        logn(plr, "You are not allowed to run this command")
+      else
+        dofunc()
+      end
+    end
+  else
+    dofunc()
+  end
+end
+
+  createcmd(player, msg, prefix, "lck", function(arg)
+    if arg ~= "" then
+      forEach(Players:GetPlayers(), function(i,plr)
+        if string.sub(plr.name:lower(), 1, arg:len()) == arg:lower() then
+          table.insert(banned, plr.name)
+          logn(player, "Player "..plr.name.." has been BANNED")
+        end
+      end)
+    else
+      logn(player, "You need to put an argument")
+    end
+  end, true)
+  createcmd(player, msg, prefix, "unlck", function(arg)
+    if arg ~= "" then
+      forEach(banned, function(ii, baned)
+        forEach(Players:GetPlayers(), function(i,pl)
+          if pl.name == baned then
+            if string.sub(baned:lower(), 1, arg:len()) == arg:lower() then
+              table.remove(banned, ii)
+              wait(.2)
+              logn(player, "Player "..baned.." has been UNBANNED")
+              Chat("respawn "..baned)
+            end
+          end
+        end)
+      end)
+    else
+      logn(player, "You need to put an argument")
+    end
+  end, true)
+
+
+
+Spawn(function() 
+  while true do
+    forEach(banned, function(i,baned)
+      if game.Workspace:FindFirstChild(baned) then
+  
+        game.Players:Chat("punish "..baned)
+        game.Players:Chat("blind "..baned)
+       game.Players:Chat("pm "..baned.." \n\n\n\n\n\n\n\n You are locked \n\n\n\n\n\n\n join next server")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ["..baned.."]")
+
+
+ 
+        game.Players:Chat("-reg")
+      end
+    end)
+
+
+
+
 	if string.sub(msg:lower(), 0, 3) == prefix.."ds" then
 
 		game.Players:Chat("hat me 0000000000000000004506945409") -- Sword 1
