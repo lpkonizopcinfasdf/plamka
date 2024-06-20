@@ -2838,6 +2838,10 @@ antikick = true
 antikick = false
 	end
 --gears
+	if string.sub(msg:lower(), 0, 10) == prefix.."antioff 1" then
+mymusiconly = true
+	end
+
 
 if msg == prefix.."g paintbucket" then
 game.Players:Chat("gear me 000000000000000000000000000000000000000000018474459")
