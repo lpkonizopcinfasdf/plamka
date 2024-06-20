@@ -478,13 +478,13 @@ game.Players:Chat("respawn                                         me")
 		end
 	end -- table.remove(list1, i)
 	
-	if string.sub(msg:lower(), 0, 5) == prefix.."perm" then
-		PadCheck = true
-        GetPad(msg)
+	if string.sub(msg:lower(), 0, 9) == prefix.."loopgrab" then
+		loopgrab = true
+      
 	end
 	
-	if string.sub(msg:lower(), 0, 8) == prefix.."nonperm" then
-		PadCheck = false
+	if string.sub(msg:lower(), 0, 11) == prefix.."unloopgrab" then
+		loopgrab = false
 	end
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."infjump" then
