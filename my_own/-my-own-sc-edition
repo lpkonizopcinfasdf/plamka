@@ -40,6 +40,7 @@ local anticrashVG = true
 local antijailgearban = true 
 local antigrayscale = false
 local antikill = true -- 
+local nopunish = true
 local antijail = true --
 local mymusiconly = false -- Force your music onto peoples ears
 local mymusiconly_ID = 0000000000000000142376088 -- mymusiconly song ID
@@ -867,7 +868,7 @@ game.Players:Chat("-reg")
         end
 	end
 	
-	if string.sub(msg:lower(), 0, 15) == prefix.."moveobbybricks" then
+	if string.sub(msg:lower(), 0, 9) == prefix.."moveobby" then
 		game.Players:Chat(prefix.."nok")
 		wait(0.05)
         if Stable_Check == false then
@@ -2846,4 +2847,12 @@ if string.sub(msg:lower(), 0, 9) == prefix.."gearlist" then
 game.Players:Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
 wait(0.25)
 game.Players:Chat("reset others")
+end
+
+if nopunish == true then
+if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
+game:GetService'Players':Chat(("reset                                                                      me"))
+game:GetService'Players':Chat(("punish                                                                    others"))
+wait(0.25)
+end
 end
