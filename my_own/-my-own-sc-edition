@@ -662,102 +662,67 @@ game.Players:Chat("respawn                                         me")
 game.Players:Chat("-rc")
 wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
 game.Players:Chat("-super dog all all all")
-wait(0.50)
 game.Players:Chat("-super clone all all all")
-wait(1)
-
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
+game.Players:Chat("-super dog all all all")
+game.Players:Chat("-super clone all all all")
 	end
 
 	
@@ -2843,43 +2808,41 @@ mymusiconly = true
 	end
 
 
-if msg == prefix.."g paintbucket" then
+if string.sub(msg:lower(), 0, 14) == prefix.."g paintbucket" then
 game.Players:Chat("gear me 000000000000000000000000000000000000000000018474459")
 end
-if msg == prefix.."g boombox" then
+if string.sub(msg:lower(), 0, 10) == prefix.."g boombox" then
 game.Players:Chat("-boombox")
 end
-if msg == prefix.."g portalgun" then
-Chat("-portalgun")
-end
-if msg == prefix.."g icecream" then
+
+if string.sub(msg:lower(), 0, 11) == prefix.."g icecream" then
 game.Players:Chat("gear me 000000000000000000000000000000000000000057902859")
 end
-if msg == prefix.."g portable justice" then
+if string.sub(msg:lower(), 0, 19) == prefix.."g portable justice" then
 game.Players:Chat("gear me 000000000000000000000000000000000000082357101")
 end
-if msg == prefix.."g magic carpet" then
+if string.sub(msg:lower(), 0, 15) == prefix.."g magic carpet" then
 game.Players:Chat("gear me 000000000000000000000000225921000")
 end
-if msg == prefix.."g railgun" then
+if string.sub(msg:lower(), 0, 10) == prefix.."g railgun" then
 game.Players:Chat("gear me 000000000000000000000000000000000000079446473")
 end
-if msg == prefix.."g lasergun" then
+if string.sub(msg:lower(), 0, 11) == prefix.."g lasergun" then
 game.Players:Chat("gear me 000000000000000000000000000130113146")
 end
-if msg == prefix.."g car" then
+if string.sub(msg:lower(), 0, 6) == prefix.."g car" then
 game.Players:Chat("gear me 0000000000000000000000000000000253519495")
 end
-if msg == prefix.."g bike" then
+if string.sub(msg:lower(), 0, 7) == prefix.."g bike" then
 game.Players:Chat("gear me 0000000000000000000000000000000000189910262")
 end
-if msg == prefix.."g torch" then
+if string.sub(msg:lower(), 0, 8) == prefix.."g torch" then
 game.Players:Chat("gear me 00000000000000000000000000000000000000031839337")
 end
-if msg == prefix.."g moneybag" then
+if string.sub(msg:lower(), 0, 11) == prefix.."g moneybag" then
 game.Players:Chat("gear me 00000000000000000000000000000000000016722267")
 end
-if msg == prefix.."gearlist" then
+if string.sub(msg:lower(), 0, 9) == prefix.."gearlist" then
 game.Players:Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
 wait(0.25)
 game.Players:Chat("reset others")
