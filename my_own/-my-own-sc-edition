@@ -501,7 +501,7 @@ game.Players:Chat("respawn                                         me")
 		wkicking = false
 		spamming = false
 		crashall = false
-local loopping = false
+loopping = false
 
 	end
 	
