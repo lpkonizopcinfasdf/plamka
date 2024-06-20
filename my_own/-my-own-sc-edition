@@ -371,6 +371,21 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
   game.Players:Chat("kill                                                 "..plr.."     /o")
 
 	end
+	if string.sub(msg:lower(), 0, 5) == prefix.."slag" then
+		local plr = string.sub(msg:lower(), 7)
+  game.Players:Chat("respawn                                                 "..plr.."     ")
+wait(.20)
+  game.Players:Chat("jail                                                "..plr.."     ")
+wait(.10)
+		game.Players:Chat("-super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+		game.Players:Chat("-super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+		wait(2)
+  game.Players:Chat("clone                                                 "..plr.."     ")
+  game.Players:Chat("clone     ")
+wait(.50)
+game.Players:Chat("-spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+
+	end
 
 if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
