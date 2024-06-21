@@ -704,7 +704,7 @@ game.Players:Chat("-reg")
 wait(.25)
 game.Players:Chat("tp                                                 others me")
 game.Players:Chat("name admins I have perm admin !")
-wait(1)
+wait(3)
 game.Players:Chat("unname                                                                               /all/all /")
 	end
 
