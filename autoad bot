@@ -1,4 +1,5 @@
 local auto = true
+local permadmin = true
 
 
 -- -- - - ------------------------------------------------------
@@ -17,3 +18,38 @@ game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 end
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+task.spawn(function()
+    while true do 
+        task.wait(0)
+        coroutine.wrap(function()
+                              local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                              if (permadmin ~= true or workspace.Terrain._Game.Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil) and firetouchinterest then 
+                              else
+                                    pcall(function()
+                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+                                              local a = pad.Head
+                                              firetouchinterest(a, spr, 1)
+                                              firetouchinterest(a, spr, 0)
+                                              firetouchinterest(a, spr, 1)
+                                              task.wait()
+                                              firetouchinterest(a, spr, 0)
+                                    end)
+                              end
+        end)()
+    end
+end)
