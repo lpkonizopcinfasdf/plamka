@@ -42,16 +42,15 @@ local antigrayscale = false
 local antikill = true -- 
 local nopunish = true
 local antijail = true --
-local mymusiconly = false -- Force your music onto peoples ears
-local mymusiconly_ID = 0000000000000000142376088 -- mymusiconly song ID
-local antilogs = false -- Clears logs when someone opens it!
-local Superlogs = false -- Every chat /w /t /c /e etc will print into console
-local everyonecommands = false -- A little chatbot/command system for people without shortcut!
-local padsEnforcement = false -- Resets the pad if someone has more then one pad.
-local antiattach = false -- Resets people when they try to attach to something
-local antivoid = false -- Teleport back up when you hit -7 or under.
--- ANTIS!
--- ANTIS!
+local mymusiconly = false -- 
+local mymusiconly_ID = 0000000000000000142376088 
+local antilogs = false --
+local Superlogs = false -- 
+local everyonecommands = false -- 
+local padsEnforcement = false -- 
+local antiattach = false -- 
+local antivoid = false -- T
+
 
 
 
@@ -163,8 +162,8 @@ game.Players:Chat("invis                                          me")
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-		game.Players:Chat("-loop name me [AFK]  \n\n")
-game.Players:Chat("-spam god god                                              me")
+		game.Players:Chat("name me [AFK] ")
+game.Players:Chat("ff                                             me")
 	end
 	if key:lower() == reset_keybind then
 		game.Players:Chat("reset me")
