@@ -391,7 +391,14 @@ game.Players:Chat("-spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr..
 if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
-
+if msg == prefix.."bnuke" then
+game.Players:Chat("-super gear me 000000000000000000000000000000000000000000011563251")
+wait(1)
+game.Players:Chat("-usetools")
+end
+if string.sub(msg:lower(), 0, 9) == prefix.."usetools" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
+end
 	if string.sub(msg:lower(), 0, 4) == prefix.."pun" then
 		local plr = string.sub(msg:lower(), 6)
  game.Players:Chat("name "..plr.." [Punished] ")
