@@ -1752,14 +1752,12 @@ game.Players:Chat("h \n\n\n\n\n\n Hi! íf ƴοû ħåѷȇ đíšçοŕđ ƥ|š �
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 16" then
 		game.Players:Chat("music 000000000000000000213336468")
 	end
-	if string.sub(msg:lower(), 0, 2) == prefix.."s" then
-		game.Players:Chat("-sm hi! If you have Díšçοŕđ please join this server: đíšçοŕđ.ĝĝ/ 8  y H v8 EP   nE  F")
-	end
+
 	if string.sub(msg:lower(), 0, 9) == prefix.."vgcrash2" then
 	game.Players:Chat("-super gear all 000000000000000000000000000094794847")
 wait(.25)
 game.Players:Chat("-super -alltools")
-wait(.25)
+wait(.50)
 game.Players:Chat("-super unsize                  me me me ")
 wait(.36)
 game.Players:Chat("-spam unsize me me me")
