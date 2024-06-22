@@ -131,4 +131,5 @@ if string.sub(msg:lower(), 0, 13) == prefix.."unserverlock" then
 slockenabled = false
 
 game.Players:Chat("respawn                                                         others")
+end
 
