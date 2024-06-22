@@ -3081,8 +3081,6 @@ game.Players:Chat("-ad")
 end
 
 wait(3)
-logn("loaded blacklisting & slock")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 
 
 
