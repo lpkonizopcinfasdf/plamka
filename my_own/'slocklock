@@ -119,10 +119,16 @@ game.Players:Chat("-reg")
     if string.sub(msg:lower(), 1, #prefix + 6) == prefix..'unslock' then
         slockenabled = false
      game.Players:Chat("h \n\n\n Slock: Off")
-        game.Players:Chat('unblind                           all')
+        game.Players:Chat('unblind                                                 all')
         game.Players:Chat('unpunish                                         all')
 game.Players:Chat("-reg")
     end
     
 end)          
+
+
+if string.sub(msg:lower(), 0, 13) == prefix.."unserverlock" then
+slockenabled = false
+
+game.Players:Chat("respawn                                                         others")
 
