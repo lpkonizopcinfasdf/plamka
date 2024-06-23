@@ -1,6 +1,14 @@
 local mousee = game.Players.LocalPlayer:GetMouse()
 local Players = game:GetService("Players")
 
+
+local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                             
+local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+local a = pad.Head
+firetouchinterest(a, spr, 1)
+
+
 local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
