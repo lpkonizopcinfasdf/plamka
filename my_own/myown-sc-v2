@@ -1884,7 +1884,10 @@ wait(0.50)
 	if string.sub(msg:lower(), 0, 5) == prefix.."upme" then
 		game.Players.LocalPlayer.Character:Destroy()
 	end
-	
+	if string.sub(msg:lower(), 0, 10) == prefix.."antiabuse" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antiabuse",true))()
+	end
+
 
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."pmkick" then
