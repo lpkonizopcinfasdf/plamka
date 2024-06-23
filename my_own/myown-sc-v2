@@ -182,7 +182,7 @@ game.Players:Chat("ff                                             me")
 		game.Players:Chat("tp me me me")
 	end
 	if key:lower() == pads_keybind then
-		game.Players:Chat(prefix.."pads")
+		game.Players:Chat(prefix.."house")
 	end
 end)
 
