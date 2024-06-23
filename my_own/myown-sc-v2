@@ -2752,7 +2752,7 @@ end)
 logn("Code fully executed!")
 game.Players:Chat("-pad")
 wait(.35)
-logn("h \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n []")
+logn("-------")
 
 
 logn(" Załadowano w "..tostring(os.clock()-loadtime).."s")
