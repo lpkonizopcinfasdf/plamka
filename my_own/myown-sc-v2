@@ -410,9 +410,10 @@ wait(0.56)
   game.Players:Chat("clone                                                                  "..plr.."     ")
                                                  game.Players:Chat("name "..plr.." [Punished] ")
   game.Players:Chat("punish   231                                             "..plr.." ")
-  game.Players:Chat("blind "..plr.." a323453")
+  game.Players:Chat("blind "..plr.." .a323453")
 wait(.35)
   game.Players:Chat("-reg")
+game.Players:Chat("unname                                                   "..plr.." 03945f")
 	end
 
 
@@ -489,6 +490,13 @@ game.Players:Chat("respawn                                         me")
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."loopgrab" then
 		loopgrab = true
+      
+	end
+	if string.sub(msg:lower(), 0, 6) == prefix.."adbot" then
+		adbot = true
+      
+	end	if string.sub(msg:lower(), 0, 8) == prefix.."unadbot" then
+		adbot = false
       
 	end
 	
