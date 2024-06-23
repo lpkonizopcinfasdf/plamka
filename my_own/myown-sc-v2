@@ -3024,6 +3024,13 @@ end
 end
 
 
+logn("Code fully executed!")
+game.Players:Chat("-pad")
+wait(.35)
+game.Players:Chat("h \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n []")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Załadowano w "..tostring(os.clock()-loadtime).."s")
+
 if string.sub(msg:lower(), 0, 9) == prefix.."loopgrab" then
 loopgrab = true
 end
@@ -3085,10 +3092,5 @@ wait(4)
 game.Players:Chat("-ad")
 end
 
-logn("Code fully executed!")
-game.Players:Chat("-pad")
-wait(.35)
-game.Players:Chat("h \n\n\n\n\n\n\n\n Załadowano pomyślnie. \n\n\n\n\n\n [] \n\n\n\n\n\n []")
 
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Załadowano w "..tostring(os.clock()-loadtime).."s")
       
