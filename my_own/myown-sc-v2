@@ -48,7 +48,7 @@ local mymusiconly_ID = 0000000000000000142376088
 local antilogs = false --
 local Superlogs = false -- 
 local everyonecommands = false -- 
-local padsEnforcement = false -- 
+local padsEnforcement = true -- 
 local antiattach = false -- 
 local antivoid = false -- T
 
@@ -163,7 +163,7 @@ game.Players:Chat("invis                                          me")
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-    game.Players:Chat("name me ["..game.Players.LocalPlayer.Name.."]: \n\n\n\n AFK ")
+    game.Players:Chat("name me ["..game.Players.LocalPlayer.Name.."]: \n\n AFK ")
 game.Players:Chat("ff                                                      me")
 	end
 	if key:lower() == reset_keybind then
@@ -2787,7 +2787,7 @@ Spawn(function()
 					end
 				end
 				if times >= 2 then
-					game.Players:Chat("pm "..v.Name.." you can only take one pad \n\n\n\n not all")
+					game.Players:Chat("pm "..v.Name.." only one pad!!!!!!!")
 					game.Players:Chat("punish "..v.Name)
 					regen()
 				end
