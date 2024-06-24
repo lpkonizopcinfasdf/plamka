@@ -1170,7 +1170,7 @@ game.Players:Chat("invis                                          me")
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
 allowcrash = true
-wait(.25)
+wait(.60)
 game.Players:Chat("invis                                          me")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
