@@ -2200,7 +2200,7 @@ if antisword == true then
 			if allowcrash == false then
 				for i, player in pairs(game:GetService("Players"):GetPlayers()) do
 					if player.Character then
-						if player.Character:FindFirstChild("Sword") then
+						if player.Character:FindFirstChild("LinkedSword") then
 							local plrname = player.Name
 							game.Players:Chat(("ungear                                      "..plrname))
 							game.Players:Chat(("h \n\n\n\n Sorry, \n\n that gear is blacklisted \n\n\n\n\n   "..plrname))
