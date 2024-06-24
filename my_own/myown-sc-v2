@@ -1169,7 +1169,7 @@ game.Players:Chat("invis                                          me")
 	end
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
-noivory = false
+allowcrash = true
 wait(.25)
 game.Players:Chat("invis                                          me")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
@@ -1208,7 +1208,7 @@ clickivory()
             wait(0.5)
             Stable_Check = false
             logn("{Move.lua} Done Moving Admin Reset Pad")
-noivory = true
+allowcrash = false
         else
             logn("{Move.lua} Already Moving, Please Wait")
         end
