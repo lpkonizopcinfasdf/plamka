@@ -2194,8 +2194,53 @@ Spawn(function()
 				end
 			end
 		end
+-- antisword
+local antisword = true
+if antisword == true then
+			if allowcrash == false then
+				for i, player in pairs(game:GetService("Players"):GetPlayers()) do
+					if player.Character then
+						if player.Character:FindFirstChild("Sword") then
+							local plrname = player.Name
+							game.Players:Chat(("ungear                                      "..plrname))
+							game.Players:Chat(("h \n\n\n\n Sorry, \n\n that gear is blacklisted \n\n\n\n\n   "..plrname))
+							if AllowMessages == true then
+								if allowads == true then
+						
+								else
+			
+								end
+							end
+							wait(0.28)
+						end
+						if player.Character:FindFirstChild("HumanoidRootPart") then
+							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
+								local plrname = player.Name
+								game.Players:Chat(("ungear                                   "..plrname))
+								game.Players:Chat(("removetools                                     "..plrname))
+								if AllowMessages == true then
+									if allowads == true then
+							
+									else
+								
+									end
+								end
+								wait(0.28)
+							end
+						end
+					end
+				end
+			end
+		end
+		
+
+
+
+--
+
 local noivory = true
 -- antiivory
+
 if noivory == true then
 			if allowcrash == false then
 				for i, player in pairs(game:GetService("Players"):GetPlayers()) do
@@ -3048,7 +3093,6 @@ if adbot == true then
 wait(4)
 game.Players:Chat("-ad")
 end
-
 
 
 
