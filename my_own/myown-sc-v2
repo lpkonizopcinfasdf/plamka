@@ -1169,6 +1169,8 @@ game.Players:Chat("invis                                          me")
 	end
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
+noivory = false
+wait(.25)
 game.Players:Chat("invis                                          me")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
@@ -1206,6 +1208,7 @@ clickivory()
             wait(0.5)
             Stable_Check = false
             logn("{Move.lua} Done Moving Admin Reset Pad")
+noivory = true
         else
             logn("{Move.lua} Already Moving, Please Wait")
         end
@@ -2191,7 +2194,51 @@ Spawn(function()
 				end
 			end
 		end
+local noivory = true
+-- antiivory
+if noivory == true then
+			if allowcrash == false then
+				for i, player in pairs(game:GetService("Players"):GetPlayers()) do
+					if player.Character then
+						if player.Character:FindFirstChild("IvoryPeriastron") then
+							local plrname = player.Name
+							game.Players:Chat(("ungear                                      "..plrname))
+							game.Players:Chat(("h \n\n\n\n Sorry, \n\n that gear is blacklisted \n\n\n\n\n   "..plrname))
+							if AllowMessages == true then
+								if allowads == true then
+						
+								else
+			
+								end
+							end
+							wait(0.28)
+						end
+						if player.Character:FindFirstChild("HumanoidRootPart") then
+							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
+								local plrname = player.Name
+								game.Players:Chat(("reset                                     "..plrname))
+								game.Players:Chat(("unclone                                       "..plrname))
+								if AllowMessages == true then
+									if allowads == true then
+							
+									else
+								
+									end
+								end
+								wait(0.28)
+							end
+						end
+					end
+				end
+			end
+		end
 		
+
+
+
+
+
+-- koniec antiivory
 		if antijailgearban == true then
 			if game.Players.LocalPlayer.Character:FindFirstChild("Part") then
 				game.Players.LocalPlayer.Character:FindFirstChild("Part"):Destroy()
