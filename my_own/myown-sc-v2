@@ -48,7 +48,7 @@ local mymusiconly_ID = 0000000000000000142376088
 local antilogs = false --
 local Superlogs = false -- 
 local everyonecommands = false -- 
-local padsEnforcement = true -- 
+local padsEnforcement = false -- 
 local antiattach = false -- 
 local antivoid = false -- T
 
