@@ -163,8 +163,8 @@ game.Players:Chat("invis                                          me")
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-		game.Players:Chat("name me [AFK] ")
-game.Players:Chat("ff                                                    me")
+    game.Players:Chat("name me ["..game.Players.LocalPlayer.Name.."]: \n\n\n\n AFK ")
+game.Players:Chat("ff                                                      me")
 	end
 	if key:lower() == reset_keybind then
 		game.Players:Chat("reset                                                           me")
