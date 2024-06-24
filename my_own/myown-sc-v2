@@ -2821,7 +2821,7 @@ Spawn(function()
 end)
 
 logn("Code fully executed!")
-game.Players:Chat("-pad")
+
 wait(.35)
 logn("-------")
 
