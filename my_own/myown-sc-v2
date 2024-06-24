@@ -164,19 +164,19 @@ game.Players:Chat("invis                                          me")
 	end
 	if key:lower() == respawn_keybind then
 		game.Players:Chat("name me [AFK] ")
-game.Players:Chat("ff                                             me")
+game.Players:Chat("ff                                                    me")
 	end
 	if key:lower() == reset_keybind then
-		game.Players:Chat("reset                                          me")
+		game.Players:Chat("reset                                                           me")
 	end
 	if key:lower() == forcefield_keybind then
-		game.Players:Chat("ff                               me")
+		game.Players:Chat("ff                                                                       me")
 	end
 	if key:lower() == gravity_keybind then
 		loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
 	end
 	if key:lower() == fly_keybind then
-		game.Players:Chat("fly                                        me")
+		game.Players:Chat("fly                                                                me")
 	end
 	if key:lower() == teleport_keybind then
 		game.Players:Chat("tp me me me")
