@@ -416,6 +416,27 @@ wait(.35)
 game.Players:Chat("unname                                                   "..plr.." 03945f")
 	end
 
+	if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
+		local plr = string.sub(msg:lower(), 10)
+game
+iyc noclipcam fuck
+v!super hat me 00000000000000000000000000000000000000000000000000000000000018101265026
+wait0.35
+size me 3
+:punish me
+clone me
+respawn player
+wait0.35
+blind player
+unpunish me fuck
+freeze player
+name player   
+wait0.35
+unpunish me me me fuck
+v!spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026
+
+	end
+
 
 	
 	if string.sub(msg:lower(), 0, 6) == prefix.."fixbp" then
