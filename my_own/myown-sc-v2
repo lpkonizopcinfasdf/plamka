@@ -1907,7 +1907,9 @@ wait(0.50)
 
 	end
 	
-
+if msg == prefix.."shop" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
+end
 	
 
 	if string.sub(msg:lower(), 0, 10) == prefix.."headfloat" then
