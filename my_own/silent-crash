@@ -1,3 +1,10 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/myown-sc-v2",true))()
+
+wait(0.5)
+
+
+
+
 local perm = true
 task.spawn(function()
     while true do 
@@ -352,4 +359,4 @@ end
 
 wait(10)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
+game.Players:Chat("-shop")
