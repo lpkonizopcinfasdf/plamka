@@ -1,7 +1,6 @@
--- The naming is based off of vecko's uban. His uban was a ban that worked on every sort of username, u standing for universal.
--- Universal is the naming here because this crash works regardless of what gamepasses you have, you don't need any of them but it has the best crash for each gamepass or not gamepass (If you know what I mean)
--- Open source and free to use, credit would def be appreciated tho.
--- Code is awful because I made this fast but everything works as intended so don't complain
+
+local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
 
 
 task.spawn(function()
@@ -318,3 +317,9 @@ else
         end
     end
 end
+
+
+wait(10)
+
+module:Teleport(game.PlaceId)
+
