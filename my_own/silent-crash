@@ -1,22 +1,8 @@
-fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
-
-
-wait(.25)
-local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
-local a = pad.Head
- local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
-firetouchinterest(a, spr, 1)
-firetouchinterest(a, spr, 0)
-firetouchinterest(a, spr, 1)
-task.wait()
-firetouchinterest(a, spr, 0)
-wait(0.30)
 
 
 
-game.Players:Chat("fogcolor 0 0 0")
-game.Players:Chat("fogend")
-game.Players:Chat("time -")
+
+
 
 
 
@@ -213,7 +199,16 @@ else
             end
         end
 
+
+
         PadCheck = true
+
+
+game.Players:Chat("fogcolor 0 0 0")
+game.Players:Chat("fogend")
+game.Players:Chat("time -")
+
+
         GetPad(msg) -- Attempting to get a pad lmao
     end)
     wait(1.5) -- Shoutout to Funzy
