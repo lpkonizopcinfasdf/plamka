@@ -352,17 +352,4 @@ end
 
 wait(10)
 
-    local x = {}
-    for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
-      if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId and v.maxPlayers ~= v.playing then
-        x[#x + 1] = v.id
-        amount = v.playing
-      end
-    end
-    if #x > 0 then
-
-      wait(0.25)
-      game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
-    else
-     print("no server found.")
-    end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
