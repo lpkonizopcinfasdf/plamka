@@ -1,8 +1,24 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/myown-sc-v2",true))()
-
-wait(0.5)
-
-
+local perm = true
+task.spawn(function()
+    while true do 
+        task.wait(0)
+        coroutine.wrap(function()
+                              local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+                              if (perm ~= true or workspace.Terrain._Game.Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil) and firetouchinterest then 
+                              else
+                                    pcall(function()
+                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
+                                              local a = pad.Head
+                                              firetouchinterest(a, spr, 1)
+                                              firetouchinterest(a, spr, 0)
+                                              firetouchinterest(a, spr, 1)
+                                              task.wait()
+                                              firetouchinterest(a, spr, 0)
+                                    end)
+                              end
+        end)()
+    end
+end)
 
 
 
@@ -330,10 +346,11 @@ else
         while task.wait() do
             chet("clone all all all                                                                           ")
         end
+wait(7)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
     end
 end
 
 
-wait(10)
 
-game.Players:Chat("-shop")
