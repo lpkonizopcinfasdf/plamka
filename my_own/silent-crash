@@ -353,5 +353,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/pla
     end
 end
 
+chet("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n  Crashed in: "..tostring(os.clock()-loadtime).."s")
 
 
