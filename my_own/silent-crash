@@ -1,5 +1,7 @@
+game.Players:Chat("fogcolor 0 0 0")
+game.Players:Chat("fogend")
+game.Players:Chat("time -")
 
-local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 
 
 
@@ -321,5 +323,106 @@ end
 
 wait(10)
 
-module:Teleport(game.PlaceId)
-
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+wait(0.1)
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
