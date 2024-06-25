@@ -1,3 +1,4 @@
+local loabtime = os.clock()
 local perm = true
 task.spawn(function()
     while true do 
