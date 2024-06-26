@@ -2745,6 +2745,14 @@ function start(plr)
 		end)
 
 
+local LP = game.Players.LocalPlayer
+local CharLP = game.Players.LocalPlayer.Character
+local RootLP = CharLP.HumanoidRootPart
+
+
+
+
+
 --------------- ANTIS ----------------
 spawn(function()
   while true do
