@@ -6,9 +6,11 @@ local allowads = true -- Let us put our discord in some commands (Clearlogs, Ant
 local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortcut game teleports
 
 
-function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
+
+
+
+function startupScripts() 
 game.Players:Chat("-nok")
-game.Players:Chat("-autocrasher")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 end
 
@@ -44,6 +46,10 @@ end
 local anticrashVG = true 
 local antijailgearban = true 
 local antigrayscale = false
+local antimb = true
+local antiblindb = true
+local antipunishb = true
+local antifreeze = true
 local antikill = true -- 
 local nopunish = true
 local antijail = true --
@@ -2737,6 +2743,59 @@ function start(plr)
 				})
 			end
 		end)
+
+
+--------------- ANTIS ----------------
+spawn(function()
+  while true do
+    wait()
+-- --------------------------------------------
+----------- ANTI MESSAGE CRASH --------
+game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(child)
+  if antimb == true then
+    if child.name == "MessageGUI" then
+      if not child:FindFirstChild("bg") then
+        repeat wait() until child:FindFirstChild("bg")
+      end
+      child.bg:Remove()
+    end
+  end
+------------- ANTI BLIND ------------
+  if antiblindb == true then
+    if child.name == "EFFECTGUIBLIND" then
+      pcall(function()
+        repeat wait() child:Remove() until child.Parent == nil
+      end)
+    end
+  end
+end)
+
+--------- ANTI PUNISH ---------
+game.Lighting.ChildAdded:Connect(function(child)
+  if antipunishb == true then
+    if child.name == game.Players.LocalPlayer.Name then
+Chat("reset                                                                             me")
+Chat("god                                                                                me")
+      Chat("punish                                                                     others")
+      regen() 
+
+   
+      wait(0.25)
+    end
+  end
+end)
+--------- ANTI FREEZE ---------
+game.Players.LocalPlayer.Character.ChildAdded:Connect(function(child)
+  if child.name == "ice" and antifreeze == true then
+ Chat("reset                                                                                                       me")
+ Chat("god                                                                                                         me")
+ Chat("freeze                                                                                                       others")
+    wait(0.28)
+  end
+end)
+
+
+
 		if msg:lower() == "logs" or msg:lower() == ":logs" then
 			local player = plr.Name
 			if antilogs == true then
