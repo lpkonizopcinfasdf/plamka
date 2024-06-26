@@ -31,8 +31,8 @@ wait()
 
 if nopunish == true then
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
-  game:GetService'Players':Chat(("reset                                                                                   me"))
-  game:GetService'Players':Chat(("punish                                                                                    others"))
+game.Players:Chat("reset                                                                                   me")
+game.Players:Chat("punish                                                                                    others")
 wait(0.25)
 end
 end
@@ -454,7 +454,7 @@ game.Players:Chat("invis                                          me")
 		antikicking()
 	end
 	if key:lower() == respawn_keybind then
-    game.Players:Chat("name me ["..game.Players.LocalPlayer.Name.."]: \n\n AFK ")
+    game.Players:Chat("name me ["..game.Players.LocalPlayer.Name.."] \n\n AFK ")
 game.Players:Chat("ff                                                      me")
 	end
 	if key:lower() == reset_keybind then
@@ -2163,7 +2163,8 @@ game.Players:Chat("-spam unsize me me me")
 	end
 
 	
-	if string.sub(msg:lower(), 0, 5) == prefix.."clag" then
+	
+if string.sub(msg:lower(), 0, 5) == prefix.."clag" then
 		local player = string.sub(msg:lower(), 7)
 		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
@@ -2201,6 +2202,14 @@ wait(0.50)
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
+
+	end
+
+
+if string.sub(msg:lower(), 0, 6) == prefix.."bring" then
+		local player = string.sub(msg:lower(), 8)
+		game.Players:Chat("tp                                                                                                        "..player.." me")
+
 
 	end
 	
