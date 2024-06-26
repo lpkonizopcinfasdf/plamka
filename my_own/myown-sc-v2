@@ -1,4 +1,4 @@
-local loadtime = os.clock()
+
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
 local Rank = "Owner" -- Your shortcut custom rank
@@ -2984,13 +2984,13 @@ Spawn(function()
 	mods()
 end)
 
-logn("Code fully executed!")
+logn("Executed MPX")
 
 wait(.35)
 logn("-------")
 
 
-logn(" Załadowano w "..tostring(os.clock()-loadtime).."s")
+
 
 wait(0.25)
 
