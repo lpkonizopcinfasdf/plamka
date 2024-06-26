@@ -1,5 +1,267 @@
-local antipunish = true
-local antifreeze = true
+local abc = 0 -- Wait Time of Spam
+local lol = 0 -- If command being spammed will be displayed
+local amn = 1 -- amount of gear given
+local nopunish = true
+local healauto = true
+local noexp = true
+local nokill = true
+local noblind = true
+local nojail = true
+local nomusic = false
+local nodog = true
+local nosmoke = true
+local noswag = true
+local nosparkles = false
+local nofire = true
+local nospeed = false
+local noskydive = true
+local nocrash = true
+local noice = true
+local noseizure = true
+local noff = false
+local nomsgcrash = false
+local ilight = true
+
+-- Functions
+
+local function ultanti(msg)
+local GetPlayers = game:GetService("Players")
+local allplr = GetPlayers:GetPlayers()
+ 
+while multianti == true do
+wait()
+
+-- anti-punish
+
+if nopunish == true then
+if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
+game:GetService'Players':Chat(("reset                                                                      me"))
+game:GetService'Players':Chat(("punish                                                                    others"))
+wait(0.25)
+end
+end
+
+-- auto-heal
+
+if healauto == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
+game:GetService'Players':Chat(("heal me 100"))
+wait(0.25)
+end
+end
+end
+end
+
+-- remove explosion effect
+
+if noexp == true then
+if game.Workspace:FindFirstChild("Explosion") then
+game.Workspace.Explosion:Destroy()
+end
+end
+
+-- anti-kill
+
+if nokill == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+game:GetService'Players':Chat(("reset                                                     me"))
+game:GetService'Players':Chat(("god                                                       me"))
+wait(0.25)
+end
+end
+end
+
+-- anti-blind
+
+if noblind == true then
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
+game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
+end
+end
+
+--anti-jail
+
+if nojail == true then
+if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name .. "'s jail") then
+game:GetService'Players':Chat(("unjail                                               me"))
+wait(0.25)
+end
+end
+
+-- anti-music
+
+if nomusic == true then
+if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") then
+game:GetService'Players':Chat(("music antimusic "))
+wait(0.25)
+end
+end
+
+-- anti dog
+
+if nodog == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso.Transparency == 1 and game.Players.LocalPlayer.Character.Torso.BrickColor == BrickColor.new("Brown") then
+game:GetService'Players':Chat(("undog                                         me"))
+wait(0.25)
+end
+end
+end
+
+-- anti smoke
+
+if nosmoke == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Smoke") then
+game:GetService'Players':Chat(("unsmoke                                                  me"))
+wait(0.25)
+end
+end
+end
+
+-- anti swag
+
+if noswag == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("EpicCape") then
+game:GetService'Players':Chat(("reset                                      me"))
+wait(0.25)
+end
+end
+
+-- anti-sparkles
+
+if nosparkles == true then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Sparkles") then
+game:GetService'Players':Chat(("unsparkles                                             me"))
+wait(0.25)
+end
+end
+
+-- anti-fire
+
+if nofire == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
+if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Fire") then
+game:GetService'Players':Chat(("unfire                                                             me"))
+wait(0.25)
+end
+end
+end
+
+-- anti-speed
+
+if nospeed == true then
+if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed > 16 or game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 16 then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+wait(0.25)
+end
+end
+
+-- anti skydive
+
+if noskydive == true then
+if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+if game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y >= 1950 then
+game:GetService'Players':Chat(("unskydive                                                me"))
+wait(0.25)
+end
+end
+end
+
+-- anti crash
+
+ if nocrash == true then
+  if game.Players.PlayerAdded then
+   allplr = GetPlayers:GetPlayers()
+  end
+  for i, player in pairs(allplr) do
+   if player.Character then
+    if player.Character:FindFirstChild("VampireVanquisher") then
+     local plrname = player.Name
+     game:GetService'Players':Chat(("ungear "..plrname))
+     game:GetService'Players':Chat(("unsize "..plrname))
+     wait(0.28)
+    end
+    if player.Character:FindFirstChild("HumanoidRootPart") then
+     if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
+      local plrname = player.Name
+      game:GetService'Players':Chat(("reset "..plrname))
+      game:GetService'Players':Chat(("unclone "..plrname))
+      wait(0.28)
+     end
+    end
+   end
+  end
+ end
+
+-- removeff effect
+if noff == true then
+ if game.Players.PlayerAdded then
+  allplr = GetPlayers:GetPlayers()
+ end
+ for i, player in pairs(allplr) do
+  if player.Character then
+   if player.Character:FindFirstChild("ForceField") then
+    player.Character.ForceField:Destroy()
+   end
+  end
+ end
+end
+
+-- anti ice
+
+if noice == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("ice") then
+game:GetService'Players':Chat(("reset                                   me"))
+game:GetService'Players':Chat(("freeze                                                                                         others"))
+wait(0.28)
+end
+end
+end
+
+-- anti seizure
+
+if noseizure == true then
+if game.Players.LocalPlayer.Character then
+if game.Players.LocalPlayer.Character:FindFirstChild("Seizure") then
+game:GetService'Players':Chat(("unseizure                                               all"))
+wait(0.28)
+end
+end
+end
+
+-- anti message crash
+
+if nomsgcrash == true then
+wait(0.2)
+for i, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+if v.Name == "MessageGUI" or v.Name == "HintGUI" then
+v:Destroy()
+end
+end
+end
+
+
+-- anti ivory light
+
+if ilight == true then
+ if game.Workspace:FindFirstChild("StarShard") then
+  game.Workspace.StarShard:Destroy()
+ end
+ if game.Workspace:FindFirstChild("Part") then
+  if game.Workspace.Part:FindFirstChild("Twinkle") then
+   game.Workspace.Part:Destroy()
+  end
+ end
+end
+
+end
+end
+
 
 
 
