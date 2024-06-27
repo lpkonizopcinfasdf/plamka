@@ -825,7 +825,7 @@ chat("fix")
 wait(.1)
 chat("time 0")
 chat("fogcolor 0 0 0")
-chat("fogend 20")
+chat("fogend 10")
 chat("colorshifttop 10000 0 0")
 chat("colorshiftbottom 10000 0 0")
 end
