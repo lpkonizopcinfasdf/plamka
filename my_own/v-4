@@ -1236,6 +1236,7 @@ allowcrash = false
 	end
 	
 	if string.sub(msg:lower(), 0, 14) == prefix.."movebaseplate" then
+antijail = false
 game.Players:Chat("invis                                          me")
  game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
@@ -1272,6 +1273,7 @@ wait(0.66)
             wait(0.5)
             Stable_Check = false
             logn("{Move.lua} Done Moving Basteplate")
+antijail = true
         else
             logn("{Move.lua} Already Moving, Please Wait")
         end
