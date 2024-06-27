@@ -572,7 +572,7 @@ game.Players:Chat("respawn                                         me")
 		loadstring()
 	end
 	
-	if string.sub(msg:lower(), 0, 5) == prefix.."stop" then
+	if string.sub(msg:lower(), 0, 5) == sprefix.."stop" then
 		logn("Stopped all things")
 		teskking = false
 		Wwkicking = "none"
