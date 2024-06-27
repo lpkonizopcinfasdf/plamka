@@ -1,16 +1,12 @@
+local antiBlind = true
 
-
-local antiblindb = true
-
-local function antiblind()
-  game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(child)
-    if antiblindb == true then
-      if child.name == "EFFECTGUIBLIND" then
-        game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
-      end
-    end
-  end)
-end
+    if antiBlind == true then
+            for i, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+                if v.Name == "EFFECTGUIBLIND" then
+                    v:Destroy()
+                end
+            end
+        end
 
 
 local loadtime = os.clock()
