@@ -1296,11 +1296,8 @@ game.Players:Chat("respawn                                                      
 wait(0.35)
 game.Players:Chat("stun                                                                                                       me")
 wait(0.10)
-game.Players:Chat("unpunish                                                                                                    /me/me/me")
-game.Players:Chat("unpunish                                                                                                    /me/me/me")
-game.Players:Chat("unpunish                                                                                                    /me/me/me")
-game.Players:Chat("unpunish                                                                                                    /me/me/me")
-game.Players:Chat("unpunish                                                                                                    /me/me/me")
+game.Players:Chat("unpunish                                                                                                   me")
+
 wait(0.50)
 game.Players:Chat("trip                                                                                                        /me/me/me")
 
