@@ -1740,7 +1740,12 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Temp/main/v
 			end)()
 		end
 	end
-	
+	if msg == prefix.."antiallpads on" then
+padsEnforcement = true
+end
+if msg == prefix.."antiallpads off" then
+padsEnforcement = false
+end
 	if string.sub(msg:lower(), 0, 19) == prefix.."color house random" then
 		logn("This is a strip of Color3 it works its way through every block SLOWLY want it to keep changing then ;spam it")
 		game.Players:Chat("gear me 00000000000000000018474459")
