@@ -1293,7 +1293,7 @@ game.Players:Chat("unpunish                                                     
 game.Players:Chat("unpunish                                                                                                    /me/me/me")
 game.Players:Chat("unpunish                                                                                                    /me/me/me")
 game.Players:Chat("unpunish                                                                                                    /me/me/me")
-wait(0.35)
+wait(0.50)
 game.Players:Chat("trip                                                                                                        /me/me/me")
 
 end	
