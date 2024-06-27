@@ -1,10 +1,15 @@
-local antiblind = true
 
 
-if antiblind == true then
-if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
-game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
-end
+local antiblindb = true
+
+local function antiblind()
+  game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(child)
+    if antiblindb == true then
+      if child.name == "EFFECTGUIBLIND" then
+        game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
+      end
+    end
+  end)
 end
 
 
@@ -1292,14 +1297,16 @@ allowcrash = false
 
 
 if msg == prefix.."tripbp" then
+
 game.Players:Chat("respawn                                                                                                      me")
-wait(0.35)
+game.Players:Chat("invis                                                                                                    me")
+wait(0.30)
 game.Players:Chat("stun                                                                                                       me")
-wait(0.10)
+wait(0.30)
 game.Players:Chat("unpunish                                                                                                   me")
 
-wait(0.50)
-game.Players:Chat("trip                                                                                                        /me/me/me")
+wait(0.70)
+game.Players:Chat("trip                                                                                                      me")
 
 end	
 	if string.sub(msg:lower(), 0, 15) == prefix.."setspawnpoints" then
