@@ -37,7 +37,7 @@ wait()
 
 if nopunish == true then
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
-game:GetService'Players':Chat(("reset                                                                        me"))
+game.Players:Chat("reset me")
 wait(0.25)
 end
 end
