@@ -397,13 +397,13 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 wait(.20)
   game.Players:Chat("jail                                                "..plr.."     ")
 wait(.10)
-		game.Players:Chat("-super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
-		game.Players:Chat("-super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+		game.Players:Chat("super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+		game.Players:Chat("super smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
 		wait(2)
   game.Players:Chat("clone                                                 "..plr.."     ")
   game.Players:Chat("clone     ")
 wait(.50)
-game.Players:Chat("-spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+game.Players:Chat("spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
 
 	end
 
@@ -411,9 +411,9 @@ if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
 if msg == prefix.."bnuke" then
-game.Players:Chat("-super gear me 000000000000000000000000000000000000000000011563251")
+game.Players:Chat("super gear me 000000000000000000000000000000000000000000011563251")
 wait(1)
-game.Players:Chat("-usetools")
+game.Players:Chat("usetools")
 end
 if string.sub(msg:lower(), 0, 9) == prefix.."usetools" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
@@ -431,7 +431,7 @@ wait(0.56)
   game.Players:Chat("punish   231                                             "..plr.." ")
   game.Players:Chat("blind "..plr.." .a323453")
 wait(.35)
-  game.Players:Chat("-reg")
+  game.Players:Chat("reg")
 game.Players:Chat("unname                                                   "..plr.." 03945f")
 	end
 
@@ -439,7 +439,7 @@ game.Players:Chat("unname                                                   "..p
 		local plr = string.sub(msg:lower(), 10)
 
 game.Players:Chat("iyc noclipcam")
-game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(.35)
 game.Players:Chat("size me 3")
 game.Players:Chat("punish                                  me")
@@ -452,10 +452,10 @@ game.Players:Chat("freeze                                                     ".
 game.Players:Chat("name "..plr.." ")
 wait(0.35)
 game.Players:Chat("unpunish                                         me me me")
-game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(5)
 game.Players:Chat("respawn                                                    me")
-game.Players:Chat("-house")
+game.Players:Chat("house")
 
 	end
 
@@ -761,7 +761,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/pla
 	end
 
 	if string.sub(msg:lower(), 0, 11) == prefix.."npermcheck" then
-game.Players:Chat("-reg")
+game.Players:Chat("reg")
 wait(.25)
 game.Players:Chat("tp                                                 others me")
 game.Players:Chat("name admins I have perm admin !")
@@ -896,7 +896,7 @@ game.Players:Chat("fix 343 ")
 game.Players:Chat("ungear 343                                           all")
 game.Players:Chat("respawn 343                                              all")
 game.Players:Chat("unchar 343                                              all")
-game.Players:Chat("-reg")
+game.Players:Chat("reg")
 	end
 if string.sub(msg:lower(), 0, 4) == prefix.."dis" then
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
@@ -1422,7 +1422,7 @@ game.Players:Chat("invis                                          me")
 		cf.CFrame = Admin_Folder.Regen.CFrame
 	end
 	if string.sub(msg:lower(), 0, 13) == prefix.."rchat" then
-game.Players:Chat("-super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ")
+game.Players:Chat("super h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ก็็็   ")
 	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."nok" then
@@ -1883,11 +1883,11 @@ end
 	if string.sub(msg:lower(), 0, 9) == prefix.."vgcrash2" then
 	game.Players:Chat("-super gear all 000000000000000000000000000094794847")
 wait(.25)
-game.Players:Chat("-super -alltools")
+game.Players:Chat("spam alltools")
 wait(.50)
-game.Players:Chat("-super unsize                  me me me ")
+game.Players:Chat("loop unsize                  me me me ")
 wait(.36)
-game.Players:Chat("-spam unsize me me me")
+game.Players:Chat("spam unsize me me me")
 	end
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."alltools" then
@@ -1943,39 +1943,39 @@ game.Players:Chat("-spam unsize me me me")
 	
 if string.sub(msg:lower(), 0, 5) == prefix.."clag" then
 		local player = string.sub(msg:lower(), 7)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
-		game.Players:Chat("-super gear "..player.." 0000000000000000000000000000253519495")
+		game.Players:Chat("super gear "..player.." 0000000000000000000000000000253519495")
 wait(4)
 		game.Players:Chat("reset 0                                                "..player.." ")
 wait(0.50)
@@ -2020,9 +2020,9 @@ end
 		game.Players:Chat("freeze                                                    "..player.." 0.3")
   		game.Players:Chat("name "..player.." \n\n PMKICKING \n\n ["..player.."] \n\n\n")
     wait(.34)
-    		game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
+    		game.Players:Chat("super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
       wait(.20)
-       		game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
+       		game.Players:Chat("spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
 	end
 	
 
@@ -2349,8 +2349,8 @@ if antisword == true then
 						if player.Character:FindFirstChild("HumanoidRootPart") then
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
-								game.Players:Chat(("ungear                                   "..plrname))
-								game.Players:Chat(("removetools                                     "..plrname))
+								game.Players:Chat(("ungear                                                 "..plrname))
+								game.Players:Chat(("removetools                                             "..plrname))
 								if AllowMessages == true then
 									if allowads == true then
 							
@@ -2394,9 +2394,9 @@ if noivory == true then
 						if player.Character:FindFirstChild("HumanoidRootPart") then
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
-								game.Players:Chat(("reset                                     "..plrname))
-								game.Players:Chat(("unclone                                       "..plrname))
-								if AllowMessages == true then
+								game.Players:Chat(("reset                                                             "..plrname))
+								game.Players:Chat(("unclone                                                             "..plrname))
+								if AllowMessages == true then                            
 									if allowads == true then
 							
 									else
@@ -3144,45 +3144,7 @@ mymusiconly = true
 	end
 
 
-if string.sub(msg:lower(), 0, 14) == prefix.."g paintbucket" then
-game.Players:Chat("gear me 000000000000000000000000000000000000000000018474459")
-end
-if string.sub(msg:lower(), 0, 10) == prefix.."g boombox" then
-game.Players:Chat("-boombox")
-end
 
-if string.sub(msg:lower(), 0, 11) == prefix.."g icecream" then
-game.Players:Chat("gear me 000000000000000000000000000000000000000057902859")
-end
-if string.sub(msg:lower(), 0, 19) == prefix.."g portable justice" then
-game.Players:Chat("gear me 000000000000000000000000000000000000082357101")
-end
-if string.sub(msg:lower(), 0, 15) == prefix.."g magic carpet" then
-game.Players:Chat("gear me 000000000000000000000000225921000")
-end
-if string.sub(msg:lower(), 0, 10) == prefix.."g railgun" then
-game.Players:Chat("gear me 000000000000000000000000000000000000079446473")
-end
-if string.sub(msg:lower(), 0, 11) == prefix.."g lasergun" then
-game.Players:Chat("gear me 000000000000000000000000000130113146")
-end
-if string.sub(msg:lower(), 0, 6) == prefix.."g car" then
-game.Players:Chat("gear me 0000000000000000000000000000000253519495")
-end
-if string.sub(msg:lower(), 0, 7) == prefix.."g bike" then
-game.Players:Chat("gear me 0000000000000000000000000000000000189910262")
-end
-if string.sub(msg:lower(), 0, 8) == prefix.."g torch" then
-game.Players:Chat("gear me 00000000000000000000000000000000000000031839337")
-end
-if string.sub(msg:lower(), 0, 11) == prefix.."g moneybag" then
-game.Players:Chat("gear me 00000000000000000000000000000000000016722267")
-end
-if string.sub(msg:lower(), 0, 9) == prefix.."gearlist" then
-game.Players:Chat("h \n\n\n\n\n\n\n [GEAR LIST] \n\n 1.moneybag \n\n 2.torch \n\n 3.bike \n\n 4.car \n\n 5.lasergun \n\n 6.railgun \n\ 7.magic carpet \n\n 8.portable justice \n\n 9.icecream \n\n 10.portalgun 11.boombox 12.paintbucket \n\n\n\n ---------------------")
-wait(0.25)
-game.Players:Chat("reset others")
-end
 
 local antipunishb = true
 local function antipunish()
@@ -3265,7 +3227,7 @@ adbot = false
 
 if adbot == true then
 wait(4)
-game.Players:Chat("-ad")
+game.Players:Chat("ad")
 end
 
 if antihatkick == true then
