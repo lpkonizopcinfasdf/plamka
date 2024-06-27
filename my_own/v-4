@@ -1,6 +1,5 @@
 
 
-
 local loadtime = os.clock()
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
