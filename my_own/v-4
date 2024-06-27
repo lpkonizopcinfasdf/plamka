@@ -1,6 +1,6 @@
 
 
-
+local chat = function(...)game.Players:Chat(...)end
 local loadtime = os.clock()
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
@@ -771,6 +771,7 @@ game.Players:Chat("unname                                                       
 -- themes
 if msg == prefix.."themelist" then
 chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <THEME LIST> \n\n\n 1. Day 2.Noon 3.Night 4.Fire 5.Retro 6.Noob 7.Hell")
+end
 if msg == prefix.."theme day" then
 chat("fix")
 wait()
