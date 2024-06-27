@@ -1,12 +1,4 @@
-local antiBlind = true
 
-    if antiBlind == true then
-            for i, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
-                if v.Name == "EFFECTGUIBLIND" then
-                    v:Destroy()
-                end
-            end
-        end
 
 
 local loadtime = os.clock()
@@ -776,43 +768,67 @@ game.Players:Chat("name admins I have perm admin !")
 wait(3)
 game.Players:Chat("unname                                                                               /all/all /")
 	end
+-- themes
+if msg == prefix.."themelist" then
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <THEME LIST> \n\n\n 1. Day 2.Noon 3.Night 4.Fire 5.Retro 6.Noob 7.Hell")
+if msg == prefix.."theme day" then
+chat("fix")
+wait()
+chat("time 6.17")
+chat("outdoorambient 200 150 0")
+end
+if msg == prefix.."theme noon" then
+chat("fix")
+wait()
+chat("time 12")
+chat("outdoorambient 255 248 220")
+end
+if msg == prefix.."theme night" then
+chat("fix")
+wait()
+chat("time 4")
+chat("outdoorambient 000 000 111")
+end
+if msg == prefix.."theme fire" then
+chat("fix")
+wait()
+chat("time 0")
+chat("outdoorambient 255 69 0")
+chat("colorshiftbottom 255 69 0")
+chat("colorshifttop 255 69 0")
+wait()
+chat("fogcolor 255 69 0")
+chat("fogend 150")
+end
+if msg == prefix.."theme retro" then
+chat("fix")
+wait()
+chat("time 4")
+chat("outdoorambient 135 8 186")
+chat("fogcolor 135 8 186")
+chat("fogend 200")
+end
+if msg == prefix.."theme noob" then
+chat("fix")
+wait()
+chat("time 0")
+chat("fogend 200")
+chat("fogcolor 255 255 0")
+wait()
+chat("colorshifttop 255 255 0")
+chat("colorshiftbottom 255 255 0")
+wait()
+end
+if msg == prefix.."theme hell" then
+chat("fix")
+wait(.1)
+chat("time 0")
+chat("fogcolor 0 0 0")
+chat("fogend 20")
+chat("colorshifttop 10000 0 0")
+chat("colorshiftbottom 10000 0 0")
+end
 
-	
-	if string.sub(msg:lower(), 0, 11) == prefix.."bind fkick" then
-		logn("fkick is now bound to '"..string.sub(msg:lower(), 13, 13).."'")
-		fkick_keybind = string.sub(msg:lower(), 13, 13)
-	end
-	
-	if string.sub(msg:lower(), 0, 14) == prefix.."bind antikick" then
-		logn("antikick is now bound to '"..string.sub(msg:lower(), 16, 16).."'")
-		antikick_keybind = string.sub(msg:lower(), 16, 16)
-	end
-	
-	if string.sub(msg:lower(), 0, 13) == prefix.."bind respawn" then
-		logn("respawn is now bound to '"..string.sub(msg:lower(), 15, 15).."'")
-		respawn_keybind = string.sub(msg:lower(), 15, 15)
-	end
-	
-	if string.sub(msg:lower(), 0, 11) == prefix.."bind reset" then
-		logn("reset is now bound to '"..string.sub(msg:lower(), 13, 13).."'")
-		reset_keybind = string.sub(msg:lower(), 13, 13)
-	end
-	
-	if string.sub(msg:lower(), 0, 16) == prefix.."bind forcefield" then
-		logn("forcefield is now bound to '"..string.sub(msg:lower(), 18, 18).."'")
-		forcefield_keybind = string.sub(msg:lower(), 18, 18)
-	end
-	
-	if string.sub(msg:lower(), 0, 9) == prefix.."bind fly" then
-		logn("fly is now bound to '"..string.sub(msg:lower(), 11, 11).."'")
-		fly_keybind = string.sub(msg:lower(), 11, 11)
-	end
-	
-	if string.sub(msg:lower(), 0, 14) == prefix.."bind teleport" then
-		logn("teleport is now bound to '"..string.sub(msg:lower(), 16, 16).."'")
-		teleport_keybind = string.sub(msg:lower(), 16, 16)
-	end
-	
 	if string.sub(msg:lower(), 0, 8) == prefix.."boombox" then
 		logn("Gave player a boombox!")
 		local player = string.sub(msg:lower(), 10)
