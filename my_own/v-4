@@ -1,3 +1,11 @@
+local antiblind = true
+
+
+if antiblind == true then
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
+game.Players.LocalPlayer.PlayerGui.EFFECTGUIBLIND:Destroy()
+end
+end
 
 
 local loadtime = os.clock()
