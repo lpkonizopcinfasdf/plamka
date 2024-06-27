@@ -1276,6 +1276,43 @@ wait(0.66)
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
+
+
+if string.sub(msg:lower(), 0, 7) == prefix.."tripbp" then
+
+
+
+        if Stable_Check == false then
+            logn("{Move.lua} Moving Basteplate")
+            Stable_Check = true
+            if Workspace_Folder.Baseplate.CFrame.Y < 500 then
+				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				local looping = true
+				spawn(function()
+				    while true do
+				        game:GetService('RunService').Heartbeat:Wait()
+						game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						cf.CFrame = Workspace_Folder.Baseplate.CFrame * CFrame.new(-1*(Workspace_Folder.Baseplate.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						if not looping then break end
+				    end
+				end)
+				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				wait(0.3)
+				looping = false
+	
+				wait(0.45)
+				game.Players:Chat("trip                                                                                              me")
+				wait(0.30)
+game.Players:Chat("respawn                                                                                                             me")
+            end
+            wait(0.5)
+            Stable_Check = false
+            logn("{Move.lua} Done Triping Basteplate")
+        else
+            logn("{Move.lua} Already Moving, Please Wait")
+        end
+	end
 	
 	if string.sub(msg:lower(), 0, 15) == prefix.."setspawnpoints" then
 		local playername = string.sub(msg:lower(), 17)
