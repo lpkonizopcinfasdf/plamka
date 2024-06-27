@@ -74,7 +74,7 @@ local antivoid = false -- T
 
 
 
-local prefix = "-" 
+local prefix = "" -- yea no prefix 
 
 local fkick = false
 local fkickmsg = ";kick "
