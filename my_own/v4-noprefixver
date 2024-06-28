@@ -20,6 +20,7 @@ local perm = true
 local adbot = false
 local antihatkick = true
 local loopgrab = false
+local wlc = true
 
   local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -465,7 +466,7 @@ game.Players:Chat("house")
 	
 	if string.sub(msg:lower(), 0, 6) == prefix.."fixbp" then
 		local plr = string.sub(msg:lower(), 8)
-
+antijail = false
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 		wait(0.10)
 		game.Players:Chat("jail me")
@@ -499,6 +500,7 @@ game.Players:Chat("invis                                          me")
 clickivory()
 wait(.35)
 game.Players:Chat("respawn                                         me")
+antijail = true
 	end
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."padban" then
@@ -951,7 +953,46 @@ game.Players:Chat("invis                                          me")
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
-	
+
+if msg == prefix.."1cmds" then
+logn("type /console in chat")
+print("This script is made by plamk_a -        ")
+print("                                                       ")
+print(" themes: Retro,noob,hell,day,noon,night,fire                                     --               ")
+print("loopgrab / unloopgrab - loopgrabs all pads                                                      ")
+print("bok (plr) - bok player *spam dog 3wait kill*                                                       ")
+print("slag (plr) - smoke lags player works sometimes                                                       ")
+print("fpaint - fix paint                                                       ")
+print("bnuke - bomb nuke                                                       ")
+print("usetools - uses all tools in your inventory                                                       ")
+print("pun (plr) - punishes player + regen admin                                                       ")
+print("bl (plr) - blacklists player (type unbl (plr) to unblacklist)                                                       ")
+print("moveobbybox - moves obby box |skydive method|                                                       ")
+print("moveobby - moves obby                                                       ")
+print("delreg - deletes regen sometimes not works                                                       ")
+print("fixbp -fixes baseplate if its broken                                                      ")
+print("spam - spam cmd say stop to stop                                                       ")
+print("super (cmd) -does cmd 100 times                                                       ")
+print("padban (plr) - padban player (unpadban plr to unban)                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+print("                                                       ")
+end
+
 	if string.sub(msg:lower(), 0, 9) == prefix.."moveobby" then
 		game.Players:Chat(prefix.."nok")
 game.Players:Chat("invis                                          me")
@@ -3024,7 +3065,10 @@ game.Players:Chat(("ungear                                                      
 		end
 
 
-
+game:GetService("Players").PlayerAdded:Connect(function(player)
+  if wlc == true then
+    chat("h \n\n\n\n\n\n "..player.name.." has joined the game. ")
+  end
 
 
 
