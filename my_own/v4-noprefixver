@@ -1356,12 +1356,12 @@ if msg == prefix.."tripbp" then
 
 game.Players:Chat("respawn                                                                                                      me")
 game.Players:Chat("invis                                                                                                    me")
-wait(0.30)
+wait(1)
 game.Players:Chat("stun                                                                                                       me")
-wait(0.30)
+wait(0.70)
 game.Players:Chat("unpunish                                                                                                   me")
 
-wait(0.70)
+wait(1)
 game.Players:Chat("trip                                                                                                      me")
 
 end	
@@ -1714,7 +1714,7 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Power
 	end
 	
-	if string.sub(msg:lower(), 0, 3) == prefix.."sm" then
+	if string.sub(msg:lower(), 0, 3) == sprefix.."sm" then
 		local box = string.sub(msg:lower(), 5)
 		hint("Server message", box)
 	end
