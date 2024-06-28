@@ -20,7 +20,7 @@ local perm = true
 local adbot = false
 local antihatkick = true
 local loopgrab = false
-local wlc = true
+
 
   local function clickivory() -- YES, FINALLY IVORY MOVING METHOD
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -3065,10 +3065,7 @@ game.Players:Chat(("ungear                                                      
 		end
 
 
-game:GetService("Players").PlayerAdded:Connect(function(player)
-  if wlc == true then
-    chat("h \n\n\n\n\n\n "..player.name.." has joined the game. ")
-  end
+
 
 
 
