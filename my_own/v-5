@@ -409,6 +409,26 @@ wait(.50)
     game.Players:Chat("-spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
 
 	end
+	if string.sub(msg:lower(), 0, 5) == prefix.."hlag" then
+		local plr = string.sub(msg:lower(), 7)
+  game.Players:Chat("-super skydive                                                "..plr.." "..plr.." "..plr.."     ")
+wait(1)
+game.Players:Chat("jail                                                                          "..plr.."     ")
+game.Players:Chat("blind                                                                         "..plr.."     ")
+game.Players:Chat("speed                                                                          "..plr.." 0")
+wait(.45)
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+game.Players:Chat("-stop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+chat("-stop")
+
+
+
+
+
+	end
 
 if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
@@ -1345,10 +1365,9 @@ allowcrash = false
 if msg == prefix.."tripbp" then
 
 game.Players:Chat("respawn                                                                                                      me")
-game.Players:Chat("invis                                                                                                    me")
 wait(1)
 game.Players:Chat("stun                                                                                                       me")
-wait(0.70)
+wait(1)
 game.Players:Chat("unpunish                                                                                                   me")
 
 wait(1)
