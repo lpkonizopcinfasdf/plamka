@@ -459,14 +459,18 @@ game.Players:Chat("-stop")
 	end
 
 	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+antijail = false
+wait(0.50)
+chat("skydive me me me")
+wait(0.10)
+chat("jail me")
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
-chat("skydive me me me me me me me")
-  game.Players:Chat("skydive                                                    "..plr.." "..plr.." "..plr.." me me me      ")
+
 wait(1)
 game.Players:Chat("tp                                                                       "..plr.." me")
-wait(0.45)
+wait(0.10)
 game.Players:Chat("jail                                                                       me "..plr.."")
 
 game.Players:Chat("spin                                                                           me "..plr.."")
