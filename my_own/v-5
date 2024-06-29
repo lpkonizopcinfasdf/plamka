@@ -437,14 +437,16 @@ chat("removeclones 764")
 
 	end
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
   game.Players:Chat("-super skydive                                                 "..plr.." "..plr.." "..plr.."     ")
 wait(1)
-game.Players:Chat("jail "..plr.." ")
-game.Players:Chat("spin "..plr.."")
+game.Players:Chat("jail                                                                        "..plr.."")
+game.Players:Chat("spin                                                                            "..plr.."")
+
+game.Players:Chat("blind                                                                            "..plr.."")
 wait(0.45)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(5)
