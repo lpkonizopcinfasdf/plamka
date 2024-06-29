@@ -11,7 +11,7 @@ local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortc
 
 
 function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
-game.Players:Chat("nok")
+game.Players:Chat("-nok")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 end
@@ -3028,9 +3028,9 @@ Spawn(function()
 if antiabusegears == true then
 			for i, player in pairs(game:GetService("Players"):GetPlayers()) do
 				if player.Character then
-					if player.Character:FindFirstChild("SeaThemedCrossbow") then
+					if player.Character:FindFirstChild("SteampunkGlove") then
 						local plrname = player.Name
-game.Players:Chat(("h \n\n\n\n Sorry, \n\n that gear is blacklisted \n\n\n\n [SeaThemedCrossbow]  \n\n\n\n\n   "..plrname))
+game.Players:Chat(("h \n\n\n\n Sorry, \n\n that gear is blacklisted \n\n\n\n [SteampunkGlove]  \n\n\n\n\n   "..plrname))
 						game.Players:Chat(("ungear                                                                         "..plrname))
 					 
 					end
