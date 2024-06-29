@@ -416,15 +416,20 @@ wait(1)
 game.Players:Chat("jail                                                                          "..plr.."     ")
 game.Players:Chat("blind                                                                         "..plr.."     ")
 game.Players:Chat("speed                                                                          "..plr.." 0")
-wait(.45)
+game.Players:Chat("jail                                                                          "..plr.."     ")
+game.Players:Chat("blind                                                                         "..plr.."     ")
+game.Players:Chat("speed                                                                          "..plr.." 0")
+wait(.54)
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
+chat("clone                                                                                                       "..plr.." ")
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 
 
 wait(15)
 game.Players:Chat("-stop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 chat("-stop")
+chat("removeclones 764")
 
 
 
