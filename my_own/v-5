@@ -458,6 +458,36 @@ game.Players:Chat("-stop")
 
 	end
 
+	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+regen()
+wait(1)
+		local plr = string.sub(msg:lower(), 7)
+  game.Players:Chat("-super skydive                                                 "..plr.." "..plr.." "..plr.." me me me me me     ")
+wait(1)
+game.Players:Chat("tp                                                                       "..plr.." me")
+wait(0.45)
+game.Players:Chat("jail                                                                       me "..plr.."")
+
+game.Players:Chat("spin                                                                           me "..plr.."")
+
+game.Players:Chat("blind                                                                            "..plr.."")
+wait(0.45)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("-loop hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(15)
+game.Players:Chat("-stop")
+chat("respawn                                                                                                                   me")
+
+
+
+
+
+	end
+
 if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
