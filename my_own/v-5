@@ -483,7 +483,7 @@ game.Players:Chat("-super hat "..plr.." 0000000000000000000000000000000000000000
 wait(1)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 game.Players:Chat("-loop hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(15)
+wait(30)
 game.Players:Chat("-stop")
 chat("respawn                                                                                                                   me")
 
