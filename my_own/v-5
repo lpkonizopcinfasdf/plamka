@@ -437,6 +437,48 @@ chat("removeclones 764")
 
 	end
 
+	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+regen()
+wait(1)
+		local plr = string.sub(msg:lower(), 7)
+  game.Players:Chat("-super skydive                                                 "..plr.." "..plr.." "..plr.."     ")
+wait(1)
+
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-loop skydive "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-loop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("-loop skydive "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-loop skydive "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+
+game.Players:Chat("-super skydive "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("-loop skydive "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+
+
+wait(15)
+game.Players:Chat("-stop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+chat("-stop")
+chat("removeclones 764")
+
+
+
+
+
+	end
+
 if msg == prefix.."fpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
@@ -752,7 +794,10 @@ loopping = false
 		else
 
 			game.Players:Chat("gear me 00000000000000000094794847")
+
 			allowcrash = true
+wait(.25)
+chat("-alltools")
 			Spawn(function()
 				wait(10)
 				allowcrash = false
