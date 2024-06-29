@@ -489,7 +489,7 @@ game.Players:Chat("invis                                          me")
   game.Players:Chat("gear me 00000000000000000000000000000108158379")
   wait(.50)
   clickivory()
-  wait(.30)
+  wait(.50)
   
 		
 		local target = Workspace_Folder.Baseplate
