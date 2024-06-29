@@ -461,8 +461,12 @@ game.Players:Chat("unname                                                   "..p
 	end
 
 if msg == prefix.."lo" then
-chat("-super skydive me me me")
-chat("fly me")
+chat("-super skydive me me me")  
+chat("fly                                                                                                               me")
+chat("fly                                                                                                               me")
+chat("fly                                                                                                               me")
+chat("fly                                                                                                               me")
+
 wait(1)
   chat("respawn                                                                                                                 others ")
   chat("speed others 0")
@@ -470,7 +474,7 @@ wait(1)
   game.Players:Chat("-super hat others 00000000000000000000000000000000000000000000000000000000000018101265026")
   wait(1)
   game.Players:Chat("-spam hat others 00000000000000000000000000000000000000000000000000000000000018101265026")
-  wait(5)
+  wait(15)
   chat("-stop")
   end
   
