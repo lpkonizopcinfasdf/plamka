@@ -449,7 +449,7 @@ game.Players:Chat("spin                                                         
 game.Players:Chat("blind                                                                            "..plr.."")
 wait(0.45)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(5)
+wait(15)
 game.Players:Chat("-stop")
 
 
