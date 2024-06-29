@@ -36,14 +36,14 @@ task.spawn(function()
                     if string.find(player.Name:lower(), v.Name:lower()) then
                         if slockenabled == true then
                             if not game.Lighting:FindFirstChild(v.Name) then
-game.Players:Chat("reg")
+game.Players:Chat("-reg")
                                 game.Players:Chat('punish                                   '..v.Name)
                              game.Players:Chat('blind                                                 '..v.Name)
                                 game.Players:Chat('pm '..v.Name..' Sorry, \n\n\n this server is locked \n\n\n join next server \n\n\n\n or ask to be whitelisted')
                             end
                         elseif table.find(blacklist, v.Name) then
                             if not game.Lighting:FindFirstChild(v.Name) then
-game.Players:Chat("reg")
+game.Players:Chat("-reg")
                                 game.Players:Chat('punish                                  '..v.Name)
                                 game.Players:Chat('blind                                            '..v.Name)
                                 game.Players:Chat('pm '..v.Name..' \n\n\n\n You are blacklisted \n\n\n\n Join next server')
@@ -64,7 +64,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
          checkforplayer(dasplayer)
          if player ~= nil then
                 game.Players:Chat("h \n\n\n Whitelisted  \n\n "..player.."  \n\n\n")
-game.Players:Chat("reg")
+game.Players:Chat("-reg")
                 table.insert(whitelist, player)
                 game.Players:Chat('unblind '..player)
                 game.Players:Chat('unpunish '..player)
@@ -112,7 +112,7 @@ game.Players:Chat("-reg")
     
     if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'slock' then
         game.Players:Chat("h \n\n\n Slock: On")
-game.Players:Chat("reg")
+game.Players:Chat("-reg")
         slockenabled = true
     end
     
@@ -121,7 +121,7 @@ game.Players:Chat("reg")
      game.Players:Chat("h \n\n\n Slock: Off")
         game.Players:Chat('unblind                                                 all')
         game.Players:Chat('unpunish                                         all')
-game.Players:Chat("reg")
+game.Players:Chat("-reg")
     end
     
 end)          
