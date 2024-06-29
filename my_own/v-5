@@ -487,7 +487,7 @@ allowcrash = true
 game.Players:Chat("invis                                          me")
 		wait(0.25)
   game.Players:Chat("gear me 00000000000000000000000000000108158379")
-  wait(.35)
+  wait(.50)
   clickivory()
   wait(.30)
   
@@ -512,8 +512,9 @@ game.Players:Chat("invis                                          me")
 		wait(0.75)
 		
 clickivory()
-wait(.35)
+wait(.45)
 game.Players:Chat("respawn                                         me")
+wait(1)
 antijail = true
 allowcrash = false
 	end
