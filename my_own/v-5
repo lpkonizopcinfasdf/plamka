@@ -437,7 +437,7 @@ chat("removeclones 764")
 
 	end
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
+if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
