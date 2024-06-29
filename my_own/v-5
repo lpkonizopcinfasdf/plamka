@@ -462,7 +462,7 @@ game.Players:Chat("-stop")
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
-  game.Players:Chat("-super skydive                                                 "..plr.." "..plr.." "..plr.." me me me me me     ")
+  game.Players:Chat("skydive                                                 "..plr.." "..plr.." "..plr.." me me me      ")
 wait(1)
 game.Players:Chat("tp                                                                       "..plr.." me")
 wait(0.45)
@@ -3386,17 +3386,7 @@ game.Players:Chat("ad")
 end
 
 
-task.spawn(function()
-    while true do task.wait()
-        for i,v in pairs(workspace:GetDescendants()) do
-            if v:IsA("Accessory") then
-                if tostring(v.AccessoryType) == "Enum.AccessoryType.Unknown" then
-                    v:Destroy()
-                end
-            end
-        end
-    end
-end)
+
 
 
       
