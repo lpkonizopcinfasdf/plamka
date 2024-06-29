@@ -3355,7 +3355,7 @@ wait(4)
 game.Players:Chat("ad")
 end
 
-if antihatkick == true then
+
 task.spawn(function()
     while true do task.wait()
         for i,v in pairs(workspace:GetDescendants()) do
@@ -3367,7 +3367,6 @@ task.spawn(function()
         end
     end
 end)
-end
 
 
       
