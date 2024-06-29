@@ -417,10 +417,12 @@ game.Players:Chat("jail                                                         
 game.Players:Chat("blind                                                                         "..plr.."     ")
 game.Players:Chat("speed                                                                          "..plr.." 0")
 wait(.45)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 
-game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(5)
+
+wait(15)
 game.Players:Chat("-stop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 chat("-stop")
 
