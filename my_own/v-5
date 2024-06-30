@@ -452,6 +452,7 @@ chat("size "..plr.." 3")
 wait(0.45)
 chat("tp "..plr.." me")
 chat("tp "..plr.." me")
+chat("spin                                                                                          "..plr.." ")
 wait(0.65)
 chat("jail                                                                         "..plr.." ")
 
