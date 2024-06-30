@@ -532,8 +532,10 @@ chat("respawn                                                                   
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
-game.Players:Chat("respawn                                                                                      me/"..plr.." ")
+game.Players:Chat("reset                                                                                      me/"..plr.." ")
 wait(0.35)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+wait(0.45)
 chat("tp "..plr.." me")
 chat("tp "..plr.." me")
 wait(0.10)
@@ -816,7 +818,8 @@ loopping = false
 		logn("Teleported to pads!")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 	end -- CFrame.new(Vector3.new(-41, 3.7, -15.589996337891))
-	
+-- 
+-- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))	
 	if string.sub(msg:lower(), 0, 6) == prefix.."spawn" then
 		logn("Teleported to pads!")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41, 3.7, -15.589996337891))
