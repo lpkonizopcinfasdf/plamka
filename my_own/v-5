@@ -3380,7 +3380,7 @@ wait(.35)
 logn("-------")
 
 
-logn(" Załadowano w "..tostring(os.clock()-loadtime).."s")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loaded in "..tostring(os.clock()-loadtime).."s")
 
 wait(0.25)
 
