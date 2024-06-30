@@ -502,7 +502,7 @@ wait(1)
 		local plr = string.sub(msg:lower(), 7)
 chat("-super skydive "..plr.." "..plr.." "..plr.." ")
 wait(2)
-chat("respawn                                                                               "..plr.."")
+
 wait(0.40)
 chat("speed "..plr.." 0")
 
