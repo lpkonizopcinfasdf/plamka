@@ -505,6 +505,7 @@ chat("-stop")
 chat("removejails ")
 chat("removejails")
 chat("reset                                                                                                                        "..plr.."")
+chat("removeclones")
 
 
 
