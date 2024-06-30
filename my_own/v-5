@@ -496,6 +496,7 @@ wait(0.65)
 chat("jail                                                                         "..plr.." ")
 
 chat("-house")
+chat("reset                                                                          me")
 wait(0.65)
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
