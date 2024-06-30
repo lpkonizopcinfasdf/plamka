@@ -532,28 +532,33 @@ chat("respawn                                                                   
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
-chat("-super skydive "..plr.." "..plr.." "..plr.." ")
-wait(2)
-
-wait(0.40)
-chat("speed "..plr.." 0")
-
+game.Players:Chat("respawn                                                                                      me/"..plr.." ")
+wait(0.35)
+chat("tp "..plr.." me")
+chat("tp "..plr.." me")
 wait(0.10)
+chat("freeze                                                                                              "..plr.." fkuc")
+wait(1)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(.35)
+game.Players:Chat("size me 2.15")
+game.Players:Chat("punish                                                                              me")
+game.Players:Chat("clone                                                                                 me")
 
-game.Players:Chat("spin                                                                         "..plr.."")
-
-
-wait(0.45)
+wait(0.35)
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
-game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(1)
-game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-game.Players:Chat("-loop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(30)
+game.Players:Chat("blind                                                                       "..plr.."  ")
+game.Players:Chat("unpunish                                                                  me ")
+game.Players:Chat("name "..plr.." ")
+wait(0.35)
+game.Players:Chat("unpunish                                           me me me")
+game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+game.Players:Chat("respawn                                                    me")
+chat("removeclones")
+chat("reset                                                                                 "..plr.." ")
 game.Players:Chat("-stop")
-
-
 
 
 
