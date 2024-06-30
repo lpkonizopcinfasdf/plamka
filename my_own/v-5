@@ -465,6 +465,7 @@ wait(5)
 chat("-stop")
 chat("removejails ")
 chat("removejails")
+chat("reset                                                                                                                        "..plr.."")
 
 
 
