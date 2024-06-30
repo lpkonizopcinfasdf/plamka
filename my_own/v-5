@@ -882,7 +882,36 @@ game.Players:Chat("fogcolor 0 0 0")
 game.Players:Chat("fogend")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/silent-crash",true))()
 	end
+if msg == prefix.."gearbl on" then
+antisword = true
+noivory = true
+antilasergun = true
+antiabusegears = true
 
+
+
+
+
+
+
+
+
+end
+
+if msg == prefix.."gearbl off" then
+
+antisword = false
+noivory = false
+antilasergun = false
+antiabusegears = false
+
+
+
+
+
+
+
+end
 	if string.sub(msg:lower(), 0, 11) == prefix.."npermcheck" then
     game.Players:Chat("-reg")
 wait(.25)
