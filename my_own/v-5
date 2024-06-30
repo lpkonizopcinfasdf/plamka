@@ -459,7 +459,7 @@ game.Players:Chat("-stop")
 
 	end
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."1234" then
 
                                                                              
 regen()
@@ -484,6 +484,40 @@ game.Players:Chat("-super hat "..plr.." 0000000000000000000000000000000000000000
 wait(1)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 game.Players:Chat("-loop hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(30)
+game.Players:Chat("-stop")
+chat("respawn                                                                                                                   me")
+
+
+
+
+
+	end
+
+	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+
+                                                                             
+regen()
+wait(1)
+		local plr = string.sub(msg:lower(), 7)
+chat("-super skydive "..plr.." "..plr.." "..plr.." ")
+wait(2)
+chat("respawn                                                                               "..plr.."")
+wait(0.40)
+chat("speed "..plr.." 0")
+
+wait(0.10)
+
+game.Players:Chat("spin                                                                         "..plr.."")
+
+
+wait(0.45)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+game.Players:Chat("-loop hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(30)
 game.Players:Chat("-stop")
 chat("respawn                                                                                                                   me")
