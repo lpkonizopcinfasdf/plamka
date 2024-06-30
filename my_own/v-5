@@ -450,7 +450,7 @@ game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000
 wait(1)
 chat("tp "..plr.." me")
 chat("tp "..plr.." me")
-wait(0.35)
+wait(0.65)
 chat("jail                                                                         "..plr.." ")
 wait(1)
 chat("reset me")
