@@ -526,6 +526,20 @@ chat("respawn                                                                   
 
 	end
 
+
+if msg == prefix.."hslock" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
+wait(0.45)
+chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(120)
+chat("-stop")
+wait(0.65)
+chat("size me 10")
+wait(0.65)
+chat("punish me")
+wait(.65)
+chat("clone me")
+end
 	if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
 
                                                                              
