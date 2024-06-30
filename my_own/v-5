@@ -459,6 +459,33 @@ game.Players:Chat("-stop")
 
 	end
 
+if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
+		local plr = string.sub(msg:lower(), 10)
+chat("-iy")
+wait(1)
+
+game.Players:Chat("iyc noclipcam")
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(.35)
+game.Players:Chat("size me 3")
+game.Players:Chat("punish                                  me")
+game.Players:Chat("clone me")
+game.Players:Chat("respawn                         "..plr.." ")
+wait(0.35)
+game.Players:Chat("blind                                                                       "..plr.."  ")
+game.Players:Chat("unpunish                                                                  me ")
+game.Players:Chat("freeze                                                      "..plr.."         ")
+game.Players:Chat("name "..plr.." ")
+wait(0.35)
+game.Players:Chat("unpunish                                           me me me")
+game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+game.Players:Chat("respawn                                                    me")
+game.Players:Chat("-stop")
+
+	end
+
+
 	if string.sub(msg:lower(), 0, 5) == prefix.."1234" then
 
                                                                              
