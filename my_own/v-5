@@ -442,17 +442,24 @@ if string.sub(msg:lower(), 0, 5) == prefix.."test" then
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 7)
-  game.Players:Chat("-super skydive                                                 "..plr.." "..plr.." "..plr.."     ")
-wait(1)
-game.Players:Chat("jail                                                                        "..plr.."")
-game.Players:Chat("spin                                                                            "..plr.."")
 
-game.Players:Chat("blind                                                                            "..plr.."")
+game.Players:Chat("reset                                                                                      me/"..plr.." ")
+wait(0.35)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 wait(0.45)
-game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(15)
-game.Players:Chat("-stop")
-
+chat("tp "..plr.." me")
+chat("tp "..plr.." me")
+wait(0.25)
+chat("jail                                                                      "..plr.." ")
+chat("-house")
+wait(0.65)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+chat("-stop")
+chat("removejails ")
+chat("removejails")
 
 
 
