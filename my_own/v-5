@@ -555,10 +555,12 @@ wait(0.35)
 game.Players:Chat("unpunish                                           me me me")
 game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(5)
+game.Players:Chat("-stop")
+wait(0.50)
 game.Players:Chat("respawn                                                    me")
 chat("removeclones")
 chat("reset                                                                                 "..plr.." ")
-game.Players:Chat("-stop")
+
 
 
 
