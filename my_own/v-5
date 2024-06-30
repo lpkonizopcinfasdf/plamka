@@ -449,7 +449,7 @@ wait(1)
 game.Players:Chat("reset                                                                                      me/"..plr.." ")
 wait(0.35)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-chat("size "..plr.." 2.25")
+
 
 
 wait(0.45)
