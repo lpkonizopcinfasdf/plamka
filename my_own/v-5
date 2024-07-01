@@ -441,7 +441,7 @@ chat("removeclones 764")
 
 
 
-if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
+if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 8)
@@ -463,7 +463,7 @@ chat("jail                                                                      
 chat("reset                                                                                          me")
 chat("-house")
 
-wait(0.65)
+wait(0.75)
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
@@ -478,7 +478,7 @@ chat("removeclones")
 
 	end
 
-if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
+if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
 regen()
 wait(1)
 		local plr = string.sub(msg:lower(), 8)
