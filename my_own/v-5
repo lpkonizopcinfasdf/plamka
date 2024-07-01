@@ -464,6 +464,7 @@ chat("reset                                                                     
 chat("-house")
 
 wait(0.75)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
