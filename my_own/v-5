@@ -555,34 +555,19 @@ game.Players:Chat("-stop")
 
                                                                              
 regen()
-wait(1)
+
 		local plr = string.sub(msg:lower(), 7)
-wait(0.50)
-chat("respawn                                                                               "..plr.."  me me me")
-wait(0.40)
-chat("speed "..plr.." 0")
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
-game.Players:Chat("tp                                                                       "..plr.." me")
+chat("tp                                                                                   "..plr.." me")
+wait(0.25)
+chat("jail                                                                            "..plr.." ")
 wait(0.10)
-
-game.Players:Chat("spin                                                                           me "..plr.."")
-
-game.Players:Chat("blind                                                                            "..plr.."")
-wait(0.45)
-game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(1)
-game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(1)
-game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
-game.Players:Chat("-loop hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(30)
-game.Players:Chat("-stop")
-chat("respawn                                                                                                                   me")
-
-
-
-
+chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+chat("reset                                                                                      me")
+chat("-house ")
 
 	end
 
