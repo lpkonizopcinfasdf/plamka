@@ -1982,13 +1982,13 @@ game.Players:Chat("h \n\n\n\n\n\n Hi! íf ƴοû ħåѷȇ đíšçοŕđ ƥ|š �
       Chat("-boombox")
 end
 
-if msg == prefix.."findgear flashbang" then
+if msg == prefix.."findtool flashbang" then
 Chat("gear me 000000000000000000000000000000000000000000000000000000000000006979083")
 end
-if msg == prefix.."findgear bomb" then
+if msg == prefix.."findtool bomb" then
 chat("gear me 000000000000000000000000000000000000000000000000000000000000000000000011563251")
 end
-if msg == prefix.."findgear bloxy cola" then
+if msg == prefix.."findtool bloxy cola" then
 chat("gear me 00000000000000000000000000000000000000000000000000000000000000010472779")
 end
 if msg == prefix.."findtool taco" then
@@ -2018,31 +2018,31 @@ end
 if msg == prefix.."findtool body swap" then
 chat("gear me 000000000000000000000000000000000000000000000000000000078730532")
 end
-if msg == prefix.."findgear icecream" then
+if msg == prefix.."findtool icecream" then
 Chat("gear me 000000000000000000000000000000000000000057902859")
 end
-if msg == prefix.."findgear portable justice" then
+if msg == prefix.."findtool portable justice" then
 Chat("gear me 000000000000000000000000000000000000082357101")
 end
-if msg == prefix.."findgear magic carpet" then
+if msg == prefix.."findtool magic carpet" then
 Chat("gear me 000000000000000000000000225921000")
 end
-if msg == prefix.."findgear railgun" then
+if msg == prefix.."findtool railgun" then
 Chat("gear me 000000000000000000000000000000000000079446473")
 end
-if msg == prefix.."findgear lasergun" then
+if msg == prefix.."findtool lasergun" then
 Chat("gear me 000000000000000000000000000130113146")
 end
-if msg == prefix.."findgear car" then
+if msg == prefix.."findtool car" then
 Chat("gear me 0000000000000000000000000000000253519495")
 end
-if msg == prefix.."findgear bike" then
+if msg == prefix.."findtool bike" then
 Chat("gear me 0000000000000000000000000000000000189910262")
 end
-if msg == prefix.."findgear torch" then
+if msg == prefix.."findtool torch" then
 Chat("gear me 00000000000000000000000000000000000000031839337")
 end
-if msg == prefix.."findgeare moneybag" then
+if msg == prefix.."findtool moneybag" then
 Chat("gear me 00000000000000000000000000000000000016722267")
 end
 if msg == prefix.."autocrasher" then
