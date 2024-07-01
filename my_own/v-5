@@ -447,7 +447,7 @@ game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000
 wait(1)
 		local plr = string.sub(msg:lower(), 8)
 
-game.Players:Chat("reset                                                                                      me/"..plr.." ")
+game.Players:Chat("reset                                                                                     "..plr.." ")
 wait(0.35)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 
