@@ -443,6 +443,7 @@ chat("removeclones 764")
 
 if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 regen()
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
 		local plr = string.sub(msg:lower(), 8)
 
@@ -453,6 +454,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.
 
 
 wait(0.45)
+chat("clone                                                                                         me")
 chat("tp "..plr.." me")
 chat("tp "..plr.." me")
 chat("blind                                                                       "..plr.." ")
@@ -460,6 +462,8 @@ chat("size "..plr.." nan")
 chat("spin                                                                         "..plr.." ")
 wait(.5)
 chat("jail                                                                                                 "..plr.." ")
+wait(.2)
+chat("reset                                                                                             me")
 
 wait(0.35)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
