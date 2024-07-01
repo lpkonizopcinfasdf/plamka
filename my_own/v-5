@@ -557,7 +557,7 @@ game.Players:Chat("-stop")
 regen()
 
 		local plr = string.sub(msg:lower(), 7)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-13, 32, 55))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 wait(0.25)
 chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(2)
