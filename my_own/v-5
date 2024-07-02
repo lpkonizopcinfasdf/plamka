@@ -809,29 +809,7 @@ allowcrash = false
       
 	end
 
--- Golden_Clubs
--- robloxrocks109339
-Players.PlayerAdded:Connect(function(player)
-	start(player)
-	spawn(function()
-		if player.Name == "Golden_Clubs" then
 
-chat("-hkick Golden_Clubs")
-wait(10)
-		end
-	end)
-end)
-Players.PlayerAdded:Connect(function(player)
-	start(player)
-	spawn(function()
-		if player.Name == "robloxrocks109339" then
-
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n [MPX] \n\n Crasher has joined the server. \n\n\n [robloxrocks109339] ")
-chat("-spam punish all")
-wait(10)
-		end
-	end)
-end)
 
 	if string.sub(msg:lower(), 0, 6) == prefix.."adbot" then
 		adbot = true
