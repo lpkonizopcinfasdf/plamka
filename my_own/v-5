@@ -1515,6 +1515,8 @@ game.Players:Chat("invis                                          me")
 	end
 if msg == prefix.."trapspawn" then
 allowcrash = true
+noivory = false
+wait(0.50)
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-57, 4, -20))
 wait(0.50)
@@ -1530,6 +1532,7 @@ clickivory()
 wait(0.70)
 chat("respawn me")
 allowcrash = false
+noivory = true
 end
 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
