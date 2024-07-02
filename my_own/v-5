@@ -811,8 +811,9 @@ Players.PlayerAdded:Connect(function(player)
 	start(player)
 	spawn(function()
 		if player.Name == "Golden_Clubs" then
-			chat("h \n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user has joined the game. \n\n\n\n [Golden_Clubs] \n\n\n\n")
+
 chat("-hkick Golden_Clubs")
+wait(10)
 		end
 	end)
 end)
