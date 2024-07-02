@@ -511,9 +511,12 @@ wait(.10)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(5)
 chat("-stop")
+wait(0.35)
 chat("removejails ")
 chat("removejails")
 chat("reset                                                                                                                        "..plr.."")
+chat("-bring "..plr.." ")
+chat("jump "..plr.."")
 chat("removeclones")
 
 
