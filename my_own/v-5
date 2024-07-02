@@ -478,7 +478,7 @@ wait(1)
 
 
 
-if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
+if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
 regen()
 game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
@@ -523,42 +523,46 @@ chat("removeclones")
 
 	end
 
-if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
+if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 regen()
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
 		local plr = string.sub(msg:lower(), 8)
 
-game.Players:Chat("reset                                                                                      me/"..plr.." ")
+game.Players:Chat("reset                                                                                     "..plr.." ")
 wait(0.35)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-chat("size me 2.25")
-wait(0.25)
-game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(1)
-chat("clone me")
 
-wait(0.65)
+
+
+wait(0.45)
+chat("clone                                                                                         me")
 chat("tp "..plr.." me")
 chat("tp "..plr.." me")
-chat("spin                                                                                          "..plr.." ")
-wait(0.65)
-chat("jail                                                                         "..plr.." ")
+chat("blind                                                                       "..plr.." ")
+chat("size "..plr.." nan")
+chat("spin                                                                         "..plr.." ")
+wait(.5)
+chat("jail                                                                                                 "..plr.." ")
+wait(.2)
+chat("reset                                                                                             me")
 
-chat("-house")
-chat("reset                                                                          me")
-wait(0.65)
+wait(0.35)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
+chat("clone                                                                                                  "..plr.." ")
+wait(.10)
 game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(5)
 chat("-stop")
+wait(0.35)
 chat("removejails ")
 chat("removejails")
 chat("reset                                                                                                                        "..plr.."")
+chat("-bring "..plr.." ")
+chat("jump "..plr.."")
 chat("removeclones")
-
-
-
 
 	end
 
