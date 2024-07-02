@@ -3499,15 +3499,14 @@ wait(0.45)
 Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [MPX] \nLoaded ")
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/paint1",true))()
+
 
 wait(0.25)
 
 Spawn(function()
 	startupScripts()
 end)
-wait(2)
-chat("-fpaint")
+
 
 
 
