@@ -1,4 +1,4 @@
-
+-- 
 
 local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
@@ -3496,8 +3496,9 @@ wait(0.45)
 
 
 
-Chat("ff Loaded in")
-chat("ff "..tostring(os.clock()-loadtime).."s")
+Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [MPX] \nLoaded in")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "..tostring(os.clock()-loadtime).."s")
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/paint1",true))()
 
 wait(0.25)
