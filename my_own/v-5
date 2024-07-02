@@ -1633,13 +1633,15 @@ allowcrash = false
 if msg == prefix.."tripbp" then
 
 game.Players:Chat("respawn                                                                                                      me")
-wait(1)
-game.Players:Chat("stun                                                                                                       me")
-wait(1)
-game.Players:Chat("unpunish                                                                                                   me")
+wait(0.50)
+game.Players:Chat("sit                                                                                                      me")
+wait(0.50)
+game.Players:Chat("-super unpunish                                                                                                   me")
 
 wait(1)
 game.Players:Chat("trip                                                                                                      me")
+wait(0.50)
+chat("respawn                                                                                                                          me")
 
 end	
 	if string.sub(msg:lower(), 0, 15) == prefix.."setspawnpoints" then
