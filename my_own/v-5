@@ -3502,6 +3502,8 @@ wait(0.25)
 Spawn(function()
 	startupScripts()
 end)
+wait(2)
+chat("-fpaint")
 
 
 
