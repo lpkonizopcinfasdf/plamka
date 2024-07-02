@@ -882,7 +882,8 @@ loopping = false
 	if string.sub(msg:lower(), 0, 6) == prefix.."house" then
 		logn("Teleported to pads!")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
-	end -- CFrame.new(Vector3.new(-41, 3.7, -15.589996337891))
+-- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-57, 4, -20))
+	end -- CFrame.new(Vector3.new(-57, 4, -20))
 -- 
 -- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))	
 	if string.sub(msg:lower(), 0, 6) == prefix.."spawn" then
@@ -1512,6 +1513,23 @@ game.Players:Chat("invis                                          me")
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
+if msg == prefix.."trapspawn" then
+game.Players:Chat("gear me 00000000000000000000000000000108158379")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-57, 4, -20))
+wait(0.50)
+clickivory()
+wait(0.50)
+chat("-house")
+wait(0.25)
+chat("sit me")
+wait(0.90)
+chat("-super unpunish me me me")
+wait(2)
+clickivory()
+wait(0.70)
+chat("respawn me")
+end
+
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
 allowcrash = true
