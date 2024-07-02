@@ -1577,11 +1577,13 @@ if msg == prefix.."blockpads" then
 
 chat("-house")
 wait(0.25)
-chat("sit me")
+chat("si4t me")
 wait(0.90)
 chat("-super unpunish me me me")
 wait(1)
 chat("unsize                                                              me")
+wait(0.45)
+chat("reset me")
 
 end
 
