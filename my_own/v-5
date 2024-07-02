@@ -801,6 +801,18 @@ allowcrash = false
 		loopgrab = true
       
 	end
+
+-- Golden_Clubs
+Players.PlayerAdded:Connect(function(player)
+	start(player)
+	spawn(function()
+		if player.Name == "Golden_Clubs" then
+			chat("h \n\n\n\n\n\n\n\n\n\n\n\n Blacklisted user has joined the game. \n\n\n\n [Golden_Clubs] \n\n\n\n")
+chat("-hkick Golden_Clubs")
+		end
+	end)
+end)
+
 	if string.sub(msg:lower(), 0, 6) == prefix.."adbot" then
 		adbot = true
       
