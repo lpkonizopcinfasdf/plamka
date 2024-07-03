@@ -570,11 +570,8 @@ chat("jump "..plr.."")
 chat("removeclones")
 
 	end
-local wlc = true
-game:GetService("Players").PlayerAdded:Connect(function(player)
-  if wlc == true then
-    game:GetService'Players':Chat(("h \n\n\n\n\n\n "..player.name.." has joined the server! Welcome!))
-  end
+
+
 
 if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
 		local plr = string.sub(msg:lower(), 10)
