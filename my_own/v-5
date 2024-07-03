@@ -525,7 +525,7 @@ chat("removeclones")
 
 if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 regen()
-wait(0.10)
+wait(0.35)
 chat("size me 2")
 wait(0.25)
 game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
@@ -550,7 +550,7 @@ chat("jail                                                                      
 wait(.2)
 chat("reset                                                                                             me")
 
-wait(0.35)
+wait(0.40)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
