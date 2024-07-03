@@ -1593,6 +1593,35 @@ wait(0.45)
 chat("reset me")
 
 end
+if msg == prefix.."unblockpads" then
+
+chat("-house")
+wait(0.25)
+chat("si4t me")
+wait(0.90)
+chat("-super unpunish me me me")
+wait(1)
+chat("unskydive                                                               me")
+wait(0.25)
+chat("unsize                                                               me")
+wait(0.45)
+chat("reset me")
+
+end
+
+if msg == prefix.."blockpads" then
+
+chat("-house")
+wait(0.25)
+chat("si4t me")
+wait(0.90)
+chat("-super unpunish me me me")
+wait(1)
+chat("unsize                                                              me")
+wait(0.45)
+chat("reset me")
+
+end
 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
