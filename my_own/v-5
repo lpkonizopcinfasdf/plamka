@@ -879,6 +879,9 @@ print("test")
 loopping = false
 
 	end
+if msg prefix.."robox" then
+game.Players.LocalPlayer.Backpack.Delete.delete:FireServer(Workspace.Terrain.GameFolder.Workspace["Obby Box"])
+end
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."clicktp" then
 		logn("Gave you the clicktp tool")
