@@ -831,7 +831,30 @@ allowcrash = false
 			end
 		end)
 	end
-	
+
+local wlc = true
+game:GetService("Players").PlayerAdded:Connect(function(player)
+  if wlc == true then
+-- "..player.name.."
+Players:Chat([[h 
+
+
+_________________________________________
+                                         
+"..player.name.." has joined the server!  
+
+_________________________________________
+
+
+
+]])
+  end
+
+  if player.name == "" then
+print("test")
+
+  end
+
 	if string.sub(msg:lower(), 0, 7) == prefix.."attach" then
 
 		game.Players:Chat("stun me")
