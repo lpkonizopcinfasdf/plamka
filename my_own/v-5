@@ -564,12 +564,11 @@ game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000
 wait(5)
 chat("-stop")
 wait(0.35)
-chat("removejails ")
-chat("removejails")
+
 chat("reset                                                                                                                        "..plr.."")
 chat("-bring "..plr.." ")
 chat("jump "..plr.."")
-chat("removeclones")
+chat("clr")
 
 	end
 
