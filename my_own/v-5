@@ -1603,7 +1603,7 @@ chat("-super unpunish me me me")
 wait(1)
 chat("unskydive                                                               me")
 wait(0.25)
-chat("unsize                                                               me")
+chat("unsize me                                                               me")
 wait(0.45)
 chat("reset me")
 
