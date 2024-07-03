@@ -1151,6 +1151,16 @@ chat("colorshifttop 255 255 0")
 chat("colorshiftbottom 255 255 0")
 wait()
 end
+if msg == prefix.."theme noob" then
+chat("fix")
+wait()
+chat("time 0")
+chat("fogend 200")
+chat("fogcolor 255 255 0")
+wait()
+chat("disco")
+wait()
+end
 if msg == prefix.."theme hell" then
 chat("fix")
 wait(.1)
