@@ -544,6 +544,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.
 wait(0.45)
 chat("clone                                                                                         me")
 chat("tp "..plr.." me")
+wait(0.10)
 chat("tp "..plr.." me")
 chat("blind                                                                       "..plr.." ")
 chat("size "..plr.." nan")
