@@ -1204,7 +1204,7 @@ end
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
 	
-	if string.sub(msg:lower(), 0, 3) == prefix.."ad" then
+	if string.sub(msg:lower(), 0, 3) == prefix.."+ad" then
 
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 
@@ -1227,7 +1227,7 @@ game.Players:Chat("respawn 343                                              all"
 game.Players:Chat("unchar 343                                              all")
 game.Players:Chat("reg")
 	end
-if string.sub(msg:lower(), 0, 4) == prefix.."dis" then
+if string.sub(msg:lower(), 0, 4) == prefix.."+dis" then
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 
 game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
