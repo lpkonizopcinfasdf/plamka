@@ -595,9 +595,11 @@ game.Players:Chat("name "..plr.." ")
 wait(0.35)
 game.Players:Chat("unpunish                                           me me me")
 game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(5)
-game.Players:Chat("respawn                                                    me")
+wait(2)
+game.Players:Chat("respawn                                                  "..plr.." me")
+chat("removeclones")
 game.Players:Chat("-stop")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 
 	end
 
