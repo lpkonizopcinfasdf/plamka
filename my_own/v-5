@@ -932,7 +932,16 @@ end
 		logn("Skydived!")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y + 1500, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z))
 	end
-	
+	if msg == prefix.."findregen" then
+local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+root.Anchored = true
+repeat
+	wait(.15)
+	root.CFrame = CFrame.new(-7.165, root.Position.Y + 2500 , 94.743)
+until workspace.Terrain._Game.Admin:FindFirstChild("Regen")
+root.Anchored = false
+root.CFrame = workspace.Terrain._Game.Admin:FindFirstChild("Regen").CFrame + Vector3.new(0, 3, 0)
+end
 	if string.sub(msg:lower(), 0, 6) == prefix.."house" then
 		logn("Teleported to pads!")
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
