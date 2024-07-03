@@ -2859,7 +2859,7 @@ if antisword == true then
 
 --
 
-local noivory = true
+local noivory = false
 -- antiivory
 
 if noivory == true then
