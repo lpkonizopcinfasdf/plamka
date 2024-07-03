@@ -1151,7 +1151,7 @@ chat("colorshifttop 255 255 0")
 chat("colorshiftbottom 255 255 0")
 wait()
 end
-if msg == prefix.."theme noob" then
+if msg == prefix.."theme rainbow" then
 chat("fix")
 wait()
 chat("time 0")
