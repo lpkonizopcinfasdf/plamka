@@ -475,7 +475,9 @@ wait(1)
 
 	end
 
-
+if msg == prefix.."g portalgun" then
+chat("gear me 00000000000000000000000000000000000000000000000000000000000000034870758")
+end
 
 
 if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
