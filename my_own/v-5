@@ -832,28 +832,6 @@ allowcrash = false
 		end)
 	end
 
-local wlc = true
-game:GetService("Players").PlayerAdded:Connect(function(player)
-  if wlc == true then
--- "..player.name.."
-Players:Chat([[h 
-
-
-_________________________________________
-                                         
-"..player.name.." has joined the server!  
-
-_________________________________________
-
-
-
-]])
-  end
-
-  if player.name == "" then
-print("test")
-
-  end
 
 	if string.sub(msg:lower(), 0, 7) == prefix.."attach" then
 
@@ -879,7 +857,7 @@ print("test")
 loopping = false
 
 	end
-if msg prefix.."robox" then
+if msg == prefix.."robox" then
 game.Players.LocalPlayer.Backpack.Delete.delete:FireServer(Workspace.Terrain.GameFolder.Workspace["Obby Box"])
 end
 	
