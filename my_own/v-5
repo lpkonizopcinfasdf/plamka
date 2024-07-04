@@ -3572,7 +3572,7 @@ wait(0.45)
 
 
 
-Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n Welcome "..game.Players.LocalPlayer.Name.." \n Script  Successfully \nLoaded \n\n Your prefix is "..prefix)
+Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n Welcome "..game.Players.LocalPlayer.Name..". \n Script Successfully \nLoaded. \n\n Your prefix is "..prefix)
 wait(0.10)
 resetothers()
 
