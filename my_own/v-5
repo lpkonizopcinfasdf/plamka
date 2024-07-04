@@ -4,25 +4,6 @@ local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
 local loadtime = os.clock()
 
---//functions\\--
-local autoafk = true
-
---//Script\\--
-local UserInputService = game:GetService("UserInputService")
-
-UserInputService.WindowFocused:Connect(
-    function()
-        if autoafk == true then
-          chat(game.Players.LocalPlayer.DisplayName.." is no longer afk")
-        end
-    end)
-
-UserInputService.WindowFocusReleased:Connect(
-    function()
-        if autoafk == true then
-            chat("name "..game.Players.LocalPlayer.DisplayName.." [AFK]")
-        end
-    end)
 
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
