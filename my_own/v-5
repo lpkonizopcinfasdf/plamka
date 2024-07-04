@@ -1346,7 +1346,7 @@ print("                                                       ")
 print("                                                       ")
 end
 
-	if string.sub(msg:lower(), 0, 9) == prefix.."moveobby" then
+	if msg == prefix.."moveobbybox" then
 		game.Players:Chat(prefix.."nok")
 game.Players:Chat("invis                                          me")
 		wait(0.05)
