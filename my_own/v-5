@@ -700,6 +700,8 @@ if msg == prefix.."bnuke" then
   game.Players:Chat("-super gear me 000000000000000000000000000000000000000000011563251")
 wait(1)
   game.Players:Chat("-usetools")
+wait(0.45)
+chat("ungear                                                                                               me")
 end
 if string.sub(msg:lower(), 0, 9) == prefix.."usetools" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
