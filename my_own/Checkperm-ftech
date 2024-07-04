@@ -19,7 +19,7 @@ if string.sub(msg, 1, #sprefix+2) == sprefix..'cp' then
     task.wait()
     if string.match(game:HttpGet("https://inventory.roblox.com/v1/users/" .. playnl.UserId .. "/items/GamePass/" .. id1), id1) then
         permcheck1 = true
-        game.Players:Chat(['Permcheck'], playr..' has perm.')
+        game.Players:Chat('Permcheck', playr..' has perm.')
         permcheck1 = true
         task.spawn(function()
             wait(1.35)
