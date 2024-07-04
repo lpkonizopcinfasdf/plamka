@@ -745,7 +745,7 @@ wait(1)
 	if string.sub(msg:lower(), 0, 6) == prefix.."fixbp" then
 		local plr = string.sub(msg:lower(), 8)
 antijail = false
-allowcrash = true
+
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 		wait(0.10)
 		game.Players:Chat("jail me")
