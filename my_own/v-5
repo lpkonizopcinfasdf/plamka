@@ -408,7 +408,14 @@ chat("respawn                                                                   
 chat("reset                                                                                                 "..plr.."")
 
 	end
-	if string.sub(msg:lower(), 0, 5) == prefix.."slag" then
+if msg == prefix.."vgc" then
+chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
+wait(.10)
+chat("-loop -alltools")
+chat("-spam unsize me me me")
+
+end
+if string.sub(msg:lower(), 0, 5) == prefix.."slag" then
 		local plr = string.sub(msg:lower(), 7)
   game.Players:Chat("respawn                                                 "..plr.."     ")
 wait(.20)
