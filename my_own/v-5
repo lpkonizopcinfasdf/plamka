@@ -5,14 +5,10 @@ local Chat = function(...)game.Players:Chat(...)end
 local loadtime = os.clock()
 
 
-local AllowMessages = true -- This cant be toggled when injected!
-local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
-local Rank = "Owner" -- Your shortcut custom rank
-local allowads = true -- Let us put our discord in some commands (Clearlogs, Anticrash msg, etc)
-local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortcut game teleports
 
 
-function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
+
+function startupScripts() 
 game.Players:Chat("-nok")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
@@ -259,7 +255,7 @@ end
 
 
 
-logn("Loaded my_own")
+logn("Loaded MPX")
 
 local function GetPad(msg)
 	while PadCheck == true do
@@ -384,6 +380,17 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 		local cf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 	
 		game.Players:Chat([[music 
+		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
+		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
+		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
+		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
+		]])
+	end
+
+if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
+		local cf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	
+		game.Players:Chat([[-super music 
 		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
 		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
 		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
@@ -726,21 +733,17 @@ if string.sub(msg:lower(), 0, 9) == prefix.."usetools" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
 end
 	if string.sub(msg:lower(), 0, 4) == prefix.."pun" then
+regen()
 		local plr = string.sub(msg:lower(), 6)
- game.Players:Chat("name "..plr.." [Punished] ")
- game.Players:Chat("name "..plr.." [Punished] ")
- game.Players:Chat("name "..plr.." [Punished] ")
- game.Players:Chat("name "..plr.." [Punished] ")
-wait(0.56)
-
-  game.Players:Chat("clone                                                                  "..plr.."     ")
-                                                 game.Players:Chat("name "..plr.." [Punished] ")
-  game.Players:Chat("punish   231                                             "..plr.." ")
-  game.Players:Chat("blind "..plr.." .a323453")
-wait(.35)
-    game.Players:Chat("-reg")
-game.Players:Chat("unname                                                   "..plr.." 03945f")
+chat("clone                                                                                                                     "..plr.." ")
+chat("punish                                                                                                                        "..plr.." ")
+chat("speed "..plr.." 0")
+chat("blind                                                                                                                       "..plr.." ")
+chat("trip                                                                                                                          "..plr.." ")
+chat("noclip                                                                                                                         "..plr.." ")
+chat("skydive                                                                                                                 "..plr.." "..plr.." "..plr.." ")
 	end
+
 
 if msg == prefix.."lo" then
 chat("-super skydive me me me")  
@@ -875,6 +878,12 @@ allowcrash = false
 		game.Players:Chat("unpunish me")
 
 	end
+function attachsit()
+chat("sit                                                                                                                       me")
+wait(0.45)
+chat("-super unpunish                                                                            me me me")
+logn("attached!")
+end
 	
 	if string.sub(msg:lower(), 0, 2) == prefix.."g " then
 		loadstring()
@@ -2589,6 +2598,12 @@ end
 		local Sound = game:GetService("Workspace").Terrain["_Game"].Folder.Sound
 		Sound.Volume = newVolume
 	end
+
+local AllowMessages = true 
+local ShortcutProtectedMSG = false
+local Rank = "Owner"
+local allowads = true 
+local AllowTeleportsToShortcutHub = false
 	
 	if string.sub(msg:lower(), 0, 9) == prefix.."bangears" then
 		game.Players:Chat("gear me 00000000000000000082357101")
@@ -2606,7 +2621,7 @@ end
 				local JailPlayer = v.Name
 				workspace[game.Players.LocalPlayer.Name].PortableJustice.MouseClick:FireServer(workspace[JailPlayer])
 				wait(0.25)
-				game.Players:Chat("reset "..v.Name)
+				game.Players:Chat("reset                                                                              "..v.Name)
 			end
 		end
 	end
