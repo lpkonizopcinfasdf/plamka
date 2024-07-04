@@ -410,6 +410,7 @@ chat("reset                                                                     
 
 	end
 if msg == prefix.."vgc" then
+allowcrash = true
 chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
 wait(.1)
 chat("-loop -alltools")
