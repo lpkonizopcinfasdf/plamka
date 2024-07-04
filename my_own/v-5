@@ -1366,7 +1366,7 @@ game.Players:Chat("invis                                          me")
                                 game.Players:Chat("skydive                                   me me me me me me me")
                     wait(0.2)
 					game.Players:Chat("respawn me")
-                    wait(0.15)
+                    wait(0.25)
                 end
             end
             wait(0.5)
