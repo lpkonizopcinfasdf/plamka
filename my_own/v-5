@@ -1643,17 +1643,16 @@ end
 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
-allowcrash = true
+
 wait(.60)
 game.Players:Chat("invis                                          me")
+game.Players:Chat("size me 0.5")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
       wait(.2)
-      game.Players:Chat("jail me")
-      wait(.2)
-      clickivory()
+   clickivory()
 wait(0.66)
 
         if Stable_Check == false then
@@ -1675,7 +1674,7 @@ wait(0.66)
 				wait(0.3)
 				looping = false
 clickivory()
-				wait(0.50)
+				wait(0.30)
 				game.Players:Chat("respawn me")
 				wait(0.2)
             end
