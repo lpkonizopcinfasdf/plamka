@@ -398,6 +398,11 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
   game.Players:Chat("kill                                                 "..plr.."     /o")
 
 	end
+	if string.sub(msg:lower(), 0, 3) == prefix.."re" then
+		local plr = string.sub(msg:lower(), 5)
+chat("reset                                                                                                 "..plr.."")
+
+	end
 	if string.sub(msg:lower(), 0, 5) == prefix.."slag" then
 		local plr = string.sub(msg:lower(), 7)
   game.Players:Chat("respawn                                                 "..plr.."     ")
