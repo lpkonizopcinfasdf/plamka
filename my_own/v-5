@@ -1662,7 +1662,7 @@ chat("reset me")
 end
 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
-	if string.sub(msg:lower(), 0, 7) == prefix.."delreg" then
+	if string.sub(msg:lower(), 0, 9) == prefix.."delregen" then
 
 wait(.60)
 game.Players:Chat("invis                                          me")
