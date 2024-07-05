@@ -1683,7 +1683,7 @@ end
 
 wait(.60)
 game.Players:Chat("invis                                          me")
-game.Players:Chat("size me 0.5")
+
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
@@ -3594,7 +3594,7 @@ wait(0.45)
 
 
 
-Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n Welcome "..game.Players.LocalPlayer.Name..". \n Script Successfully \nLoaded. \n\n Your prefix is "..prefix)
+
 wait(0.10)
 resetothers()
 
