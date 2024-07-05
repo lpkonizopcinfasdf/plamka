@@ -418,9 +418,10 @@ chat("reset                                                                     
 
 	end
 if msg == prefix.."vgc" then
+loopgrab = true
 allowcrash = true
 chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
-wait(.1)
+wait(.01)
 chat("-loop -alltools")
 chat("-spam unsize me me me")
 
