@@ -582,7 +582,7 @@ chat("spin                                                                      
 wait(.10)
 chat("jail                                                                                                 "..plr.." ")
 wait(.2)
-chat("reset                                                                                             me")
+chat("reset                                                                                                  me")
 
 wait(0.40)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
@@ -594,13 +594,7 @@ game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000
 wait(5)
 chat("-stop")
 wait(0.35)
-
-chat("reset                                                                                                                        "..plr.."")
-chat("-bring "..plr.." ")
-wait(0.2)
-chat("jump "..plr.." ")
-wait(0.2)
-chat("clr")
+chat("removeclones")
 
 	end
 
