@@ -773,9 +773,9 @@ wait(1)
 antijail = false
 
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
-		wait(0.10)
+		wait(0.2)
 		game.Players:Chat("jail me")
-game.Players:Chat("invis                                          me")
+
 		wait(0.25)
   game.Players:Chat("gear me 00000000000000000000000000000108158379")
   wait(.50)
@@ -804,7 +804,7 @@ game.Players:Chat("invis                                          me")
 		
 clickivory()
 wait(.45)
-game.Players:Chat("respawn                                         me")
+game.Players:Chat("respawn                                                                                                                      me")
 wait(1)
 antijail = true
 allowcrash = false
