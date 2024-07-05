@@ -602,6 +602,46 @@ chat("removeclones")
 	end
 
 
+if string.sub(msg:lower(), 0, 10) == prefix.."fastkick" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+regen()
+wait(0.35)
+
+		local plr = string.sub(msg:lower(), 12)
+
+game.Players:Chat("reset                                                                                     "..plr.." ")
+wait(0.35)
+chat("-super skydive                                                                                "..plr.." "..plr.." "..plr.." ")
+
+
+
+wait(0.45)
+chat("jail                                                                                                 "..plr.." ")
+chat("blind                                                                       "..plr.." ")
+chat("size "..plr.." nan")
+chat("spin                                                                         "..plr.." ")
+wait(.10)
+
+wait(.2)
+chat("reset                                                                                                  me")
+
+wait(0.40)
+
+game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+chat("clone                                                                                                  "..plr.." ")
+wait(.10)
+game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+chat("-stop")
+wait(0.35)
+chat("removeclones")
+
+	end
+
+
+
+
 
 if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
 		local plr = string.sub(msg:lower(), 10)
