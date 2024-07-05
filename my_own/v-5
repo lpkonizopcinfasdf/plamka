@@ -316,7 +316,10 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 			logn("Unable to Locate Server")
 		end
 	end
-	
+	if msg == prefix.."breakcam" then
+chat("gear all 00000000000000000000000000000000000000000000000000000004842204072")
+chat("removetools                                                                                         all")
+end
 	if string.sub(msg:lower(), 0, 4) == prefix.."srj" then
 		game.Players:Chat(prefix.."rjg 1")
 		game.Players:Chat(prefix.."rjg 2")
