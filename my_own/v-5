@@ -1272,8 +1272,16 @@ game.Players:Chat("fix 343 ")
     game.Players:Chat("ungear 343                                                              all")
 game.Players:Chat("respawn 343                                              all")
 game.Players:Chat("unchar 343                                              all")
-game.Players:Chat("reg")
+regen()
+wait(0.25)
+chat("-fpaint")
 	end
+if msg == prefix.."fixfilter" then
+chat("ASFGA$^$#?>")
+chat("ASD<G><AT")
+chat("JHDFHS%HK<>")
+
+end
 if string.sub(msg:lower(), 0, 4) == prefix.."+dis" then
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 
