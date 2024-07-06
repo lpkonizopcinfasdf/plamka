@@ -426,6 +426,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 	end
 
 if msg == prefix.."silc" then
+wait(0.25)
 	
 
 for i = 1,52 do
