@@ -96,7 +96,7 @@ local forcefield_keybind = "x"
 local fly_keybind = "z"
 local AttachTO_keybind = "m"
 local gravity_keybind = "None" -- Secret keybind
-local AttachDelete_keybind = ""
+local AttachDelete_keybind = "`"
 local allowcrash = false
 
 local crashall_Text = "                                                                                                                                                                                                                                                                                                                                                                                                                                        v                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 fuck"
@@ -150,6 +150,7 @@ mousee.KeyDown:connect(function(key)
 	end
 	
 	if key:lower() == AttachDelete_keybind then
+chat("invis                                                                                   me")
 		logn("Attached to object")
 		if mousee.Target then
 			local target = mousee.Target
@@ -167,14 +168,14 @@ mousee.KeyDown:connect(function(key)
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.25)
 				looping = false
-game.Players:Chat("invis                                          me")
-				game.Players:Chat(prefix..'super skydive me')
-				wait(1)
-				game.Players:Chat(prefix..'spam tp me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me,me')
-				wait(5)
-				game.Players:Chat(prefix..'stop')
+game.Players:Chat("invis                                                                                       me")
+chat("-super skydive                                                                       me me me")
+wait(1)
+
 				wait(0.25)
 				game.Players:Chat('respawn me')
+wait(0.12)
+chat("-house")
 			end
 			movepart()
 		end
