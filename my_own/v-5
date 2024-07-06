@@ -430,32 +430,7 @@ for i = 1,52 do
         for i = 1,51 do
             chat("clone all all all                                                                           ")
         end
-for i = 1,52 do
-            chat("dog all all all                                                                           ")
-        end
-        for i = 1,51 do
-            chat("clone all all all                                                                           ")
-        end
-for i = 1,52 do
-            chat("dog all all all                                                                           ")
-        end
-        for i = 1,51 do
-            chat("clone all all all                                                                           ")
-        end
-for i = 1,52 do
-            chat("dog all all all                                                                           ")
-        end
-        for i = 1,51 do
-            chat("clone all all all                                                                           ")
-        end
-for i = 1,52 do
-            chat("dog all all all                                                                           ")
-        end
-        for i = 1,51 do
-            chat("clone all all all                                                                           ")
-        end
 end
-
 	if string.sub(msg:lower(), 0, 4) == prefix.."res" then
 		local plr = string.sub(msg:lower(), 6)
 chat("respawn                                                                                                                 "..plr.." ")
