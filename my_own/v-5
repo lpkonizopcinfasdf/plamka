@@ -331,6 +331,7 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 	end
 	if msg == prefix.."breakcam" then
 chat("gear all 00000000000000000000000000000000000000000000000000000004842204072")
+wait(1)
 chat("removetools                                                                                         all")
 end
 	if string.sub(msg:lower(), 0, 4) == prefix.."srj" then
@@ -423,24 +424,10 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
   game.Players:Chat("kill                                                 "..plr.."     /o")
 
 	end
+
 if msg == prefix.."silc" then
 	
-chat("blind                                                                                all")
-game.Players:Chat[[
 
-
-
-_________________________________________________
-
-You have been kicked from this game.
-Reason: SERVER CRASHED
-
-(Error code:267)
-
-_________________________________________________
-
-]]
-wait(0.30)
 for i = 1,52 do
             chat("dog all all all                                                                           ")
         end
