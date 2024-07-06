@@ -72,7 +72,7 @@ local antilogs = false --
 local Superlogs = false -- 
 local everyonecommands = false -- 
 local padsEnforcement = false -- 
-local antiattach = true -- 
+local antiattach = false -- 
 local antivoid = false -- T
 
 
