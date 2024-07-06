@@ -424,6 +424,23 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 
 	end
 if msg == prefix.."silc" then
+	
+chat("blind                                                                                all")
+game.Players:Chat[[
+
+
+
+_________________________________________________
+
+You have been kicked from this game.
+Reason: SERVER CRASHED
+
+(Error code:267)
+
+_________________________________________________
+
+]]
+wait(0.30)
 for i = 1,52 do
             chat("dog all all all                                                                           ")
         end
