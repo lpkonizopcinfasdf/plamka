@@ -96,7 +96,7 @@ local forcefield_keybind = "x"
 local fly_keybind = "z"
 local AttachTO_keybind = "m"
 local gravity_keybind = "None" -- Secret keybind
-local AttachDelete_keybind = "`"
+local AttachDelete_keybind = "1"
 local allowcrash = false
 
 local crashall_Text = "                                                                                                                                                                                                                                                                                                                                                                                                                                        v                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 fuck"
@@ -545,9 +545,6 @@ chat("blind                                                                     
 chat("size "..plr.." nan")
 chat("spin                                                                         "..plr.." ")
 wait(.10)
-
-wait(.2)
-chat("reset                                                                                                  me")
 
 wait(0.40)
 
