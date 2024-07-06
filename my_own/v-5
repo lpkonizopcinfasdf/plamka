@@ -150,6 +150,7 @@ mousee.KeyDown:connect(function(key)
 	end
 	
 	if key:lower() == AttachDelete_keybind then
+chat("size me 0.5")
 chat("invis                                                                                   me")
 		logn("Attached to object")
 		if mousee.Target then
@@ -169,12 +170,23 @@ chat("invis                                                                     
 				wait(0.25)
 				looping = false
 game.Players:Chat("invis                                                                                       me")
-chat("-super skydive                                                                       me me me")
-wait(1)
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+chat("skydive                                                                       me me me")
+
+
 
 				wait(0.25)
 				game.Players:Chat('respawn me')
-wait(0.12)
+wait(0.25)
 chat("-house")
 			end
 			movepart()
