@@ -45,7 +45,7 @@ end
 
 
 function resetothers()
-game.Players:Chat("reset                                                                                others")
+game.Players:Chat("                                                                                others")
 end
 
 
@@ -72,7 +72,7 @@ local antilogs = false --
 local Superlogs = false -- 
 local everyonecommands = false -- 
 local padsEnforcement = false -- 
-local antiattach = false -- 
+local antiattach = true -- 
 local antivoid = false -- T
 
 
@@ -3378,7 +3378,10 @@ function start(plr)
 						killoff = false
 					end
 					if killoff == true then
-					print("someone is attaching lol")
+					print("someone is attaching lol")     
+game.Players:Chat("reset                                                                                       "..plr.Name)
+wait(0.25)
+game.Players:Chat("punish                                                                                       "..plr.Name)
 					end
 				end
 			end
