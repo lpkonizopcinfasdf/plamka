@@ -1,4 +1,5 @@
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/v-5",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/loadernotmyscript",true))()
 local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
 
