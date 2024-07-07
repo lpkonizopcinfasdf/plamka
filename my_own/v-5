@@ -1732,7 +1732,8 @@ wait(0.45)
 chat("reset me")
 
 end
-
+local fixregencords = CFrame.new(-7, 6, 93)
+-- 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 12) == prefix.."deleteregen" then
 
@@ -1741,16 +1742,16 @@ game.Players:Chat("size me 0.5")
 
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
-wait(.2)
+wait(.5)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
-      wait(.30)
+      wait(.40)
    clickivory()
 wait(0.40)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
             Stable_Check = true
-            if Admin_Folder.Regen.CFrame.Y < 500 then
+          if Admin_Folder.Regen.CFrame.Y < 500 then
 				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 				local looping = true
@@ -1791,7 +1792,49 @@ game.Players:Chat("size me 0.5")
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
             Stable_Check = true
-            if Admin_Folder.Regen.CFrame.Y < 500 then
+           if Admin_Folder.Regen.CFrame.Y < 500 then
+				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+				local looping = true
+				spawn(function()
+				    while true do
+				        game:GetService('RunService').Heartbeat:Wait()
+						game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+						cf.CFrame = Admin_Folder.Regen.CFrame * CFrame.new(-1*(Admin_Folder.Regen.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+						if not looping then break end
+				    end
+				end)
+				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+				wait(0.3)
+				looping = false
+clickivory()
+				wait(0.30)
+				game.Players:Chat("respawn me")
+				wait(0.2)
+            end
+            wait(0.5)
+            Stable_Check = false
+            logn("{Move.lua} Done Moving Admin Reset Pad")
+allowcrash = false
+        else
+            logn("{Move.lua} Already Moving, Please Wait")
+        end
+	end
+if string.sub(msg:lower(), 0, 9) == prefix.."fixregen" then
+chat("size me 0.5")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
+
+
+
+game.Players:Chat("gear me 00000000000000000000000000000108158379")
+ wait(.30)
+   clickivory()
+wait(0.40)
+game.Players:Chat("size me 0.5")
+        if Stable_Check == false then
+            logn("{Move.lua} Moving Admin Reset Pad")
+            Stable_Check = true
+         if Admin_Folder.Regen.CFrame.Y > 500 then
 				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 				local looping = true
@@ -3690,9 +3733,9 @@ wait(.35)
 logn("-------")
 chat("-pad")
 wait(0.25)
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <mpx.txt> ")
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loadtime: "..tostring(os.clock()-loadtime).."s")
+-- chat(" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <mpx.txt> ")
+-- chat(" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
+
 
 
 
