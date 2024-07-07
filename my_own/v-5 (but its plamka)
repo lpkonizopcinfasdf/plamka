@@ -1130,7 +1130,7 @@ chat("-alltools")
 			end
 		end
 	end
-	if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
+	if msg == prefix.."crash" then
 game.Players:Chat("time -")
 game.Players:Chat("fogcolor 0 0 0")
 game.Players:Chat("fogend")
