@@ -1,7 +1,7 @@
--- SlockD
+
 local prefix = "-"
 
-print("SlockD by S_P. Since 2023.")
+
 
 
 local whitelist = {"s#criptingprogrammer","me_123#eq","me_cr#ashking"}
@@ -20,12 +20,9 @@ end
 
 
 
-print("-Commands-")
-print("-slock/-unslock -> Serverlock the whole server.")
-print("-wl/-unwl -> Let a user bypass the serverlock.")
-print("-bl/unbl -> Serverlock a particular individual.")
 
--- this is similar to CMD's system :D
+
+
 task.spawn(function()
     while true do 
         task.wait(0)
@@ -39,14 +36,14 @@ task.spawn(function()
 game.Players:Chat("-reg")
                                 game.Players:Chat('punish                                   '..v.Name)
                              game.Players:Chat('blind                                                 '..v.Name)
-                                game.Players:Chat('pm '..v.Name..' Sorry, \n\n\n this server is locked \n\n\n join next server \n\n\n\n or ask to be whitelisted')
+                               
                             end
                         elseif table.find(blacklist, v.Name) then
                             if not game.Lighting:FindFirstChild(v.Name) then
 game.Players:Chat("-reg")
                                 game.Players:Chat('punish                                  '..v.Name)
                                 game.Players:Chat('blind                                            '..v.Name)
-                                game.Players:Chat('pm '..v.Name..' \n\n\n\n You are blacklisted \n\n\n\n Join next server')
+                              
                             end
                         else 
                         end
@@ -66,8 +63,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
                 game.Players:Chat("h \n\n\n Whitelisted  \n\n "..player.."  \n\n\n")
 game.Players:Chat("-reg")
                 table.insert(whitelist, player)
-                game.Players:Chat('unblind '..player)
-                game.Players:Chat('unpunish '..player)
+                game.Players:Chat('unblind                                               '..player)
+                game.Players:Chat('unpunish                                               '..player)
          else
                 print('Cannot find player with the name: '..dasplayer)
          end
@@ -111,7 +108,7 @@ game.Players:Chat("-reg")
     end
     
     if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'slock' then
-        game.Players:Chat("h \n\n\n Slock: On")
+  
 game.Players:Chat("-reg")
         slockenabled = true
     end
