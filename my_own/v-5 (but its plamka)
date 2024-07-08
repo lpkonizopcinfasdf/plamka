@@ -3364,8 +3364,8 @@ chat("jail                                                                      
 				end
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
-				game.Players:Chat("unjail                                                                me")
-chat("jail                                                                                                         others")
+				game.Players:Chat("unjail/                                                                me")
+chat("jail/                                                                                                         others")
 			end
 
 		end
@@ -3679,7 +3679,7 @@ game.Players:Chat(("ungear                                                      
 				end
 				if times >= 2 then
           game.Players:Chat("pm "..v.Name.." <PLAMKA.txt> \n\n\n You are punished for trying to take allpads.")
-					game.Players:Chat("punish "..v.Name)
+					game.Players:Chat("punish                                                    "..v.Name)
 					regen()
 				end
 			end
