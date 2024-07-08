@@ -2747,13 +2747,14 @@ local Rank = "Owner"
 local allowads = true 
 local AllowTeleportsToShortcutHub = false
 	
-	if string.sub(msg:lower(), 0, 9) == prefix.."bangears" then
-		game.Players:Chat("gear me 00000000000000000082357101")
+	if string.sub(msg:lower(), 0, 8) == prefix.."gearban" then
+-- 130113146 HyperLaserGun
+		game.Players:Chat("-super gear me 0000000000000000000000000000000000000000000000000000000000000000000082357101")
 		wait(0.50)
 		game.Players:Chat(prefix.."alltools")
 		wait(0.50)
 		names = game.Players:GetChildren()
-		local name = string.sub(msg:lower(), 11)
+		local name = string.sub(msg:lower(), 10)
 		for i,v in pairs(names) do
 			strlower = string.lower(v.Name)
 			sub = string.sub(strlower,1,#name)
@@ -2764,6 +2765,27 @@ local AllowTeleportsToShortcutHub = false
 				workspace[game.Players.LocalPlayer.Name].PortableJustice.MouseClick:FireServer(workspace[JailPlayer])
 				wait(0.25)
 				game.Players:Chat("reset                                                                              "..v.Name)
+			end
+		end
+	end
+
+if string.sub(msg:lower(), 0, 6) == prefix.."laser" then
+-- 130113146 HyperLaserGun
+		game.Players:Chat("-super gear me 00000000000000000000000000000000000000000000000000000000000000000000130113146")
+		wait(0.50)
+		game.Players:Chat(prefix.."alltools")
+		wait(0.1)
+		names = game.Players:GetChildren()
+		local name = string.sub(msg:lower(), 8)
+		for i,v in pairs(names) do
+			strlower = string.lower(v.Name)
+			sub = string.sub(strlower,1,#name)
+			if name == sub then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.25)
+				local JailPlayer = v.Name
+				workspace[game.Players.LocalPlayer.Name].HyperLaserGun.MouseClick:FireServer(workspace[JailPlayer])
+				
 			end
 		end
 	end
