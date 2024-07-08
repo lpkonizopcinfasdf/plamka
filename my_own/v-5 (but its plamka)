@@ -423,8 +423,9 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 
 if msg == prefix.."silc" then
 chat("music 00000000000000000000000000000000000000000000000000000000000000000000401117743")
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n You have been kicked from the game. \n\n Reason : SERVER CRASHED \n\n\n (Error code 267) ")
-wait(0.25)
+chat("blind                                                                                             all")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n You have been kicked from the game. \n\n Reason : SERVER CRASHED \n\n\n (Error code 267) ")
+wait(0.35)
 	
 
 for i = 1,52 do
