@@ -36,7 +36,7 @@ end
 
 -- VARIABLES --
 
-getgenv().antigear = false -- No one except you can use gears with this on
+getgenv().antigear = true -- No one except you can use gears with this on
 getgenv().anticrash = true -- No one except you can crash the servers (gears only)
 
 -- LocalPlayer variable --
