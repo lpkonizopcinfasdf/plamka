@@ -1,6 +1,6 @@
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/v-5",true))()
 local loadtime = os.clock()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/loadernotmyscript",true))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/loadernotmyscript",true))()
 local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
 
@@ -3718,13 +3718,13 @@ wait(0.25)
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
 chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loadtime: "..tostring(os.clock()-loadtime).."s")
-chat("iy fuck")
-chat("antikill me fuck")
-chat("antirocketlag me fuck")
-chat("playerlistv2")
-chat("|")
-chat("v!cmds")
-chat("antiblind fuck")
+-- chat("iy fuck")
+-- chat("antikill me fuck")
+-- chat("antirocketlag me fuck")
+-- chat("playerlistv2")
+-- chat("|")
+-- chat("v!cmds")
+-- chat("antiblind fuck")
 
 
 chat("god                                                                               me")
