@@ -59,7 +59,7 @@ end
 local anticrashVG = true 
 local antijailgearban = true 
 local antigrayscale = false
-local antikill = false -- 
+local antikill = true -- 
 local nopunish = true
 local antijail = true --
 local mymusiconly = false -- 
