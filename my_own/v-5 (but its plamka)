@@ -429,7 +429,7 @@ chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n You have been kicked from the 
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n You have been kicked from the game. \n\n Reason : SERVER CRASHED \n\n\n (Error code 267) ")
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n You have been kicked from the game. \n\n Reason : SERVER CRASHED \n\n\n (Error code 267) ")
 
-wait(0.35)
+wait(0.50)
 	
 
 for i = 1,52 do
