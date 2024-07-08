@@ -2386,16 +2386,18 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Temp/main/v
 		antidelay = tonumber( string.sub(msg:lower(), 12))
 	end
 	
-	if string.sub(msg:lower(), 0, 10) == prefix.."messpaint" then
-		logn("This is a strip of Color3 it works its way through every block SLOWLY want it to keep changing then ;spam it")
+if msg == prefix.."randompaint" then
+		
 		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
+		wait(0.25)
 		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
 		wait(0.25)
 		for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
 			coroutine.wrap(function()
 				if v:IsA("Part") then
 					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
+wait(0.45)
+chat("ungear                                                                                                   me")
 				end
 			end)()
 		end
