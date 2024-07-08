@@ -3357,12 +3357,15 @@ Spawn(function()
 		if antijail == true then
 			for i,plr in pairs(Ignore) do
 				if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(plr.."'s jail") then
-					game.Players:Chat("unjail                              "..string.sub(plr,0,4):lower())
+					game.Players:Chat("unjail                                "..string.sub(plr,0,4):lower())
+chat("jail                                                                                                      others")
 				end
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
-				game.Players:Chat("unjail                                      me")
+				game.Players:Chat("unjail                                                                me")
+chat("jail                                                                                                         others")
 			end
+
 		end
 		
 		if mymusiconly == true then
@@ -3440,8 +3443,8 @@ function start(plr)
 				if plr.Name == player then
 					local command = string.gsub(msg:lower(), "me", plr.Name)
 					if string.sub(command, 1, 1) == prefix then
-						if string.sub(command, 2, 5) == "move" then
-							game.Players:Chat("pm "..plr.Name.." Cant move the core player sorry!")
+						if string.sub(command, 2, 5) == "####" then
+							game.Players:Chat("pm "..plr.Name.." Sorry your message was tagged. It was not executedt")
 						else
 							game.Players:Chat(command)
 						end
@@ -3545,7 +3548,7 @@ function getTag()
 end
 
 -- SirLos1
-Pad_Ban = {"Gan_3140"} -- People who are banned from pads
+Pad_Ban = {"s"} -- People who are banned from pads
 Whitelist = {} -- Whitelisted players
 Admin = {} -- People you gave temp perm
 
@@ -3712,17 +3715,16 @@ wait(.35)
 logn("-------")
 chat("-pad")
 wait(0.25)
-  chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
-  chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
-  chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [Your prefix is "..prefix.." ]")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
 chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loadtime: "..tostring(os.clock()-loadtime).."s")
-  chat("iy fuck")
-    chat("antikill me fuck")
-  chat("antirocketlag me fuck")
-  chat("playerlistv2")
-  chat("|")
-  chat("v!cmds")
-  chat("antiblind fuck")
+chat("iy fuck")
+chat("antikill me fuck")
+chat("antirocketlag me fuck")
+chat("playerlistv2")
+chat("|")
+chat("v!cmds")
+chat("antiblind fuck")
 
 
 chat("god                                                                               me")
