@@ -3745,8 +3745,6 @@ logn("Code fully executed!")
 
 wait(.35)
 logn("-------")
-chat("-pad")
-wait(0.25)
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Successfully loaded.")
 chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Loadtime: "..tostring(os.clock()-loadtime).."s")
