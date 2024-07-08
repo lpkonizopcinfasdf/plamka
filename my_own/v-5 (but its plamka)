@@ -1,6 +1,6 @@
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/v-5",true))()
 local loadtime = os.clock()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/loadernotmyscript",true))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/loadernotmyscript",true))()
 local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
 
@@ -576,7 +576,17 @@ chat("-stop")
 
 
 	end
-
+if msg == prefix.."crashothers" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
+chat("respawn                                                                                      others")
+chat("size me 9")
+wait(0.45)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(1)
+game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(5)
+chat("-stop")
+end
   if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 regen()
