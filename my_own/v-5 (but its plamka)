@@ -576,10 +576,10 @@ chat("-stop")
 
 
 	end
-if msg == prefix.."crashothers" then
+if msg == prefix.."lagothers" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
 chat("respawn                                                                                      others")
-chat("size me 9")
+chat("size me 4")
 wait(0.45)
 game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
 wait(1)
