@@ -1732,7 +1732,7 @@ wait(0.45)
 chat("reset me")
 
 end
-local fixregencords = CFrame.new(-7, 6, 93)
+local fixregencords = CFrame.new(-7.16500044, 5.42999268, 91.7430038, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 -- 
 	  local hugecords = CFrame.new(-200000, 50000, 3500000)
 	if string.sub(msg:lower(), 0, 12) == prefix.."deleteregen" then
