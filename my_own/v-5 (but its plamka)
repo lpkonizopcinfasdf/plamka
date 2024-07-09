@@ -2071,7 +2071,7 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 		end
 	end
 	
-	if string.sub(msg:lower(), 0, 7) == prefix.."ignore" then
+	if string.sub(msg:lower(), 0, 7) == prefix.."gantis" then
 		names = game.Players:GetChildren()
 		local name = string.sub(msg:lower(), 9)
 		for i,v in pairs(names) do
@@ -2080,12 +2080,12 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 			if name == sub then
 				user = v.Name
 				table.insert(Ignore, v.Name)
-				logn("Ignoring "..v.Name)
+				logn("Gived antis  "..v.Name)
 			end
 		end
 	end
 	
-	if string.sub(msg:lower(), 0, 9) == prefix.."unignore" then
+	if string.sub(msg:lower(), 0, 9) == prefix.."ungantis" then
 		names = game.Players:GetChildren()
 		local name = string.sub(msg:lower(), 11)
 		for i,v in pairs(names) do
@@ -2096,7 +2096,7 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 				for a,b in pairs(ignore) do
 					if b == v.Name then
 						table.remove(Ignore, a)
-						logn("Unignored "..v.Name)
+						logn("Ungived antis "..v.Name)
 					end
 				end
 			end
@@ -3384,8 +3384,8 @@ Spawn(function()
 				for i,v in pairs(Ignore) do
 					if player.Name == Ignore[i] then
 						if player.Character.Humanoid.Health == 0 then
-              game.Players:Chat("reset                                               "..Ignore[i])
-              game.Players:Chat("god                                                  "..Ignore[i])
+              game.Players:Chat("reset                                                  "..Ignore[i])
+              game.Players:Chat("god                                                     "..Ignore[i])
 						end
 					end
 				end
@@ -3399,13 +3399,13 @@ Spawn(function()
 		if antijail == true then
 			for i,plr in pairs(Ignore) do
 				if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(plr.."'s jail") then
-					game.Players:Chat("unjail                                "..string.sub(plr,0,4):lower())
-chat("jail                                                                                                      others")
+					game.Players:Chat("unjail/                                "..string.sub(plr,0,4):lower())
+
 				end
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
 				game.Players:Chat("unjail/                                                                me")
-chat("jail/                                                                                                         others")
+
 			end
 
 		end
