@@ -22,6 +22,30 @@ local perm = false
 local adbot = false
 local antihatkick = true
 local loopgrab = false
+local function bugivory()
+chat("gear me 000000000000000000000000000000000000000000000000000000108158379")
+ for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
+        v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
+      --repeat wait() until workspace[LP]:FindFirstChild("IvoryPeriaston")
+        for i,w in pairs(workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+          if w:IsA("Tool") and v.Name == "IvoryPeriastron" then
+            local wkspt = w
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+          wait(.1)
+            local Remote = wkspt.Remote
+            wait(.1)
+            Remote:FireServer(Enum.KeyCode.E)
+          end
+        end
+        v.Parent = game.Players.LocalPlayer.Backpack
+wait(0.34)
+chat("reset                                                                                        me")
+      end
+    end
+end
+
+
 local function clickivory() 
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
@@ -473,6 +497,12 @@ chat("respawn                                                                   
 chat("reset                                                                                                 "..plr.."")
 
 	end
+if msg == prefix.."antilogs on" then
+antilogsv2 = true
+end
+if msg == prefix.."antilogs off" then
+antilogsv2 = false
+end
 if msg == prefix.."vgc" then
 loopgrab = true
 allowcrash = true
@@ -480,6 +510,21 @@ chat("gear me 000000000000000000000000000000000000000000000000000000000000000009
 wait(.01)
 chat("-loop -alltools")
 chat("-spam unsize me me me")
+
+end
+if antilogsv2 == true then
+if string.sub(msg:lower(), 0, 4) == "logs" then
+
+chat("-clearlogs")
+end
+if string.sub(msg:lower(), 0, 5) == ":logs" then
+
+chat("-clearlogs")
+end
+if string.sub(msg:lower(), 0, 6) == "::logs" then
+
+chat("-clearlogs")
+end
 
 end
 if string.sub(msg:lower(), 0, 5) == prefix.."slag" then
@@ -2144,6 +2189,9 @@ game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n  đíšçοŕ�
 			end
 		end
 	end
+if msg == prefix.."bugivory" then
+bugivory()
+end
 	
 	if string.sub(msg:lower(), 0, 6) == prefix.."admin" then
 		names = game.Players:GetChildren()
