@@ -2907,6 +2907,30 @@ if string.sub(msg:lower(), 0, 6) == prefix.."laser" then
 		antivoid = not antivoid
 		logn("antivoid is now set to "..tostring(antivoid))
 	end
+if msg == prefix.."antikill on" then
+antikill = true
+end
+if msg == prefix.."antikill off" then
+antikill = false
+end
+if msg == prefix.."antijail on" then
+antijail = true
+end
+if msg == prefix.."antijail off" then
+antijail = false
+end
+if msg == prefix.."anticrashvg on" then
+anticrashvg = true
+end
+if msg == prefix.."anticrashvg off" then
+anticrashvg = false
+end
+if msg == prefix.."antiattach on" then
+antiattach = true
+end
+if msg == prefix.."antiattach off" then
+antiattach = false
+end
 	
 	if string.sub(msg:lower(), 0, 12) == prefix.."togglenames" then
 		print("----- Anti's -----")
