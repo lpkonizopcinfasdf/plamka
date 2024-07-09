@@ -1311,7 +1311,11 @@ end
 		logn("attachto is now bound to '"..string.sub(msg:lower(), 16, 16).."'")
 		AttachTO_keybind = string.sub(msg:lower(), 16, 16)
 	end
-	
+	-- game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
+-- 
+if string.sub(msg:lower(), 0, 4) == prefix.."msg" then
+chat("h \n\n\n\n\n\n "..string.sub(msg:lower(), 6).." ")
+end
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 		logn("Now making person bok...")
 		wait(0.5)
