@@ -1,0 +1,3 @@
+while true do
+game.Players:Chat("ungear/all")
+end
