@@ -9,6 +9,8 @@ local Chat = function(...)game.Players:Chat(...)end
 
 function startupScripts() 
 game.Players:Chat("-nok")
+chat("-conjoin") 
+-- crash on join
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
@@ -412,6 +414,16 @@ for i = 1,52 do
         for i = 1,51 do
             chat("clone all all all                                                                           ")
         end
+wait(2)
+ for i = 1,51 do
+            chat("shield/ all all all                                                                           ")
+        end
+ for i = 1,51 do
+            chat("rocket/ all all all                                                                           ")
+        end
+wait(2)
+chat("-vgc")
+
 end
 if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 		local cf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
