@@ -401,7 +401,18 @@ end
 		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
 		]])
 	end
-
+if msg == prefix.."conjoin" then
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Crash on join: on")
+chat("-pad")
+loopgrab = true
+wait(0.25)
+for i = 1,52 do
+            chat("dog all all all                                                                           ")
+        end
+        for i = 1,51 do
+            chat("clone all all all                                                                           ")
+        end
+end
 if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 		local cf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 	
