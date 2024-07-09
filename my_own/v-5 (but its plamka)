@@ -755,6 +755,7 @@ chat("-house ")
 
 
 if msg == prefix.."hslock" then
+chat("-res others")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
 wait(0.45)
 chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
@@ -1011,11 +1012,11 @@ end
 	if string.sub(msg:lower(), 0, 10) == prefix.."clearlogs" then
 		logn("Cleared!")
 		for i = 1,100 do
-		game.Players:Chat("h \n\n\n\n\n - ")
+		game.Players:Chat("ff ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ \n\n ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ ")
 		end
 		wait(0.05)
 		if allowads == true then
-		game.Players:Chat("h \n\n\n\n\n - ")
+		game.Players:Chat("ff ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ \n\n ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ ")
 		end
 	end
 	
