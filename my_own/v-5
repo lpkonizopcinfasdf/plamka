@@ -1834,7 +1834,7 @@ game.Players:Chat("size me 0.5")
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
             Stable_Check = true
-         if Admin_Folder.Regen.CFrame.Y > 500 then
+         if Admin_Folder.Regen.CFrame.Y > 1 then
 				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 				local looping = true
