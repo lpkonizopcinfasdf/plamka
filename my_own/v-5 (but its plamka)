@@ -903,48 +903,6 @@ wait(1)
 
 
 	
-	if string.sub(msg:lower(), 0, 6) == prefix.."fixbp" then
-		local plr = string.sub(msg:lower(), 8)
-antijail = false
-
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
-		wait(0.2)
-		game.Players:Chat("jail me")
-
-		wait(0.25)
-  game.Players:Chat("gear me 00000000000000000000000000000108158379")
-  wait(.50)
-  clickivory()
-  wait(.50)
-  
-		
-		local target = Workspace_Folder.Baseplate
-		function movepart()
-			local cf = game.Players.LocalPlayer.Character.HumanoidRootPart
-			local looping = true
-			spawn(function()
-				while true do
-					game:GetService('RunService').Heartbeat:Wait()
-					game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
-					cf.CFrame = target.CFrame * CFrame.new(-1*(target.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
-					if not looping then break end
-				end
-			end)
-			spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
-			wait(0.25)
-			looping = false
-		end
-		movepart()
-		wait(0.75)
-		
-clickivory()
-wait(.45)
-game.Players:Chat("respawn                                                                                                                      me")
-wait(1)
-antijail = true
-allowcrash = false
-	end
-	
 	if string.sub(msg:lower(), 0, 7) == prefix.."padban" then
 		names = game.Players:GetChildren()
 		local name = string.sub(msg:lower(), 9)
@@ -1949,7 +1907,8 @@ allowcrash = false
   --clickivory()
 --  wait(.50)
 
-if msg == prefix.."2fixbp" then
+if msg == prefix.."fixbp" then
+
 antijail = false
 
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
