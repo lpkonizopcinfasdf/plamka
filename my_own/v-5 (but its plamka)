@@ -1314,7 +1314,7 @@ end
 	-- game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 -- 
 if string.sub(msg:lower(), 0, 4) == prefix.."msg" then
-chat("h \n\n\n\n\n\n "..string.sub(msg:lower(), 6).." ")
+chat("h \n\n\n\n\n\n "..string.sub(msg:lower(), 6).." \n\n\n\n\n\n ")
 end
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 		logn("Now making person bok...")
@@ -1340,7 +1340,9 @@ end
 		game.Players:Chat("name "..string.sub(msg:lower(), 7).." ")
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
-	
+	local function PlayerConnection(plr)
+   chat("h/ \n\n\n\n\n\n "..plr.Name.." has joined the server. \n\n\n\n\n\n")
+end
 	if string.sub(msg:lower(), 0, 3) == prefix.."+ad" then
 
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
