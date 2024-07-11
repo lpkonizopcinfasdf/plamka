@@ -1860,14 +1860,20 @@ allowcrash = false
         end
 	end
 if string.sub(msg:lower(), 0, 9) == prefix.."fixregen" then
+game.Players:Chat("gear me 00000000000000000000000000000108158379")
+
 chat("size me 0.5")
 wait(.45)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
 
 
 
-game.Players:Chat("gear me 00000000000000000000000000000108158379")
+
+
  wait(.40)
    clickivory()
 wait(0.40)
