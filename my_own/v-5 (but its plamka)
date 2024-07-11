@@ -611,12 +611,12 @@ chat("gear me 000000000000000000000000000000000000000000000000000000000000000348
 end
 
 
-if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
+if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
 
 regen()
 wait(0.35)
 
-		local plr = string.sub(msg:lower(), 8)
+		local plr = string.sub(msg:lower(), 9)
 
 game.Players:Chat("reset                                                                                     "..plr.." ")
 wait(0.35)
@@ -646,14 +646,55 @@ chat("-stop")
 	end
 if msg == prefix.."lagothers" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
-chat("respawn                                                                                      others")
-chat("size me 4")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
+
+chat("size me 2")
 wait(0.45)
 game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(1)
-game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
-wait(5)
-chat("-stop")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018101265026")
+wait(2)
+
+chat("punish                                                                       me")
+chat("clone                                                                        me")
+wait(0.45)
+chat("reset                                                                               me")
+wait(0.10)
+chat("-house")
 end
   if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
