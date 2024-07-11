@@ -644,6 +644,29 @@ chat("-stop")
 
 
 	end
+--  trapspawn 
+if msg == prefix.."trapspawn" then
+game.Players:Chat("gear me 00000000000000000000000000000108158379")
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-21, 4, -11))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-21, 4, -11))
+wait(0.35)
+clickivory()
+wait(0.35)
+chat("-house")
+wait(0.35)
+chat("-super unpunish me me me")
+wait(0.25)
+clickivory()
+wait(0.25)
+chat("seizure                                                                  me")
+wait(0.25)
+chat("respawn me")
+end
+
+
+
+
 if msg == prefix.."lagothers" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-43.01628494262695, 3.6999993324279785, -14.990374565124512))
