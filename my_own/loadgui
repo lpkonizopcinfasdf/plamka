@@ -26,6 +26,8 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000 
 TextButton.MouseButton1Down:connect(function()
 TextButton.Visible = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/v-5%20(but%20its%20plamka)",true))()
+print("PLAMKA.Txt - loaded")
 
 end)
 
