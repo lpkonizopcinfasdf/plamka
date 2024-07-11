@@ -646,6 +646,7 @@ chat("-stop")
 	end
 --  trapspawn 
 if msg == prefix.."trapspawn" then
+chat("invis                                                              me")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 -- -36, 4, -8
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-36, 4, -8))
