@@ -1,0 +1,31 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(234, 255, 1)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0297619049, 0, 0.0448143408, 0)
+Frame.Size = UDim2.new(0, 100, 0, 25)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 89)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.140000001, 0, 0.159999996, 0)
+TextButton.Size = UDim2.new(0, 71, 0, 17)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Load"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000 
+TextButton.MouseButton1Down:connect(function()
+TextButton.Visible = false
+
+end)
+
