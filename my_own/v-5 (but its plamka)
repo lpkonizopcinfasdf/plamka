@@ -1286,14 +1286,12 @@ end
 	end
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."jail" then
-		logn("Trapped person!")
+		
 		game.Players:Chat("freeze "..string.sub(msg:lower(), 7))
 		game.Players:Chat("name "..string.sub(msg:lower(), 7).." ")
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
-	local function PlayerConnection(plr)
-   chat("h/ \n\n\n\n\n\n "..plr.Name.." has joined the server. \n\n\n\n\n\n")
-end
+	
 	if string.sub(msg:lower(), 0, 3) == prefix.."+ad" then
 
 game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
@@ -1325,16 +1323,7 @@ chat("ASD<G><AT")
 chat("JHDFHS%HK<>")
 
 end
-if string.sub(msg:lower(), 0, 4) == prefix.."+dis" then
-game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n g")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n .")
-
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /8 yH v8 E PnE F")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
-end
 	if string.sub(msg:lower(), 0, 12) == prefix.."moveobbybox" then
         if Stable_Check == false then
             logn("{Move.lua} Moving Obby Box")
@@ -2207,23 +2196,10 @@ end
 		end
 	end
 	
-	if string.sub(msg:lower(), 0, 8) == prefix.."allpads" then
- game.Players:Chat("-reg")
- wait(.8)
-		local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:GetChildren("Head")
-		for i, pad in pairs(pads) do
-			Spawn(function()
-				pad.PrimaryPart = pad:FindFirstChild("Head")
-				local pos = pad.PrimaryPart.CFrame
-				wait(0)
-				pad.PrimaryPart.CanCollide = false
-				pad:SetPrimaryPartCFrame(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
-				wait(0)
-				pad:SetPrimaryPartCFrame(pos)
-				pad.PrimaryPart.CanCollide = true
-			end)
-		end
-	end
+	if string.sub(msg:lower(), 0, 8) == prefix.."grabpads" then
+ loopgrab = true
+loopgrab = false
+end
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."cmds" then
 		logn("Click F9 for the commands list")
