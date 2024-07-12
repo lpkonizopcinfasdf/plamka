@@ -499,9 +499,15 @@ end
 if msg == prefix.."antilogs off" then
 antilogsv2 = false
 end
+local spamgearv2 = false
+if spamgearv2 == true then
+wait(0.1)
+chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
+end
 if msg == prefix.."vgc" then
 loopgrab = true
 allowcrash = true
+spamgearv2 = true
 chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
 wait(.01)
 chat("-loop -alltools")
