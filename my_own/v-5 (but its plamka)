@@ -966,7 +966,7 @@ end
 	if string.sub(msg:lower(), 0, 10) == prefix.."clearlogs" then
 		logn("Cleared!")
 		for i = 1,100 do
-		game.Players:Chat("ff ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ \n\n ⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫ ")
+		game.Players:Chat("ff ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️⚠️\n⚠️ ")
 		end
 		wait(0.05)
 		if allowads == true then
