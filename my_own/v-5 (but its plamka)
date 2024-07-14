@@ -684,28 +684,36 @@ end
 
 
 if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
+
 regen()
-local plr = string.sub(msg:lower(), 9)
+wait(0.35)
+
+		local plr = string.sub(msg:lower(), 9)
+
 game.Players:Chat("reset                                                                                     "..plr.." ")
 wait(0.35)
-chat("skydive                                                                                        /"..plr.."/"..plr.."/"..plr.."/")
-chat("skydive                                                                                        /"..plr.."/"..plr.."/"..plr.."/")
-wait(0.10)
-chat("jail                                                                                                                  "..plr.."")
 chat("speed "..plr.." fuck")
+chat("size "..plr.." .3 ")
 chat("blind                                                                                                      "..plr.."")
 chat("spin                                                                                                   "..plr.."")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-14, 49, 57))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-14, 49, 57))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-14, 49, 57))
 wait(0.25)
+chat("tp                                                                                           "..plr.." plamk_a")
+chat("tp                                                                                           "..plr.." plamk_a")
+wait(0.25)
+chat("unsize                                                                                                        "..plr.."")
 chat("-super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-22, 8, 60))
 wait(1.50)
-chat("clone                                                                                                "..plr.."")
+chat("clone                                                                                           "..plr.."")
 wait(0.35)
 chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
 wait(5)
 chat("-stop")
 end
 -- 
-
 
 if msg == prefix.."cothers" then
 chat("respawn others")
