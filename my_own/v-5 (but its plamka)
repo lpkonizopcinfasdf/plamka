@@ -643,28 +643,25 @@ wait(0.35)
 
 game.Players:Chat("reset                                                                                     "..plr.." ")
 wait(0.35)
-chat("-super skydive                                                                                "..plr.." "..plr.." "..plr.." ")
-
-
-
-wait(0.45)
-chat("jail                                                                                                 "..plr.." ")
-chat("blind                                                                       "..plr.." ")
-chat("size "..plr.." nan")
-chat("spin                                                                         "..plr.." ")
-wait(.10)
-
-wait(0.40)
-
-game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018113316616")
-wait(1)
-chat("clone                                                                                                  "..plr.." ")
-wait(.10)
-game.Players:Chat("-spam hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018113316616")
+chat("speed "..plr.." fuck")
+chat("size "..plr.."  nan")
+chat("blind                                                                                                      "..plr.."")
+chat("spin                                                                                                   "..plr.."")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+wait(0.25)
+chat("tp                                                                                           "..plr.." plamk_a")
+chat("tp                                                                                           "..plr.." plamk_a")
+chat("-super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+wait(1.50)
+chat("clone                                                                                           "..plr.."")
+wait(0.35)
+chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
 wait(5)
 chat("-stop")
-
-
+end
+-- 
 
 	end
 --  trapspawn 
