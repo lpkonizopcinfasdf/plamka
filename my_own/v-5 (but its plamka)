@@ -516,7 +516,6 @@ if msg == prefix.."vgc" then
 loopgrab = true
 allowcrash = true
 anticrash = false
-spamgearv2 = true
 
 game.Players:Chat("gear me 0000000000000000000000000094794847")
 local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
@@ -533,8 +532,6 @@ wait(1)
 
 
 chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
-wait(.01)
-chat("-loop -alltools")
 chat("-spam unsize me me me")
 
 end
