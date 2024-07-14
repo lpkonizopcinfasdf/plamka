@@ -470,6 +470,18 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 	end
 
 if msg == prefix.."silc" then
+loopgrab = true
+chat("time/0")
+chat("fogcolor 0 0 0")
+chat("fogend")
+chat("speed/others/0")
+chat("seizure all")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ##################################################")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     You have been kicked from the game.        ")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Reason: SERVER CRASHED                  ")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     (Error code 267)                      ")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ###################################################")
+chat("")
 chat("music r00000000000000000000000000000000000000000000000000000000000000000000401117743")
 
 
