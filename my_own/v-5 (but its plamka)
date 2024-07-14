@@ -705,6 +705,7 @@ chat("tp                                                                        
 wait(0.20)
 chat("unsize                                                                                                        "..plr.." ")
 chat("-super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-22, 8, 60))
 wait(1.50)
 chat("clone                                                                                           "..plr.."")
 wait(0.35)
