@@ -468,6 +468,11 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
   game.Players:Chat("kill                                                 "..plr.."     /o")
 
 	end
+function crashmsg()
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     You have been kicked from the game.      ")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Reason: SERVER CRASHED              ")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    (Error code 267)                  ")
+end
 
 if msg == prefix.."silcrash" then
 loopgrab = true
@@ -476,11 +481,7 @@ chat("fogcolor 0 0 0")
 chat("fogend")
 chat("speed/others/0")
 chat("seizure all")
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ##################################################")
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     You have been kicked from the game.      ")
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Reason: SERVER CRASHED              ")
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     (Error code 267)                  ")
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ###################################################")
+crashmsg()
 chat("")
 chat("music r00000000000000000000000000000000000000000000000000000000000000000000401117743")
 
@@ -525,11 +526,11 @@ wait(0.1)
 chat("gear me 0000000000000000000000000000000000000000000000000000000000000000094794847")
 end
 if msg == prefix.."vgcrash" then
-
+crashmsg()
 allowcrash = true
 anticrash = false
 
-game.Players:Chat("gear me 0000000000000000000000000094794847")
+game.Players:Chat("gear all 0000000000000000000000000094794847")
 local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
 game.Players.LocalPlayer.Backpack:WaitForChild("VampireVanquisher")
 for _, v in ipairs(Backpack:GetChildren()) do
