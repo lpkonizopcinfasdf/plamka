@@ -599,8 +599,10 @@ chat("clone "..plr)
 wait(.10)
 chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
 wait(3)
+
+chat("-spam clone "..plr)
+wait(3)
 chat("-stop")
-chat("clone "..plr)
 
 
 
