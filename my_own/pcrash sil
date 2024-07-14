@@ -1,31 +1,426 @@
 local plr = "all"
 
 wait(1)
-print("Rocket kicking "..plr.."")
 
-for i 1,128 do
+
+for i = 1,128 do
 game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
 end
 wait(1)
-for i 1,128 do
+for i = 1,128 do
 game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
 end
-for i 1,128 do
-game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
-end
-wait(1)
-for i 1,128 do
+for i = 1,128 do
 game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
 end
 wait(1)
-for i 1,128 do
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
 game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
 end
 wait(1)
-for i 1,128 do
+for i = 1,128 do
 game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
 end
-wait(3)
-for i 1,128 do
-game.Players:Chat("kill/"..plr.."/"..plr.."/"..plr.." ")
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
 end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i = 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+
+
+
