@@ -842,7 +842,7 @@ chat("-house ")
 
 
 
-if msg == prefix.."fpaint" then
+if msg == prefix.."fixpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
 if msg == prefix.."bnuke" then
