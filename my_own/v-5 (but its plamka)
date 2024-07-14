@@ -471,7 +471,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 function crashmsg()
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     You have been kicked from the game.      ")
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Reason: SERVER CRASHED              ")
-chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    (Error code 267)                  ")
+chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      (Error code 267)                  ")
 end
 
 if msg == prefix.."silcrash" then
@@ -600,6 +600,7 @@ wait(.10)
 chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
 wait(3)
 chat("-stop")
+chat("clone "..plr)
 
 
 
