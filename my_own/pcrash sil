@@ -1,6 +1,31 @@
-   for i = 1,100 do
-       game.Players:Chat("rocket/all/all/all")
- game.Players:Chat("shield/all/all/all")
- game.Players:Chat("clone/all/all/all")
+local plr = "all"
 
-        end
+wait(1)
+print("Rocket kicking "..plr.."")
+
+for i 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+for i 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i 1,128 do
+game.Players:Chat("rocket/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i 1,128 do
+game.Players:Chat("clone/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(1)
+for i 1,128 do
+game.Players:Chat("shield/"..plr.."/"..plr.."/"..plr.." ")
+end
+wait(3)
+for i 1,128 do
+game.Players:Chat("kill/"..plr.."/"..plr.."/"..plr.." ")
+end
