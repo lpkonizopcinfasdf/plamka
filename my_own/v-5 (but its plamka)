@@ -888,7 +888,7 @@ end
 		loadstring()
 	end
 	
-	if string.sub(msg:lower(), 0, 5) == sprefix.."stop" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."stop" then
 		logn("Stopped all things")
 		teskking = false
 		Wwkicking = "none"
