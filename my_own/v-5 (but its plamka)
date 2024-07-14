@@ -578,7 +578,7 @@ wait(.50)
     game.Players:Chat("-spam smoke  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
 
 	end
-	if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."hatc" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 		local plr = string.sub(msg:lower(), 7)
 chat("respawn "..plr)
