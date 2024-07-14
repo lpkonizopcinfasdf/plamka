@@ -2432,7 +2432,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Temp/main/v3-bar-src"),true))()
 	end
 
-	if string.sub(msg:lower(), 0, 4) == prefix.."pad" then
+	if string.sub(msg:lower(), 0, 5) == prefix.."gpad" then
                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
                                               local a = pad.Head
  local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
@@ -2482,7 +2482,7 @@ chat("ungear                                                                    
 padsEnforcement = true
 end
 local anticrash = true
-local crashTools = {"OrinthianSwordAndShield", "VampireVanquisher"}
+local crashTools = {"SeaThemedCrossbow", "VampireVanquisher"}
 
 function warnCrash(player, toolName)
        Chat("ungear                                                                                         " .. player.Name)
@@ -3210,7 +3210,7 @@ if antisword == true then
 
 --
 
-local noivory = true
+local noivory = false
 -- antiivory
 
 if noivory == true then
