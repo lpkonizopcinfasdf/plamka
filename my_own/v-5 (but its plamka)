@@ -634,36 +634,9 @@ chat("gear me 000000000000000000000000000000000000000000000000000000000000000348
 end
 
 
-if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
 
-regen()
-wait(0.35)
 
-		local plr = string.sub(msg:lower(), 9)
 
-game.Players:Chat("reset                                                                                     "..plr.." ")
-wait(0.35)
-chat("speed "..plr.." fuck")
-chat("size "..plr.."  nan")
-chat("blind                                                                                                      "..plr.."")
-chat("spin                                                                                                   "..plr.."")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
-wait(0.25)
-chat("tp                                                                                           "..plr.." plamk_a")
-chat("tp                                                                                           "..plr.." plamk_a")
-chat("-super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
-wait(1.50)
-chat("clone                                                                                           "..plr.."")
-wait(0.35)
-chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
-wait(5)
-chat("-stop")
-end
--- 
-
-	end
 --  trapspawn 
 if msg == prefix.."trapspawn" then
 chat("invis                                                              me")
@@ -697,6 +670,35 @@ chat("respawn me")
 end
 
 
+
+if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
+
+regen()
+wait(0.35)
+
+		local plr = string.sub(msg:lower(), 9)
+
+game.Players:Chat("reset                                                                                     "..plr.." ")
+wait(0.35)
+chat("speed "..plr.." fuck")
+chat("size "..plr.."  nan")
+chat("blind                                                                                                      "..plr.."")
+chat("spin                                                                                                   "..plr.."")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-17, 49, 54))
+wait(0.25)
+chat("tp                                                                                           "..plr.." plamk_a")
+chat("tp                                                                                           "..plr.." plamk_a")
+chat("-super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+wait(1.50)
+chat("clone                                                                                           "..plr.."")
+wait(0.35)
+chat("-spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+wait(5)
+chat("-stop")
+end
+-- 
 
 
 if msg == prefix.."cothers" then
