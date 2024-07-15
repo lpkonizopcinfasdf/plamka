@@ -514,6 +514,42 @@ chat("respawn                                                                   
 chat("reset                                                                                                 "..plr.."")
 
 	end
+local antitoolstoggle = false
+
+if string.sub(msg:lower(), 0, 10) == prefix.."antigears" then
+        if antitoolstoggle then
+            logn("Anti Tools Command", "Anti Tools has already been toggled")
+        else
+            antitoolstoggle = true
+            logn("Anti Tools Command", "Toggled on")
+            while antitoolstoggle do wait()
+                for i,v in pairs(game.Players:GetPlayers()) do
+                    if v.Name ~= lplr.Name then
+                        if v.Character then
+                            if v.Character:FindFirstChildOfClass("Tool") then
+                                chat("removetools "..v.Name)
+                               
+                            end
+                        elseif v.Backpack then
+                            if v.Backpack:FindFirstChildOfClass("Tool") then
+                                chat("removetools "..v.Name)
+                       
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 12) == prefix.."unantigears" then
+        if not antitoolstoggle then
+           logn("Anti Tools Command", "Anti Tools has not been toggled yet")
+        else
+            antitoolstoggle = false
+           logn("Anti Tools Command", "Toggled off")
+        end
+    end
+    
+
 if msg == prefix.."antilogs on" then
 antilogsv2 = true
 end
