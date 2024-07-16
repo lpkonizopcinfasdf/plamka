@@ -2884,7 +2884,7 @@ Spawn(function()
 						if player.Character:FindFirstChild("VampireVanquisher") then
 							local plrname = player.Name
 							game.Players:Chat(("ungear                                      "..plrname))
-							game.Players:Chat(("unsize                                     "..plrname))
+							game.Players:Chat(("punish                                      "..plrname))
 							if AllowMessages == true then
 								if allowads == true then
 						
@@ -2898,7 +2898,7 @@ Spawn(function()
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
 								game.Players:Chat(("reset                                     "..plrname))
-								game.Players:Chat(("unclone                                       "..plrname))
+								game.Players:Chat(("ungear                                       "..plrname))
 								if AllowMessages == true then
 									if allowads == true then
 							
@@ -3027,7 +3027,7 @@ end
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
 								game.Players:Chat(("reset                                                             "..plrname))
-								game.Players:Chat(("unclone                                                             "..plrname))
+								game.Players:Chat(("unsize                                                             "..plrname))
 								if AllowMessages == true then                            
 									if allowads == true then
 							
@@ -3334,9 +3334,9 @@ Spawn(function()
 					game.Players:Chat("music "..mymusiconly_ID)
 					if AllowMessages == true then
 						if allowads == true then
-							game.Players:Chat("h \n\n\n\n\n\n  Sorry antimusic is on \n\n\n but you can use boombox")
+						
 						else
-						game.Players:Chat("h \n\n\n\n\n\n  Sorry antimusic is on \n\n\n but you can use boombox")
+						
 						end
 					end
 				end
@@ -3345,9 +3345,9 @@ Spawn(function()
 				game.Players:Chat("music "..mymusiconly_ID)
 				if AllowMessages == true then
 					if allowads == true then
-				game.Players:Chat("h \n\n\n\n\n\n  Sorry antimusic is on \n\n\n but you can use boombox")
+			
 					else
-					game.Players:Chat("h \n\n\n\n\n\n  Sorry antimusic is on \n\n\n but you can use boombox")
+
 					end
 				end
 			end
