@@ -1,0 +1,1809 @@
+repeat wait()
+until game:IsLoaded()
+
+
+
+workspace.FallenPartsDestroyHeight = -50000
+
+-- Values
+
+local lplr = game.Players.LocalPlayer
+local mouse = lplr:GetMouse()
+local spamtoggle = false
+local permtoggle = false
+local antimsgtoggle = true
+local allpadstoggle = false
+local antispintoggle = false
+local antifreezetoggle = true
+local antipunishtoggle = true
+local antismoketoggle = false
+local antidogtoggle = false
+local antifiretoggle = false
+local antitptoggle = false
+local antiblindtoggle = false
+local antitoolstoggle = false
+local autosize = true
+local padenforcetoggle = false
+local amountofpadstakenbyplayer = 0
+local previewing = false
+local gearblacklist = true
+local antijailtoggle = false
+local antiattachtoggle = false
+local obbydeath = false
+local afk = false
+local uss = game:GetService("UserInputService")
+local env = getfenv()
+local pos1 = nil
+local pos2 = nil
+
+-- Settings
+
+local prefix = "["
+local runessentialcommandsonexecute = true
+
+-- Tables
+
+local padbans = {}
+local blacklisted = {"Joshua11TheCheater", "evaded_taxes", "catboxer125", "tubers85s", "Scentedda", "Stevekim0219", "The60sCalled", "joemamaisahaxorlol", "cyxapuk4uncuk", "TheNoobSaidHiReply", "kingroblox1251", "FoxTheSuprise", "lailaonthe_spectrum", "Bruh_timetrio", "Sinscrimes", "thatscrazy665", "GekkeTurk3221", "arazuhl_HT", "ChristopherReed06", "guesii94", "I_l06", "Aq0nto", "ArcusMedia", "mufatgaming123", "LegHat4445", "me_NoLifeCrasher", "Cruelxal", "miroks34704", "hliasvsmaria", "ducminh244226", "ducminh244227", "ddfsgrthtdfg", "block_ofmaster", "dss3fg", "QwertyDark635", "Robin66440", "extrafun456789", "Cameroncrowson16", "me_mati16az", "K0h1s4DM12", "o7ws", "nsunixxr", "7x9x4x3x7", "nx_lt", "Corcunda274", "eqfiohewquhfqegqwhdi", "0akyz", "xrffg", "minh24422", "gyukfrhg", "CryptoMilky", "all_ecatlol", "me_NormalHuman", "roblox7779027", "pousman678", "SoGoodBacon_Hair", "9x9x9x1x1x1x2", "Sebfan8", "itsnothardtocrash", "misha_161", "WiktorGames32", "Xtreme_Sploits", "akaRadapedaxa", "adasdawdsawdawssd", "1x1x1x10x1xx", "ggezclapslol", "scv2crasher", "gusiongamer146", "FiratProTRX", "an6_x", "Skylander1335", "killer12344321123443", "frown0_o", "am4tos2", "Tanqr_92po", "roblox34guess", "ScoreDoblox", "placeooIinmob", "1010Happiness1010", "swaggy_jonsey", "SwagBloxA", "lightningdc12", "NotGary1234", "XXDARKSWOLFSXX123", "overglee", "chaderchad1", "me_Kohlscrasher", "yourserverisgone", "youpoolo123", "Geury30052", "1argeBro", "batu1890", "Flasedreams", "mer4300", "Lighthouws0", "banfor7days1191", "jabsjsjhekekdbd", "ayowhatthefa_idk", "IWillCrashYouEz", "iiQuarantine_Vibesii", "idontknowwhaatimdoing", "PokeIsBetter483", "PABLITO_ESPANA", "AKWUFHSNCTWN", "Joyful_Blocky22", "GuardUpBozo123", "Dirionyemma", "throwdboy66", "23SebeePRO6482", "cubbylovesme", "EDP_445ww", "Auzri_q", "BigStinkyBoi90222", "PrincesseGalya", "guest981125", "herique21", "kr4zybread", "UnusuallyTheUnusual", "PozziBros09507", "TestAccountKRNL", "tnt_pro66", "ThatGurlLiv", "blacklistingwontwork", "AltForFree0146", "chadgod90222"}
+local blacklistedgears = {"AlienEgg", "BarrelOfMonkeys", "AnAlpacaYouKnow", "IceStaff", "Transmorpher", "BoneSword", "WormholeTunneler", "TurkeyTool", "GiantAnimeHammer", "SubspaceTripmine", "FakeChartreusePeriastron", "RageTable", "AzureDragonMagicSlayerSword", "SwordOfSwords", "SkeletonScythe", "SwordOfDarkness", "SwordOfLight", "DaggerOfShatteredDimensions", "BodySwapPotion", "LaserFingerPointers", "PrettyPrettyPrincessSceptor", "BlizzardWand", "SeaThemedCrossbow", "SentryTurret", "Cauldron", "RCTank", "PaintBucket", "PortableJustice", "StatueStaffOfStonyJustice", "Tactical Airstrike", "SuperFlyGoldBoombox", "Easterbomby", "AzurePeriastron", "IvoryPeriastron", "CrimsonPeriastron", "GrimgoldPeriastron", "ChartreusePeriastron", "AmethystPeriastron", "NoirPeriastron", "RainbowPeriastron", "FestivePeriastron", "FallPeriastron", "JoyfulPeriastron", "ALSIceBucketChallenge", "VampireVanquisher"}
+local regenpositions = {Vector3.new(-500000, 300000, 500000), Vector3.new(-300000, 300000, 300000), Vector3.new(300000, 300000, 300000), Vector3.new(300000, 300000, -300000), Vector3.new(-300000, 300000, -300000), Vector3.new(1000000, 1000000, 1000000), Vector3.new(-7, 12009, 95), Vector3.new(-20, 1286, 2809), Vector3.new(734399, 560502, 2776), Vector3.new(-360263, 421796, 716100), Vector3.new(999982, 3143, 999997), Vector3.new(-7, 6009, 95)}
+
+-- Functions
+
+function notif(title ,msg)
+    game.StarterGui:SetCore("SendNotification", {
+    	Title = title; 
+    	Text = msg; 
+    	Duration = 5;
+    })
+end
+
+function chat(text)
+    game.Players:Chat(text)
+end
+
+ogtext = hookmetamethod(Instance.new("RemoteEvent"), "__namecall", function(Self, ...)
+    local args = {...}
+    
+    if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(Self) == "SayMessageRequest" then
+        if string.sub(args[1], 1, #prefix) == prefix then
+            game.StarterGui:SetCore("ChatMakeSystemMessage", { Text = "Command has been hidden from other players." })
+            return nil
+        end
+    end
+    return ogtext(Self, ...)
+end)
+
+workspace.ChildRemoved:Connect(function(loplr)
+    if loplr.Name == lplr.Name then
+        workspace:WaitForChild(lplr.Name)
+        workspace[lplr.Name].DescendantAdded:Connect(function()
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("Torso") then
+                    if lplr.Character.Torso:FindFirstChild("BodyForce") then
+                        lplr.Character.Torso:FindFirstChild("BodyForce").Force = Vector3.new(0,0,0)
+                        wait()
+                        lplr.Character.Torso:FindFirstChild("BodyForce"):Destroy()
+                        repeat wait()
+                        until not lplr.Character.Torso:FindFirstChild("BodyForce")
+                    end
+                end
+            end
+        end)
+        if lplr.Character then
+            if lplr.Character:FindFirstChild("Humanoid") then
+                antispeed = lplr.Character.Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+                    lplr.Character.Humanoid.WalkSpeed = 16
+                end)
+            end
+        end
+    end
+end)
+
+for i,plr in pairs(game.Players:GetPlayers()) do
+     if plr.Name ~= lplr.Name then
+        plr.CharacterAdded:Connect(function()
+            plr.Character.ChildAdded:Connect(function(v)
+                if gearblacklist then
+                    if not antitoolstoggle then
+                    	if table.find(blacklistedgears, v.Name) then
+                    		if not string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+                        		chat("removetools                                                                                     "..plr.Name)
+                        	
+                    		else
+                    			chat("removetools                                                                                          others")
+                        	
+                    		end
+                    	end
+                    end
+                end
+            end)
+            plr.Backpack.ChildAdded:Connect(function(v)
+                if gearblacklist then
+                    if not antitoolstoggle then
+            			if table.find(blacklistedgears, v.Name) then
+            				if not string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+                				chat("removetools                                                                                     "..plr.Name)
+                	
+            				else
+            					chat("removetools                                                                                               others")
+                		
+            				end
+            			end
+            		end
+            	end
+            end)
+        end)
+    end
+end
+
+game.Players.ChildAdded:Connect(function(plr)
+    if plr.Name ~= lplr.Name then
+        plr.CharacterAdded:Connect(function()
+            plr.Character.ChildAdded:Connect(function(v)
+                if gearblacklist then
+                    if not antitoolstoggle then
+                    	if table.find(blacklistedgears, v.Name) then
+                    		if not string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+                        		chat("removetools "..plr.Name)
+                      
+                    		else
+                    			chat("removetools others")
+                        
+                    		end
+                    	end
+                    end
+                end
+            end)
+            plr.Backpack.ChildAdded:Connect(function(v)
+                if gearblacklist then
+                    if not antitoolstoggle then
+            			if table.find(blacklistedgears, v.Name) then
+            				if not string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+                				chat("removetools "..plr.Name)
+                		
+            				else
+            					chat("removetools others")
+                		
+            				end
+            			end
+            		end
+            	end
+            end)
+        end)
+    end
+end)
+
+
+
+-- Commands
+
+lplr.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 0, 5) == prefix.."spam" then
+        spamtoggle = true
+        notif("Spam Command", "Spamming "..'"'..string.sub(msg, 7)..'"')
+        while spamtoggle do
+            game:GetService("RunService").Heartbeat:wait()
+            chat(string.sub(msg, 7))
+        end
+    elseif string.sub(msg:lower(), 0, 5) == prefix.."stop" then
+        notif("Spam Command", "Stopped spamming")
+        spamtoggle = false
+    end
+    
+    if string.sub(msg:lower(), 0, 6) == prefix.."super" then
+        for i = 1, 100 do
+            chat(string.sub(msg, 8))
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 7) == prefix.."repeat" then
+        if string.split(msg, ",")[4] then
+            for i = 1, string.split(msg, ",")[3] do
+                chat(string.split(msg, ",")[2])
+                wait(string.split(msg, ",")[4])
+            end
+        else
+            for i = 1, string.split(msg, ",")[3] do
+                chat(string.split(msg, ",")[2])
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 5) == prefix.."perm" then
+        permtoggle = true
+        notif("Perm Command", "Toggled on")
+        while permtoggle do wait()
+            if not allpadstoggle then
+                if not game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild(lplr.Name.."'s admin") then
+                    if not game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
+                        if game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen") then
+                            fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+                        else
+                            notif("Attention!", "Regen pad could not be found, turning off perm.")
+                            permtoggle = false
+                            wait(5)
+                        end
+                    else
+                        local pad = game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin")
+                        pad:WaitForChild("Head").Transparency = 1
+                        pad.Head.CanCollide = false
+                        local previouspadcf = pad.Head.CFrame
+                        pad.Head.CFrame = lplr.Character.HumanoidRootPart.CFrame
+                        wait()
+                        pad.Head.CFrame = previouspadcf
+                        pad.Head.CanCollide = true
+                        pad.Head.Transparency = 0
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."noperm" then
+        permtoggle = false
+        notif("Perm Command", "Toggled off")
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."allpads" then
+        allpadstoggle = true
+        notif("All Pads Command", "Toggled on")
+        while allpadstoggle do wait()
+            for i,v in pairs(game.Workspace.Terrain["_Game"].Admin.Pads:GetChildren()) do
+                spawn(function()
+                    if v.Name == "Touch to get admin" then
+                        v.Head.Transparency = 1
+                        v.Head.CanCollide = false
+                        local previouspadcf = v.Head.CFrame
+                        v.Head.CFrame = lplr.Character.HumanoidRootPart.CFrame
+                        wait(0)
+                        v.Head.CFrame = previouspadcf
+                        v.Head.CanCollide = true
+                        v.Head.Transparency = 0
+                    end
+                end)
+                if v.Name ~= lplr.Name.."'s admin" then
+                    if game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen") then
+                        fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+                    else
+                        notif("Attention!", "Regen pad could not be found, turning off allpads.")
+                        allpadstoggle = false
+                        wait(5)
+                        break
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."noallpads" then
+        allpadstoggle = false
+        notif("All Pads Command", "Toggled off")
+    end
+    
+    if string.sub(msg:lower(), 0, 11) == prefix.."antiattach" then
+        antiattachtoggle = true
+        notif("Anti Attach Command", "Toggled off")
+        while antiattachtoggle do wait()
+            for i,v in pairs(game.Players:GetPlayers()) do
+                if v.Name ~= lplr.Name then
+                    if v.Character then
+                        for i,ch in pairs(v.Character:GetChildren()) do
+                            if not v.Character:FindFirstChild("Addon") then
+                                if ch:FindFirstChild("Weld") or ch:FindFirstChild("Snap") then
+                                    game:GetService("RunService").Heartbeat:wait()
+                                    if string.find(v.Name, "me_", 1, true) then
+                                        chat("reset others")
+                                    else
+                                        chat("reset "..v.Name)
+                                    end
+                                    wait(.1)
+                              
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 13) == prefix.."noantiattach" then
+        antiattachtoggle = false
+        notif("Anti Attach Command", "Toggled off")
+    end
+    
+    if string.sub(msg:lower(), 0, 7) == prefix.."padban" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if string.find(v.Name:lower(), string.sub(msg:lower(), 9), 1, true) then
+                if string.find(string.sub(v.Name:lower(), 0, #string.split(msg, " ")[2]), string.split(msg, " ")[2], 1, true) then
+                    notif("Pad Ban Command", "Pad Banned "..v.Name)
+                    table.insert(padbans, v.Name)
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."unpadban" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if string.find(v.Name:lower(), string.sub(msg:lower(), 11), 1, true) then
+                if string.find(string.sub(v.Name:lower(), 0, #string.split(msg, " ")[2]), string.split(msg, " ")[2], 1, true) then
+                    for p,b in pairs(padbans) do
+                        if b == v.Name then
+                            notif("Pad Ban Command", "Unpad Banned "..b)
+                            table.remove(padbans, p)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 11) == prefix.."antipunish" then
+        if antipunishtoggle then
+            notif("Anti Punish Command", "Anti Punish has already been toggled")
+        else
+            antipunishtoggle = true
+            notif("Anti Punish Command", "Toggled on")
+            while antipunishtoggle do wait()
+                if game.Lighting:FindFirstChild(lplr.Name) then
+                    chat("unpunish me")
+                    wait(.1)
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 13) == prefix.."noantipunish" then
+        if not antipunishtoggle then
+            notif("Anti Punish Command", "Anti Punish has not been toggled yet")
+        else
+            antipunishtoggle = false
+            notif("Anti Punish Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."antimsg" then
+        if antimsgtoggle then
+            notif("Anti Message Command", "Anti Message has already been toggled")
+        else
+            antimsgtoggle = true
+            notif("Anti Message Command", "Toggled on")
+            while antimsgtoggle do game:GetService("RunService").Heartbeat:wait()
+                if lplr.PlayerGui:FindFirstChild("HintGUI") then
+                    lplr.PlayerGui:FindFirstChild("HintGUI"):Destroy()
+                end
+                if lplr.PlayerGui:FindFirstChild("MessageGUI") then
+                    lplr.PlayerGui:FindFirstChild("MessageGUI"):Destroy()
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 13) == prefix.."noantimsg" then
+        if not antimsgtoggle then
+            notif("Anti Message Command", "Anti Message has not been toggled yet")
+        else
+            antimsgtoggle = false
+            notif("Anti Message Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 10) == prefix.."antigears" then
+        if antitoolstoggle then
+            notif("Anti Tools Command", "Anti Tools has already been toggled")
+        else
+            antitoolstoggle = true
+            notif("Anti Tools Command", "Toggled on")
+            while antitoolstoggle do wait()
+                for i,v in pairs(game.Players:GetPlayers()) do
+                    if v.Name ~= lplr.Name then
+                        if v.Character then
+                            if v.Character:FindFirstChildOfClass("Tool") then
+                                chat("removetools others "..v.Name)
+                            
+                            end
+                        elseif v.Backpack then
+                            if v.Backpack:FindFirstChildOfClass("Tool") then
+                                chat("removetools others "..v.Name)
+                              
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 12) == prefix.."unantigears" then
+        if not antitoolstoggle then
+            notif("Anti Tools Command", "Anti Tools has not been toggled yet")
+        else
+            antitoolstoggle = false
+            notif("Anti Tools Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."antikill" then
+        if antikilltoggle then
+            notif("Anti Kill Command", "Anti Kill has already been toggled")
+        else
+            antikilltoggle = true
+            notif("Anti Kill Command", "Toggled on")
+            while antikilltoggle do wait()
+                if lplr.Character.Humanoid.Health <= 0 and game.Workspace:FindFirstChild(lplr.Name) then
+                    if game.Workspace[lplr.Name]:FindFirstChild("HumanoidRootPart") then
+                        chat("reset me")
+                        wait(.4)
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."noantikill" then
+        if not antikilltoggle then
+            notif("Anti Kill Command", "Anti Kill has not been toggled yet")
+        else
+            antikilltoggle = false
+            notif("Anti Kill Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."antispin" then
+        if antispintoggle then
+            notif("Anti Spin Command", "Anti Spin has already been toggled")
+        else
+            antispintoggle = true
+            notif("Anti Spin Command", "Toggled on")
+            while antispintoggle do wait()
+                if lplr.Character then
+                    if lplr.Character:FindFirstChild("Torso") then
+                        if lplr.Character.Torso:FindFirstChild("SPINNER") then
+                            lplr.Character.Torso.SPINNER:Destroy()
+                            wait(.1)
+                        end
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."noantispin" then
+        if not antispintoggle then
+            notif("Anti Spin Command", "Anti Spin has not been toggled yet")
+        else
+            antispintoggle = false
+            notif("Anti Spin Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."antijail" then
+        if antijailtoggle then
+            notif("Anti Jail Command", "Anti Jail has already been toggled")
+        else
+            antijailtoggle = true
+            notif("Anti Jail Command", "Toggled on")
+            while antijailtoggle do wait()
+                if game.Workspace.Terrain._Game.Folder:FindFirstChild(lplr.Name.."'s jail") then
+                    chat("unjail me")
+                    wait(.1)
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."noantijail" then
+        if not antijailtoggle then
+            notif("Anti Jail Command", "Anti Jail has not been toggled yet")
+        else
+            antijailtoggle = false
+            notif("Anti Jail Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 11) == prefix.."antifreeze" then
+        if antifreezetoggle then
+            notif("Anti Freeze Command", "Anti Freeze has already been toggled")
+        else
+            antifreezetoggle = true
+            notif("Anti Freeze Command", "Toggled on")
+            while antifreezetoggle do wait()
+                if lplr.Character then
+                    if lplr.Character:FindFirstChild("ice") then
+                        chat("reset                                                                        me")
+                        wait(.1)
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 13) == prefix.."noantifreeze" then
+        if not antifreezetoggle then
+            notif("Anti Freeze Command", "Anti Freeze has not been toggled yet")
+        else
+            antifreezetoggle = false
+            notif("Anti Freeze Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."antidog" then
+        if antidogtoggle then
+            notif("Anti Dog Command", "Anti Dog has already been toggled")
+        else
+            antidogtoggle = true
+            notif("Anti Dog Command", "Toggled on")
+            while antidogtoggle do wait()
+                if lplr.Character then
+                    if lplr.Character:FindFirstChild("Addon") then
+                        chat("undog me")
+                        wait(.1)
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."noantidog" then
+        if not antidogtoggle then
+            notif("Anti Dog Command", "Anti Dog has not been toggled yet")
+        else
+            antidogtoggle = false
+            notif("Anti Dog Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."antifire" then
+        if antifiretoggle then
+            notif("Anti Fire Command", "Anti Fire has already been toggled")
+        else
+            antifiretoggle = true
+            notif("Anti Fire Command", "Toggled on")
+            while antifiretoggle do game:GetService("RunService").Heartbeat:wait()
+                if lplr.Character then
+                    if lplr.Character.Torso:FindFirstChild("Fire") then
+                        lplr.Character.Torso.Fire:Destroy()
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."noantifire" then
+        if not antifiretoggle then
+            notif("Anti Fire Command", "Anti Fire has not been toggled yet")
+        else
+            antifiretoggle = false
+            notif("Anti Fire Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 10) == prefix.."antismoke" then
+        if antismoketoggle then
+            notif("Anti Smoke Command", "Anti Smoke has already been toggled")
+        else
+            antismoketoggle = true
+            notif("Anti Smoke Command", "Toggled on")
+            while antismoketoggle do game:GetService("RunService").Heartbeat:wait()
+                if lplr.Character then
+                    if lplr.Character.Torso:FindFirstChild("Smoke") then
+                        lplr.Character.Torso.Smoke:Destroy()
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 12) == prefix.."noantismoke" then
+        if not antismoketoggle then
+            notif("Anti Smoke Command", "Anti Smoke has not been toggled yet")
+        else
+            antismoketoggle = false
+            notif("Anti Smoke Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 10) == prefix.."antiblind" then
+        if antiblindtoggle then
+            notif("Anti Blind Command", "Anti Blind has already been toggled")
+        else
+            antiblindtoggle = true
+            notif("Anti Blind Command", "Toggled on")
+            while antiblindtoggle do wait()
+                if lplr.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
+                    lplr.PlayerGui.EFFECTGUIBLIND:Destroy()
+                    wait(.1)
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 12) == prefix.."noantiblind" then
+        if not antiblindtoggle then
+            notif("Anti Blind Command", "Anti Blind has not been toggled yet")
+        else
+            antiblindtoggle = false
+            notif("Anti Blind Command", "Toggled off")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 7) == prefix.."antitp" then
+        if not antitptoggle then
+            antitptoggle = true
+            notif("Anti Teleport Command", "Anti Teleport has been toggled on.")
+            while antitptoggle do wait()
+        	    if pos1 == nil then
+        			pos1 = lplr.Character.HumanoidRootPart.CFrame
+        			pos2 = lplr.Character.HumanoidRootPart.CFrame
+        		end
+        		
+        		local gap = (Vector3.new(pos1.x, pos1.y, pos1.z) - Vector3.new(pos2.x, pos2.y, pos2.z)).Magnitude
+        		if math.floor(gap) > 8 then
+        			lplr.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(pos1.x, pos1.y, pos1.z))
+        			pos1 = lplr.Character.HumanoidRootPart.CFrame
+        			pos2 = lplr.Character.HumanoidRootPart.CFrame
+        		else
+        			pos1 = pos2
+        			pos2 = lplr.Character.HumanoidRootPart.CFrame
+        		end
+            end
+    	else
+    	    notif("Anti Teleport Command", "Anti Teleport has already been toggled on.")
+    	end
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."noantitp" then
+        if antitptoggle then
+            antitptoggle = false
+            notif("Anti Teleport Command", "Anti Teleport has been toggled off.")
+        else
+            notif("Anti Teleport Command", "Anti Teleport has already been toggled off.")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 11) == prefix.."padenforce" then
+        padenforcetoggle = true
+        notif("Enforce One Pad Command", "Toggled on")
+        while padenforcetoggle do wait()
+            for e, plr in pairs(game.Players:GetPlayers()) do
+                amountofpadstakenbyplayer = 0
+                for i,v in pairs(game.Workspace.Terrain._Game.Admin.Pads:GetDescendants()) do
+                    if v.Name == plr.Name.."'s admin" and plr.Name ~= lplr.Name then
+                        amountofpadstakenbyplayer = amountofpadstakenbyplayer + 1
+                    end
+                end
+                if amountofpadstakenbyplayer > 2 then
+                    chat("respawn "..plr.Name)
+                    wait()
+                  
+         wait(.05)
+                    fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 13) == prefix.."nopadenforce" then
+        padenforcetoggle = false
+    end
+    
+    if string.sub(msg:lower(), 0, 4) == prefix.."gbl" then
+    	gearblacklist = true
+    	notif("Gear Blacklist Command", "Gear Blacklist has been toggled on.")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."nogbl" then
+    	gearblacklist = false
+    	notif("Gear Blacklist Command", "Gear Blacklist has been toggled off.")
+	end
+    
+    if string.sub(msg:lower(), 0, 5) == prefix.."tban" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if string.find(v.Name:lower(), string.sub(msg:lower(), 7), 1, true) then
+                if string.find(string.sub(v.Name:lower(), 0, #string.split(msg, " ")[2]), string.split(msg:lower(), " ")[2], 1, true) then
+                    table.insert(blacklisted, v.Name)
+                  
+                    if string.find(v.Name:lower(), "me_", 1, true) or string.find(v.Name:lower(), "all_", 1, true) then
+                        env[v.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                            if bozo.Name == v.Name then
+                                fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                                chat("punish others")
+                                chat("blind others")
+                                for i,b in pairs(game.Players:GetPlayers()) do
+                                    if not table.find(blacklisted, b.Name) then
+                                        chat("reset "..b.Name)
+                                        wait(.4)
+                                    end
+                                end
+                            end
+                        end)
+                        game.Players.ChildRemoved:Connect(function(bozo)
+                            if bozo.Name == v.Name then
+                                env[v.Name.."bozobanner"]:Disconnect()
+                            end
+                        end)
+                        chat("reset others")
+                    elseif game.Players:FindFirstChild(v.Name) then
+                        env[v.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                            if bozo.Name == v.Name then
+                                fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                                chat("punish "..v.Name)
+                                chat("blind "..v.Name)
+                            end
+                        end)
+                        game.Players.ChildRemoved:Connect(function(bozo)
+                            if bozo.Name == v.Name then
+                                env[v.Name.."bozobanner"]:Disconnect()
+                            end
+                        end)
+                        chat("reset "..v.Name)
+                    end
+                    notif("Temporary Ban Command", "Temporarily Banned "..v.Name)
+                end
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."moveobby" then
+        for i,v in pairs(game.Workspace.Terrain._Game.Workspace.Obby:GetDescendants()) do
+            if v:IsA("Part") then
+                lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                wait(.05)
+                chat("stun me")
+                wait(.1)
+                repeat
+					if lplr.Character then
+                        if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                            lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                            game:GetService("RunService").Heartbeat:wait()
+                            chat("unpunish me")
+                        end
+                    end
+				until lplr.Character.Torso:FindFirstChild("Weld")
+                wait(.2)
+                chat("unstun me")
+                wait(.5)
+                chat("skydive me/me/me/me/me/me/me/me/me/me/me/me/me/me/me/me")
+chat("tp/plamk_a/plamk_a/plamk_a/plamk_a/plamk_a/plamk_a")
+                wait(.2)
+                chat("respawn me")
+                wait(.2)
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."moveob" then
+        for i,v in pairs(game.Workspace.Terrain._Game.Workspace["Obby Box"]:GetDescendants()) do
+            if v:IsA("Part") then
+                lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                wait(.05)
+                chat("stun me")
+                wait(.1)
+                repeat
+					if lplr.Character then
+                        if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                            lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                            game:GetService("RunService").Heartbeat:wait()
+                            chat("unpunish me")
+                        end
+                    end
+				until lplr.Character.Torso:FindFirstChild("Weld")
+                wait(.2)
+                chat("unstun me")
+                wait(.5)
+                  chat("skydive me/me/me/me/me/me/me/me/me/me/me/me/me/me/me/me")
+chat("tp/plamk_a/plamk_a/plamk_a/plamk_a/plamk_a/plamk_a")
+                wait(.2)
+                chat("respawn me")
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."movehouse" then
+        for i,v in pairs(game.Workspace.Terrain._Game.Workspace["Basic House"]:GetDescendants()) do
+            if v:IsA("Part") then
+                lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                wait(.05)
+                chat("stun me")
+                wait(.1)
+                repeat
+					if lplr.Character then
+                        if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                            lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                            game:GetService("RunService").Heartbeat:wait()
+                            chat("unpunish me")
+                        end
+                    end
+				until lplr.Character.Torso:FindFirstChild("Weld")
+                wait(.2)
+                chat("unstun me")
+                wait(.5)
+                chat("skydive me")
+                wait(.2)
+                chat("respawn me")
+                wait(.2)
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."movebp" then
+        lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Workspace.Baseplate.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Workspace.Baseplate.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Workspace.Baseplate.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Workspace.Baseplate.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                    game:GetService("RunService").Heartbeat:wait()
+					chat("unpunish me")
+				end
+			end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        wait(.5)
+        chat("skydive me")
+        wait(.2)
+        chat("respawn me")
+        wait(.2)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."setws" then
+        local plrcf = lplr.Character.HumanoidRootPart.CFrame
+        for i, v in pairs(game.Workspace.Terrain._Game.Workspace:GetChildren()) do
+            if v:IsA("SpawnLocation") then
+                chat(prefix.."ivory")
+                wait(.1)
+                lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+                wait(.3)
+                lplr.Character.HumanoidRootPart.CFrame = plrcf
+                wait(.4)
+                game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+                wait(.4)
+                lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                wait(.05)
+                chat("stun me")
+                wait(.1)
+                repeat
+					if lplr.Character then
+                        if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                            lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                            game:GetService("RunService").Heartbeat:wait()
+                            chat("unpunish me")
+                        end
+                    end
+				until lplr.Character.Torso:FindFirstChild("Weld")
+                wait(.2)
+                chat("unstun me")
+                game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+                wait(.2)
+                chat("respawn me")
+                wait(.4)
+            end
+        end
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."slock" then
+        for i, v in pairs(game.Workspace.Terrain._Game.Workspace:GetChildren()) do
+            if v:IsA("SpawnLocation") then
+                chat(prefix.."ivory")
+                wait(.1)
+                lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+                wait(.3)
+                lplr.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-34, 500000, -52))
+                wait(.4)
+                game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+                wait(.4)
+                lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                wait(.05)
+                chat("stun me")
+                wait(.1)
+                repeat
+					if lplr.Character then
+                        if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                            lplr.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                            game:GetService("RunService").Heartbeat:wait()
+                            chat("unpunish me")
+                        end
+                    end
+				until lplr.Character.Torso:FindFirstChild("Weld")
+                wait(.2)
+                chat("unstun me")
+                game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+                wait(.2)
+                chat("respawn me")
+                wait(.4)
+            end
+        end
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."bringhl" then
+        local plrcf = lplr.Character.HumanoidRootPart.CFrame
+        chat(prefix.."ivory")
+        wait(.1)
+        lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+        wait(.4)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.4)
+        lplr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.CFrame * CFrame.new(-1*(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.CFrame * CFrame.new(-1*(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                    game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+                end
+            end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.2)
+        chat("respawn me")
+        wait(.4)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."fixhl" then
+        chat(prefix.."ivory")
+        wait(.1)
+        lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+        wait(.3)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(-30.166, 5.82996, 70.432)
+        wait(.4)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.4)
+        lplr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.CFrame * CFrame.new(-1*(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.CFrame * CFrame.new(-1*(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                    game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+                end
+            end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.2)
+        chat("respawn me")
+        wait(.4)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."movereg" then
+        lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                 if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+					game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+				end
+			end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        wait(.5)
+        chat("unskydive me")
+        wait(.2)
+        chat("respawn me")
+        wait(.2)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."bringreg" then
+    	local plrcf = lplr.Character.HumanoidRootPart.CFrame
+    	chat(prefix.."ivory")
+        wait(.1)
+        lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+        wait(.3)
+        lplr.Character.HumanoidRootPart.CFrame = plrcf
+        wait(.4)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.4)
+        lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                 if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+					game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+				end
+			end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.5)
+        chat("respawn me")
+        wait(.2)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."rmovereg" then
+        chat(prefix.."ivory")
+        wait(.1)
+        lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+        wait(.3)
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(regenpositions[math.random(1,5)])
+        wait(.4)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.2)
+        lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+        wait(.05)
+        chat("stun me")
+        wait(.1)
+        repeat
+			if lplr.Character then
+                 if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain._Game.Admin.Regen.CFrame * CFrame.new(-1*(game.Workspace.Terrain._Game.Admin.Regen.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+					game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+				end
+			end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        wait(.2)
+        chat("unstun me")
+        wait(.5)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.2)
+        chat("respawn me")
+        wait(.2)
+        chat(prefix.."house")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."ltrlt" then
+        if not game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen") then
+            for i, v in pairs(regenpositions) do
+                if not game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen") then
+                    wait(.25)
+                    lplr.Character.HumanoidRootPart.CFrame = CFrame.new(regenpositions[i])
+                else
+                    chat(prefix.."house")
+                    break
+                end
+            end
+        else
+            notif("ltrlt", "The regen pad is already loaded!")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 12) == prefix.."noobbydeath" then
+        if not obbydeath then
+            obbydeath = true
+            notif("No Obby Death Command", "No Obby Death has been executed")
+            for i,v in pairs(game.Workspace.Terrain._Game.Workspace.Obby:GetChildren()) do
+                v.TouchInterest:Destroy()
+            end
+        else
+            notif("No Obby Death Command", "No Obby Death has already been executed")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 6) == prefix.."house" then
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-30, 8, 71))
+        notif("House Command", "Teleported to house")
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."musicid" then
+    	setclipboard(string.sub(tostring(game.Workspace.Terrain._Game.Folder.Sound.SoundId), 33))
+	end
+    
+    if string.sub(msg:lower(), 0, 5) == prefix.."caog" then
+        chat(prefix.."paint")
+        lplr.Backpack:WaitForChild("PaintBucket")
+        lplr.Backpack.PaintBucket.Parent = lplr.Character
+        lplr.Character:WaitForChild("PaintBucket")
+        lplr.Character.PaintBucket:WaitForChild("Remotes")
+        for i,v in pairs(game:GetService("Workspace").Terrain["_Game"].Workspace:GetDescendants()) do
+            spawn(function()
+                if v.Parent.Name == "Basic House" then
+                    if v.Name == "SmoothBlockModel56" or v.Name == "SmoothBlockModel75" or v.Name == "SmoothBlockModel114" or v.Name == "SmoothBlockModel130" or v.Name == "SmoothBlockModel176" or v.Name == "SmoothBlockModel129" or v.Name == "SmoothBlockModel131" or v.Name == "SmoothBlockModel140" or v.Name == "SmoothBlockModel135" or v.Name == "SmoothBlockModel118" or v.Name == "SmoothBlockModel36" or v.Name == "SmoothBlockModel26" or v.Name == "SmoothBlockModel68" or v.Name == "SmoothBlockMode56" or v.Name == "SmoothBlockModel51" or v.Name == "SmoothBlockModel98" or v.Name == "SmoothBlockModel103" or v.Name == "SmoothBlockModel37" or v.Name == "SmoothBlockModel30" or v.Name == "SmoothBlockModel41" or v.Name == "SmoothBlockModel11" or v.Name == "SmoothBlockModel15" or v.Name == "SmoothBlockModel8" or v.Name == "SmoothBlockModel13" or v.Name == "SmoothBlockModel14" or v.Name == "SmoothBlockModel22" or v.Name == "SmoothBlockModel29" or v.Name == "SmoothBlockModel20" or v.Name == "SmoothBlockModel67" or v.Name == "SmoothBlockModel72" or v.Name == "SmoothBlockModel20" or v.Name == "SmoothBlockModel31" or v.Name == "SmoothBlockModel70" or v.Name == "SmoothBlockModel38" or v.Name == "SmoothBlockModel113" or v.Name == "SmoothBlockModel69" or v.Name == "SmoothBlockModel115" or v.Name == "SmoothBlockModel85" or v.Name == "SmoothBlockModel116" or v.Name == "SmoothBlockModel108" or v.Name == "SmoothBlockModel142" or v.Name == "SmoothBlockModel132" or v.Name == "SmoothBlockModel122" or v.Name == "SmoothBlockModel134" or v.Name == "SmoothBlockModel81" or v.Name == "SmoothBlockModel166" or v.Name == "SmoothBlockModel198" or v.Name == "SmoothBlockModel164" or v.Name == "SmoothBlockModel196" or v.Name == "SmoothBlockModel154" or v.Name == "SmoothBlockModel205" or v.Name == "SmoothBlockModel223" or v.Name == "SmoothBlockModel190" or v.Name == "SmoothBlockModel226" or v.Name == "SmoothBlockModel213" or v.Name == "SmoothBlockModel211" or v.Name == "SmoothBlockModel207" or v.Name == "SmoothBlockModel210" or v.Name == "SmoothBlockModel208" or v.Name == "SmoothBlockModel209" or v.Name == "SmoothBlockModel203" or v.Name == "SmoothBlockModel197" or v.Name == "SmoothBlockModel201" or v.Name == "SmoothBlockModel185" or v.Name == "SmoothBlockModel218" or v.Name == "SmoothBlockModel191" or v.Name == "SmoothBlockModel224" or v.Name == "SmoothBlockModel155" or v.Name == "SmoothBlockModel173" or v.Name == "SmoothBlockModel179" or v.Name == "SmoothBlockModel186" or v.Name == "SmoothBlockModel93" or v.Name == "SmoothBlockModel105" or v.Name == "SmoothBlockModel106" or v.Name == "SmoothBlockModel147" or v.Name == "SmoothBlockModel49" or v.Name == "SmoothBlockModel39" or v.Name == "SmoothBlockModel38" or v.Name == "SmoothBlockModel93" or v.Name == "SmoothBlockModel126" or v.Name == "SmoothBlockModel48" then
+                        lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(215, 197, 154)})
+                    elseif v.Name == "SmoothBlockModel97" or v.Name == "SmoothBlockModel52" or v.Name == "SmoothBlockModel46" or v.Name == "SmoothBlockModel161" or v.Name == "SmoothBlockModel171" or v.Name == "SmoothBlockModel60" or v.Name == "SmoothBlockModel35" or v.Name == "SmoothBlockModel64" or v.Name == "SmoothBlockModel146" or v.Name == "SmoothBlockModel175" or v.Name == "SmoothBlockModel174" or v.Name == "SmoothBlockModel145" or v.Name == "SmoothBlockModel82" or v.Name == "SmoothBlockModel24" or v.Name == "SmoothBlockModel66" or v.Name == "SmoothBlockModel150" or v.Name == "SmoothBlockModel192" or v.Name == "SmoothBlockModel228" or v.Name == "SmoothBlockModel217" or v.Name == "SmoothBlockModel182" or v.Name == "SmoothBlockModel183" or v.Name == "SmoothBlockModel194" or v.Name == "SmoothBlockModel199" or v.Name == "SmoothBlockModel204" or v.Name == "SmoothBlockModel206" or v.Name == "SmoothBlockModel212" or v.Name == "SmoothBlockModel181" or v.Name == "SmoothBlockModel195" or v.Name == "SmoothBlockModel101" or v.Name == "SmoothBlockModel89" or v.Name == "SmoothBlockModel159" or v.Name == "SmoothBlockModel144" or v.Name == "SmoothBlockModel117" or v.Name == "SmoothBlockModel65" or v.Name == "SmoothBlockModel57" or v.Name == "SmoothBlockModel71" or v.Name == "SmoothBlockModel148" or v.Name == "SmoothBlockMode161" or v.Name == "SmoothBlockModel121" or v.Name == "SmoothBlockModel99" or v.Name == "SmoothBlockModel83" or v.Name == "SmoothBlockModel73" or v.Name == "SmoothBlockModel50" or v.Name == "SmoothBlockModel45" or v.Name == "SmoothBlockModel43" or v.Name == "SmoothBlockModel53" or v.Name == "SmoothBlockModel46" or v.Name == "SmoothBlockModel27" or v.Name == "SmoothBlockModel46" or v.Name == "SmoothBlockModel7" or v.Name == "SmoothBlockModel4" or v.Name == "SmoothBlockModel10" then
+                        if v.Name == "SmoothBlockModel97" or v.Name == "SmoothBlockModel52" then
+                            lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(105, 64, 40)})
+                        else
+                            lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(160, 95, 53)})
+                        end
+                    elseif v.Name == "SmoothBlockModel28" or v.Name == "SmoothBlockModel6" or v.Name == "SmoothBlockModel136" or v.Name == "SmoothBlockModel102" or v.Name == "SmoothBlockModel100" or v.Name == "SmoothBlockModel104" or v.Name == "SmoothBlockModel123" or v.Name == "SmoothBlockModel86" or v.Name == "SmoothBlockModel88" or v.Name == "SmoothBlockModel87" or v.Name == "SmoothBlockModel125" or v.Name == "SmoothBlockModel137" or v.Name == "SmoothBlockModel128" or v.Name == "SmoothBlockModel127" or v.Name == "SmoothBlockModel110" or v.Name == "SmoothBlockModel95" or v.Name == "SmoothBlockModel124" or v.Name == "SmoothBlockModel120" or v.Name == "SmoothBlockModel94" or v.Name == "SmoothBlockModel158" or v.Name == "SmoothBlockModel202" or v.Name == "SmoothBlockModel143" or v.Name == "SmoothBlockModel119" or v.Name == "SmoothBlockModel109" or v.Name == "SmoothBlockModel149" or v.Name == "SmoothBlockModel153" or v.Name == "SmoothBlockModel188" or v.Name == "SmoothBlockModel62" or v.Name == "SmoothBlockModel63" or v.Name == "SmoothBlockModel96" or v.Name == "SmoothBlockModel180" or v.Name == "SmoothBlockModel187" or v.Name == "SmoothBlockModel84" or v.Name == "SmoothBlockModel61" or v.Name == "SmoothBlockModel76" or v.Name == "SmoothBlockModel177" or v.Name == "SmoothBlockModel156" or v.Name == "SmoothBlockModel214" or v.Name == "SmoothBlockModel79" or v.Name == "SmoothBlockModel111" or v.Name == "SmoothBlockModel141" or v.Name == "SmoothBlockModel170" or v.Name == "SmoothBlockModel221" or v.Name == "SmoothBlockModel74" or v.Name == "SmoothBlockModel77" or v.Name == "SmoothBlockModel54" or v.Name == "SmoothBlockModel168" or v.Name == "SmoothBlockModel157" or v.Name == "SmoothBlockModel216" or v.Name == "SmoothBlockModel42" or v.Name == "SmoothBlockModel78" or v.Name == "SmoothBlockModel139" or v.Name == "SmoothBlockModel152" or v.Name == "SmoothBlockModel220" or v.Name == "SmoothBlockModel32" or v.Name == "SmoothBlockModel25" or v.Name == "SmoothBlockModel58" or v.Name == "SmoothBlockModel231" or v.Name == "SmoothBlockModel193" or v.Name == "SmoothBlockModel227" or v.Name == "SmoothBlockModel34" or v.Name == "SmoothBlockModel23" or v.Name == "SmoothBlockModel90" or v.Name == "SmoothBlockModel172" or v.Name == "SmoothBlockModel189" or v.Name == "SmoothBlockModel21" or v.Name == "SmoothBlockModel16" or v.Name == "SmoothBlockModel59" or v.Name == "SmoothBlockModel133" or v.Name == "SmoothBlockModel167" or v.Name == "SmoothBlockModel215" or v.Name == "SmoothBlockModel17" or v.Name == "SmoothBlockModel91" or v.Name == "SmoothBlockModel163" or v.Name == "SmoothBlockModel230" or v.Name == "SmoothBlockModel19" or v.Name == "SmoothBlockModel18" or v.Name == "SmoothBlockModel44" or v.Name == "SmoothBlockModel200" or v.Name == "SmoothBlockModel225" or v.Name == "SmoothBlockModel12" or v.Name == "SmoothBlockModel47" or v.Name == "SmoothBlockModel92" or v.Name == "SmoothBlockModel169" or v.Name == "SmoothBlockModel229" or v.Name == "SmoothBlockModel2" or v.Name == "SmoothBlockModel33" or v.Name == "SmoothBlockModel55" or v.Name == "SmoothBlockModel138" or v.Name == "SmoothBlockModel184" or v.Name == "SmoothBlockModel222" or v.Name == "SmoothBlockModel80" or v.Name == "SmoothBlockModel219" or v.Name == "SmoothBlockModel107" or v.Name == "SmoothBlockModel151" or v.Name == "SmoothBlockModel219" then
+                        lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(196, 40, 28)})
+                    elseif v.Name == "SmoothBlockModel1" or v.Name == "SmoothBlockModel5" or v.Name == "SmoothBlockModel9" or v.Name == "SmoothBlockModel3" then
+                        lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(99, 95, 98)})
+                    elseif v.Name == "SmoothBlockModel178" or v.Name == "SmoothBlockModel165" or v.Name == "SmoothBlockModel160" or v.Name == "SmoothBlockModel162" then
+                        lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(149, 121, 119)})
+                    end
+                elseif v.Parent.Name == "Obby" then
+                    lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(255, 0, 0)})
+                elseif v.Parent.Name == "Obby Box" then
+                    lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(18, 238, 212)})
+                elseif v.Parent.Name == "Admin Dividers" then
+                    lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(99, 95, 98)})
+                end
+            end)
+        end
+        spawn(function()
+            if game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"]:FindFirstChild("SmoothBlockModel112") then
+            lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel112, ["Color"] = Color3.fromRGB(110, 153, 202)})
+            end
+            if game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"]:FindFirstChild("SmoothBlockModel40") then
+            lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel40, ["Color"] = Color3.fromRGB(75, 151, 75)})
+            end
+            if game:GetService("Workspace").Terrain["_Game"].Workspace:FindFirstChild("Baseplate") then
+            lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = workspace.Terrain._Game.Workspace.Baseplate, ["Color"] = Color3.fromRGB(75, 151, 75)})
+            end
+        end)
+        wait(1)
+        chat("removetools me")
+    elseif string.sub(msg:lower(), 0, 4) == prefix.."car" then
+        chat(prefix.."paint")
+        lplr.Backpack:WaitForChild("PaintBucket")
+        lplr.Backpack.PaintBucket.Parent = lplr.Character
+        lplr.Character:WaitForChild("PaintBucket")
+        lplr.Character.PaintBucket:WaitForChild("Remotes")
+        for i, v in pairs(game.Workspace:GetDescendants()) do
+            if v:IsA("Part") then
+                spawn(function()
+                    lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(math.random(0,255), math.random(0,255), math.random(0,255))})
+                end)
+            end
+        end
+        wait(.2)
+        chat("removetools me")
+    elseif string.sub(msg:lower(), 0, 4) == prefix.."cac" then
+        chat(prefix.."paint")
+        lplr.Backpack:WaitForChild("PaintBucket")
+        lplr.Backpack.PaintBucket.Parent = lplr.Character
+        lplr.Character:WaitForChild("PaintBucket")
+        lplr.Character.PaintBucket:WaitForChild("Remotes")
+        for i, v in pairs(game.Workspace:GetDescendants()) do
+            if v:IsA("Part") then
+                spawn(function()
+                    lplr.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = v, ["Color"] = Color3.fromRGB(string.split(msg, " ")[2],string.split(msg, " ")[3],string.split(msg, " ")[4])})
+                end)
+            end
+        end
+        wait(.2)
+        chat("removetools me")
+    elseif string.sub(msg:lower(), 0, 4) == prefix.."chl" then
+        if string.split(msg, " ")[2] then
+            chat(prefix.."paint")
+            lplr.Backpack:WaitForChild("PaintBucket")
+            lplr.Backpack.PaintBucket.Parent = lplr.Character
+            lplr.Character:WaitForChild("PaintBucket")
+            lplr.Character.PaintBucket:WaitForChild("Remotes")
+            game:GetService("Players").LocalPlayer.Character.PaintBucket.Remotes.ServerControls:InvokeServer("PaintPart", {["Part"] = game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232.PointLight, ["Color"] = Color3.fromRGB(string.split(msg, " ")[2], string.split(msg, " ")[3], string.split(msg, " ")[4])})
+            wait(.2)
+            chat("removetools me")
+        end
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."oghlc" then
+        chat(prefix.."chl 150 150 150")
+    end
+    
+ 
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 9) == prefix.."autosize" then
+        autosize = true
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."noautosize" then
+        autosize = false
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."cripple" then
+        if string.sub(msg:lower(), 10) == "all" then
+            chat("freeze all")
+            wait(.5)
+            chat("name all ")
+            wait(.3)
+            chat("thaw all")
+        elseif string.sub(msg:lower(), 10) == "others" then
+            chat("freeze others")
+            wait(.5)
+            chat("name others vegetable")
+            wait(.3)
+            chat("thaw others")
+        else
+            for i,v in pairs(game.Players:GetPlayers()) do
+                if string.find(v.Name:lower(), string.sub(msg:lower(), 10), 1, true) then
+                    chat("freeze "..v.Name)
+                    wait(.5)
+                    chat("name "..v.Name.." vegetable")
+                    wait(.3)
+                    chat("thaw "..v.Name)
+                end
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 10) == prefix.."resetdead" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Character then
+                if v.Character:FindFirstChild("Humanoid") then
+                    if v.Character.Humanoid.Health <= 0 then
+                        chat("reset "..v.Name)
+                    end
+                end
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."mymusic" then
+        mymusictoggle = true
+        notif("My Music Command", "Toggled on")
+        while mymusictoggle do wait()
+            if not game.Workspace.Terrain._Game.Folder:FindFirstChild("Sound") then
+                chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"..string.sub(msg, 10))
+                wait(.05)
+            elseif game.Workspace.Terrain._Game.Folder:FindFirstChild("Sound").SoundId ~= "http://www.roblox.com/asset/?id="..string.sub(msg, 10) then
+                chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"..string.sub(msg, 10))
+                wait(.05)
+            end
+            if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") then
+                if game:GetService("Workspace").Terrain["_Game"].Folder.Sound.SoundId == "http://www.roblox.com/asset/?id=6969198609" then
+                    if game:GetService("Workspace").Terrain["_Game"].Folder.Sound.TimePosition < 9.5 then
+                        game:GetService("Workspace").Terrain["_Game"].Folder.Sound.TimePosition = 9.5
+                    end
+                end
+            end
+        end
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."nomymusic" then
+        mymusictoggle = false
+        notif("My Music Command", "Toggled off")
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."railaim" then
+        for i,v in pairs(lplr.Backpack:GetChildren()) do
+            for i, plr in pairs(game.Players:GetPlayers()) do
+                if string.find(plr.Name:lower(), string.split(msg:lower(), " ")[2], 1, true) then
+                    v.Parent = lplr.Character
+                    game:GetService("Players").LocalPlayer.Character.Railgun.Click:FireServer(plr.Character.HumanoidRootPart.Position)
+                    wait(.025)
+                    v.Parent = lplr.Backpack
+                end
+            end
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 8) == prefix.."preview" then
+        if not previewing then
+            previewing = true
+            soundpreviewer = Instance.new("Sound", workspace)
+            soundpreviewer.SoundId = "rbxassetid://"..string.sub(msg, 10)
+            soundpreviewer.Playing = true
+        end
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."restart" then
+        if previewing then
+            soundpreviewer.TimePosition = 0
+        end
+    elseif string.sub(msg:lower(), 0, 12) == prefix.."stoppreview" then
+        if previewing then
+            previewing = false
+            soundpreviewer:Destroy()
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 6) == prefix.."paint" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000018474459")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."korblox" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000068539623")
+    elseif string.sub(msg:lower(), 0, 6) == prefix.."ivory" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000108158379")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."railgun" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000079446473")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."boombox" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000212641536")
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."hammer" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000045177979")
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."invismine" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000011999247")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."detain" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000081330766")
+        chat("gear me 00000000000000000000000000000000000000000000000000000000074385399")
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."bpglitch" then
+        chat("gear me 000000000000000000000000000000000000287426148")
+        chat("gear me 00000000000000000000000000000000000074385399")
+        chat("gear me 000000000000000000000000000000000000112593662")
+        chat("gear me 00000000000000000000000000000000000034898883")
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."touchtrip" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000029100449")
+        chat("gear me 00000000000000000000000000000000000000000000000000000000074385399")
+        chat("gear me 000000000000000000000000000000000000000000000000000000000243790334")
+        chat("gear me 00000000000000000000000000000000000000000000000000000000035293856")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."watercb" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000236438668")
+    elseif string.sub(msg:lower(), 0, 9) == prefix.."gearjail" then
+        chat("gear me 00000000000000000000000000000000000000000000000000000000082357101")
+    	chat("gear me 00000000000000000000000000000000000000000000000000000000059190534")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."bhsword" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000268586231")
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."rlasergun" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000212296936")
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."blasergun" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000130113146")
+    elseif string.sub(msg:lower(), 0, 8) == prefix.."machete" then
+        chat("gear me 000000000000000000000000000000000000000000000000000000000123234673")
+    elseif string.sub(msg:lower(), 0, 11) == prefix.."removemesh" then
+        lplr.Character:FindFirstChildOfClass("Tool"):FindFirstChild("Mesh", true):Destroy()
+    elseif string.sub(msg:lower(), 0, 10) == prefix.."banhammer" then
+        local bancooldown = false
+        chat("gear me 00000000000000000000000000000000000000000000000000000000010468797")
+        game.Players.LocalPlayer.Backpack:WaitForChild("BanHammer V1.1").Parent = game.Players.LocalPlayer.Character
+        wait(.2)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Handle.Touched:Connect(function(hit)
+            if hit.Parent:FindFirstChild("Humanoid") or hit.Parent.Parent:FindFirstChild("Humanoid") then
+                if not bancooldown then
+                    bancooldown = true
+                    if hit.Name == "Handle" then
+                        if hit.Parent.Parent.Name ~= lplr.Name then
+                            game.Players:Chat("invis "..hit.Parent.Parent.Name)
+                            wait(.2)
+                        
+                            wait(.2)
+                            game.Players:Chat("clone "..hit.Parent.Parent.Name)
+                            game.Players:Chat(prefix.."tban "..hit.Parent.Parent.Name)
+                            game.Players:Chat("music 5696182212")
+                            wait(1.7)
+                            game.Players:Chat("stopmusic")
+         
+                        end
+                    else
+                        if hit.Parent.Name ~= lplr.Name then
+                            game.Players:Chat("invis "..hit.Parent.Name)
+                            wait(.2)
+                            game.Players:Chat("name "..hit.Parent.Name.." This user has been banned!")
+                            wait(.2)
+                            game.Players:Chat("clone "..hit.Parent.Name)
+                            game.Players:Chat(prefix.."tban "..hit.Parent.Name)
+                            game.Players:Chat("music 5696182212")
+                            wait(1.7)
+                            game.Players:Chat("stopmusic")
+                            game.Players:Chat("removeclones")
+                        end
+                    end
+                    bancooldown = false
+                end
+            end
+        end)
+    end
+    
+    if string.sub(msg:lower(), 0, 3) == prefix.."up" then
+        lplr.Character.HumanoidRootPart.CFrame = lplr.Character.HumanoidRootPart.CFrame + Vector3.new(0, 2000, 0)
+    elseif string.sub(msg:lower(), 0, 5) == prefix.."down" then
+        lplr.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(lplr.Character.HumanoidRootPart.Position.X,7,lplr.Character.HumanoidRootPart.Position.Z))
+    end
+    
+    if string.sub(msg:lower(), 0, 7) == prefix.."theme1" then
+        chat("fix")
+        wait(.2)
+        chat("brightness .3")
+        chat("fogend 200")
+        chat("ambient 100 25 100")
+        chat("outdoorambient 125 50 175")
+        chat("fogcolor 30 0 60")
+        chat("time 0")
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."theme2" then
+        chat("fix")
+        wait(.2)
+        chat("colorshifttop 260 205 25")
+        chat("time 7")
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."theme3" then
+        chat("fix")
+        wait(.2)
+        chat("fogend 1000")
+        chat("time 0")
+        chat("fogcolor 400 0 1000")
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."theme4" then
+        chat("fix")
+        wait(.2)
+        chat("outdoorambient 0 0 0")
+        chat("time 3")
+        chat("brightness 0")
+    elseif string.sub(msg:lower(), 0, 7) == prefix.."theme5" then
+        chat("fix")
+        wait(.2)
+        chat("colorshiftbottom 275 75 200")
+        chat("colorshifttop 255, 211, 8")
+        chat("ambient 250 175 245")
+    end
+    
+    if string.sub(msg:lower(), 0, 6) == prefix.."regen" then
+        if game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen") then
+            notif("Regen Command", "Pads have been regenerated")
+            fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+        else
+            notif("Attention!", "Regen pad could not be found.")
+        end
+    end
+    
+    if string.sub(msg:lower(), 0, 6) == prefix.."toreg" then
+        if game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen") then
+            notif("To Regen Command", "Teleported to the Regen.")
+            lplr.Character.HumanoidRootPart.CFrame = game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").CFrame * CFrame.new(Vector3.new(0, 4, 0))
+        else
+            notif("Attention!", "Regen pad could not be found.")
+        end
+    end
+end)
+
+-- Other Things
+
+mouse.KeyDown:Connect(function(key)
+    if key:lower() == "z" then
+        local target = mouse.Target
+        chat("stun me")
+        repeat
+			if lplr.Character then
+				if lplr.Character:FindFirstChild("HumanoidRootPart") then
+                    lplr.Character.HumanoidRootPart.CFrame = target.CFrame * CFrame.new(-1*(target.Size.X/2)-(lplr.Character['Torso'].Size.X/2), 0, 0)
+                    game:GetService("RunService").Heartbeat:wait()
+                    chat("unpunish me")
+                end
+            end
+		until lplr.Character.Torso:FindFirstChild("Weld")
+        chat("unstun me")
+    end
+end)
+
+wait(.5)
+
+if runessentialcommandsonexecute then
+    obbydeath = true
+    antikilltoggle = true
+    antipunishtoggle = true
+    antifreezetoggle = true
+    antiattachtoggle = true
+    antidogtoggle = true
+    antispintoggle = true
+    antimsgtoggle = true
+    antifiretoggle = true
+    antitptoggle = false
+    antismoketoggle = true
+    antiblindtoggle = true
+    permtoggle = true
+    antijailtoggle = true
+    notif("Essential Commands", "Essential Commands have been executed.")
+    for i,v in pairs(game.Workspace.Terrain._Game.Workspace.Obby:GetChildren()) do
+        v:WaitForChild("TouchInterest"):Destroy()
+    end
+    spawn(function()
+        while antikilltoggle do wait(.05)
+            if lplr.Character:WaitForChild("Humanoid").Health <= 0 and game.Workspace:FindFirstChild(lplr.Name) then
+                if game.Workspace[lplr.Name]:FindFirstChild("HumanoidRootPart") then
+                    chat("reset me")
+                    wait(.4)
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antimsgtoggle do game:GetService("RunService").Heartbeat:wait()
+            if lplr.PlayerGui:FindFirstChild("HintGUI") then
+                lplr.PlayerGui:FindFirstChild("HintGUI"):Destroy()
+            end
+            if lplr.PlayerGui:FindFirstChild("MessageGUI") then
+                lplr.PlayerGui:FindFirstChild("MessageGUI"):Destroy()
+            end
+        end
+    end)
+    spawn(function()
+        while antiblindtoggle do wait()
+            if lplr.PlayerGui:FindFirstChild("EFFECTGUIBLIND") then
+                lplr.PlayerGui.EFFECTGUIBLIND:Destroy()
+                wait(.1)
+            end
+        end
+    end)
+    spawn(function()
+        while antipunishtoggle do wait(.1)
+            if game.Lighting:FindFirstChild(lplr.Name) then
+                chat("unpunish me")
+            end
+        end
+    end)
+    spawn(function()
+        while wait() do
+            for i,v in ipairs(workspace:GetDescendants()) do
+                if v:IsA("BasePart") or v:IsA("Part") then
+                    if v.Transparency == 1 and v.Name ~= "HumanoidRootPart" then
+                        v.Transparency = 0.6
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antispintoggle do wait()
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("Torso") then
+                    if lplr.Character.Torso:FindFirstChild("SPINNER") then
+                        lplr.Character.Torso.SPINNER:Destroy()
+                        wait(.1)
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antitptoggle do wait()
+    	    if pos1 == nil then
+    			pos1 = lplr.Character.HumanoidRootPart.CFrame
+    			pos2 = lplr.Character.HumanoidRootPart.CFrame
+    		end
+    		
+    		local gap = (Vector3.new(pos1.x, pos1.y, pos1.z) - Vector3.new(pos2.x, pos2.y, pos2.z)).Magnitude
+    		if math.floor(gap) > 8 then
+    			lplr.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(pos1.x, pos1.y, pos1.z))
+    			pos1 = lplr.Character.HumanoidRootPart.CFrame
+    			pos2 = lplr.Character.HumanoidRootPart.CFrame
+    		else
+    			pos1 = pos2
+    			pos2 = lplr.Character.HumanoidRootPart.CFrame
+    		end
+    	end
+    end)
+    spawn(function()
+        while antidogtoggle do wait()
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("Addon") then
+                    chat("undog me")
+                    wait(.1)
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antismoketoggle do game:GetService("RunService").Heartbeat:wait()
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("Torso") then
+                    if lplr.Character.Torso:FindFirstChild("Smoke") then
+                        lplr.Character.Torso.Smoke:Destroy()
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antifiretoggle do game:GetService("RunService").Heartbeat:wait()
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("Torso") then
+                    if lplr.Character.Torso:FindFirstChild("Fire") then
+                        lplr.Character.Torso.Fire:Destroy()
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antijailtoggle do wait(.05)
+            if game.Workspace.Terrain._Game.Folder:FindFirstChild(lplr.Name.."'s jail") then
+                chat("unjail me")
+            end
+        end
+    end)
+    spawn(function()
+        while antifreezetoggle do wait(.05)
+            if lplr.Character then
+                if lplr.Character:FindFirstChild("ice") then
+                    chat("thaw me")
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while permtoggle do wait()
+            if not allpadstoggle then
+                if not game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild(lplr.Name.."'s admin") then
+                    if not game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
+                        if game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen") then
+                            fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+                        else
+                            notif("Attention!", "Regen pad could not be found, turning off perm.")
+                            permtoggle = false
+                            wait(5)
+                        end
+                    else
+                        local pad = game.Workspace.Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin")
+                        pad:WaitForChild("Head").Transparency = 1
+                        pad.Head.CanCollide = false
+                        local previouspadcf = pad.Head.CFrame
+                        pad.Head.CFrame = lplr.Character.HumanoidRootPart.CFrame
+                        wait()
+                        pad.Head.CFrame = previouspadcf
+                        pad.Head.CanCollide = true
+                        pad.Head.Transparency = 0
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while antiattachtoggle do wait()
+            for i,v in pairs(game.Players:GetPlayers()) do
+                if v.Name ~= lplr.Name then
+                    if v.Character then
+                        for i,ch in pairs(v.Character:GetChildren()) do
+                            if not v.Character:FindFirstChild("Addon") then
+                                if ch:FindFirstChild("Weld") or ch:FindFirstChild("Snap") then
+                                    game:GetService("RunService").Heartbeat:wait()
+                                    if string.find(v.Name:lower(), "me_", 1, true) then
+                                        chat("reset others")
+                                    else
+                                        chat("reset "..v.Name)
+                                    end
+                                    wait(.1)
+                              
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end)
+    spawn(function()
+        while wait() do
+            for p,b in pairs(padbans) do
+                for i,v in pairs(game.Workspace.Terrain._Game.Admin.Pads:GetChildren()) do
+                    if string.find(v.Name, b, 1, true) then
+                        chat("respawn "..b)
+                        wait(.1)
+                 
+                        wait(.1)
+                      
+                        wait(.5)
+                        fireclickdetector(game.Workspace.Terrain["_Game"].Admin:FindFirstChild("Regen").ClickDetector,0)
+                    end
+                end
+            end
+        end
+    end)
+end
+
+
+
+wait(.5)
+
+for i, plr in pairs(game.Players:GetPlayers()) do
+    if plr.Name ~= lplr.Name then
+        if table.find(blacklisted, plr.Name) then
+            if string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+                env[plr.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                    if bozo.Name == plr.Name then
+                        fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                        chat("punish others")
+                        chat("blind others")
+                        for i,b in pairs(game.Players:GetPlayers()) do
+                            if not table.find(blacklisted, b.Name) then
+                                chat("reset "..b.Name)
+                                wait(.4)
+                            end
+                        end
+                    end
+                end)
+                game.Players.ChildRemoved:Connect(function(bozo)
+                    if bozo.Name == plr.Name then
+                        env[plr.Name.."bozobanner"]:Disconnect()
+                    end
+                end)
+                chat("reset others")
+            elseif game.Players:FindFirstChild(plr.Name) then
+                env[plr.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                    if bozo.Name == plr.Name then
+                        fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                        chat("punish "..plr.Name)
+                        chat("blind "..plr.Name)
+                    end
+                end)
+                game.Players.ChildRemoved:Connect(function(bozo)
+                    if bozo.Name == plr.Name then
+                        env[plr]:Disconnect()
+                    end
+                end)
+                chat("reset "..plr.Name)
+            end
+        end
+        plr.Chatted:Connect(function(msg)
+            if string.sub(msg, 0, 9) == "/c system" then
+             
+            end
+            
+            if string.sub(msg, 0, 2) == "/w" then
+              
+            end
+        end)
+    end
+end
+
+game.Players.ChildAdded:Connect(function(plr)
+    if table.find(blacklisted, plr.Name) then
+        if string.find(plr.Name:lower(), "me_", 1, true) or string.find(plr.Name:lower(), "all_", 1, true) then
+            env[plr.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                if bozo.Name == plr.Name then
+                    fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                    chat("punish others")
+                    chat("blind others")
+                    for i,b in pairs(game.Players:GetPlayers()) do
+                        if not table.find(blacklisted, b.Name) then
+                            chat("reset "..b.Name)
+                            wait(.4)
+                        end
+                    end
+                end
+            end)
+            chat("reset others")
+        elseif game.Players:FindFirstChild(plr.Name) then
+            env[plr.Name.."bozobanner"] = workspace.ChildAdded:Connect(function(bozo)
+                if bozo.Name == plr.Name then
+                    fireclickdetector(game.Workspace.Terrain["_Game"].Admin:WaitForChild("Regen"):WaitForChild("ClickDetector"),0)
+                    chat("punish "..plr.Name)
+                    chat("blind "..plr.Name)
+                end
+            end)
+            chat("reset "..plr.Name)
+        end
+    end
+    plr.Chatted:Connect(function(msg)
+        if string.sub(msg, 0, 9) == "/c system" then
+    
+        end
+        if string.sub(msg, 0, 2) == "/w" then
+ 
+        end
+    end)
+    
+    if table.find(blacklisted, plr.Name) then
+    
+    else
+        wait(.1)
+        chat("name me "..plr.Name.." has joined the server")
+    end
+end)
+
+if game.ReplicatedStorage:FindFirstChild("WeaponsSystem") then
+    game:GetService("Players"):chat("gear me 4842218829")
+    wait(1)
+    local WeaponsSystem = require(game.ReplicatedStorage.WeaponsSystem.WeaponsSystem)
+    local tool = lplr.Backpack.Sniper
+    tool.Equipped:Connect(function()
+        WeaponsSystem.camera:setEnabled(true)
+    end)
+    tool.Unequipped:Connect(function()
+        WeaponsSystem.camera:setEnabled(false)
+    end)
+    game:GetService("RunService").Heartbeat:wait(.1)
+    lplr.Character.Humanoid:EquipTool(lplr.Backpack.Sniper)
+    game:GetService("RunService").Heartbeat:wait(.1)
+    lplr.Character.Humanoid:UnequipTools()
+    wait(.5)
+    game:GetService("Players"):chat("reset me")
+end
+
+mouse.KeyDown:Connect(function(key)
+    if key:lower() == "r" then
+        chat("reset me")
+    elseif key:lower() == "f" then
+        chat("ff me")
+    elseif key:lower() == "t" then
+        chat("fix")
+    elseif key:lower() == "g" then
+        chat("god me")
+    elseif key:lower() == "b" then
+        chat(prefix.."banhammer")
+    elseif key:lower() == "c" and lplr.Backpack:FindFirstChild("Railgun") then
+        for i,v in pairs(lplr.Backpack:GetChildren()) do
+            v.Parent = lplr.Character
+            game:GetService("Players").LocalPlayer.Character.Railgun.Click:FireServer(mouse.Hit.p)
+            wait(.025)
+            v.Parent = lplr.Backpack
+        end
+    end
+end)
+
+uss.WindowFocused:Connect(function()
+    afk = false
+end)
+uss.WindowFocusReleased:Connect(function()
+    afk = true
+end)
+
+spawn(function()
+    while wait() do
+        if afk then
+            if not lplr.Character:FindFirstChildOfClass("Model") then
+                chat("name me (Tabbed Out)\n"..lplr.DisplayName)
+                wait(.5)
+            end
+            if lplr.Character:FindFirstChildOfClass("Model") then
+                if lplr.Character:FindFirstChildOfClass("Model").Name ~= "(Tabbed Out)\n"..lplr.DisplayName then
+                    chat("name me (Tabbed Out)\n"..lplr.DisplayName)
+                    wait(.5)
+                end
+            end
+        else
+            if lplr.Character:FindFirstChildOfClass("Model") then
+                chat("unname me")
+                wait(.5)
+            end
+        end
+    end
+end)
+
+
+
+if not game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen") then
+    for i, v in pairs(regenpositions) do
+        if not game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen") then
+            wait(.25)
+            lplr.Character.HumanoidRootPart.CFrame = CFrame.new(regenpositions[i])
+        else
+            break
+        end
+    end
+end
+
+
+
+
+
