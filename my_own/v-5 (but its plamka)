@@ -584,6 +584,29 @@ chat("gear me 000000000000000000000000000000000000000000000000000000000000000009
 chat("-spam unsize me me me")
 
 end
+antigears2 = false
+if msg == prefix.."antigears2" then
+antigears2 = true
+end
+if msg == prefix.."unantigears2" then
+antigears2 = false
+end
+if antigears2 == true then
+if string.sub(msg:lower(), 0, 4) == "gear" then
+
+
+chat("removetools                                                                                                   others")
+end
+if string.sub(msg:lower(), 0, 5) == ":gear" then
+
+
+chat("removetools                                                                                                   others")
+end
+if string.sub(msg:lower(), 0, 6) == "::gear" then
+
+chat("removetools                                                                                                   others")
+end
+end
 if antilogsv2 == true then
 if string.sub(msg:lower(), 0, 4) == "logs" then
 
