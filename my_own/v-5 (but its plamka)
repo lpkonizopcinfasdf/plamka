@@ -11,6 +11,7 @@ function startupScripts()
 game.Players:Chat("-nok")
 -- chat("-conjoin") 
 -- crash on join
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/anticrashv3",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
