@@ -599,6 +599,24 @@ chat(prefix.."clearlogs")
 end
 
 end
+-- Chat("gear me 00000000000000000000000000000000000016722267")
+
+if string.sub(msg:lower(), 0, 5) == prefix.."test" then
+chat("-super gear me 00000000000000000000000000000000000016722267")
+wait(2)
+chat("-super gear me 00000000000000000000000000000000000016722267")
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+		local plr = string.sub(msg:lower(), 7)
+chat("reset "..plr.."")
+wait(0.25)
+chat("speed "..plr.." 0")
+chat("tp/"..plr.."/plamk_a")
+chat("blind "..plr.."")
+chat("jail/"..plr.."")
+wait(0.25)
+chat("-usetools")
+end
 
 	if string.sub(msg:lower(), 0, 5) == prefix.."hatc" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
