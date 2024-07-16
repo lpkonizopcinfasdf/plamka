@@ -521,7 +521,7 @@ if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 chat(prefix.."super hat me 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
-wait(1)
+wait(.75)
 chat("size me nan")
 chat("size me 3")
 wait(0.10)
