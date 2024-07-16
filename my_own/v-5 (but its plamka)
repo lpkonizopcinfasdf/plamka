@@ -625,9 +625,9 @@ end
 -- Chat("gear me 00000000000000000000000000000000000016722267")
 
 if string.sub(msg:lower(), 0, 5) == prefix.."test" then
-chat("-super gear me 00000000000000000000000000000000000016722267")
+chat("-super gear me 00000000000000000000000000000000000243788010")
 wait(2)
-chat("-super gear me 00000000000000000000000000000000000016722267")
+chat("-super gear me 00000000000000000000000000000000000243788010")
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 		local plr = string.sub(msg:lower(), 7)
