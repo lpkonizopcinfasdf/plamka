@@ -823,6 +823,11 @@ chat("removeclones")
 
 
 
+if string.sub(msg:lower(), 0, 10) == prefix.."spongebob" then
+		local plr = string.sub(msg:lower(), 12)
+chat("hat "..plr.." 00000000000000000000000000000000000000000000000000000000018100795481")
+end
+-- di p 
 
 if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
 		local plr = string.sub(msg:lower(), 10)
@@ -1090,6 +1095,7 @@ end
 		prefix = string.sub(msg:lower(), 9, 9)
 	end
 	
+
 	
 
 
