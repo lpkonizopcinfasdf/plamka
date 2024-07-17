@@ -25,9 +25,6 @@ end)
 
 
 wait(.25)
-game.Players:Chat("fogcolor 0 0 0")
-game.Players:Chat("fogend")
-game.Players:Chat("time -")
 
 
 task.spawn(function()
