@@ -3340,8 +3340,10 @@ Spawn(function()
 				end
 			end
 			if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then 
-				game.Players:Chat("reset                                             me")
-    		game.Players:Chat("god                                               me")
+				game.Players:Chat("reset                                                me")
+    		game.Players:Chat("ff                                                                  me")
+wait(2)
+
 			end
 		end
 		
@@ -3354,6 +3356,7 @@ Spawn(function()
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
 				game.Players:Chat("unjail/                                                                me")
+wait(2)
 
 			end
 
