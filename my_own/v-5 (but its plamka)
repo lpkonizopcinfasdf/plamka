@@ -2698,7 +2698,7 @@ local AllowTeleportsToShortcutHub = false
 				local JailPlayer = v.Name
 				workspace[game.Players.LocalPlayer.Name].PortableJustice.MouseClick:FireServer(workspace[JailPlayer])
 				wait(0.25)
-				game.Players:Chat("reset                                                                              "..v.Name)
+				game.Players:Chat("reset                                                                              others/"..v.Name)
 chat("ungear                                                                  me")
 			end
 		end
