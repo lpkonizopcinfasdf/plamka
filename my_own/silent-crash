@@ -88,13 +88,13 @@ if pc1 and not pc2 then
                 task.spawn(function()
                     if alreadyspammed then return end
                     alreadyspammed = true
-                    chet("gear all "..antilog.."4842204072")
+   
        
        
                     for i = 1, 350 do
                         chet("respawn/                                                                                                                                       others others others fuck")
                     end
-                    chet("gear all "..antilog.."4842204072")
+           
         
                 end)
                 wait(.49)
@@ -123,7 +123,7 @@ if pc1 and not pc2 then
             end
         end
     end
-    chet("gear all "..antilog.."4842204072")
+  
 
     for i = 1, 350 do
         chet(
