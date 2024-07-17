@@ -2691,6 +2691,7 @@ local AllowTeleportsToShortcutHub = false
 		for i,v in pairs(names) do
 			strlower = string.lower(v.Name)
 			sub = string.sub(strlower,1,#name)
+ chat("freeze                                                  "..v.Name)
 			if name == sub then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
 				wait(0.25)
@@ -2698,6 +2699,7 @@ local AllowTeleportsToShortcutHub = false
 				workspace[game.Players.LocalPlayer.Name].PortableJustice.MouseClick:FireServer(workspace[JailPlayer])
 				wait(0.25)
 				game.Players:Chat("reset                                                                              "..v.Name)
+chat("ungear                                                                  me")
 			end
 		end
 	end
