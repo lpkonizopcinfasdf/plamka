@@ -82,8 +82,8 @@ fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.Clic
          end
     end
 
-    if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'lock' then
-         local dasplayer = string.sub(msg:lower(), #prefix + 6)
+    if string.sub(msg:lower(), 1, #prefix + 2) == prefix..'bl' then
+         local dasplayer = string.sub(msg:lower(), #prefix + 4)
          checkforplayer(dasplayer)
          if player ~= nil then
      fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
@@ -93,8 +93,8 @@ fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.Clic
          end
     end
 
-    if string.sub(msg:lower(), 1, #prefix + 6) == prefix..'unlock' then
-         local dasplayer = string.sub(msg:lower(), #prefix + 8)
+    if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'unbl' then
+         local dasplayer = string.sub(msg:lower(), #prefix + 6)
          checkforplayer(dasplayer)
          if player ~= nil then
            
