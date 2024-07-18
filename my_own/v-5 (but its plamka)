@@ -1731,6 +1731,15 @@ allowcrash = false
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
+local wlc = true
+-- "..player.name.."
+game:GetService("Players").PlayerAdded:Connect(function(player)
+  if wlc == true then
+  logn(""..player.name.." has joined the server!")
+  end
+  if player.name == "" then
+  
+  end
 if string.sub(msg:lower(), 0, 9) == prefix.."fixregen" then
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
