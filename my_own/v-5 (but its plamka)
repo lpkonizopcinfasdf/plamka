@@ -569,6 +569,7 @@ function moveObject(target,wawawaa)
     	else
     	    if not lp.Character:FindFirstChild("IvoryPeriastron") then
         	    game.Players:Chat("gear me 108158379")
+chat("-alltools")
         	    repeat wait() until lp.Backpack:FindFirstChild("IvoryPeriastron")
         	    lp.Backpack.IvoryPeriastron.Parent = lp.Character
         	end
@@ -3794,8 +3795,8 @@ wait(.35)
 logn("-------")
 
 
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
-chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
+--chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+--chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
 chat("antikill me fuck")
