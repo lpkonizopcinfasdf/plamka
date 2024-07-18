@@ -41,7 +41,7 @@ fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.Clic
                         elseif table.find(blacklist, v.Name) then
                             if not game.Lighting:FindFirstChild(v.Name) then
 fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.ClickDetector, 0)
-                                game.Players:Chat('punish                                  '..v.Name)
+                                game.Players:Chat('punish/                                                                          '..v.Name)
                              
                               
                             end
@@ -107,4 +107,4 @@ fireclickdetector(game:GetService("Workspace").Terrain["_Game"].Admin.Regen.Clic
          end
     end
     
- 
+end) 
