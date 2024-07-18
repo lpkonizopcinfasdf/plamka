@@ -45,7 +45,7 @@ chat("reset                                                                     
       end
     end
 end
-
+local antilogsspace = "                                                                                                         "
 
 local function clickivory() 
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -502,9 +502,23 @@ for i = 1,100 do
     game.Players:Chat("rocket/all/all/all")
     game.Players:Chat("clone all all all")
 end
+local antifelogs = "https://antifelogs.lol.com"
+if msg == prefix.."tempcrash" then
+
+for i = 1,22 do
+            chat("dog "..antilogsspace.."/all all all"..antifelogs)
+        end
+for i = 1,10 do
+            chat("clone "..antilogsspace.." me me me "..antifelogs)
+        end
+wait(3)
+for i = 1,50 do
+chat("kill "..antilogsspace.." all admins random friends others "..antifelogs)
 
 
 end
+end
+
 	if string.sub(msg:lower(), 0, 4) == prefix.."res" then
 		local plr = string.sub(msg:lower(), 6)
 chat("respawn                                                                                                                 "..plr.." ")
@@ -515,6 +529,8 @@ chat("respawn                                                                   
 chat("reset                                                                                                 "..plr.."")
 
 	end
+-- "..v.Name.."
+-- p r o  b  a l l y
 if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait(0.25)
@@ -2072,9 +2088,20 @@ game.Players:Chat("invis                                          me")
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
+if spamlogs == true then
+wait(0.0000000001)
+chat("ff <SPAMMING LOGS>")
+chat("ff 🖕🖕🖕🖕🖕🖕 \n 🖕🖕🖕🖕🖕 \n 🖕🖕🖕🖕🖕 \n 🖕🖕🖕 \n 🖕 \n 🖕 \n 🖕\n 🖕 \n 🖕 \n 🖕 \n \n 🖕 \n 🖕\n🖕🖕🖕🖕\n🖕🖕🖕🖕🖕")
+end
+
 	
-	
-	
+	if msg == prefix.."spamlogs on" then
+spamlogs = true
+end
+if msg == prefix.."spamlogs off" then
+	spamlogs = false
+end
+
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."nok" then
 		game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump.TouchInterest:destroy()
