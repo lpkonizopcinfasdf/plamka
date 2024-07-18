@@ -3720,7 +3720,8 @@ wait(.35)
 logn("-------")
 
 
-chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt> \n\n Loadtime: "..tostring(os.clock()-loadtime).."s")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
 chat("antikill me fuck")
