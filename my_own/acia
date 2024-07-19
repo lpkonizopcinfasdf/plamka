@@ -14,11 +14,11 @@ local Settings = {
     
     ["Auto Crasher"] = { -- Automatically serverhop and crash servers
 	["Enabled"] = true,
-	["Message"] = "Auto crasher message", -- Message to send upon before crashing, set to nil if no message
-	["Serverhop Time"] = 10, -- Serverhops after specified amount of time
+	["Message"] = "", -- Message to send upon before crashing, set to nil if no message
+	["Serverhop Time"] = 5, -- Serverhops after specified amount of time
 	["Skip Crashed Servers"] = true, -- Uses savehop instead of serverhop
 	["Timeout"] = 10, -- Gives up on joining a server after a specified amount of time
-	["Commands"] = {"music 6853070044",".timepositionmusic 7"}, -- Commands to run on join
+	["Commands"] = {"music 6853070044",".lg"}, -- Commands to run on join
 	["Command Delay"] = -1, -- Delay between commands, -1 is none
 	["Ignore Autorun Commands"] = true, -- Skips the autorun commands
 	["Time Before Crash"] = .5, -- Time before crashing server, -1 is instant
