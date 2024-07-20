@@ -590,10 +590,10 @@ end
 
 
 
-	if msg == prefix.."spamlogs on" then
+	if msg == prefix.."spamlogs" then
 spamlogs = true
 end
-if msg == prefix.."spamlogs off" then
+if msg == prefix.."unspamlogs" then
 	spamlogs = false
 end
 
