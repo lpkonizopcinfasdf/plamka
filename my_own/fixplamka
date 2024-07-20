@@ -474,6 +474,19 @@ chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     You have bee
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      Reason: SERVER CRASHED              ")
 chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      (Error code 267)                  ")
 end
+if msg == prefix.."shutdown1" then
+chat("music 00000000000000000000000000000000000000000000000000000000006823597327")
+chat("seizure all")
+chat("trip all")
+chat("spin all")
+chat("stun all")
+wait(0.25)
+for i = 1,100 do
+            chat("dog all all all                                                                           ")
+chat("clone all all all")
+        end
+     
+        end
 
 if msg == prefix.."silcrash" then
 loopgrab = true
