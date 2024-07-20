@@ -353,9 +353,13 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 			logn("Unable to Locate Server")
 		end
 	end
+if msg == prefix.."fixfilter" then
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt] Filter fixed")
+end
+
 	if msg == prefix.."breakcam" then
 chat("gear all 00000000000000000000000000000000000000000000000000000004842204072")
-wait(1)
+wait(5)
 chat("removetools                                                                                         all")
 end
 	if string.sub(msg:lower(), 0, 4) == prefix.."srj" then
