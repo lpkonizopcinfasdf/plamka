@@ -477,6 +477,7 @@ end
 if msg == prefix.."shutdown1" then
 chat("music 00000000000000000000000000000000000000000000000000000000006823597327")
 chat("seizure all")
+chat("time 0")
 chat("trip all")
 chat("spin all")
 chat("stun all")
@@ -587,7 +588,7 @@ end
 
 if msg == prefix.."tempcrash" then
 
-for i = 1,22 do
+for i = 1,50 do
             chat("dog "..antilogsspace.."/all all all"..antifelogs)
         end
 for i = 1,10 do
