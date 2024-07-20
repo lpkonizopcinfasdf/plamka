@@ -1896,11 +1896,11 @@ antijail = false
 		wait(0.2)
 		game.Players:Chat("jail me")
 
-		wait(0.25)
+		wait(0.5)
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
-  wait(.50)
+  wait(.25)
  clickivory()
-  wait(.50)
+  wait(.25)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Basteplate")
@@ -1921,7 +1921,7 @@ game.Players:Chat("gear me 00000000000000000000000000000108158379")
 				wait(0.3)
 				looping = false
 		clickivory()
-				wait(0.45)
+				wait(0.35)
 				game.Players:Chat("respawn me")
 				wait(0.2)
             end
