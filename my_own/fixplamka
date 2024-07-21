@@ -99,7 +99,7 @@ local antikill = true --
 local nopunish = true
 local antijail = true --
 local mymusiconly = false -- 
-local mymusiconly_ID = 0000000000000000142376088 
+local mymusiconly_ID = "0000000000000000000000000000000000000000000000000000000000000000001269160149" 
 local antilogs = false --
 local Superlogs = false -- 
 local everyonecommands = false -- 
@@ -109,6 +109,12 @@ local antivoid = false -- T
 
 
 
+if msg == prefix.."babyshark" then
+mymusiconly = true
+end
+if msg == prefix.."unbabyshark" then
+mymusiconly = false
+end
 
 local prefix = "-" --  
 local sprefix = "-" 
@@ -496,6 +502,11 @@ chat("clone all all all")
         end
      
         end
+if msg == "/c system" then
+chat("h/ \n\n\n\n\n [Server]: "..player.name.."  is using /c system ")
+end
+
+
 
 if msg == prefix.."silcrash" then
 loopgrab = true
@@ -3474,7 +3485,8 @@ wait(2)
 				if game:GetService("Workspace").Terrain["_Game"].Folder.Sound.SoundId == "http://www.roblox.com/asset/?id="..mymusiconly_ID then
 				else
 					game.Players:Chat("music "..mymusiconly_ID)
-					if AllowMessages == true then
+chat("h \n\n\n\n\n     Baby shark  doo doo doo doo doo doo (x3) \n Baby shark!   \n Mommy shark  doo doo doo doo doo doo (x3) \n Mommy shark! \n Daddy shark  doo doo doo doo doo doo (x3) \n Daddy shark! \nGrandma shark doo doo doo doo doo doo (x3) \n Grandma shark! \n Let’s go hunt doo doo doo doo doo doo (x3) \n Let’s go hunt! \n Run away doo doo doo doo doo doo (x3) \n Run away! \n Safe at last  doo doo doo doo doo doo. (x3) \n  Safe at last! \n It’s the end  doo doo doo doo doo doo (x3) \n It’s the end!\n\n\n\n\n")					
+if AllowMessages == true then
 						if allowads == true then
 						
 						else
@@ -3484,7 +3496,7 @@ wait(2)
 				end
 			end
 			if not game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild("Sound") then
-				game.Players:Chat("music "..mymusiconly_ID)
+				game.Players:Chat("music  "..mymusiconly_ID)
 				if AllowMessages == true then
 					if allowads == true then
 			
