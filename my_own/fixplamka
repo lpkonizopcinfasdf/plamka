@@ -630,6 +630,16 @@ if msg == prefix.."unspamlogs" then
 	spamlogs = false
 end
 
+if msg == prefix.."fixpaint" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
+end
+local 2 = ""
+if msg == 2.."clr" then
+chat("reset all")
+chat("fix")
+chat("clr")
+chat("-fixpaint")
+end
 
 if msg == prefix.."antilogs on" then
 antilogsv2 = true
