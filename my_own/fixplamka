@@ -23,28 +23,19 @@ local perm = false
 local adbot = false
 local antihatkick = true
 local loopgrab = false
-local function bugivory()
-chat("gear me 000000000000000000000000000000000000000000000000000000108158379")
- for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-      if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
-        v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
-      --repeat wait() until workspace[LP]:FindFirstChild("IvoryPeriaston")
-        for i,w in pairs(workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-          if w:IsA("Tool") and v.Name == "IvoryPeriastron" then
-            local wkspt = w
-            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
-          wait(.1)
-            local Remote = wkspt.Remote
-            wait(.1)
-            Remote:FireServer(Enum.KeyCode.E)
-          end
-        end
-        v.Parent = game.Players.LocalPlayer.Backpack
-wait(0.34)
-chat("reset                                                                                        me")
-      end
-    end
+
+local function equiptools()
+chat(prefix.."eqp")
 end
+
+local function ivorymove2()
+equiptools()
+wait(.25)
+game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+end
+
+	
+
 
 
 local function clickivory() 
@@ -1856,11 +1847,11 @@ antijail = false
 		wait(0.2)
 		game.Players:Chat("jail me")
 
-		wait(0.25)
+		wait(0.3)
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
-  wait(.50)
- clickivory()
-  wait(.50)
+  wait(.25)
+ivorymove2()
+  wait(.20)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Basteplate")
@@ -1880,7 +1871,7 @@ game.Players:Chat("gear me 00000000000000000000000000000108158379")
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.3)
 				looping = false
-		clickivory()
+		ivorymove2()
 				wait(0.45)
 				game.Players:Chat("respawn me")
 				wait(0.2)
@@ -1889,7 +1880,7 @@ game.Players:Chat("gear me 00000000000000000000000000000108158379")
             Stable_Check = false
             logn("{Move.lua} Done Fixing Basteplate")
 antijail = true
-allowcrash = false
+
         else
             logn("{Move.lua} Already Moving, Please Wait")
         end
@@ -1898,7 +1889,7 @@ allowcrash = false
   
 	if string.sub(msg:lower(), 0, 14) == prefix.."movebaseplate" then
 antijail = false
-allowcrash = true
+
 wait(0.25)
 game.Players:Chat("invis                                          me")
  game.Players:Chat("gear me 00000000000000000000000000000108158379")
@@ -2602,7 +2593,8 @@ end
 	end
 
 	
-	if string.sub(msg:lower(), 0, 9) == prefix.."alltools" then
+	
+if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 			Spawn(function()
 				if v:IsA'Tool' then
