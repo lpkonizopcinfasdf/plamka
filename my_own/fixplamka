@@ -25,14 +25,14 @@ local antihatkick = true
 local loopgrab = false
 
 local function equiptools()
-chat(prefix.."eqp")
+chat(prefix.."eqptools")
 end
 
 local function ivorymove2()
-  lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
-        wait(.4)
+  chat(prefix.."eqptools")
+wait(.11)
         game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
-        wait(.4)
+      
 end
 
 	
@@ -3700,65 +3700,6 @@ Spawn(function()
 				end
 			end
 		end
-
-if msg == prefix.."gearbl on" then
-antiabusegears = true
-end
-if msg == prefix.."gearbl off" then
-antiabusegears = false 
-end
-
-
-if antiabusegears == true then
-			for i, player in pairs(game:GetService("Players"):GetPlayers()) do
-				if player.Character then
-					if player.Character:FindFirstChild("SteampunkGlove") then
-						local plrname = player.Name
-if player == game.Players.LocalPlayer.Name then
-				
-				else
-
-						game.Players:Chat(("ungear/nigga                                                                         "..plrname))
-					 
-					end
-					if player.Character:FindFirstChild("DaggerOfShatteredDimensions") then
-						local plrname = player.Name
-if player == game.Players.LocalPlayer.Name then
-				
-				else
-	
-game.Players:Chat(("ungear/nigga                                                                             "..plrname))
-					
-					end
-if player.Character:FindFirstChild("IvoryPeriastron") then
-						local plrname = player.Name
-if player == game.Players.LocalPlayer.Name then
-				
-				else
-	
-game.Players:Chat(("ungear/nigga                                                                               "..plrname))
-					
-					end
-					if player.Character:FindFirstChild("SeaThemedCrossbow") then
-if player == game.Players.LocalPlayer.Name then
-				
-				else
-						local plrname = player.Name
-						game.Players:Chat(("ungear/ nigger                                                                                                 "..plrname))
-
-					end
-					if player.Character:FindFirstChild("PortableJustice") then
-if player == game.Players.LocalPlayer.Name then
-				
-				else
-						local plrname = player.Name
-						game.Players:Chat(("ungear/ nigga                                                                     "..plrname))
-		
-					end
-				end
-			end
-		end
-end
 
 
 
