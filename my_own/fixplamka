@@ -29,9 +29,10 @@ chat(prefix.."eqp")
 end
 
 local function ivorymove2()
-equiptools()
-wait(.25)
-game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+  lplr.Backpack:WaitForChild("IvoryPeriastron").Parent = lplr.Character
+        wait(.4)
+        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+        wait(.4)
 end
 
 	
