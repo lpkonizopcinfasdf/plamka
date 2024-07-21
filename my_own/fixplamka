@@ -29,9 +29,25 @@ chat(prefix.."eqptools")
 end
 
 local function ivorymove2()
-  chat(prefix.."eqptools")
-wait(.11)
-        game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
+        v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
+      --repeat wait() until workspace[LP]:FindFirstChild("IvoryPeriaston")
+        for i,w in pairs(workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+          if w:IsA("Tool") and v.Name == "IvoryPeriastron" then
+            local wkspt = w
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+          wait(.1)
+            local Remote = wkspt.Remote
+            wait(.1)
+            Remote:FireServer(Enum.KeyCode.E)
+          end
+        end
+        v.Parent = game.Players.LocalPlayer.Backpack
+      end
+    end
+
       
 end
 
