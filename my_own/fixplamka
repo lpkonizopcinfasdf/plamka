@@ -3686,6 +3686,12 @@ Spawn(function()
 			end
 		end
 
+if msg == prefix.."gearbl on" then
+antiabusegears = true
+end
+if msg == prefix.."gearbl off" then
+antiabusegears = false 
+end
 
 
 if antiabusegears == true then
@@ -3693,29 +3699,51 @@ if antiabusegears == true then
 				if player.Character then
 					if player.Character:FindFirstChild("SteampunkGlove") then
 						local plrname = player.Name
+if player == game.Players.LocalPlayer.Name then
+				
+				else
 
-						game.Players:Chat(("ungear                                                                         "..plrname))
+						game.Players:Chat(("ungear/nigga                                                                         "..plrname))
 					 
 					end
 					if player.Character:FindFirstChild("DaggerOfShatteredDimensions") then
 						local plrname = player.Name
+if player == game.Players.LocalPlayer.Name then
+				
+				else
 	
-game.Players:Chat(("ungear                                                                             "..plrname))
+game.Players:Chat(("ungear/nigga                                                                             "..plrname))
+					
+					end
+if player.Character:FindFirstChild("IvoryPeriastron") then
+						local plrname = player.Name
+if player == game.Players.LocalPlayer.Name then
+				
+				else
+	
+game.Players:Chat(("ungear/nigga                                                                               "..plrname))
 					
 					end
 					if player.Character:FindFirstChild("SeaThemedCrossbow") then
+if player == game.Players.LocalPlayer.Name then
+				
+				else
 						local plrname = player.Name
-						game.Players:Chat(("ungear                                                                                                 "..plrname))
+						game.Players:Chat(("ungear/ nigger                                                                                                 "..plrname))
 
 					end
 					if player.Character:FindFirstChild("PortableJustice") then
+if player == game.Players.LocalPlayer.Name then
+				
+				else
 						local plrname = player.Name
-						game.Players:Chat(("ungear                                                                     "..plrname))
+						game.Players:Chat(("ungear/ nigga                                                                     "..plrname))
 		
 					end
 				end
 			end
 		end
+end
 
 
 
@@ -3769,10 +3797,10 @@ Spawn(function()
 	mods()
 end)
 
-logn("Code fully executed!")
+
 
 wait(.35)
-logn("-------")
+
 
 
 --chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
@@ -3787,9 +3815,9 @@ chat("v!cmds")
 chat("antiblind fuck")
 end
 
-chat("god                                                                                                          me nigger")
+chat("god/                                                                                                          me {antifelogs.com/nigger}")
+chat("ff/                                                                                                           me {antifelogs.com/nigger}")
 
-chat("-house")
 
 
 
