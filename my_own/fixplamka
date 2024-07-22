@@ -181,6 +181,7 @@ mousee.KeyDown:connect(function(key)
 			movepart()
 		end
 	end
+
 	
 	if key:lower() == AttachDelete_keybind then
 chat("size me 0.5")
@@ -459,6 +460,13 @@ wait(2)
 chat("-vgc")
 
 end
+if msg == prefix.."lrobox" then
+ workspace.Terrain["_Game"]["Workspace"]["Obby Box"].Parent = game.Chat
+end
+if msg == prefix.."laobox" then
+ workspace.Terrain["_Game"]["Workspace"]["Obby Box"].Parent = game.Chat
+end
+
 if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 		local cf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 	
