@@ -1941,7 +1941,7 @@ antijail = false
 		wait(0.3)
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
   wait(.25)
-ivorymove2()
+clickivory()
   wait(.20)
 
         if Stable_Check == false then
