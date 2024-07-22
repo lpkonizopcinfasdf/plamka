@@ -1166,14 +1166,20 @@ until workspace.Terrain._Game.Admin:FindFirstChild("Regen")
 root.Anchored = false
 root.CFrame = workspace.Terrain._Game.Admin:FindFirstChild("Regen").CFrame + Vector3.new(0, 3, 0)
 end
+
+if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
+string.sub(msg:lower(), 6)
+end
+
 if string.sub(msg:lower(), 0, 8) == prefix.."tphouse" then
+local plr = string.sub(msg:lower(), 10)
 
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-wait(0.10)
+wait(0.20)
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 
 
-local plr = string.sub(msg:lower(), 10)
+
 
 wait(.2)
 chat("tp/"..plr.." plamk_a")
