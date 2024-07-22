@@ -631,6 +631,21 @@ end
 end
 
 
+if msg == prefix.."silcrash2" then
+for i = 1,52 do
+            chat("dog all all all                                                                           ")
+        end
+        for i = 1,51 do
+            chat("clone all all all                                                                           ")
+        end
+wait(2)
+for i = 1,100 do
+chat("dog all all all")
+chat("clone all all all")
+end
+
+end
+
 
 	if msg == prefix.."spamlogs" then
 spamlogs = true
