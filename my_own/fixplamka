@@ -109,12 +109,7 @@ local antivoid = false -- T
 
 
 
-if msg == prefix.."babyshark" then
-mymusiconly = true
-end
-if msg == prefix.."unbabyshark" then
-mymusiconly = false
-end
+
 
 local prefix = "-" --  
 local sprefix = "-" 
@@ -594,6 +589,12 @@ wait(1)
 chat(prefix.."stop")
 
 end
+if msg == prefix.."babyshark" then
+mymusiconly = true
+end
+if msg == prefix.."unbabyshark" then
+mymusiconly = false
+end
 if msg == prefix.."fixfilter" then
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt:] Filter fixed.")
 end
@@ -633,8 +634,8 @@ end
 if msg == prefix.."fixpaint" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/fixpaint",true))()
 end
-local 2 = ""
-if msg == 2.."clr" then
+local p = ""
+if msg == p.."clr" then
 chat("reset all")
 chat("fix")
 chat("clr")
@@ -1707,6 +1708,22 @@ game.Players:Chat("invis                                          me")
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
+if msg == prefix.."filtercheck" then
+chat("h/ \n\n\n\n  C                                                               ")
+chat("h/ \n\n\n\n   h                                                              ")
+chat("h/ \n\n\n\n       e                                                          ")
+chat("h/ \n\n\n\n            c                                                     ")
+chat("h/ \n\n\n\n                   k                                              ")
+chat("h/ \n\n\n\n                                                                 ")
+chat("h/ \n\n\n\n            f                                                     ")
+chat("h/ \n\n\n\n                                                                 ")
+chat("h/ \n\n\n\n                 i                                                ")
+chat("h/ \n\n\n\n                      l                              t             ")
+chat("h/ \n\n\n\n                                                                 ")
+chat("h/ \n\n\n\n                                             e                    ")
+chat("h/ \n\n\n\n                                                          r       ")
+end
+
 if msg == prefix.."blockpads" then
 
 chat("-house")
@@ -2676,14 +2693,7 @@ if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
 		game.Players:Chat("music 0000000000000000005253604010")
 	end
 
-local autoff = true
-if not player.Character:FindFirstChild("ForceField") then
-if autoff == true then
 
-chat("ff/                                                                                                               all/antifelogs.com/nigger")
-chat("god/                                                                                                              all/antifelogs.com/nigger")
-end 
-end
 
 
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 20" then
