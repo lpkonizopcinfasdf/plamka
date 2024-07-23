@@ -9,8 +9,7 @@ local Chat = function(...)game.Players:Chat(...)end
 
 function startupScripts() 
 game.Players:Chat("-nok")
--- chat("-conjoin") 
--- crash on join
+chat("-lrobox")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/anticrashv3",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
@@ -161,6 +160,7 @@ local v1 = "PaintPart"
 mousee.KeyDown:connect(function(key)
 	if key:lower() == AttachTO_keybind then
 		logn("Attached to object")
+chat("size me 0.5")
 		if mousee.Target then
 			local target = mousee.Target
 			function movepart()
@@ -185,7 +185,7 @@ mousee.KeyDown:connect(function(key)
 	
 	if key:lower() == AttachDelete_keybind then
 chat("size me 0.5")
-chat("invis                                                                                   me")
+
 		logn("Attached to object")
 		if mousee.Target then
 			local target = mousee.Target
@@ -203,25 +203,11 @@ chat("invis                                                                     
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.25)
 				looping = false
-game.Players:Chat("invis                                                                                       me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
-chat("skydive                                                                       me me me")
 
 
 
-				wait(0.25)
-				game.Players:Chat('respawn me')
-wait(0.25)
-chat("-house")
+
+
 			end
 			movepart()
 		end
@@ -241,7 +227,7 @@ game.Players:Chat("ff                                                      me")
 		game.Players:Chat("reset                                                           me")
 	end
 	if key:lower() == forcefield_keybind then
-		game.Players:Chat("ff                                                                       me")
+		game.Players:Chat("ff nygaz                                                                      me")
 	end
 	if key:lower() == gravity_keybind then
 		loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
@@ -620,7 +606,7 @@ for i = 1,50 do
             chat("dog "..antilogsspace.."/all all all"..antifelogs)
         end
 for i = 1,10 do
-            chat("clone "..antilogsspace.." me me me "..antifelogs)
+            chat("clone "..antilogsspace.." all all all "..antifelogs)
         end
 wait(3)
 for i = 1,50 do
@@ -2520,10 +2506,7 @@ wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/serverhop",true))()
 end
 
-	if string.sub(msg:lower(), 0, 3) == prefix.."cb" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Clickgameplay/no-tag-script/main/.NoTagScript"))()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Temp/main/v3-bar-src"),true))()
-	end
+
 
 	if string.sub(msg:lower(), 0, 5) == prefix.."gpad" then
                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
@@ -2655,10 +2638,18 @@ end
 		end
 	end
 	
-	if string.sub(msg:lower(), 0, 7) == prefix.."tool 1" then
+	if string.sub(msg:lower(), 0, 7) == prefix.."punish" then
 		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("gear "..player.." 00000000000000000079446473")
-	end
+		game.Players:Chat("setgrav "..player.." 1000")
+chat("punish "..player.."                                                                                                =nigger= ")
+chat("blind  "..player.." / nigger")
+chat("jail "..player.." / nigger")
+chat("stun "..player.." nigger ")
+chat("trip "..player.." nigger")
+chat("ff "..player.." nigger")
+wait(0.25)
+regen()
+end
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."tool 2" then
 		local player = string.sub(msg:lower(), 9)
