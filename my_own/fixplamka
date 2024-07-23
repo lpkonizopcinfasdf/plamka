@@ -51,7 +51,13 @@ local function ivorymove2()
 end
 
 	
+function civory()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
+
+wait(.10)
+game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(Enum.KeyCode.E)
+end
 
 
 local function clickivory() 
@@ -2031,7 +2037,7 @@ local target = Workspace_Folder.Baseplate
 wait(.20)
 moverattach()
 wait(.5)
-clickivory()
+civory()
 end
 
 
