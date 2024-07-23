@@ -2064,52 +2064,8 @@ allowcrash = false
             logn("{Move.lua} Already Moving, Please Wait")
         end
 	end
-if msg == prefix.."fixbp2" then
-fixbp2()
-local target = Workspace_Folder.Baseplate
-wait(.20)
-moverattach()
-wait(.5)
-civory()
-end
-
-
-
-
-antijail = true
-end
---
-function moverattach()
-
-					local cf = game.Players.LocalPlayer.Character.HumanoidRootPart
-					local looping = true
-					spawn(function()
-						while true do
-							game:GetService('RunService').Heartbeat:Wait()
-							game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
-							cf.CFrame = target.CFrame * CFrame.new(-1*(target.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
-							if not looping then break end
-						end
-					end)
-					spawn(function() while looping do wait(.1) tchat('unpunish me') end end)
-					wait(0.25)
-					looping = false
-				end
 
 --
-
-function fixbp2()
-antijail = false
-
-chat("gear me 00000000000000000000000000000000000000000000000000000000000000000000000000108158379")
-wait(.25)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-501, 0.100000001, 0))
-			wait(.2)
-			tchat("jail me")
-wait(.2)
-clickivory()
-end
-
 
 
 if msg == prefix.."tripbp" then
