@@ -51,7 +51,7 @@ local function ivorymove2()
 end
 
 	
-function civory()
+function clickivory()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/usetools",true))()
 
@@ -60,7 +60,7 @@ game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServ
 end
 
 
-local function clickivory() 
+local function civory() 
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
       if v:IsA("Tool") and v.Name == "IvoryPeriastron" then
         v.Parent = workspace:FindFirstChild(game.Players.LocalPlayer.name)
