@@ -748,6 +748,39 @@ wait(0.25)
 chat("-usetools")
 end
 
+if string.sub(msg:lower(), 0, 8) == prefix.."dropfps" then
+local plr = string.sub(msg:lower(), 10)
+chat("respawn [nigger]                                                                                                  "..plr.."")
+wait(0.25)
+chat("freeze [nigger]                                                                                                   "..plr.."")
+chat("jail [nigger]                                                                                                   "..plr.."")
+chat("")
+wait(0.25)
+for i = 1,200 do
+chat(prefix.."smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." ")
+end
+wait(1)
+chat("clone [nigger]                                                                                                   "..plr.." ")
+wait(.10)
+chat(prefix.."super smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr)
+wait(1)
+chat(prefix.."super smoke [nigger]                                                                                                   "..plr.."                                                         "..plr.." "..plr.." "..plr.." "..plr.." ")
+wait(1)
+chat(prefix.."spam smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+wait(4.25)
+chat(prefix.."stop")
+wait(.15)
+chat("punish [nigger]                                                                                                             "..plr.." ")
+wait(.10)
+chat(prefix.."spam explode [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
+wait(4)
+chat(prefix.."stop")
+logn("FPS DROPPED")
+
+
+
+end
+
 	if string.sub(msg:lower(), 0, 5) == prefix.."hatc" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 		local plr = string.sub(msg:lower(), 7)
