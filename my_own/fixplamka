@@ -3543,7 +3543,7 @@ Spawn(function()
 			if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then 
 				game.Players:Chat("reset                                                me")
     		game.Players:Chat("ff                                                                  me")
-wait(2)
+wait(5)
 
 			end
 		end
@@ -3551,13 +3551,13 @@ wait(2)
 		if antijail == true then
 			for i,plr in pairs(Ignore) do
 				if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(plr.."'s jail") then
-					game.Players:Chat("unjail/                                "..string.sub(plr,0,4):lower())
+					game.Players:Chat("unjail/                                                "..string.sub(plr,0,4):lower())
 
 				end
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
-				game.Players:Chat("unjail/                                                                me")
-wait(2)
+				game.Players:Chat("unjail/                                                                                me")
+wait(5)
 
 			end
 
