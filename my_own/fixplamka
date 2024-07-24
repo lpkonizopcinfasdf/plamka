@@ -166,7 +166,7 @@ local v1 = "PaintPart"
 mousee.KeyDown:connect(function(key)
 	if key:lower() == AttachTO_keybind then
 		logn("Attached to object")
-chat("size me 0.5")
+
 		if mousee.Target then
 			local target = mousee.Target
 			function movepart()
@@ -636,6 +636,9 @@ chat("dog all all all")
 chat("clone all all all")
 end
 
+end
+if msg == prefix.."anticrashvg off" then
+anticrashvg = false
 end
 
 
