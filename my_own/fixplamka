@@ -1969,25 +1969,27 @@ allowcrash = false
  -- wait(.50)
   --clickivory()
 --  wait(.50)
-
+local moveiscool = false
 if msg == prefix.."fixbp" then
 
 antijail = false
 
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 		wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 		game.Players:Chat("jail me")
 
-		wait(0.3)
+		wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-500.99981689453, 0.10156404972076, 0))
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
-  wait(.25)
-clickivory()
   wait(.20)
+clickivory()
+  wait(.15)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Basteplate")
             Stable_Check = true
-            if Workspace_Folder.Baseplate.CFrame.Y > 0 then
+            if moveiscool == false then
 				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 				local looping = true
@@ -2002,7 +2004,7 @@ clickivory()
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.3)
 				looping = false
-		ivorymove2()
+		clickivory()
 				wait(0.45)
 				game.Players:Chat("respawn me")
 				wait(0.2)
