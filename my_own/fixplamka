@@ -1114,7 +1114,7 @@ chat(prefix.."super unpunish                                                    
 logn("attached!")
 end
 	
-	if string.sub(msg:lower(), 0, 2) == prefix.."g " then
+	if string.sub(msg:lower(), 0, 2) == prefix.."e " then
 		loadstring()
 	end
 	
@@ -1400,16 +1400,7 @@ game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 	if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
 		loadstring(string.sub(msg:lower(), 6))()
 	end
-	if string.sub(msg:lower(), 0, 4) == prefix.."clr" then
-		game.Players:Chat("clr 343")
-game.Players:Chat("fix 343 ")
-    game.Players:Chat("ungear 343                                                              all")
-game.Players:Chat("respawn 343                                              all")
-game.Players:Chat("unchar 343                                              all")
-regen()
-wait(0.25)
-chat("-fpaint")
-	end
+
 if msg == prefix.."fixfilter" then
 chat("ASFGA$^$#?>")
 chat("ASD<G><AT")
@@ -2827,12 +2818,12 @@ end
 		local player = string.sub(msg:lower(), 9)
 		game.Players:Chat("respawn"..player)
 		wait(0.25)
-		game.Players:Chat("freeze                                                    "..player.." 0.3")
-  		game.Players:Chat("name "..player.." \n\n PMKICKING \n\n ["..player.."] \n\n\n")
+		game.Players:Chat("freeze                                                    "..player.." nigga0.3")
+  		
     wait(.34)
-    game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
-      wait(.20)
-    game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ lol.")
+    game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
+      wait(1)
+    game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
 	end
 	
 
@@ -2886,7 +2877,7 @@ local AllowTeleportsToShortcutHub = false
 -- 130113146 HyperLaserGun
 		game.Players:Chat("gear me 0000000000000000000000000000000000000000000000000000000000000000000082357101")
 		wait(0.30)
-		game.Players:Chat(prefix.."alltools")
+		game.Players:Chat(prefix.."eqptools")
 		wait(0.50)
 		names = game.Players:GetChildren()
 		local name = string.sub(msg:lower(), 10)
