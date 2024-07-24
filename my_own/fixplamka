@@ -469,7 +469,16 @@ if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
 		]]..cf.X..[[, ]]..cf.Y..[[, ]]..cf.Z..[[
 		]])
 	end
-	
+
+function GravFix()
+      workspace.Gravity = 196.2
+end
+if msg == prefix.."fixgrav" then
+GravFix()
+end
+
+
+
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 		local plr = string.sub(msg:lower(), 6)
 		game.Players:Chat("-super dog  "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
