@@ -25,5 +25,5 @@ for i, v in ipairs(game.Players:GetPlayers()) do
 			end
             	end
        	    end
-     end 
-end)
+
+end
