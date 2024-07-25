@@ -355,6 +355,23 @@ Players.LocalPlayer.Chatted:Connect(function(msg)
 			logn("Unable to Locate Server")
 		end
 	end
+
+
+local antirocket = true
+
+if game.Players.LocalPlayer.Character:FindFirstChild("Rocket") then
+if antirocket == true then
+
+
+				if game.Players.LocalPlayer.Character:FindFirstChild("Rocket") then
+					game.Players.LocalPlayer.Character.Rocket.CanCollide = false
+					task.wait(0.5)
+					game.Players.LocalPlayer.Character.Rocket:Destroy()
+
+
+end
+				end
+
 	if msg == prefix.."breakcam" then
 chat("gear all 00000000000000000000000000000000000000000000000000000004842204072")
 wait(1)
