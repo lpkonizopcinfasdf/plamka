@@ -3211,10 +3211,10 @@ Spawn(function()
 			if allowcrash == false then
 				for i, player in pairs(game:GetService("Players"):GetPlayers()) do
 					if player.Character then
-						if player.Character:FindFirstChild("VampireVanquisher") then
+						      if v.Backpack:FindFirstChild("VampireVanquisher") or v.Character:FindFirstChild("VampireVanquisher") then
 							local plrname = player.Name
-							game.Players:Chat(("ungear                                      "..plrname))
-							game.Players:Chat(("punish                                      "..plrname))
+						   Chat("ungear/[nigger]                                                                               "..v.Name)
+                Chat("punish/[nigger]                                                                                                                 "..v.Name)
 							if AllowMessages == true then
 								if allowads == true then
 						
