@@ -1880,17 +1880,14 @@ local fixregencords = CFrame.new(-7, 6, 93)
 -- 
 	  local hugecords = CFrame.new(-2349580, 9974679, 9954249)
 	if string.sub(msg:lower(), 0, 12) == prefix.."deleteregen" then
-chat("invis me ")
-wait(.60)
 game.Players:Chat("size me 0.5")
-
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.5)
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = hugecords
-      wait(.40)
+      wait(.10)
    clickivory()
-wait(0.40)
+wait(0.20)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
@@ -1911,7 +1908,7 @@ wait(0.40)
 				wait(0.3)
 				looping = false
 clickivory()
-				wait(0.30)
+				wait(0.20)
 				game.Players:Chat("respawn me")
 				wait(0.2)
             end
@@ -1936,7 +1933,7 @@ game.Players:Chat("size me 0.5")
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
             Stable_Check = true
-           if Admin_Folder.Regen.CFrame.Y < 500 then
+           if moveiscool = false then
 				repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 				local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 				local looping = true
@@ -1968,7 +1965,7 @@ if string.sub(msg:lower(), 0, 9) == prefix.."fixregen" then
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 chat("size me 0.5")
-wait(.45)
+wait(.10)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
@@ -1979,9 +1976,9 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = fixregencords
 
 
 
- wait(.40)
+ wait(.10)
    clickivory()
-wait(0.40)
+wait(0.20)
 
         if Stable_Check == false then
             logn("{Move.lua} Moving Admin Reset Pad")
@@ -1999,7 +1996,7 @@ wait(0.40)
 				    end
 				end)
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
-				wait(0.3)
+				wait(0.45)
 				looping = false
 clickivory()
 				wait(0.30)
