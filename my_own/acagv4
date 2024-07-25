@@ -1,0 +1,29 @@
+local crashTools = {"OrinthianSwordAndShield", "VampireVanquisher"}
+local antigear2 = false
+local anticrash2 = true
+for i, v in ipairs(game.Players:GetPlayers()) do
+            if v.Backpack:FindFirstChild("VampireVanquisher") or v.Character:FindFirstChild("VampireVanquisher") then
+               if v ~= game.Players.LocalPlayer and anticrash2 == true then
+                Chat("ungear/ "..v.Name)
+                Chat("punish/ "..v.Name)
+        Chat("h/ \n\n\n "..v.Name.. " has tryed to use blacklisted gear  \n\n")
+               end
+            end
+            if v.Backpack:FindFirstChild(crashTools) or v.Character:FindFirstChild(crashTools) then
+               if v ~= game.Players.LocalPlayer and anticrash2 == true then
+                Chat("ungear/ "..v.Name)
+                Chat("punish/ "..v.Name)
+                Chat("h/ \n\n\n "..v.Name.. " has tryed to use blacklisted gear  \n\n")
+               end
+            end
+	    for i, gear in pairs(v.Backpack:GetChildren()) do
+            	if gear:IsA("Tool") and antigear2 == true then
+               		if v.Name ~= game.Players.LocalPlayer.Name then
+				Chat("ungear/ "..v.Name)
+				Chat("removetools/ "..v.Name)
+                		Chat("h/  \n\n\n  "..v.Name.. " \n\n Gears are not allowed in this server. \n\n\n")
+			end
+            	end
+       	    end
+     end 
+end)
