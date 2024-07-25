@@ -528,33 +528,8 @@ function FixCam()
 end
 
 
-local antipunish = true
-     if antipunish == true then
-            if game.Lighting:FindFirstChild(lp.Name) then
-                chat("unpunish/plamk_a ")
-            end
-        end
 
-local antirocket = true
-    if antirocket == true then
-            for i, v in pairs(lp.Character:GetChildren()) do
-                if v.Name == "Rocket" then
-                    lp.Character.Rocket.CanCollide = false
-                    task.wait(0.5)
-                    v:Destroy()
-                end
-            end
-        end
-local autogod = true
-local tempautogod = true
 
- if autogod == true or tempautogod == true then
-            if tostring(lp.Character.Humanoid.MaxHealth) ~= "inf" then
-                    Chat("god/plamk_a")
-                    lp.Character.Humanoid.MaxHealth = math.huge
-                    lp.Character.Humanoid.Health = 9e9            
-            end
-        end
 -- new things
 
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
