@@ -971,6 +971,17 @@ chat(prefix.."spam hat others 00000000000000000000000000000000000000000000000000
 wait(10)
 chat(prefix.."stop")
 end
+
+if string.sub(msg:lower(), 0, 8) == prefix.."loadreg" then
+local plr = string.sub(msg:lower(), 10)
+chat(prefix.."findregen")
+
+wait(.20)
+chat("fly plamk_a "..plr.." ")
+chat("tp/"..plr.."/plamk_a")
+wait(.50)
+chat("respawn plamk_a "..plr.." ")
+end
   if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 
@@ -1430,6 +1441,9 @@ end
 		wait(3)
 		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
 	end
+
+
+	
 	
 	if string.sub(msg:lower(), 0, 6) == prefix.."dkick" then
 		logn("Atempting to kick")
