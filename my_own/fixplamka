@@ -924,6 +924,11 @@ end
 
 
 
+
+
+
+
+
 if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
 
 regen()
@@ -971,6 +976,28 @@ chat(prefix.."spam hat others 00000000000000000000000000000000000000000000000000
 wait(10)
 chat(prefix.."stop")
 end
+
+
+
+
+ if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'cube' then -- cmdv3/pi
+                local imacube = string.sub(msg:lower(), #prefix + 6)
+                Chat("unpackage "..imacube)
+                for i = 1,15 do
+                        task.wait()
+                        Chat("size " .. imacube .. " .3")
+                    end
+                Chat("paint " .. imacube .. " white")
+                Chat("bighead " .. imacube)
+                Chat("unsize " .. imacube)
+                Chat("removelimbs " .. imacube)
+                Chat("size " .. imacube .. " 2.5")
+                Chat("shiny " .. imacube)
+           
+    end
+
+
+
 
 if string.sub(msg:lower(), 0, 8) == prefix.."loadreg" then
 local plr = string.sub(msg:lower(), 10)
@@ -3200,8 +3227,8 @@ Spawn(function()
 						if player.Character:FindFirstChild("HumanoidRootPart") then
 							if player.Character.HumanoidRootPart.Size.Y <= 0.3 then
 								local plrname = player.Name
-								game.Players:Chat(("reset                                     "..plrname))
-								game.Players:Chat(("ungear                                       "..plrname))
+
+
 								if AllowMessages == true then
 									if allowads == true then
 							
