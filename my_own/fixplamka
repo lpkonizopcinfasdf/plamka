@@ -3587,16 +3587,17 @@ Spawn(function()
 				for i,v in pairs(Ignore) do
 					if player.Name == Ignore[i] then
 						if player.Character.Humanoid.Health == 0 then
-              game.Players:Chat("reset                                                  "..Ignore[i])
-              game.Players:Chat("god/                                                     "..Ignore[i])
+              game.Players:Chat("resa                                               "..Ignore[i])
+              game.Players:Chat("goa                                                     "..Ignore[i])
 						end
 					end
 				end
 			end
 			if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then 
 				game.Players:Chat("reset plamk_a")
+chat("god/plamk_a")
   
-wait(5)
+wait(1)
 
 			end
 		end
