@@ -987,6 +987,7 @@ end
 
 
 
+
  if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'cube' then -- cmdv3/pi
                 local imacube = string.sub(msg:lower(), #prefix + 6)
                 Chat("unpackage "..imacube)
