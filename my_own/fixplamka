@@ -976,7 +976,14 @@ chat(prefix.."spam hat others 00000000000000000000000000000000000000000000000000
 wait(10)
 chat(prefix.."stop")
 end
+local playlist = false
 
+if msg == prefix.."playlist on" then
+playlist = true
+end
+if msg == prefix.."playlist off" then 
+playlist = false
+end
 
 
 
