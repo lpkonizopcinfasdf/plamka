@@ -619,6 +619,8 @@ chat("respawn                                                                   
 chat("reset                                                                                                 "..plr.."")
 
 	end
+
+-- hat me 00000000000000000000000000000000000000000000000000000018131548964
 if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait(0.25)
@@ -627,7 +629,7 @@ wait(0.25)
 		local plr = string.sub(msg:lower(), 8)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-chat(prefix.."super hat me 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+chat(prefix.."super hat me 000000000000000000000000000000000000000000000000000000000000000000018131548964")
 wait(.75)
 chat("size me nan")
 chat("size me 3")
@@ -647,13 +649,13 @@ wait(0.25)
 chat("jail/"..plr)
 chat("spin "..plr)
 wait(0.10)
-chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+chat(prefix.."super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000000000000018131548964")
 
 wait(1)
 
-chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018131548964")
 wait(1)
-chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
+chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018131548964")
 wait(3)
 chat(prefix.."stop")
 wait(.10)
@@ -937,51 +939,42 @@ chat("respawn me")
 end
 
 
-game.Players.PlayerAdded:Connect(function(plr)
-chat("h/<joinlogs> \n\n\n\n\n\n [System]: A user has joined the game \n\n\n\n   Display name: "..plr.DisplayName.."  Name:"..plr.name.." \n\n  \n\n\n\n\n\n")
 
-if string.match(game:HttpGet("https://inventory.roproxy.com/v1/users/" .. plr.name..UserId .. "/items/GamePass/" .. 66254), 66254) then
-chat("h/<permcheck> \n\n\n\n\n\n\n\n\n\ Perm: ✅")
-else
-chat("h/<permcheck> \n\n\n\n\n\n\n\n\n\ Perm: ❌")
-end
+--local abc = ""
 
-end)
-local abc = ""
-
-if msg == abc.."playlist 1" then
-chat("m/[Playlist1] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt]:   [     Now playing from playlist 1     ]   \n\n  10 songs found.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-wait(1)
-chat("h/[Playlist1] \n\n\n\n\n Now playing: rihanna sos  \n\n\n\n\n\n")
-chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901063458")
-wait(241)
-chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Brooklyn Blood Pop ")
-chat("music 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006823597327")
-wait(135)
-chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Just Wanna Dance    \n\n\n\n\n\n")
-chat("music 000000000000000000000000000000000000000000000000000000000000000001836736337")
-wait(155)
-chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Elypsis  i miss you   \n\n\n\n\n\n")
-chat("music 00000000000000000000000000000000000000000000000000000000000000007023741506")
-wait(210)
-chat("h/[Playlist1] \n\n\n\n\n\n Now playing: It’s raining tacos \n\n\n\n\n\n")
-chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000152745539")
-wait(80)
-chat("h/[Playlist1] \n\n\n\n\n\n Now playing: BTS - Fake love \n\n\n\n\n\n")
-chat("music 000000000000000000000000000000000000000000000000000000000000001894066752")
-wait(100)
-chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Ariana Grande – God Is a Woman ")
-chat("music 000000000000000000000000000000000000000000000000000000000000000000000000002071829884")
-wait(180)
-chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Billie Eilish – NDA \n\n\n\n\n\n ")
-chat("music 000000000000000000000000000000000000000000000000000000000000000000007079888477")
-wait(180)
-chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: GTA San Andreas – Theme Song")
-chat("music 0000000000000000000000000000000000000000000000000000000000000000000004571975095")
+--if msg == abc.."playlist 1" then
+--chat("m/[Playlist1] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt]:   [     Now playing from playlist 1     ]   \n\n  10 songs found.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+--wait(1)
+--chat("h/[Playlist1] \n\n\n\n\n Now playing: rihanna sos  \n\n\n\n\n\n")
+--chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901063458")
+--wait(241)
+--chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Brooklyn Blood Pop ")
+--chat("music 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006823597327")
+--wait(135)
+--chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Just Wanna Dance    \n\n\n\n\n\n")
+--chat("music 000000000000000000000000000000000000000000000000000000000000000001836736337")
+--wait(155)
+--chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Elypsis  i miss you   \n\n\n\n\n\n")
+--chat("music 00000000000000000000000000000000000000000000000000000000000000007023741506")
+--wait(210)
+--chat("h/[Playlist1] \n\n\n\n\n\n Now playing: It’s raining tacos \n\n\n\n\n\n")
+--chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000152745539")
+--wait(80)
+--chat("h/[Playlist1] \n\n\n\n\n\n Now playing: BTS - Fake love \n\n\n\n\n\n")
+--chat("music 000000000000000000000000000000000000000000000000000000000000001894066752")
+--wait(100)
+--chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Ariana Grande – God Is a Woman ")
+--chat("music 000000000000000000000000000000000000000000000000000000000000000000000000002071829884")
+--wait(180)
+---chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Billie Eilish – NDA \n\n\n\n\n\n ")
+--chat("music 000000000000000000000000000000000000000000000000000000000000000000007079888477")
+--wait(180)
+--chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: GTA San Andreas – Theme Song")
+--chat("music 0000000000000000000000000000000000000000000000000000000000000000000004571975095")
 
 
 
-end
+--end
 
 if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
 
@@ -1112,10 +1105,6 @@ chat("removeclones")
 
 
 
-if string.sub(msg:lower(), 0, 10) == prefix.."spongebob" then
-		local plr = string.sub(msg:lower(), 12)
-chat("hat "..plr.." 00000000000000000000000000000000000000000000000000000000018100795481")
-end
 -- di p 
 
 if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
