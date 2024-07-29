@@ -937,25 +937,47 @@ chat("respawn me")
 end
 
 
-if msg == prefix.."playlist 1" then
-chat("m/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[   Now playing from playlist 1   ] \n  10 songs found.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+game.Players.PlayerAdded:Connect(function(plr)
+chat("h/<joinlogs> \n\n\n\n\n\n [System]: A user has joined the game \n\n\n\n   Display name: "..plr.DisplayName.."  Name:"..plr.name.." \n\n  \n\n\n\n\n\n")
+
+if string.match(game:HttpGet("https://inventory.roproxy.com/v1/users/" .. plr.name..UserId .. "/items/GamePass/" .. 66254), 66254) then
+chat("h/<permcheck> \n\n\n\n\n\n\n\n\n\ Perm: ✅")
+else
+chat("h/<permcheck> \n\n\n\n\n\n\n\n\n\ Perm: ❌")
+end
+
+end)
+local abc = ""
+
+if msg == abc.."playlist 1" then
+chat("m/[Playlist1] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt]:   [     Now playing from playlist 1     ]   \n\n  10 songs found.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 wait(1)
-chat("h/ \n\n\n\n\n Now playing: rihanna sos  \n\n\n\n\n\n")
+chat("h/[Playlist1] \n\n\n\n\n Now playing: rihanna sos  \n\n\n\n\n\n")
 chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901063458")
 wait(241)
-chat("h/ \n\n\n\n\n\n Now playing: Brooklyn Blood Pop ")
+chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Brooklyn Blood Pop ")
 chat("music 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006823597327")
 wait(135)
-chat("h/ \n\n\n\n\n\n Now playing: Just Wanna Dance    \n\n\n\n\n\n")
+chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Just Wanna Dance    \n\n\n\n\n\n")
 chat("music 000000000000000000000000000000000000000000000000000000000000000001836736337")
 wait(155)
-chat("h/ \n\n\n\n\n\n Now playing: Elypsis  i miss you   \n\n\n\n\n\n")
+chat("h/[Playlist1] \n\n\n\n\n\n Now playing: Elypsis  i miss you   \n\n\n\n\n\n")
 chat("music 00000000000000000000000000000000000000000000000000000000000000007023741506")
 wait(210)
-chat("h/ \n\n\n\n\n\n Now playing: It’s raining tacos \n\n\n\n\n\n")
+chat("h/[Playlist1] \n\n\n\n\n\n Now playing: It’s raining tacos \n\n\n\n\n\n")
 chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000152745539")
 wait(80)
-
+chat("h/[Playlist1] \n\n\n\n\n\n Now playing: BTS - Fake love \n\n\n\n\n\n")
+chat("music 000000000000000000000000000000000000000000000000000000000000001894066752")
+wait(100)
+chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Ariana Grande – God Is a Woman ")
+chat("music 000000000000000000000000000000000000000000000000000000000000000000000000002071829884")
+wait(180)
+chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: Billie Eilish – NDA \n\n\n\n\n\n ")
+chat("music 000000000000000000000000000000000000000000000000000000000000000000007079888477")
+wait(180)
+chat("h/[Playlist1] \n\n\n\n\n\n\n Now playing: GTA San Andreas – Theme Song")
+chat("music 0000000000000000000000000000000000000000000000000000000000000000000004571975095")
 
 
 
@@ -1008,63 +1030,6 @@ chat(prefix.."spam hat others 00000000000000000000000000000000000000000000000000
 wait(10)
 chat(prefix.."stop")
 end
-
-function addcommand(cmdName, cmdDescription, cmdFunction)
-    commands[cmdName] = cmdName
-    descriptions[cmdName] = cmdDescription
-    plr.Chatted:Connect(
-        function(msg)
-            msg = msg:lower()
-            args = msg:split(" ")
-            if args[1] == admin.prefix .. cmdName then
-                cmdFunction()
-            elseif args[1] == "/e" and args[2] == admin.prefix .. cmdName then
-                args[2] = args[3]
-                cmdFunction()
-            end
-        end
-    )
-end
-
-
-
-  addcommand("rk",
-		"a",
-		function()
-			for _Index, Target in pairs(GetPlayer(args[2])) do
-				if Target.Name ~= game.Players.LocalPlayer.Name then
-					for _, v in pairs(plr.Character:GetDescendants()) do 
-                        if v:IsA("Part") or v:IsA("BasePart") then 
-                            v.CanCollide = false
-                        end 
-                    end 
-                    chat("invis me")
-chat("respawn/"..Target.Name)
-
-
-                    task.wait(.3)
-                    chat("jail/"..Target.Name)
-chat("blind "..Target.Name)
-                    task.wait(.3)
-                    for _, v in pairs(Target.Character:GetDescendants()) do 
-                        if v:IsA("Part") or v:IsA("BasePart") then 
-                            v.CanCollide = false 
-                        end 
-                    end
-                      
-                    for i = 1, 120 do 
-                        task.wait()
-                        for i = 1, 25 do 
-                        chat("rocket/me "..Target.Name.."/me "..Target.Name.."/me "..Target.Name)
-                        plr.Character:WaitForChild("HumanoidRootPart").CFrame = Target.Character:WaitForChild("HumanoidRootPart").CFrame * CFrame.fromEulerAnglesXYZ(0, math.rad(180), 0) - Target.Character:WaitForChild("HumanoidRootPart").CFrame.LookVector * 2.5
-                    end 
-                    end
-                    chat("reset me")
-                end 
-			end
-		end
-	)
-
 
 
 
