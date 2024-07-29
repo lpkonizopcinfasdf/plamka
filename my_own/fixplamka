@@ -937,11 +937,29 @@ chat("respawn me")
 end
 
 
+if msg == prefix.."playlist 1" then
+chat("m/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[   Now playing from playlist 1   ] \n  10 songs found.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+wait(1)
+chat("h/ \n\n\n\n\n Now playing: rihanna sos  \n\n\n\n\n\n")
+chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006901063458")
+wait(241)
+chat("h/ \n\n\n\n\n\n Now playing: Brooklyn Blood Pop ")
+chat("music 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006823597327")
+wait(135)
+chat("h/ \n\n\n\n\n\n Now playing: Just Wanna Dance    \n\n\n\n\n\n")
+chat("music 000000000000000000000000000000000000000000000000000000000000000001836736337")
+wait(155)
+chat("h/ \n\n\n\n\n\n Now playing: Elypsis  i miss you   \n\n\n\n\n\n")
+chat("music 00000000000000000000000000000000000000000000000000000000000000007023741506")
+wait(210)
+chat("h/ \n\n\n\n\n\n Now playing: It’s raining tacos \n\n\n\n\n\n")
+chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000152745539")
+wait(80)
 
 
 
 
-
+end
 
 if string.sub(msg:lower(), 0, 7) == prefix.."fcrash" then
 
