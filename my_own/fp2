@@ -559,11 +559,53 @@ chat("clone all all all")
         end
      
         end
+ if string.sub(msg:lower(), 0, 7) == prefix.."3hkick" then
+local plr = string.sub(msg:lower(), 9)
+local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(.45)
+chat("speed "..plr.." nigger")
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+
+wait(.10)
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+wait(.30)
+chat("jail/"..plr)
+chat("setgrav "..plr.." 1000")
+wait(.20)
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=pos
+wait(.20)
+chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+
+wait(1)
+chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+wait(4)
+chat(prefix.."stop")
+wait(.10)
+chat("clone "..plr.." nigger")
+chat("unjail "..plr.." nigger")
+chat("tp/"..plr.."/"..plr.." ")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+wait(.30)
+chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+
+end
+
+
+
 
  if string.sub(msg:lower(), 0, 7) == prefix.."2hkick" then
 local plr = string.sub(msg:lower(), 9)
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait(0.25)
+
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 wait(.10)
 chat("tp/"..plr.."/plamk_a")
@@ -639,9 +681,9 @@ chat(prefix.."spam hat "..plr.." 00000000000000000000000000000000000000000000000
 wait(3)
 chat(prefix.."stop")
 wait(.10)
-
-chat("removeclones /")
+chat("unjail "..plr)
 wait(.5)
+
 chat(prefix.."spam clone "..plr.." "..plr.." "..plr.." "..plr.."/"..plr)
 wait(1)
 chat(prefix.."stop")
