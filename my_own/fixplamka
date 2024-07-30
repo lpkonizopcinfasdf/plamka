@@ -527,21 +527,7 @@ function FixCam()
                 end)
 end
 
-local god = true
 
-if god == true then
-if game.Players.LocalPlayer.Character then
-if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
-chat("god/(fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck) plamk_a")
-chat("heal plamk_a inf")
-chat("health plamk_a inf")
-
-wait(1)
-end
-end
-end
-end
 
 
 -- new things
@@ -565,6 +551,7 @@ chat("seizure all")
 chat("time 0")
 chat("trip all")
 chat("spin all")
+chat("fling all all all")
 chat("stun all")
 wait(0.25)
 for i = 1,100 do
@@ -572,11 +559,7 @@ for i = 1,100 do
 chat("clone all all all")
         end
      
-        end
-if msg == "/c system" then
-chat("h/ \n\n\n\n\n [Server]: "..player.name.."  is using /c system ")
 end
-
 
 
 if msg == prefix.."silcrash" then
@@ -676,11 +659,7 @@ chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt:] 
 end
 local antilogsspace = "                                                                                                                         "
 local antifelogs = "https://antifelogs.lol.com"
-if spamlogs == true then
-wait(0.0000000001)
-chat("ff <SPAMMING LOGS>")
-chat("ff 🖕🖕🖕🖕🖕🖕 \n 🖕🖕🖕🖕🖕 \n 🖕🖕🖕🖕🖕 \n 🖕🖕🖕 \n 🖕 \n 🖕 \n 🖕\n 🖕 \n 🖕 \n 🖕 \n \n 🖕 \n 🖕\n🖕🖕🖕🖕\n🖕🖕🖕🖕🖕")
-end
+
 
 if msg == prefix.."tempcrash" then
 
@@ -815,55 +794,8 @@ end
 end
 -- Chat("gear me 00000000000000000000000000000000000016722267")
 
-if string.sub(msg:lower(), 0, 5) == prefix.."test" then
-chat("-super gear me 00000000000000000000000000000000000243788010")
-wait(2)
-chat("-super gear me 00000000000000000000000000000000000243788010")
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-		local plr = string.sub(msg:lower(), 7)
-chat("reset "..plr.."")
-wait(0.25)
-chat("speed "..plr.." 0")
-chat("tp/"..plr.."/plamk_a")
-chat("blind "..plr.."")
-chat("jail/"..plr.."")
-wait(0.25)
-chat("-usetools")
-end
-
-if string.sub(msg:lower(), 0, 8) == prefix.."dropfps" then
-local plr = string.sub(msg:lower(), 10)
-chat("respawn [nigger]                                                                                                  "..plr.."")
-wait(0.25)
-chat("freeze [nigger]                                                                                                   "..plr.."")
-chat("jail [nigger]                                                                                                   "..plr.."")
-chat("")
-wait(0.25)
-for i = 1,200 do
-chat(prefix.."smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." ")
-end
-wait(1)
-chat("clone [nigger]                                                                                                   "..plr.." ")
-wait(.10)
-chat(prefix.."super smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr)
-wait(1)
-chat(prefix.."super smoke [nigger]                                                                                                   "..plr.."                                                         "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(1)
-chat(prefix.."spam smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(4.25)
-chat(prefix.."stop")
-wait(.15)
-chat("punish [nigger]                                                                                                             "..plr.." ")
-wait(.10)
-chat(prefix.."spam explode [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(4)
-chat(prefix.."stop")
-logn("FPS DROPPED")
 
 
-
-end
 
 	if string.sub(msg:lower(), 0, 5) == prefix.."hatc" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
@@ -2944,30 +2876,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/pla
 end
 	
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."rbok" then
-		local rac = string.sub(msg:lower(), 7)
 
-
-
-for i = 1,150 do
-
-chat("rocket/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/")
-end
-
-wait(1)
-for i = 1,150 do
-
-chat("rocket/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/"..rac.."/")
-end
-
-wait(0.75)
-
-chat("kill "..rac.." ")
-
-
-
-	
-	end
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."upme" then
 		game.Players.LocalPlayer.Character:Destroy()
@@ -2978,33 +2887,7 @@ chat("kill "..rac.." ")
 
 
 	
-	if string.sub(msg:lower(), 0, 7) == prefix.."pmkick" then
-
-		local player = string.sub(msg:lower(), 9)
-
-
-
-
-		game.Players:Chat("respawn/                                                                   (password)  "..player)
-		wait(0.25)
-chat("skydive "..player.." ")
-wait(.3)
-chat("jail "..player)
-
-for i = 1,10 do
-chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018131548964"")
-chat("gear "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000253519495")
-
-end
-chat("spin "..player.." ")
-  		
-    wait(.34)
-    game.Players:Chat(prefix.."super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
-      wait(1)
-    game.Players:Chat(prefix.."spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
-	end
 	
-
 	if string.sub(msg:lower(), 0, 5) == prefix.."noob" then
 		local player = string.sub(msg:lower(), 7)
 		game.Players:Chat("char "..player.." 4")
