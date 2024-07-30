@@ -560,6 +560,49 @@ chat("clone all all all")
      
         end
 
+ if string.sub(msg:lower(), 0, 7) == prefix.."2hkick" then
+local plr = string.sub(msg:lower(), 9)
+local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(0.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+wait(.10)
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+chat("tp/"..plr.."/plamk_a")
+wait(.20)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=pos
+wait(.3)
+chat("jail/"..plr)
+chat("spin "..plr)
+wait(.5)
+chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+wait(1)
+chat("clone "..plr.."")
+wait(.20)
+chat("unjail/"..plr.."")
+wait(.15)
+chat("jump "..plr.." ")
+wait(.15)
+chat("jump "..plr.." ")
+wait(.15)
+chat("jump "..plr.." ")
+wait(.10)
+chat("jump "..plr.." ")
+wait(.10)
+chat("jump "..plr.." ")
+wait(.30)
+chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+wait(15)
+chat(prefix.."stop")
+end
+
+
+
+
+
+
         if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait(0.25)
