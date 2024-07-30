@@ -577,7 +577,7 @@ chat("tp/"..plr.."/me")
 chat("tp/"..plr.."/me")
 wait(.10)
 chat("respawn/me")
-wait(0.10)
+wait(0.20)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=pos
 
 chat("blind "..plr.."")
