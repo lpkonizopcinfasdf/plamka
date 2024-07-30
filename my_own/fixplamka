@@ -718,28 +718,6 @@ anticrashvg = false
 end
 
 
--- omg test
-
-game.Players.PlayerAdded:Connect(function(plr)
-chat("h/<Joinlogs> \n\n\n\n\n\n  A Player Has Joined The Game!  \n\n\n\n\n\n")
-game.Players:Chat("h/<Joinlogs> \n\n\n\n\n\n\n\n\n Display name: "..plr.DisplayName.." \n\n Name: "..plr.name.." ")
-chat("h/<Joinlogs> \n\n\n\n\n\n\n\n\n\n\n\n\n User id: "..plr.UserId.." ")
-
-
-
-
-if string.match(game:HttpGet("https://inventory.roproxy.com/v1/users/"..plr.UserId.."/items/GamePass/" .. 66254), 66254) then
-
-chat("h/<Joinlogs> \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Perm: ✅ ")
-else
-chat("h/<Joinlogs> \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Perm: ❌ ")
-
-
-
-end
-
-
-end)
 
 
 
