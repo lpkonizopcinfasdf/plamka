@@ -2916,12 +2916,19 @@ end
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."pmkick" then
 		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("respawn"..player)
+		game.Players:Chat("respawn/"..player)
 		wait(0.25)
-		game.Players:Chat("freeze                                                    "..player.." nigga0.3")
+		game.Players:Chat("freeze                                                    "..player.." 0.3")
   		
-    wait(.34)
-    game.Players:Chat("-super pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
+
+
+for i = 1,100 do
+  game.Players:Chat("pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
+chat("h \n\n\n\n\n\n\n\n\n\n\n ก็็็                       ก็็็                        ก็็็                         ก็็็ ")
+end
+
+
+
       wait(1)
     game.Players:Chat("-spam pm "..player.." ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ก็็็ ")
 	end
@@ -3974,8 +3981,8 @@ wait(.35)
 
 
 
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
-chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
+--chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+--chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
 chat("antikill me fuck")
