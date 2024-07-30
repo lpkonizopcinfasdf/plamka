@@ -533,10 +533,10 @@ if god == true then
 if game.Players.LocalPlayer.Character then
 if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
 if game.Players.LocalPlayer.Character.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health < 100 then
-chat("god/░❦↹✁✂☹︎☠︎⛠⛛♌∛℥㎒㏅⑼④⑴⑽ⅶ⁏～❬＂'›⚫𓀟/me (discord)")
-chat("heal me inf")
-chat("health me inf")
-cha("god/𒆳𒈝༞𖥂𒐮𓃙𓄂𓅇𓅃※𖡟☸✬𓆚⚧⚣𓀲⬛▓𒆳𒈝༞𖥂𒐮𓃙𓄂𓅇𓅃※𖡟☸✬𓆚⚧⚣𓀲⬛▓/me (fuck)")
+chat("god/(fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck fuck) plamk_a")
+chat("heal plamk_a inf")
+chat("health plamk_a inf")
+
 wait(1)
 end
 end
