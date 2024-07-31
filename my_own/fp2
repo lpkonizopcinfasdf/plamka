@@ -578,42 +578,35 @@ end
 
 
 
-        if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
+        if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
+local ab = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(.25)
 
 
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 local plr = string.sub(msg:lower(), 8)
-chat("respawn/"..plr.."")
-wait(.12)
-chat("skydive "..plr.." "..plr.." "..plr.." ")
-wait(.2)
-game.Players:Chat("pm/"..plr.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Imagine getting crashed \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-chat("jail "..plr.." ")
-wait(.2)
-for i = 1,200 do
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
+chat("reset "..plr.."")
+wait(.25)
+chat("tp/"..plr.." me")
+wait(.40)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=ab
+chat("jail/"..plr.." ")
+chat("speed "..plr.." 0")
+chat("blind "..plr.." ")
+wait(.25)
+chat(prefix.."super hat "..plr.." 0000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 wait(1)
+chat("spin "..plr.."")
+chat("clone "..plr.." ")
+wait(.25)
+chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 
-for i = 1,200 do
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
-wait(1)
 
-for i = 1,200 do
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
-wait(1)
 
-for i = 1,200 do
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
-wait(1)
-
-for i = 1,200 do
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
-wait(1)
 
 
 
