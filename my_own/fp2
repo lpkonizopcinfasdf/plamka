@@ -10,7 +10,8 @@ local hatid = "18137588505"
 
 function startupScripts() 
 game.Players:Chat("-nok")
-chat("-lrobox")
+
+chat("-perm2")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/anticrashv3",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
