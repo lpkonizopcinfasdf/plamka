@@ -834,6 +834,8 @@ chat("speed "..plr.." 0")
 
 chat("blind "..plr.."")
 chat("tp me me me me me me me me me me me me me me me me me me")
+chat("tp me me me me me me me me me me me me me me me me me me")
+
 chat("speed plamk_a 0")
 chat("pm/"..plr.."/ Imagine getting crashed")
 
