@@ -559,6 +559,54 @@ chat("clone all all all")
         end
      
         end
+
+
+ if string.sub(msg:lower(), 0, 7) == prefix.."4hkick" then
+local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+regen()
+wait(.25)
+local plr = string.sub(msg:lower(), 9)
+chat("speed me 0")
+chat("blind "..plr.." ")
+chat("speed "..plr.." 0 ")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
+wait(.25)
+chat("tp/"..plr.."/me")
+chat("tp/"..plr.."/me")
+chat("tp/"..plr.."/me")
+chat("tp/"..plr.."/me")
+wait(.20)
+chat("freeze nigger                                                                                                          "..plr.." ")
+chat("tp/plamk_a/plamk_a")
+chat("tp/plamk_a/plamk_a")
+chat("tp/plamk_a/plamk_a")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+wait(.10)
+chat(prefix.."super hat plamk_a 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+wait(1)
+chat("size plamk_a 2")
+wait(.10)
+
+chat("punish plamk_a")
+chat("clone plamk_a")
+wait(.10)
+chat("unpunish/me")
+chat("tp/plamk_a/plamk_a")
+
+chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
+chat(prefix.."spam hat plamk_a 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
+wait(7)
+chat(prefix.."stop nigers")
+chat("respawn/plamk_a")
+
+
+
+
+
+
+end
  if string.sub(msg:lower(), 0, 7) == prefix.."3hkick" then
 local plr = string.sub(msg:lower(), 9)
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -576,10 +624,7 @@ wait(.30)
 chat("jail/"..plr)
 chat("setgrav "..plr.." 1000")
 wait(.20)
-chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
-chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
-chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
-
+chat("")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=pos
 wait(.20)
 chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
@@ -590,9 +635,6 @@ wait(4)
 chat(prefix.."stop")
 wait(.10)
 chat("clone "..plr.." nigger")
-chat("unjail "..plr.." nigger")
-chat("tp/"..plr.."/"..plr.." ")
-chat("pm/"..plr.."/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[    Kicked by plamk_a    ]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ")
 wait(.30)
 chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000018131548964")
 
@@ -2003,7 +2045,6 @@ local fixregencords = CFrame.new(-7, 6, 93)
 -- 
 	  local hugecords = CFrame.new(-2349580, 9974679, 9954249)
 	if string.sub(msg:lower(), 0, 12) == prefix.."deleteregen" then
-game.Players:Chat("size me 0.5")
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.5)
