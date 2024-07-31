@@ -822,7 +822,7 @@ chat("tp/"..plr.."/plamk_a")
 chat("blind "..plr.."")
 chat("tp me me me me me me me me me me me me me me me me me me")
 chat("speed plamk_a 0")
-chat("pm/"..plr.."/ \n\n\n\n\n\n\n\n\n\n\n  Imagine getting crashed   \n\n\n\n\n\n\n\n\n\n\n\n\n\")
+
 wait(.25)
 for i = 1,150 do
 game.Players:Chat("hat me 000000000000000000000000000000000000000000000000000000000000"..hatid.."")
