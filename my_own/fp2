@@ -820,16 +820,6 @@ chat("jump "..plr.."  ")
 chat("spin "..plr.." ")
 end
 
-game:GetService("Players").PlayerAdded:Connect(function(player)
-  if player.name == "Dawid1234590" then
-chat("pm/Dawid1234590/ \n\n ez z toba")
-chat("pm/Dawid1234590/ \n\n ez z toba")
-chat("pm/Dawid1234590/ \n\n ez z toba")
-chat("blind Dawid1234590")
-chat("pm/Dawid1234590/ \n\n ez z toba")
-wait(.25) 
-chat(prefix.."spam hat Dawid1234590 0000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-  end
 
 
 if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
