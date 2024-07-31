@@ -563,6 +563,11 @@ chat("clone all all all")
         end
      
         end
+if msg == prefix.."exec betterperson299" then
+logn("executed betterperson299 made by tech")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/BetterPerson299.lua",true))()
+end
+
 
 
 
