@@ -1,0 +1,7 @@
+wait(.50)
+game.Players:chat("h \n\n\n\n\n\n crashed ez \n\n\n\n\n\n")
+wait(.30)
+for i = 1,100 do
+game.Players:chat("dog all all all")
+game.Players:chat("clone all all all")
+end
