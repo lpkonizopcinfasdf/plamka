@@ -529,6 +529,9 @@ function FixCam()
 end
 
 
+if msg == prefix.."perm2" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/KAH%20light%20padgrabber.lua",true))()
+end
 
 
 -- new things
@@ -574,7 +577,7 @@ chat("clone all all all")
 
 
 
-local plr = string.sub(msg:lower(), 9)
+local plr = string.sub(msg:lower(), 8)
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 game.Players:Chat("respawn "..plr)
 wait(.2)
@@ -783,8 +786,8 @@ end
 end
 -- Chat("gear me 00000000000000000000000000000000000016722267")
 
-if string.sub(msg:lower(), 0, 5) == prefix.."crashcheck" then
-local plr = string.sub(msg:lower(), 8)
+if string.sub(msg:lower(), 0, 11) == prefix.."crashcheck" then
+local plr = string.sub(msg:lower(), 13)
 chat("tp/"..plr.."/me")
 
 chat("tp/"..plr.."/me")
@@ -812,16 +815,22 @@ end
 
 
 if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
+local plr = string.sub(msg:lower(), 7)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-local plr = string.sub(msg:lower(), 8)
+wait(.10)
+chat("tp "..plr.." me")
+chat("tp "..plr.." me")
+chat("speed "..plr.." ")
+wait(.20)
 		
 chat("reset "..plr.."")
 wait(0.25)
 chat("speed "..plr.." 0")
-chat("tp/"..plr.."/plamk_a")
+
 chat("blind "..plr.."")
 chat("tp me me me me me me me me me me me me me me me me me me")
 chat("speed plamk_a 0")
+chat("pm/"..plr.."/ Imagine getting crashed")
 
 wait(.25)
 for i = 1,150 do
@@ -843,6 +852,7 @@ chat(prefix.."spam hat me 000000000000000000000000000000000000000000000000000000
 end
 if msg == prefix.."stopkick" then
 chat(prefix.."stop")
+wait(.25)
 chat("respawn/me")
 chat("unclone all")
 chat("reset all")
