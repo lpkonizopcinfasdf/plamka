@@ -3943,6 +3943,7 @@ wait(.35)
 
 
 --chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+chat("h/ \n\n\n\n\n\n  [PLAMKA.txt]: Loaded in: "..tostring(os.clock()-loadtime).."s       \n\n\n\n\n\n")
 --chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
