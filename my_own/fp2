@@ -579,33 +579,43 @@ end
 
 
 
-        if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
+        if string.sub(msg:lower(), 0, 6) == prefix.."fkick" then
 
 
 
 local plr = string.sub(msg:lower(), 8)
-local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-game.Players:Chat("respawn "..plr)
-wait(.2)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(455.448242, 3.63637614, 453.299042, 0.649438977, 6.72485001e-08, 0.760413706, -7.56329328e-08, 1, -2.38416611e-08, -0.760413706, -4.20286135e-08, 0.649438977)
-task.wait(.15)
-chat("tp/"..plr.."/me")
-chat("speed "..plr.." hate niggers")
+chat("respawn/"..plr.."")
 wait(.12)
-chat("freeze "..plr.." ")
-chat(prefix.."super hat me 00000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-wait(.75)
-for i = 1,190 do
-chat("hat me 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+chat("skydive "..plr.." "..plr.." "..plr.." ")
+wait(.2)
+game.Players:Chat("pm/"..plr.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Imagine getting crashed \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+chat("jail "..plr.." ")
+wait(.2)
+for i = 1,200 do
+chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 end
 wait(1)
-chat("clone me "..plr.." ")
-chat("unjail me "..plr.." ")
-chat("unfreeze all")
-wait(.15)
-chat("speed")
-chat("spin "..plr.." ")
+
+for i = 1,200 do
+chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(1)
+
+for i = 1,200 do
+chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(1)
+
+for i = 1,200 do
+chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(1)
+
+for i = 1,200 do
+chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(1)
+
 
 
 
