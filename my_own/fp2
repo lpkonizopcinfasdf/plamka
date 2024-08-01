@@ -607,7 +607,11 @@ chat(prefix.."spam hat "..player.." 00000000000000000000000000000000000000000000
 
 end
 
-
+if msg == prefix.."vis 2" then
+chat("-visrad 30")
+chat("-vismode 2")
+chat("-visamt 100")
+end
 
 if msg == prefix.."silcrash" then
 loopgrab = true
