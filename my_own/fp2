@@ -841,10 +841,7 @@ chat(prefix.."spam hat "..player.." 00000000000000000000000000000000000000000000
 
 end
 
-game.Players.PlayerAdded:Connect(function(plr)
-game.Players:Chat("m/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "..plr.DisplayName.." ("..plr.Name..") has joined the server  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-task.wait(3)
-end)
+
 
 
 function PLAYERCHECK(plr)
