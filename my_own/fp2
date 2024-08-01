@@ -3921,7 +3921,7 @@ Spawn(function()
 			for i,pad in pairs(Admin_Folder.Pads:GetDescendants()) do
 				if pad.Name == player.."'s admin" then
           game.Players:Chat("noclip                                                     "..player)
-          game.Players:Chat("pm "..player.." \n\n\n\n <PLAMKA.txt> \n\n Sorry you are banned from pads.")
+
 					regen()
 				end
 			end
@@ -3986,7 +3986,7 @@ wait(.35)
 
 
 --chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
-chat("h/ \n\n\n\n\n\n  [PLAMKA.txt]: Loaded in: "..tostring(os.clock()-loadtime).."s       \n\n\n\n\n\n")
+chat("h/ \n\n\n\n\n\n  Loadtime: "..tostring(os.clock()-loadtime).."s       \n\n\n\n\n\n")
 --chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
