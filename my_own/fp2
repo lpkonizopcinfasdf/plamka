@@ -585,22 +585,23 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-local plr = string.sub(msg:lower(), 8)
-chat("reset "..plr.."")
+local dasplayer = string.sub(msg:lower(), 8)
+PLAYERCHECK(dasplayer)
+chat("reset "..player)
 wait(.25)
-chat("tp/"..plr.." me")
+chat("tp/"..player.." me")
 wait(.40)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=ab
-chat("jail/"..plr.." ")
-chat("speed "..plr.." 0")
-chat("blind "..plr.." ")
+chat("jail/"..player)
+chat("speed "..player.." 0")
+chat("blind "..player.." ")
 wait(.25)
-chat(prefix.."super hat "..plr.." 0000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 wait(1)
-chat("spin "..plr.."")
-chat("clone "..plr.." ")
+chat("spin "..player)
+chat("clone "..player)
 wait(.25)
-chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+chat(prefix.."spam hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 
 
 
@@ -850,7 +851,8 @@ end
 
 
 if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
-local plr = string.sub(msg:lower(), 7)
+local dasplayer = string.sub(msg:lower(), 7)
+PLAYERCHECK(dasplayer)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
@@ -858,16 +860,16 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 wait(.30)
-chat("tp "..plr.." me")
-chat("tp "..plr.." me")
-chat("speed "..plr.." ")
+chat("tp "..player.." me")
+chat("tp "..player.." me")
+chat("speed "..player.." ")
 wait(.20)
 		
-chat("reset "..plr.."")
+chat("reset "..player)
 wait(0.25)
-chat("speed "..plr.." 0")
+chat("speed "..player)
 
-chat("blind "..plr.."")
+chat("blind "..player)
 chat("tp me me me me me me me me me me me me me me me me me me")
 chat("tp me me me me me me me me me me me me me me me me me me")
 chat("tp me me me me me me me me me me me me me me me me me me")
@@ -875,16 +877,16 @@ chat("tp me me me me me me me me me me me me me me me me me me")
 
 
 chat("speed plamk_a 0")
-chat("pm/"..plr.."/ Imagine getting crashed")
+
 
 wait(.25)
 for i = 1,150 do
 game.Players:Chat("hat me 000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-game.Players:Chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+game.Players:Chat("hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 end
 wait(1)
-chat("freeze "..plr.." ")
-chat("clone "..plr.." ")
+chat("freeze "..player)
+chat("clone "..player)
 wait(.20)
 chat(prefix.."spam hat me 000000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 
