@@ -819,23 +819,38 @@ chat("fling "..plr.." ")
 chat("jump "..plr.."  ")
 chat("spin "..plr.." ")
 end
- if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'crash' then  
-		local dasplayer = string.sub(msg:lower(), #prefix + 7)
+ if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 6)
                 PLAYERCHECK(dasplayer)
+chat("respawn/"..player)
+
 wait(.25)
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
 chat("skydive "..player.." "..player.." "..player.." ")
 wait(.10)
 chat("jail "..player)
-wait(.3)
-chat("reset "..player)
-wait(.2)
+chat("size "..player.." 10")
+chat("spin "..player.." ")
+chat("blind "..player)
+wait(.15)
+
 
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-wait(.75)
+wait(1)
 chat("clone "..player)
 chat("fly  "..player)
-wait(.5)
-chat(prefix.."spam hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(.50)
+chat("clone "..player)
+chat("fly  "..player)
+wait(.50)
+chat("clone "..player)
+chat("fly  "..player)
+wait(.25)
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+
+logn(""..player.." crashed ez ez ")
 
 
 
@@ -855,8 +870,8 @@ function PLAYERCHECK(plr)
 end
 
 
-if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
-local dasplayer = string.sub(msg:lower(), 7)
+if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
+local dasplayer = string.sub(msg:lower(), 8)
 PLAYERCHECK(dasplayer)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
