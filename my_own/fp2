@@ -568,12 +568,9 @@ logn("executed betterperson299 made by tech")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/BetterPerson299.lua",true))()
 end
 
-
-
-
-
-
-
+if msg == prefix.."exec vis fuck" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/S-PScripts/scripts/main/Luau/KAH/Main%20Scripts/MyVisualiser.lua",true))()
+end
 
 
 
@@ -658,7 +655,7 @@ chat("reset                                                                     
 	end
 
 if msg == prefix.."fixfilter" then
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n [PLAMKA.txt:] Filter fixed.")
+chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Filter fixed.")
 end
 local antilogsspace = "                                                                                                                         "
 local antifelogs = "https://antifelogs.lol.com"
