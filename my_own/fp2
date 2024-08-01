@@ -819,7 +819,37 @@ chat("fling "..plr.." ")
 chat("jump "..plr.."  ")
 chat("spin "..plr.." ")
 end
+ if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'crash' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 7)
+                PLAYERCHECK(dasplayer)
+wait(.25)
+chat("skydive "..player.." "..player.." "..player.." ")
+wait(.10)
+chat("jail "..player)
+wait(.3)
+chat("reset "..player)
+wait(.2)
 
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(.75)
+chat("clone "..player)
+chat("spin  "..player)
+wait(.5)
+chat(prefix.."spam hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+
+
+
+end
+
+function PLAYERCHECK(plr)
+  for i, v in pairs(game.Players:GetPlayers()) do
+      if string.sub(v.Name:lower(), 1, #plr) == plr:lower() then
+          player = v.Name
+          cplr = v
+          logn("Found "..player)
+      end
+  end
+end
 
 
 if string.sub(msg:lower(), 0, 5) == prefix.."kick" then
@@ -843,6 +873,9 @@ chat("speed "..plr.." 0")
 chat("blind "..plr.."")
 chat("tp me me me me me me me me me me me me me me me me me me")
 chat("tp me me me me me me me me me me me me me me me me me me")
+chat("tp me me me me me me me me me me me me me me me me me me")
+chat("tp me me me me me me me me me me me me me me me me me me")
+
 
 chat("speed plamk_a 0")
 chat("pm/"..plr.."/ Imagine getting crashed")
