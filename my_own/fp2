@@ -568,6 +568,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/S-PScripts/scripts/ma
 end
 
 
+if msg == prefix.."vis 2" then
+chat("music 6823597327")
+end
 
 
         if string.sub(msg:lower(), 0, 6) == prefix.."hkick" then
