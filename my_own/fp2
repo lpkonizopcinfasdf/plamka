@@ -112,7 +112,7 @@ local antivoid = false -- T
 
 
 
-local prefix = "-" --  
+local prefix = "*" --  
 local sprefix = "-" 
 
 local fkick = false
