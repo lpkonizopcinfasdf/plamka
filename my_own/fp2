@@ -831,7 +831,7 @@ wait(.2)
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 wait(.75)
 chat("clone "..player)
-chat("spin  "..player)
+chat("fly  "..player)
 wait(.5)
 chat(prefix.."spam hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 
