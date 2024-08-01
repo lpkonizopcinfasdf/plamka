@@ -2734,10 +2734,10 @@ end
 	
 	if string.sub(msg:lower(), 0, 7) == prefix.."punish" then
 		local player = string.sub(msg:lower(), 9)
+
 		game.Players:Chat("setgrav "..player.." 1000")
 chat("punish "..player.."                                                                                                =nigger= ")
 chat("blind  "..player.." / nigger")
-chat("jail "..player.." / nigger")
 chat("stun "..player.." nigger ")
 chat("trip "..player.." nigger")
 chat("ff "..player.." nigger")
