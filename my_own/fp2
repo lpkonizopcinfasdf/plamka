@@ -3984,7 +3984,7 @@ end)
 wait(.35)
 
 
-
+logn("Loaded!")
 --chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
 chat("h/ \n\n\n\n\n\n  Loadtime: "..tostring(os.clock()-loadtime).."s       \n\n\n\n\n\n")
 --chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
