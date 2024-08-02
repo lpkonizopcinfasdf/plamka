@@ -834,9 +834,8 @@ chat("jail "..player)
 chat("size "..player.." 10")
 chat("spin "..player.." ")
 chat("blind "..player)
+game.Players:Chat("pm/"..player.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou have been kicked from this game\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 wait(.15)
-
-
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 wait(1)
 chat("clone "..player)
@@ -849,7 +848,6 @@ chat("clone "..player)
 chat("fly  "..player)
 wait(.25)
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-
 logn(""..player.." crashed ez ez ")
 
 
