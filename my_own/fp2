@@ -662,6 +662,7 @@ local ap = true
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 if ap == true then
 game.Players:Chat("unpunish/me")
+chat("unpunish me")
 wait(1)
 end
 end
