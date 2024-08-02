@@ -657,6 +657,16 @@ chat("reset                                                                     
 
 	end
 
+local ap = true
+
+if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
+if ap == true then
+game.Players:Chat("unpunish/me")
+wait(1)
+end
+end
+
+
 if msg == prefix.."fixfilter" then
 chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Filter fixed.")
 end
