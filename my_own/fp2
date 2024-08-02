@@ -869,6 +869,70 @@ logn(""..player.." crashed ez ez ")
 
 
 end
+if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 6)
+                PLAYERCHECK(dasplayer)
+chat("respawn/"..player)
+
+wait(.25)
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+wait(.25)
+chat("jail "..player)
+chat("size "..player.." 10")
+chat("spin "..player.." ")
+chat("blind "..player)
+game.Players:Chat("pm/"..player.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou have been kicked from this game\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+wait(.15)
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(1)
+chat("clone "..player)
+chat("fly  "..player)
+wait(.50)
+chat("clone "..player)
+chat("fly  "..player)
+wait(.50)
+chat("clone "..player)
+chat("fly  "..player)
+wait(.25)
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+logn(""..player.." crashed ez ez ")
+
+
+
+end
+
+if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 6)
+                PLAYERCHECK(dasplayer)
+chat("respawn/"..player)
+
+wait(.25)
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." ")
+wait(.25)
+chat("jail "..player)
+chat("size "..player.." 2")
+chat("spin "..player.." ")
+chat("blind "..player)
+game.Players:Chat("pm/"..player.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou have been kicked from this game\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+wait(.15)
+chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(1)
+chat("clone "..player)
+chat("fly "..player)
+wait(.25)
+
+chat(prefix.."spam hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+
+
+
+
+end
 
 
 
