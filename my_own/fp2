@@ -882,10 +882,6 @@ end
 
 
 
-game.Players.PlayerAdded:Connect(function(plr)
-game.Players:Chat("pm/all\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "..plr.DisplayName.." ("..plr.Name..") has joined the server!  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-wait(3)
-end)
 
 
 if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'2kick' then  
