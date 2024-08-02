@@ -819,6 +819,22 @@ chat("fling "..plr.." ")
 chat("jump "..plr.."  ")
 chat("spin "..plr.." ")
 end
+ if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'float' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 7)
+                PLAYERCHECK(dasplayer)
+chat("setgrav "..player.." -252.152")
+wait(.25)
+chat("stun "..player.."")
+wait(.25)
+clrlogs2()
+end
+function clrlogs2()
+for i = 1,100 do
+chat("ff fuck")
+end
+end
+
+
  if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
 		local dasplayer = string.sub(msg:lower(), #prefix + 6)
                 PLAYERCHECK(dasplayer)
