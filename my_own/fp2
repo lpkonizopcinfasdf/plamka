@@ -862,50 +862,24 @@ chat("fly  "..player)
 wait(.50)
 chat("clone "..player)
 chat("fly  "..player)
-wait(.25)
+wait(.35)
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 logn(""..player.." crashed ez ez ")
 
-
-
-end
-if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
-		local dasplayer = string.sub(msg:lower(), #prefix + 6)
-                PLAYERCHECK(dasplayer)
-chat("respawn/"..player)
-
-wait(.25)
-chat("skydive "..player.." "..player.." "..player.." ")
-chat("skydive "..player.." "..player.." "..player.." ")
-chat("skydive "..player.." "..player.." "..player.." ")
-chat("skydive "..player.." "..player.." "..player.." ")
-wait(.25)
-chat("jail "..player)
-chat("size "..player.." 10")
-chat("spin "..player.." ")
-chat("blind "..player)
-game.Players:Chat("pm/"..player.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou have been kicked from this game\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-wait(.15)
-chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-wait(1)
-chat("clone "..player)
-chat("fly  "..player)
-wait(.50)
-chat("clone "..player)
-chat("fly  "..player)
-wait(.50)
-chat("clone "..player)
-chat("fly  "..player)
-wait(.25)
-chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-logn(""..player.." crashed ez ez ")
-
-
-
+logn("Fully crashed now")
 end
 
-if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
-		local dasplayer = string.sub(msg:lower(), #prefix + 6)
+
+
+
+game.Players.PlayerAdded:Connect(function(plr)
+game.Players:Chat("pm/all\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "..plr.DisplayName.." ("..plr.Name..") has joined the server!  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+wait(3)
+end)
+
+
+if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'2kick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 7)
                 PLAYERCHECK(dasplayer)
 chat("respawn/"..player)
 
@@ -920,9 +894,10 @@ chat("size "..player.." 2")
 chat("spin "..player.." ")
 chat("blind "..player)
 game.Players:Chat("pm/"..player.." \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou have been kicked from this game\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-wait(.15)
+wait(.20)
 chat(prefix.."super hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 wait(1)
+chat("fly "..player)
 chat("clone "..player)
 chat("fly "..player)
 wait(.25)
@@ -930,7 +905,7 @@ wait(.25)
 chat(prefix.."spam hat "..player.." 0000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
 
 
-
+logn("crashing "..player.." ez")
 
 end
 
@@ -1560,6 +1535,7 @@ end
 if string.sub(msg:lower(), 0, 4) == prefix.."msg" then
 chat("h \n\n\n\n\n\n "..string.sub(msg:lower(), 6).." \n\n\n\n\n\n ")
 end
+
 	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
 		logn("Now making person bok...")
 		wait(0.5)
