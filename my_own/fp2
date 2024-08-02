@@ -112,8 +112,8 @@ local antivoid = false -- T
 
 
 
-local prefix = "*" --  
-local sprefix = "-" 
+local prefix = "!" --  
+local sprefix = "!" 
 
 local fkick = false
 local fkickmsg = ";kick "
@@ -587,10 +587,10 @@ local dasplayer = string.sub(msg:lower(), 8)
 PLAYERCHECK(dasplayer)
 chat("reset "..player)
 wait(.25)
-chat("tp/"..player.." me")
+chat("tp "..player.." me")
 wait(.40)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=ab
-chat("jail/"..player)
+chat("jail "..player)
 chat("speed "..player.." 0")
 chat("blind "..player.." ")
 wait(.25)
@@ -618,10 +618,10 @@ end
 
 if msg == prefix.."silcrash" then
 loopgrab = true
-chat("time/0")
+chat("time 0")
 chat("fogcolor 0 0 0")
 chat("fogend")
-chat("speed/others/0")
+chat("speed others 0")
 chat("seizure all")
 crashmsg()
 chat("")
@@ -667,9 +667,6 @@ end
 end
 
 
-if msg == prefix.."fixfilter" then
-chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Filter fixed.")
-end
 local antilogsspace = "                                                                                                                         "
 local antifelogs = "https://antifelogs.lol.com"
 if spamlogs == true then
@@ -808,10 +805,10 @@ if string.sub(msg:lower(), 0, 11) == prefix.."crashcheck" then
 local plr = string.sub(msg:lower(), 13)
 chat("tp/"..plr.."/me")
 
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
+chat("tp "..plr.."/me")
+chat("tp "..plr.."/me")
+chat("tp "..plr.."/me")
+chat("tp "..plr.."/me")
 chat("tp/"..plr.."/me")
 chat("tp/"..plr.."/me")
 chat("tp/"..plr.."/me")
@@ -848,7 +845,7 @@ end
  if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
 		local dasplayer = string.sub(msg:lower(), #prefix + 6)
                 PLAYERCHECK(dasplayer)
-chat("respawn/"..player)
+chat("respawn "..player)
 
 wait(.25)
 chat("skydive "..player.." "..player.." "..player.." ")
@@ -887,7 +884,7 @@ end
 if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'2kick' then  
 		local dasplayer = string.sub(msg:lower(), #prefix + 7)
                 PLAYERCHECK(dasplayer)
-chat("respawn/"..player)
+chat("respawn "..player)
 
 wait(.25)
 chat("skydive "..player.." "..player.." "..player.." ")
@@ -980,7 +977,7 @@ end
 if msg == prefix.."stopkick" then
 chat(prefix.."stop")
 wait(.25)
-chat("respawn/me")
+chat("respawn me")
 chat("unclone all")
 chat("reset all")
 chat("removejails")
@@ -1804,8 +1801,9 @@ game.Players:Chat("invis                                          me")
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."control" then
 		local plr = string.sub(msg:lower(), 10)
-		game.Players:Chat("dog                      me,"..plr)
-		game.Players:Chat("tp me "..plr)
+PLAYERCHECK(plr)
+		chat("dog me "..player.." ")
+		game.Players:Chat("tp me "..player)
 		wait(1)
 		game.Players:Chat("punish                  me,"..plr)
 		game.Players:Chat("undog                         me,"..plr)
@@ -3725,8 +3723,8 @@ Spawn(function()
 				end
 			end
 			if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then 
-				game.Players:Chat("reset plamk_a")
-chat("god/plamk_a")
+				game.Players:Chat("reset me")
+chat("god me")
   
 
 
@@ -3737,11 +3735,13 @@ chat("god/plamk_a")
 			for i,plr in pairs(Ignore) do
 				if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(plr.."'s jail") then
 					game.Players:Chat("unjail/                                                "..string.sub(plr,0,4):lower())
+chat("unjail all")
 
 				end
 			end
 			if game:GetService("Workspace").Terrain["_Game"].Folder:FindFirstChild(game.Players.LocalPlayer.Name.."'s jail") then
-				game.Players:Chat("unjail/plamk_a                                                                                me")
+				game.Players:Chat("unjail me")
+chat("unjail/me")
 wait(5)
 
 			end
@@ -3848,7 +3848,7 @@ function start(plr)
 					end
 					if killoff == true then
 					print("someone is attaching lol")     
-            game.Players:Chat("pm "..plr.Name.." <PLAMKA.txt> \n You are punished for trying to attach. ")
+  
 wait(0.25)
 game.Players:Chat("punish                                                                                       "..plr.Name)
 					end
