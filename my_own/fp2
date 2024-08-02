@@ -884,6 +884,7 @@ function PLAYERCHECK(plr)
 end
 
 
+
 if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
 local dasplayer = string.sub(msg:lower(), 8)
 PLAYERCHECK(dasplayer)
