@@ -710,6 +710,41 @@ end
 if msg == prefix.."anticrashvg off" then
 anticrashvg = false
 end
+if msg == prefix.."hatslock" then
+chat("respawn others")
+wait(.25)
+for i = 1,200 do
+chat("hat others 0000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(1)
+chat("clone others ")
+
+
+
+hatslock = true
+end
+if msg == prefix.."unhatslock" then
+hatslock = false
+end
+
+local hatslock = false
+
+
+game.Players.PlayerAdded:Connect(function(plr)
+if hatslock == true then
+chat("fly "..plr.."                                                                                  fuck")
+wait(.10)
+for i = 1,200 do
+game.Players:Chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(2)
+chat("clone "..plr.."                                                                                    fuck")
+
+
+wait(2)
+end
+
+end)
 
 
 	if msg == prefix.."spamlogs" then
