@@ -968,7 +968,6 @@ chat("respawn "..player)
 wait(.25)
 chat("fly "..player)
 chat("blind    "..player)
-chat("size "..player.." 1.70")
 chat("skydive "..player.." "..player.." "..player.." ")
 wait(.25)
 chat("jail "..player.."")
@@ -978,10 +977,8 @@ chat("hat "..player.." 000000000000000000000000000000000000000000000000000000000
 chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
 end
 wait(.25)
-chat("clone "..player.."                                                                           fuck")
-wait(5)
-chat("reset "..player.."")
-chat("unclone "..player.." ")
+
+
 
 
 
