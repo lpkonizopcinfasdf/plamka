@@ -968,14 +968,17 @@ chat("respawn "..player)
 wait(.25)
 chat("fly "..player)
 chat("blind    "..player)
+chat("size "..player.." 1.70")
 wait(.25)
 for i = 1,200 do
 chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
 chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
 end
+wait(.25)
 chat("clone "..player.."                                                                           fuck")
 wait(5)
 chat("reset "..player.."")
+chat("unclone "..player.." ")
 
 
 
