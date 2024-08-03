@@ -733,6 +733,7 @@ local hatslock = false
 game.Players.PlayerAdded:Connect(function(plr)
 if hatslock == true then
 chat("fly "..plr.."                                                                                  fuck")
+chat("blind "..plr.." ")
 wait(.10)
 for i = 1,200 do
 game.Players:Chat("hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
@@ -956,6 +957,28 @@ chat(prefix.."spam hat "..player.." 00000000000000000000000000000000000000000000
 logn("crashing "..player.." ez")
 
 end
+if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'3kick' then  
+
+
+
+		local dasplayer = string.sub(msg:lower(), #prefix + 7)
+                PLAYERCHECK(dasplayer)
+chat("respawn "..player)
+
+wait(.25)
+chat("fly "..player)
+chat("blind    "..player)
+wait(.25)
+for i = 1,200 do
+chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
+chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
+end
+wait(5)
+chat("reset "..player.."")
+
+
+
+end
 
 
 
@@ -970,8 +993,8 @@ function PLAYERCHECK(plr)
   end
 end
 
-
-
+--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-39, 4, -9))
+-- -39, 4, -9
 if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
 local dasplayer = string.sub(msg:lower(), 8)
 PLAYERCHECK(dasplayer)
