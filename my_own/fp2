@@ -966,12 +966,14 @@ if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'3kick' then
 chat("respawn "..player)
 
 wait(.25)
-chat("fly "..player)
-chat("blind    "..player)
-chat("skydive "..player.." "..player.." "..player.." ")
-wait(.25)
-chat("jail "..player.."")
-wait(.15)
+chat("skydive "..player.." "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." "..player.." ")
+chat("skydive "..player.." "..player.." "..player.." "..player.." ")
+chat("blind "..player.." ")
+chat("size "..player.." 10")
+chat("spin "..player.." ")
+wait(.30)
 for i = 1,200 do
 chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
 end
