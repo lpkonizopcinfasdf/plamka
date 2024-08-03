@@ -802,6 +802,15 @@ end
 end
 -- Chat("gear me 00000000000000000000000000000000000016722267")
 
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+  local splitted = msg:split(" ")
+  if splitted[1] == "!lua" then
+    local execute = #splitted[1] + 1
+    loadstring(string.sub(msg, execute))()
+  end
+end)
+
 if string.sub(msg:lower(), 0, 11) == prefix.."crashcheck" then
 local plr = string.sub(msg:lower(), 13)
 chat("tp/"..plr.."/me")
