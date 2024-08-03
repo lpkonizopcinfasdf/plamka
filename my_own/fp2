@@ -888,8 +888,8 @@ end
 end
 
 
- if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
-		local dasplayer = string.sub(msg:lower(), #prefix + 6)
+ if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'3kick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 7)
                 PLAYERCHECK(dasplayer)
 chat("respawn "..player)
 
@@ -957,11 +957,11 @@ chat(prefix.."spam hat "..player.." 00000000000000000000000000000000000000000000
 logn("crashing "..player.." ez")
 
 end
-if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'3kick' then  
+if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'kick' then  
 
 
 
-		local dasplayer = string.sub(msg:lower(), #prefix + 7)
+		local dasplayer = string.sub(msg:lower(), #prefix + 6)
                 PLAYERCHECK(dasplayer)
 chat("respawn "..player)
 
