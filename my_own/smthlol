@@ -1,0 +1,3 @@
+if backpack:FindFirstChild("VampireVanquisher")
+game.Players:Chat("ungear all")
+end
