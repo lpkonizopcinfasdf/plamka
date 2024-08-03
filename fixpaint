@@ -251,5 +251,5 @@ end)
 			colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
 		end)
 wait(0.6)
-game.Players:Chat("ungear                                                                                               me "..math.random(99999))
+game.Players:Chat("ungear me nigger")
 --nil
