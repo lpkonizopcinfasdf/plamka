@@ -93,7 +93,7 @@ function mods()
 
 end
 
-local anticrashVG = true 
+local anticrashVG = false
 local antijailgearban = true 
 local antigrayscale = false
 local antikill = true -- 
