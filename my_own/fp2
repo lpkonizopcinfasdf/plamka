@@ -6,8 +6,7 @@ local Chat = function(...)game.Players:Chat(...)end
 local hatid = "18137588505"
 --
 
-Stats = {}
-Stats.starttime = os.clock()
+
 function startupScripts() 
 
 
