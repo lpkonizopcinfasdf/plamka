@@ -974,9 +974,14 @@ chat("blind "..player.." ")
 chat("size "..player.." 10")
 chat("spin "..player.." ")
 wait(.30)
-for i = 1,200 do
-chat("hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
+
+chat(prefix.."super hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(1)
+chat(prefix.."super hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
+wait(1)
+chat(prefix.."super hat "..player.." 00000000000000000000000000000000000000000000000000000000000"..hatid.."")
+
+logn("Crashed "..player.."")
 wait(.25)
 
 
