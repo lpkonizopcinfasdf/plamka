@@ -6,8 +6,8 @@ local Chat = function(...)game.Players:Chat(...)end
 local hatid = "18137588505"
 --
 
-local starttime1 = os.clock()
-
+Stats = {}
+Stats.starttime = os.clock()
 function startupScripts() 
 
 
@@ -4341,6 +4341,8 @@ task.spawn(function()
         end)()
     end
 end)
+
+
                                                      
 
 
