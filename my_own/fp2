@@ -4183,12 +4183,12 @@ end)
 
 
 wait(.35)
-
+local diff_seconds = loadtime
 
 logn("Loaded!")
---chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n <PLAMKA.txt>")
+chat("h/ \n\n\n\n\n\n Tip for everyone: Don’t abuse  \n\n\n\n\n\n")
+game.Players:Chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ Welcome plamk_a \n Script loaded succesfully \n Your prefix is ""..prefix.."" Loaded in: " .. formatted_time .. " ")
 
---chat("h/   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nLoadtime: "..tostring(os.clock()-loadtime).."s")
 function shortcutv3starts()
 chat("iy fuck")
 chat("antikill me fuck")
