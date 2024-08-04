@@ -1,6 +1,6 @@
 
 local loadtime = os.clock()
-
+local person = false
 local chat = function(...)game.Players:Chat(...)end
 local Chat = function(...)game.Players:Chat(...)end
 local hatid = "18137588505"
@@ -112,7 +112,7 @@ local antivoid = false -- T
 
 
 
-local prefix = "!" --  
+local prefix = "/" --  
 local sprefix = "!" 
 
 local fkick = false
@@ -4180,16 +4180,17 @@ Spawn(function()
 	mods()
 end)
 
+chat(prefix.."gpad")
 
+wait(.25)
 
-wait(.35)
 local diff_seconds = loadtime
 local formatted_time = string.format("%.1f", diff_seconds)
 
 
 logn("Loaded!")
-chat("h/ \n\n\n\n\n\n Tip for everyone: Don’t abuse  \n\n\n\n\n\n")
-game.Players:Chat("h/ \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ Welcome plamk_a \n Script loaded succesfully \n Your prefix is ""..prefix.."" Loaded in: " .. formatted_time .. " s ")
+--chat("h/ \n\n\n\n\n\n Tip for everyone: Don’t abuse  \n\n\n\n\n\n")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ Welcome "..game.Players.LocalPlayer.Name.." \n Script loaded succesfully \n Your prefix is ""..prefix.."" Loaded in: " .. formatted_time .. " s ")
 
 function shortcutv3starts()
 chat("iy fuck")
