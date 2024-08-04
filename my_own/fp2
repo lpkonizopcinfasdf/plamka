@@ -112,7 +112,7 @@ local antivoid = false -- T
 
 
 
-local prefix = "/" --  
+local prefix = "$" --  
 local sprefix = "!" 
 
 local fkick = false
@@ -4193,7 +4193,7 @@ wait(.25)
 logn("Loaded!")
 --chat("h/ \n\n\n\n\n\n Tip for everyone: Don’t abuse  \n\n\n\n\n\n")
 
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                                    Script loaded succesfully  ")
+
 function shortcutv3starts()
 chat("iy fuck")
 chat("antikill me fuck")
