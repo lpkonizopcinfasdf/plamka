@@ -634,16 +634,16 @@ chat("music r0000000000000000000000000000000000000000000000000000000000000000000
 
 wait(0.50)
 	
+
+for i = 1,52 do
+            chat("dog all all all                                                                           ")
+        end
+        for i = 1,51 do
             chat("clone all all all                                                                           ")
         end
 wait(2)
 for i = 1,100 do
     game.Players:Chat("shield/all/all/all")
-for i = 1,52 do
-            chat("dog all all all                                                                           ")
-        end
-        for i = 1,51 do
-
     game.Players:Chat("rocket/all/all/all")
     game.Players:Chat("clone all all all")
 end
@@ -662,15 +662,13 @@ chat("reset                                                                     
 	end
 
 
-local ap = true
-if ap == true then
+
+
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
-chat("refresh 🦶🥰⚫😐🫡🤩🥱😏⚠️⚫⚪💀☠️😑😐😐⚪❤️😪 me                                                    fuck")
+chat("refresh 😪❤️⚪😐😑☠️💀⚫😏😏🤩🥱🫡🥰🦶❌✅🤮😣😫😴👑🥹😉😀😁😂🤣😎😍fuck me ")
 wait(2)
 end
-end
-
 
 
 
@@ -3748,10 +3746,11 @@ chat("v!cmds")
 chat("antiblind fuck")
 end
 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/anticrashv3",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/rail-spam-script",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 
 
