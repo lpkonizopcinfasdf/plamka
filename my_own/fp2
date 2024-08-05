@@ -1263,9 +1263,11 @@ loopping = false
 	end
 	
      if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'super' then  
+local msg = string.sub(msg:lower(), #prefix + 7)
 	
-	                  for i = 1,120 do
-			game.Players:Chat(string.sub(msg:lower(), 8))
+	                for i = 1,120 do
+game.Players:Chat(msg)
+		
 		end
 	end
 
