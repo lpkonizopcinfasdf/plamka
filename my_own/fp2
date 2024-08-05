@@ -571,9 +571,34 @@ if msg == prefix.."exec vis fuck" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/S-PScripts/scripts/main/Luau/KAH/Main%20Scripts/MyVisualiser.lua",true))()
 end
 
+local antidogb = true
+local function antidog()
+  game.Players.LocalPlayer.Character.Torso.ChildAdded:Connect(function(child)
+    if antidogb == true then
+      if child.name == "Shirt" then
+        wait(.01)
+        child:Remove()
+        game.Players:Chat("reset me")
+      end
+    end
+  end)
+end
 
 if msg == prefix.."vis 2" then
 chat("music 6823597327")
+end
+local antipunishb = true
+
+local function antipunish()
+  game.Lighting.ChildAdded:Connect(function(child)
+    if antipunishb == true then
+      if child.name == LP.name then
+         Chat("unpunish/ 👹👺👹👺👹👺😈😈😈😈😈👺👹👺👹👺👹👺👹👹👿😈👿👹👾👽👽👿👹 fuck all")
+        Chat("unpunish 👹👺👹👺👹👺😈😈😈😈😈👺👹👺👹👺👹👺👹👹👿😈👿👹👾👽👽👿👹 fuck all")
+      
+      end
+    end
+  end)
 end
 
 
@@ -664,12 +689,12 @@ chat("reset                                                                     
 
 
 
-if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
+--if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
-chat("refresh 😪❤️⚪😐😑☠️💀⚫😏😏🤩🥱🫡🥰🦶❌✅🤮😣😫😴👑🥹😉😀😁😂🤣😎😍fuck me ")
+--chat("refresh 😪❤️⚪😐😑☠️💀⚫😏😏🤩🥱🫡🥰🦶❌✅🤮😣😫😴👑🥹😉😀😁😂🤣😎😍fuck me ")
 chat("unpunish 😍😎😂🤣😁😀😣😫😴👑🥹😉🤮✅❌🦶🥰🫡☠️💀😏⚫🤩🥱😈👹👺🫢🤫🐺🙈🐺fuck me")
-wait(3)
-end
+--wait(3)
+--end
 
 
 
