@@ -661,7 +661,8 @@ chat("reset                                                                     
 
 	end
 
-local ap = true
+
+
 
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
@@ -669,7 +670,7 @@ game.Players:Chat("unpunish/me")
 chat("unpunish me")
 wait(2)
 end
-end
+
 
 
 local antilogsspace = "                                                                                                                         "
