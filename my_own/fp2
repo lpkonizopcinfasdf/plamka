@@ -667,7 +667,7 @@ if ap == true then
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
 chat("refresh 🦶🥰⚫😐🫡🤩🥱😏⚠️⚫⚪💀☠️😑😐😐⚪❤️😪 me                                                    fuck")
-task.wait(2)
+wait(2)
 end
 end
 
