@@ -1004,53 +1004,7 @@ end
 
 --game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-39, 4, -9))
 -- -39, 4, -9
-if string.sub(msg:lower(), 0, 6) == prefix.."crash" then
-local dasplayer = string.sub(msg:lower(), 8)
-PLAYERCHECK(dasplayer)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-wait(.30)
-chat("tp "..player.." me")
-chat("tp "..player.." me")
-chat("speed "..player.." ")
-wait(.20)
-		
-chat("reset "..player)
-wait(0.25)
-chat("speed "..player)
 
-chat("blind "..player)
-chat("tp me me me me me me me me me me me me me me me me me me")
-chat("tp me me me me me me me me me me me me me me me me me me")
-chat("tp me me me me me me me me me me me me me me me me me me")
-chat("tp me me me me me me me me me me me me me me me me me me")
-
-
-chat("speed plamk_a 0")
-
-
-wait(.25)
-for i = 1,150 do
-game.Players:Chat("hat me 000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-game.Players:Chat("hat "..player.." 000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-end
-wait(1)
-chat("freeze "..player)
-chat("clone "..player)
-wait(.20)
-chat(prefix.."spam hat me 000000000000000000000000000000000000000000000000000000000000000000000000000000000"..hatid.."")
-
-
-
-
-
-
-
-end
 if msg == prefix.."stopkick" then
 chat(prefix.."stop")
 wait(.25)
@@ -1062,74 +1016,7 @@ end
 
 
 
-if string.sub(msg:lower(), 0, 8) == prefix.."dropfps" then
-local plr = string.sub(msg:lower(), 10)
-chat("respawn [nigger]                                                                                                  "..plr.."")
-wait(0.25)
-chat("freeze [nigger]                                                                                                   "..plr.."")
-chat("jail [nigger]                                                                                                   "..plr.."")
-chat("")
-wait(0.25)
-for i = 1,200 do
-chat(prefix.."smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." ")
-end
-wait(1)
-chat("clone [nigger]                                                                                                   "..plr.." ")
-wait(.10)
-chat(prefix.."super smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr)
-wait(1)
-chat(prefix.."super smoke [nigger]                                                                                                   "..plr.."                                                         "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(1)
-chat(prefix.."spam smoke [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(4.25)
-chat(prefix.."stop")
-wait(.15)
-chat("punish [nigger]                                                                                                             "..plr.." ")
-wait(.10)
-chat(prefix.."spam explode [nigger]                                                                                                   "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." "..plr.." ")
-wait(4)
-chat(prefix.."stop")
-logn("FPS DROPPED")
 
-
-
-end
-
-	if string.sub(msg:lower(), 0, 5) == prefix.."hatc" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))
-		local plr = string.sub(msg:lower(), 7)
-chat("respawn "..plr)
-wait(.10)
-chat("speed "..plr.." 0")
-chat("blind "..plr)
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-chat("tp/"..plr.."/me")
-wait(.3)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-22, 8, 60))
-chat("jail/"..plr)
-wait(.2)
-
-
-chat(prefix.."super hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
-wait(1.50)
-chat("spin "..plr)
-chat("clone "..plr)
-wait(.10)
-chat(prefix.."spam hat "..plr.." 000000000000000000000000000000000000000000000000000000000000000000000018113316616")
-wait(3)
-
-chat(prefix.."spam clone "..plr)
-wait(3)
-chat(prefix.."stop")
-
-
-
-
-	end
 
 if msg == prefix.."g portalgun" then
 chat("gear me 00000000000000000000000000000000000000000000000000000000000000034870758")
@@ -1199,61 +1086,21 @@ end
     end
 
 
+ if string.sub(msg:lower(), 1, #prefix + 7) == prefix..'loadreg' then  
+		local plr = string.sub(msg:lower(), #prefix + 9)
 
-
-if string.sub(msg:lower(), 0, 8) == prefix.."loadreg" then
-local plr = string.sub(msg:lower(), 10)
 chat(prefix.."findregen")
 
 wait(.20)
-chat("fly plamk_a "..plr.." ")
-chat("tp/"..plr.."/plamk_a")
+chat("fly  me "..plr.." ")
+chat("tp "..plr.."/me")
 wait(.50)
-chat("respawn plamk_a "..plr.." ")
+chat("respawn me "..plr.." ")
 end
  
 
+ 
 
-if string.sub(msg:lower(), 0, 10) == prefix.."spongebob" then
-		local plr = string.sub(msg:lower(), 12)
-chat("hat "..plr.." 00000000000000000000000000000000000000000000000000000000018100795481")
-end
--- di p 
-
-if string.sub(msg:lower(), 0, 8) == prefix.."hatkick" then
-		local plr = string.sub(msg:lower(), 10)
-
-game.Players:Chat("respawn                                                                                      me/"..plr.." ")
-wait(0.35)
-chat("tp/"..plr.."/me")
-chat("tp "..plr.." me")
-wait(0.10)
-chat("freeze                                                                                              "..plr.." fkuc")
-wait(1)
-game.Players:Chat("-super hat me 00000000000000000000000000000000000000000000000000000000000018113316616")
-wait(.35)
-game.Players:Chat("size me 2.15")
-game.Players:Chat("punish                                                                              me")
-game.Players:Chat("clone                                                                                 me")
-
-wait(0.35)
-game.Players:Chat("-super hat "..plr.." 00000000000000000000000000000000000000000000000000000000000018113316616")
-wait(1)
-game.Players:Chat("blind                                                                       "..plr.."  ")
-game.Players:Chat("unpunish                                                                  me ")
-game.Players:Chat("name "..plr.." ")
-wait(0.35)
-game.Players:Chat("unpunish                                           me me me")
-game.Players:Chat("-spam hat me 00000000000000000000000000000000000000000000000000000000000018113316616")
-wait(5)
-chat("-stop")
-wait(0.35)
-game.Players:Chat("respawn                                                  "..plr.." me")
-chat("removeclones")
-game.Players:Chat("-stop")
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
-
-	end
 
 
 	if string.sub(msg:lower(), 0, 5) == prefix.."1234" then
@@ -1373,8 +1220,9 @@ end
 		loadstring()
 	end
 	
-	if string.sub(msg:lower(), 0, 5) == prefix.."stop" then
-		logn("Stopped all things")
+	 if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'stop' then  
+		
+	
 		teskking = false
 		Wwkicking = "none"
 		wkicking = false
@@ -1383,9 +1231,7 @@ end
 loopping = false
 
 	end
-if msg == prefix.."robox" then
-game.Players.LocalPlayer.Backpack.Delete.delete:FireServer(Workspace.Terrain.GameFolder.Workspace["Obby Box"])
-end
+
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."clicktp" then
 		logn("Gave you the clicktp tool")
@@ -1408,7 +1254,7 @@ end
 	if string.sub(msg:lower(), 0, 10) == prefix.."clearlogs" then
 		logn("Cleared!")
 		for i = 1,100 do
-		game.Players:Chat("ff ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️⚠️\n⚠️ ")
+		game.Players:Chat("ff ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️ fuck \n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️\n⚠️⚠️\n⚠️ ")
 		end
 		wait(0.05)
 		if allowads == true then
@@ -1416,9 +1262,9 @@ end
 		end
 	end
 	
-      if string.sub(msg:lower(), 0, 7) == prefix.."super " then
-		logn("Spamming!")
-		for i = 1,100 do
+     if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'super' then  
+	
+	                  for i = 1,120 do
 			game.Players:Chat(string.sub(msg:lower(), 8))
 		end
 	end
@@ -1432,7 +1278,7 @@ end
 
 	
   if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'spam' then  
-		logn("Spamming!")
+		
 		Wspamming = string.sub(msg:lower(), #prefix + 6)
 		spamming = true
 	end
@@ -1477,8 +1323,8 @@ if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
 string.sub(msg:lower(), 6)
 end
 
-if string.sub(msg:lower(), 0, 8) == prefix.."tphouse" then
-local plr = string.sub(msg:lower(), 10)
+if string.sub(msg:lower(), 1, #prefix + 7) == prefix..'tphouse' then  
+local plr = string.sub(msg:lower(), #prefix + 9)
 
 local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait(0.20)
@@ -1488,7 +1334,7 @@ wait(0.20)
 
 
 wait(.2)
-chat("tp/"..plr.." plamk_a")
+chat("tp/"..plr.." me")
 
 wait(.10)
 
@@ -1501,19 +1347,19 @@ end
 
 
 	if string.sub(msg:lower(), 0, 6) == prefix.."house" then
-		logn("Teleported to pads!")
+	
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 -- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-57, 4, -20))
 	end -- CFrame.new(Vector3.new(-57, 4, -20))
 -- 
 -- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(452.8704528808594, 3.6999993324279785, 457.2926025390625))	
 	if string.sub(msg:lower(), 0, 6) == prefix.."spawn" then
-		logn("Teleported to pads!")
+	
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-41, 3.7, -15.589996337891))
 	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."reg" then
-		logn("Pads regenerated! ")
+	
 		regen()
 	end
 	
@@ -1599,15 +1445,6 @@ chat("colorshifttop 10000 0 0")
 chat("colorshiftbottom 10000 0 0")
 end
 
-	if string.sub(msg:lower(), 0, 8) == prefix.."boombox" then
-		logn("Gave player a boombox!")
-		local player = string.sub(msg:lower(), 10)
-		if player ~= "" then
-			game.Players:Chat("gear "..player.." 000000000000000000212641536")
-		else
-			game.Players:Chat("gear me 000000000000000000212641536")
-		end
-	end
 	
 	if string.sub(msg:lower(), 0, 10) == prefix.."bind pads" then
 		logn("pads is now bound to '"..string.sub(msg:lower(), 13, 13).."'")
@@ -1620,30 +1457,15 @@ end
 	end
 	-- game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
 -- 
-if string.sub(msg:lower(), 0, 4) == prefix.."msg" then
-chat("h \n\n\n\n\n\n "..string.sub(msg:lower(), 6).." \n\n\n\n\n\n ")
+ if string.sub(msg:lower(), 1, #prefix + 3) == prefix..'msg' then  
+local msg = string.sub(msg:lower(), #prefix + 5)
+chat("h \n\n\n\n\n\n "..msg.." \n\n\n\n\n\n ")
 end
 
-	if string.sub(msg:lower(), 0, 4) == prefix.."bok" then
-		logn("Now making person bok...")
-		wait(0.5)
-		local Luser = string.sub(msg:lower(), 6)..","
-		game.Players:Chat(prefix.."super dog "..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6)..","..string.sub(msg:lower(), 6))
-		wait(3)
-		game.Players:Chat("kill "..string.sub(msg:lower(), 6))
-	end
-
 
 	
 	
-	if string.sub(msg:lower(), 0, 6) == prefix.."dkick" then
-		logn("Atempting to kick")
-		wait(0.5)
-		local Luser = string.sub(msg:lower(), 8)..","
-		game.Players:Chat(prefix.."super dog "..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8)..","..string.sub(msg:lower(), 8))
-		wait(3)
-		game.Players:Chat("kill "..Luser)
-	end
+	
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."jail" then
 		
@@ -1652,17 +1474,6 @@ end
 		game.Players:Chat("thaw "..string.sub(msg:lower(), 7))
 	end
 	
-	if string.sub(msg:lower(), 0, 3) == prefix.."+ad" then
-
-game.Players:Chat("h \n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
-
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\  g")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n g")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n .")
-
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /8 yH v8 E PnE F")
-game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Please join❤️  \n\n\n\n\n\n")
-	end
 	
 	if string.sub(msg:lower(), 0, 4) == prefix.."lua" then
 		loadstring(string.sub(msg:lower(), 6))()
@@ -1674,8 +1485,7 @@ chat("ASD<G><AT")
 chat("JHDFHS%HK<>")
 
 end
-
-	if string.sub(msg:lower(), 0, 12) == prefix.."moveobbybox" then
+if msg == prefix.."moveobbybox" then
         if Stable_Check == false then
             logn("{Move.lua} Moving Obby Box")
             Stable_Check = true
@@ -1720,44 +1530,6 @@ if msg == prefix.."pcrash" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/silent-crash",true))()
 end
 
-if msg == prefix.."1cmds" then
-logn("type /console in chat")
-print("This script is made by plamk_a -        ")
-print("                                                       ")
-print(" themes: Retro,noob,hell,day,noon,night,fire                                     --               ")
-print("loopgrab / unloopgrab - loopgrabs all pads                                                      ")
-print("bok (plr) - bok player *spam dog 3wait kill*                                                       ")
-print("slag (plr) - smoke lags player works sometimes                                                       ")
-print("fpaint - fix paint                                                       ")
-print("bnuke - bomb nuke                                                       ")
-print("usetools - uses all tools in your inventory                                                       ")
-print("pun (plr) - punishes player + regen admin                                                       ")
-print("bl (plr) - blacklists player (type unbl (plr) to unblacklist)                                                       ")
-print("moveobbybox - moves obby box |skydive method|                                                       ")
-print("moveobby - moves obby                                                       ")
-print("delreg - deletes regen sometimes not works                                                       ")
-print("fixbp -fixes baseplate if its broken                                                      ")
-print("spam - spam cmd say stop to stop                                                       ")
-print("super (cmd) -does cmd 100 times                                                       ")
-print("padban (plr) - padban player (unpadban plr to unban)                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-print("                                                       ")
-end
 
 	if msg == prefix.."moveobby" then
 		game.Players:Chat(prefix.."nok")
@@ -2053,39 +1825,12 @@ wait(0.45)
 chat("reset me")
 
 end
-if msg == prefix.."unblockpads" then
 
-chat("-house")
-wait(0.25)
-chat("si4t me")
-wait(0.90)
-chat("-super unpunish me me me")
-wait(1)
-chat("unskydive                                                               me")
-wait(0.25)
-chat("unsize me                                                               me")
-wait(0.45)
-chat("reset me")
 
-end
-
-if msg == prefix.."blockpads" then
-
-chat("-house")
-wait(0.25)
-chat("si4t me")
-wait(0.90)
-chat("-super unpunish me me me")
-wait(1)
-chat("unsize                                                              me")
-wait(0.45)
-chat("reset me")
-
-end
 local fixregencords = CFrame.new(-7, 6, 93)
 -- 
 	  local hugecords = CFrame.new(-2349580, 9974679, 9954249)
-	if string.sub(msg:lower(), 0, 12) == prefix.."deleteregen" then
+if msg == prefix.."deleteregen" then
 game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.5)
@@ -2333,7 +2078,7 @@ antijail = true
 antijail = false
 
 wait(0.25)
-game.Players:Chat("invis                                          me")
+
  game.Players:Chat("gear me 00000000000000000000000000000108158379")
 
 wait(.2)
@@ -2411,11 +2156,11 @@ end
 						if not looping then break end
 				    end
 				end)
-game.Players:Chat("invis                                          me")
+
 
 				spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				wait(0.3)
-game.Players:Chat("invis                                          me")
+
 				looping = false
 				game.Players:Chat("tp me "..playername)
 				wait(0.2)
@@ -2814,7 +2559,7 @@ end
 
 
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."gpad" then
+if msg == prefix.."gpad" then
                                              local pad = workspace.Terrain._Game.Admin.Pads:FindFirstChild("Touch to get admin")
                                               local a = pad.Head
  local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
@@ -2847,105 +2592,15 @@ chat("ungear                                                                    
 	if msg == prefix.."antiallpads on" then
 padsEnforcement = true
 end
-local anticrash = true
-local crashTools = {"SeaThemedCrossbow", "VampireVanquisher"}
 
-function warnCrash(player, toolName)
-       Chat("ungear                                                                                         " .. player.Name)
-       Chat("punish                                                                                          " .. player.Name)
-
-end
-
-function checkPlayerBackpack(player)
-    local backpack = player:FindFirstChild("Backpack")
-    if backpack then
-        for _, toolName in ipairs(crashTools) do
-            local tool = backpack:FindFirstChild(toolName)
-            if tool and anticrash then
-		                if player.Name ~= game.Players.LocalPlayer.Name and not table.find(GWhitelisted, player.Name) then
-                            warnCrash(player, toolName)
-                    break
-                    end
-            end
-        end
-    end
-end
-
-
-game.Players.PlayerAdded:Connect(function(player)
-    task.wait(0)
-    player.CharacterAdded:Connect(function(character)
-            checkPlayerBackpack(player)
-	  end)
-    checkPlayerBackpack(player)
-end)
-
-game:GetService("RunService").Heartbeat:Connect(function()
-    task.wait(0)
-    for _, player in ipairs(game.Players:GetPlayers()) do
-        if player.Character then
-            checkPlayerBackpack(player)
-        end
-    end
-end)
-
-for _, player in ipairs(game.Players:GetPlayers()) do
-    task.wait(0)
-    if player.Character then
-            checkPlayerBackpack(player)
-    end
-end
 
 if msg == prefix.."antiallpads off" then
 padsEnforcement = false
 end
-	if string.sub(msg:lower(), 0, 19) == prefix.."color house random" then
-		logn("This is a strip of Color3 it works its way through every block SLOWLY want it to keep changing then ;spam it")
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.25)
-		for i,v in pairs(Workspace_Folder["Basic House"]:GetChildren()) do
-			Spawn(function()
-				if v:IsA("Part") then
-					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
-				end
-			end)
-		end
-	end
 	
-	if string.sub(msg:lower(), 0, 24) == prefix.."color obbybricks random" then
-		logn("This is a strip of Color3 it works its way through every block SLOWLY want it to keep changing then ;spam it")
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.25)
-        for i, v in pairs(Workspace_Folder["Obby"]:GetChildren()) do
-			Spawn(function()
-				if v:IsA("Part") then
-					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
-				end
-			end)
-		end
-	end
-	
-	if string.sub(msg:lower(), 0, 18) == prefix.."color obby random" then
-		logn("This is a strip of Color3 it works its way through every block SLOWLY want it to keep changing then ;spam it")
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.25)
-        for i, v in pairs(Workspace_Folder["Obby Box"]:GetChildren()) do
-			Spawn(function()
-				if v:IsA("Part") then
-					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
-				end
-			end)
-		end
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."punish" then
-		local player = string.sub(msg:lower(), 9)
+ if string.sub(msg:lower(), 1, #prefix + 6) == prefix..'punish' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 8)
+PLAYERCHECK(dasplayer)
 
 		game.Players:Chat("setgrav "..player.." 1000")
 chat("punish "..player.."                                                                                                =nigger= ")
@@ -2957,93 +2612,10 @@ wait(0.25)
 regen()
 end
 	
-	if string.sub(msg:lower(), 0, 7) == prefix.."tool 2" then
-		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("gear "..player.." 000000000000000000236438668")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."tool 3" then
-		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("gear "..player.." 00000000000000000018474459")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."tool 4" then
-		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("gear "..player.." 000000000000000000124126528")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."tool 5" then
-		local player = string.sub(msg:lower(), 9)
-		game.Players:Chat("gear "..player.." 00000000000000000035683911")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 1" then
-		game.Players:Chat("music 0000000000000000001374378794")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 2" then
-		game.Players:Chat("music 000000000000000000419365372")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 3" then
-		game.Players:Chat("music 0000000000000000002631240760")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 4" then
-		game.Players:Chat("music 0000000000000000004904305258")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 5" then
-		game.Players:Chat("music 0000000000000000005682636501")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 6" then
-		game.Players:Chat("music 0000000000000000004662452515")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 7" then
-		game.Players:Chat("music 0000000000000000005648499584")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 8" then
-		game.Players:Chat("music 0000000000000000002037521028")
-	end
-	
-	if string.sub(msg:lower(), 0, 7) == prefix.."play 9" then
-		game.Players:Chat("music 0000000000000000006215456978")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 10" then
-		game.Players:Chat("music 000000000000000000142376088")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 11" then
-		game.Players:Chat("music 0000000000000000004907888572")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 12" then
-		game.Players:Chat("music 0000000000000000005878555132")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 13" then
-		game.Players:Chat("music 0000000000000000002230668518")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 14" then
-		game.Players:Chat("music 000000000000000000621545697")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 15" then
-		game.Players:Chat("music 0000000000000000002256171111")
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."play 16" then
-		game.Players:Chat("music 000000000000000000213336468")
-	end
-
 	
 	
-if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
+	
+if msg == prefix.."eqptools" then
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 			Spawn(function()
 				if v:IsA'Tool' then
@@ -3091,7 +2663,7 @@ if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
 	if string.sub(msg:lower(), 0, 8) == prefix.."play 25" then
 		game.Players:Chat("music 0000000000000000002614260103")
 	end
-	if string.sub(msg:lower(), 0, 3) == prefix.."iy" then
+	if msg == prefix.."iy" then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end
 
@@ -3100,8 +2672,10 @@ if string.sub(msg:lower(), 0, 9) == prefix.."eqptools" then
 
 
 if string.sub(msg:lower(), 0, 6) == prefix.."bring" then
-		local player = string.sub(msg:lower(), 8)
-		game.Players:Chat("tp                                                                                                        "..player.." me")
+
+		local dasplayer = string.sub(msg:lower(), 8)
+PLAYERCHECK(dasplayer)
+		game.Players:Chat("tp "..player.." me")
 
 
 	end
@@ -3111,14 +2685,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/pla
 end
 	
 
-	if string.sub(msg:lower(), 0, 10) == prefix.."headfloat" then
-		local player = string.sub(msg:lower(), 12)
-		game.Players:Chat("size "..player.." 0.5")
-		wait(0.25)
-		game.Players:Chat("bighead "..player)
-		wait(0.25)
-		game.Players:Chat("unsize "..player)
-	end
 	
 	if string.sub(msg:lower(), 0, 5) == prefix.."upme" then
 		game.Players.LocalPlayer.Character:Destroy()
@@ -3129,11 +2695,12 @@ end
 
 
 	
-	if string.sub(msg:lower(), 0, 7) == prefix.."pmkick" then
-		local player = string.sub(msg:lower(), 9)
+	 if string.sub(msg:lower(), 1, #prefix + 6) == prefix..'pmkick' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 8)
+PLAYERCHECK(dasplayer)
 		game.Players:Chat("respawn/"..player)
 		wait(0.25)
-		game.Players:Chat("freeze                                                    "..player.." 0.3")
+		game.Players:Chat("freeze                                                    "..player.." 0.3 fucked ")
   		
 
 
@@ -3149,16 +2716,11 @@ end
 	end
 	
 
-	if string.sub(msg:lower(), 0, 5) == prefix.."noob" then
-		local player = string.sub(msg:lower(), 7)
-		game.Players:Chat("char "..player.." 4")
-		wait(1)
-		game.Players:Chat("size "..player.." 0000000000000000000.8")
-		game.Players:Chat("name "..player.." Noob")
-	end
-	if string.sub(msg:lower(), 0, 5) == prefix.."goto" then
-		local player = string.sub(msg:lower(), 7)
-		game.Players:Chat("tp                                                    me "..player.."")
+	
+	 if string.sub(msg:lower(), 1, #prefix + 4) == prefix..'goto' then  
+		local dasplayer = string.sub(msg:lower(), #prefix + 6)
+PLAYERCHECK(dasplayer)
+		game.Players:Chat("tp me "..player.."")
 
 	end
 	
@@ -3195,14 +2757,14 @@ local Rank = "Owner"
 local allowads = true 
 local AllowTeleportsToShortcutHub = false
 	
-	if string.sub(msg:lower(), 0, 8) == prefix.."gearban" then
+	 if string.sub(msg:lower(), 1, #prefix + 7) == prefix..'gearban' then  
 -- 130113146 HyperLaserGun
 		game.Players:Chat("gear me 0000000000000000000000000000000000000000000000000000000000000000000082357101")
 		wait(0.30)
 		game.Players:Chat(prefix.."eqptools")
 		wait(0.50)
 		names = game.Players:GetChildren()
-		local name = string.sub(msg:lower(), 10)
+		local name = string.sub(msg:lower(), #prefix + 9)
 		for i,v in pairs(names) do
 			strlower = string.lower(v.Name)
 			sub = string.sub(strlower,1,#name)
@@ -3213,34 +2775,14 @@ local AllowTeleportsToShortcutHub = false
 				local JailPlayer = v.Name
 				workspace[game.Players.LocalPlayer.Name].PortableJustice.MouseClick:FireServer(workspace[JailPlayer])
 				wait(0.25)
-				game.Players:Chat("reset                                                                             /"..v.Name)
-chat("ungear                                                                  me")
+				game.Players:Chat("reset "..v.Name)
+chat("ungear me")
 			end
 		end
 	end
 
-if string.sub(msg:lower(), 0, 6) == prefix.."laser" then
--- 130113146 HyperLaserGun
-		game.Players:Chat("-super gear me 00000000000000000000000000000000000000000000000000000000000000000000130113146")
-		wait(1)
-		game.Players:Chat(prefix.."alltools")
-		wait(1)
-		names = game.Players:GetChildren()
-		local name = string.sub(msg:lower(), 8)
-		for i,v in pairs(names) do
-			strlower = string.lower(v.Name)
-			sub = string.sub(strlower,1,#name)
-			if name == sub then
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.25)
-				local JailPlayer = v.Name
-				workspace[game.Players.LocalPlayer.Name].HyperLaserGun.MouseClick:FireServer(workspace[JailPlayer])
-				
-			end
-		end
-	end
-	
-	if string.sub(msg:lower(), 0, 9) == prefix.."stonemap" then
+
+if msg == prefix.."stonemap" then
 		game.Players:Chat("gear me 00000000000000000059190534")
 		game.Players:Chat("gear me 00000000000000000059190534")
 		wait(1)
