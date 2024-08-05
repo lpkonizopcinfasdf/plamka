@@ -2666,9 +2666,9 @@ if msg == prefix.."eqptools" then
 	
 
 
-if string.sub(msg:lower(), 0, 6) == prefix.."bring" then
+ if string.sub(msg:lower(), 1, #prefix + 5) == prefix..'bring' then  
 
-		local dasplayer = string.sub(msg:lower(), 8)
+		local dasplayer = string.sub(msg:lower(), 7)
 PLAYERCHECK(dasplayer)
 		game.Players:Chat("tp "..player.." me")
 
