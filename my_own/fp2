@@ -668,7 +668,7 @@ if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
 game.Players:Chat("unpunish/me")
 chat("unpunish me")
-wait(2)
+task.wait(2)
 end
 
 
