@@ -662,14 +662,15 @@ chat("reset                                                                     
 	end
 
 
-
-
+local ap = true
+if ap == true then
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
 
-game.Players:Chat("unpunish/me")
-chat("unpunish me")
+chat("refresh 🦶🥰⚫😐🫡🤩🥱😏⚠️⚫⚪💀☠️😑😐😐⚪❤️😪 me                                                    fuck")
 task.wait(2)
 end
+end
+
 
 
 
@@ -3747,11 +3748,10 @@ chat("v!cmds")
 chat("antiblind fuck")
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/anticrashv3",true))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/a",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/antihat",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/rail-spam-script",true))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lpkonizopcinfasdf/plamka/main/my_own/'slocklock",true))()
 
 
