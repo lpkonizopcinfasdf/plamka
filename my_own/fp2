@@ -454,22 +454,9 @@ if msg == prefix.."laobox" then
  workspace.Terrain["_Game"]["Workspace"]["Obby Box"].Parent = game.Chat
 end
 
-local antifreeze = true
-if msg == prefix.."antifreeze" then
-anfrz()
-antifreeze = true
-end
 
 
 
-function anfrz()
-	while antifreeze == true do
-		wait(0)
-		if lplr.Character:FindFirstChild("ice") then
-			fchat("thaw "..lplr.Name)
-		end
-	end
-end
 
 
 if string.sub(msg:lower(), 0, 7) == prefix.."clrlogs" then
