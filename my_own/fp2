@@ -659,10 +659,10 @@ chat("reset                                                                     
 local ap = true
 
 if game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) then
-if ap == true then
+
 game.Players:Chat("unpunish/me")
 chat("unpunish me")
-wait(1)
+wait(2)
 end
 end
 
@@ -2600,20 +2600,7 @@ if msg == prefix.."antiallpads off" then
 padsEnforcement = false
 end
 	
- if string.sub(msg:lower(), 1, #prefix + 6) == prefix..'punish' then  
-		local dasplayer = string.sub(msg:lower(), #prefix + 8)
-PLAYERCHECK(dasplayer)
 
-		game.Players:Chat("setgrav "..player.." 1000")
-chat("punish "..player.."                                                                                                =nigger= ")
-chat("blind  "..player.." / nigger")
-chat("stun "..player.." nigger ")
-chat("trip "..player.." nigger")
-chat("ff "..player.." nigger")
-wait(0.25)
-regen()
-end
-	
 	
 	
 	
