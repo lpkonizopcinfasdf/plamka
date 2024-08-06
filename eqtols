@@ -1,1 +1,9 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren())do
+if v.ClassName == "Tool" then
+v.Parent = game:GetService("Players").LocalPlayer.Character
+end
+end
 
